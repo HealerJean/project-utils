@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<school>  
+    <person id="001">  
+        <name>張宇晉</name>  
+        <age>23</age>  
+    </person>  
+    <person id="002">  
+        <name>曹雪芹</name>  
+    </person> 
+    <class id ="1">
+    	<classPersonNum>54</classPersonNum>
+    </class> 
+    <sex>2</sex>
+</school>

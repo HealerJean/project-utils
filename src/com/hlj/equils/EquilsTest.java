@@ -3,6 +3,7 @@ package com.hlj.equils;
 public class EquilsTest {
 	public static void main(String[] args) {
 		dy();
+		//== 地址相同，equit 變量相同
 	}
 	public static void dy(){
 		
