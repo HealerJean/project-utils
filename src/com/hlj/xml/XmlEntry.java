@@ -1,61 +1,72 @@
 package com.hlj.xml;
 
 public class XmlEntry {
+	
+	public String person ;
+	public Integer age;
+	public Integer sex;
 	public String name ;
-	public int age;
-	public boolean sutudent;
-	public String grade;
 	public double salary; //нˮ
-	public String classId;
-	public int classPersonNum;
+	public Integer classPersonNum;
 
 	public XmlEntry() {
 	}
-	
-	public String getClassId() {
-		return classId;
+
+	public String getPerson() {
+		return person;
 	}
 
-	public void setClassId(String classId) {
-		this.classId = classId;
+	public void setPerson(String person) {
+		this.person = person;
 	}
 
-	public int getClassPersonNum() {
-		return classPersonNum;
+	public Integer getAge() {
+		return age;
 	}
 
-	public void setClassPersonNum(int classPersonNum) {
-		this.classPersonNum = classPersonNum;
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public Integer getSex() {
+		return sex;
+	}
+
+	public void setSex(Integer sex) {
+		this.sex = sex;
 	}
 
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	public boolean isSutudent() {
-		return sutudent;
-	}
-	public void setSutudent(boolean sutudent) {
-		this.sutudent = sutudent;
-	}
-	public String getGrade() {
-		return grade;
-	}
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
+
 	public double getSalary() {
 		return salary;
 	}
+
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
+
+
+	public Integer getClassPersonNum() {
+		return classPersonNum;
+	}
+
+	public void setClassPersonNum(Integer classPersonNum) {
+		this.classPersonNum = classPersonNum;
+	}
+
+
+
+	
+
+
+
+	
+	
 }
