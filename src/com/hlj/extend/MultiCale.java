@@ -15,7 +15,7 @@ public class MultiCale extends SimleCale{
 	}
 	public void calculate(int multiplier){
 			calculate(); 
-			super.calculate(); //4
+			super.calculate(); //4 //使用了子类的value值
 			value*=multiplier; //8
 		}
 public static void main(String[] args) {
