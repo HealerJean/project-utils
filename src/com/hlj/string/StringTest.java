@@ -9,21 +9,25 @@ public class StringTest {
 	public static void main(String[] args) {
 		String str = "abc";
 		StringTest stringTest = new StringTest();
-		stringTest.change(str);   
+	//	stringTest.change(str);   
 		System.out.println(str); //输出 abc 不会改变的
-		Testsplit();
-		stringTest.testnull();
+	//	Testsplit();
+	//	stringTest.testnull();
 		/**
 		 * 测试string 和byte数组的转化
 		 */
-		testbyteArray();
+	//	testbyteArray();
+		/**
+		 * 
+		 */
+		strToBuffer();
 	}
 	
 	/**
-	 * 测试string 可不可以 +
+	 * 1、测试string 可不可以 +
 	 */
 	
-	private void teststringadd() {
+	private static void teststringadd() {
 		// TODO Auto-generated method stub
 	//	String s+="123"; //错误的
 	//	String s = s +"abc"; //错误的
@@ -54,7 +58,7 @@ public class StringTest {
 	}
 	
 	/**
-	 * 测试 split分割 
+	 * 2、测试 split分割 
 	 */
 	public static void Testsplit() {
 		// TODO Auto-generated method stub
@@ -62,7 +66,7 @@ String a = "abcdef";
 	String []aStrings  = a.split("");
 	System.out.println("0输出"+aStrings[0]+"*"); //输出* 表示索引为0的时候，不存在数据 
 	System.out.println("5输出"+aStrings[5]); //输出e 
-	System.out.println(aStrings.length); 
+	System.out.println(aStrings.length);  //7
 
 	for(String b:aStrings){
 			System.out.println(b); //a b c d e f 
@@ -70,7 +74,7 @@ String a = "abcdef";
 	}
 	
 	/**
-	 * 测试string 和byte数组的转化
+	 * 3、测试string 和byte数组的转化
 	 */
 	public static void testbyteArray(){
 		String str = "HealerJean";
@@ -85,4 +89,38 @@ String a = "abcdef";
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * String 和 StringBuffer之间的转化
+	 */
+
+	 public static void strToBuffer() {
+	  //String -> StringBuffer 1、构造方法  2、通过append方法
+	        //创建一个String对象
+	        String str = "Hi Java!";
+	        System.out.println(str);
+	 
+	        //方式一：构造方法
+	        StringBuffer buffer = new StringBuffer(str);
+	        System.out.println(buffer);
+	 
+	        //方式二：通过append方法
+	        StringBuffer buffer2 = new StringBuffer();
+	        buffer2.append(str);
+	        System.out.println(buffer2);
+	 
+	 //StringBuffer -> String
+	        //创建一个StringBuffer对象 1、构造方法 2、toString方法
+	        StringBuffer buffer3 = new StringBuffer();
+	        buffer3.append("Happy birthday Java!");
+	        System.out.println(buffer3);
+	 
+	        //方式一：通过构造方法
+	        String str2 = new String(buffer3); 
+	        System.out.println(str2);
+	         
+	        //方式二：通过toString方法
+	        String str3 = buffer3.toString();
+	        System.out.println(str3);
+	    }
 }
