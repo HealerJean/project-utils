@@ -1,6 +1,5 @@
 package com.hlj.xml;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -22,11 +21,11 @@ import org.apache.log4j.Logger;
 
 
 //解析xml
-public class XmlTest {
+public class FieldPropetiesToXml {
 	static Logger logger = Logger.getLogger(XmlEntry.class);
 	
 	public static void main(String[] args) {
-		XmlTest xmlTest = new XmlTest();
+		FieldPropetiesToXml xmlTest = new FieldPropetiesToXml();
 		xmlTest.paraseXml(new XmlEntry());
 	} 
 	public  String paraseXml(XmlEntry xmlEntry){
@@ -34,7 +33,7 @@ public class XmlTest {
 
 		try {
 			SAXReader reader=new SAXReader();
-			String fileUrl = XmlTest.class.getResource("test.xml").getFile(); 
+			String fileUrl = FieldPropetiesToXml.class.getResource("test.xml").getFile(); 
 			File fileXml = new File(fileUrl);
 			Document   document = reader.read(fileXml);
 			//取得根节点
@@ -101,7 +100,7 @@ public class XmlTest {
 	private  Properties getPropFileByBusCd(){
 	
 			try {
-				File file=new File(XmlTest.class.getResource("test.properties").getFile());
+				File file=new File(FieldPropetiesToXml.class.getResource("test.properties").getFile());
 				InputStream is;
 				is = new FileInputStream(file);
 				Properties pro=new Properties();

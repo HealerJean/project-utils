@@ -1,5 +1,184 @@
-2017-08-18 17:21:52[][main] INFO [com.hlj.log4j.Log4jTest] info
-2017-08-18 17:21:52[][main] ERROR [com.hlj.log4j.Log4jTest] error
-2017-08-18 17:21:52[][main] WARN [com.hlj.log4j.Log4jTest] warn
-2017-08-20 19:16:01[][main] INFO [com.hlj.xml.XmlEntry] {classPersonNum=classPersonNum, name=name, peoples=persons, xuexiao=school, persons=persons, banji=class, sex=sex, salary=salary, age=age, people=person}
-2017-08-20 19:16:36[][main] INFO [com.hlj.xml.XmlEntry] {classPersonNum=classPersonNum, name=name, peoples=persons, xuexiao=school, persons=persons, banji=class, sex=sex, salary=salary, age=age, people=person}
+2017-08-31 15:17:22[][main] ERROR [freemarker.runtime] Expression ref is undefined on line 5, column 24 in CreateXmlByVmFile.vm.
+
+Expression ref is undefined on line 5, column 24 in CreateXmlByVmFile.vm.
+The problematic instruction:
+----------
+==> ${ref} [on line 5, column 22 in CreateXmlByVmFile.vm]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression ref is undefined on line 5, column 24 in CreateXmlByVmFile.vm.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
+2017-08-31 15:18:10[][main] ERROR [freemarker.runtime] Expression t is undefined on line 4, column 17 in testForxml.xml.
+
+Expression t is undefined on line 4, column 17 in testForxml.xml.
+The problematic instruction:
+----------
+==> ${t.name} [on line 4, column 15 in testForxml.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression t is undefined on line 4, column 17 in testForxml.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
+2017-08-31 15:18:54[][main] ERROR [freemarker.runtime] Expression age is undefined on line 5, column 16 in testForxml.xml.
+
+Expression age is undefined on line 5, column 16 in testForxml.xml.
+The problematic instruction:
+----------
+==> ${age} [on line 5, column 14 in testForxml.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression age is undefined on line 5, column 16 in testForxml.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
+2017-08-31 15:23:19[][main] ERROR [freemarker.runtime] Expression x is undefined on line 4, column 17 in testForxml.xml.
+
+Expression x is undefined on line 4, column 17 in testForxml.xml.
+The problematic instruction:
+----------
+==> ${x.person} [on line 4, column 15 in testForxml.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression x is undefined on line 4, column 17 in testForxml.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
+2017-08-31 15:24:52[][main] ERROR [freemarker.runtime] Expression x is undefined on line 4, column 19 in testForxml.xml.
+
+Expression x is undefined on line 4, column 19 in testForxml.xml.
+The problematic instruction:
+----------
+==> ${x.person} [on line 4, column 17 in testForxml.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression x is undefined on line 4, column 19 in testForxml.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
+2017-08-31 15:25:28[][main] ERROR [freemarker.runtime] Expression x is undefined on line 4, column 19 in testForxml.xml.
+
+Expression x is undefined on line 4, column 19 in testForxml.xml.
+The problematic instruction:
+----------
+==> ${x.person} [on line 4, column 17 in testForxml.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression x is undefined on line 4, column 19 in testForxml.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.TemplateObject.invalidTypeException(TemplateObject.java:134)
+	at freemarker.core.Dot._getAsTemplateModel(Dot.java:78)
+	at freemarker.core.Expression.getAsTemplateModel(Expression.java:89)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
+2017-08-31 15:25:50[][main] ERROR [freemarker.runtime] Expression x.name is undefined on line 6, column 17 in testForxml.xml.
+
+Expression x.name is undefined on line 6, column 17 in testForxml.xml.
+The problematic instruction:
+----------
+==> ${x.name} [on line 6, column 15 in testForxml.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression x.name is undefined on line 6, column 17 in testForxml.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
+2017-08-31 15:26:33[][main] ERROR [freemarker.runtime] Expression x.name is undefined on line 6, column 17 in testForxml.xml.
+
+Expression x.name is undefined on line 6, column 17 in testForxml.xml.
+The problematic instruction:
+----------
+==> ${x.name} [on line 6, column 15 in testForxml.xml]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression x.name is undefined on line 6, column 17 in testForxml.xml.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.Expression.getStringValue(Expression.java:118)
+	at freemarker.core.Expression.getStringValue(Expression.java:93)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:210)
+	at freemarker.core.Environment.process(Environment.java:190)
+	at freemarker.template.Template.process(Template.java:237)
+	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
+	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)

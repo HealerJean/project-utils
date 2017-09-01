@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<root id="" comment="">  
+     <person>  
+        <person>${x.person}</person>  
+        <age>${x.age}</age>  
+        <name>${name}</name>  
+        <sex>${x.sex}</sex>  
+     </person>  
+</root>  

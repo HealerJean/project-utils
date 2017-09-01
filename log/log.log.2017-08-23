@@ -1,0 +1,5 @@
+2017-08-18 17:21:52[][main] INFO [com.hlj.log4j.Log4jTest] info
+2017-08-18 17:21:52[][main] ERROR [com.hlj.log4j.Log4jTest] error
+2017-08-18 17:21:52[][main] WARN [com.hlj.log4j.Log4jTest] warn
+2017-08-20 19:16:01[][main] INFO [com.hlj.xml.XmlEntry] {classPersonNum=classPersonNum, name=name, peoples=persons, xuexiao=school, persons=persons, banji=class, sex=sex, salary=salary, age=age, people=person}
+2017-08-20 19:16:36[][main] INFO [com.hlj.xml.XmlEntry] {classPersonNum=classPersonNum, name=name, peoples=persons, xuexiao=school, persons=persons, banji=class, sex=sex, salary=salary, age=age, people=person}

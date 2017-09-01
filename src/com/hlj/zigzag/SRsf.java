@@ -29,7 +29,7 @@ public class SRsf {
             num += 1;  
         }   
         for (int i = 5; i > -1; i--) {  
-            personlisttemp.add(num, personlist.get(i));  
+            personlisttemp.add(num, personlist.get(i)); 
         }  
         System.out.println();  
         System.out.println("É±ÈË£º");  
