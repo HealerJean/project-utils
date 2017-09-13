@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><pensiondata><version>1.0.0</version><sendcode>S45</sendcode><receivecode>T10</receivecode><sendername></sendername><receivername></receivername><senddate>20170809</senddate><sendtime>155054</sendtime><datasettype><typecode>1201</typecode><typename></typename></datasettype><pensioninfo><custaccountbankid>104</custaccountbankid><memo></memo><appseriono>20170802S451201000000144</appseriono><paybankprov></paybankprov><trustorid></trustorid><collecttype></collecttype><currency></currency><paybank></paybank><custodian></custodian><contributionnotno>523</contributionnotno><accountplanid>281</accountplanid><contribution>1306630.7</contribution><paybankid></paybankid><contributionsum>1306630.7</contributionsum><planlicid>2222223333</planlicid><paybankaccno>1234567890987654</paybankaccno><transtype>04</transtype><trustaccname>中国人寿职业年金受托财产专户</trustaccname><planname>中国人寿年金计划</planname><trustorname></trustorname><paybankaccname>年金财务</paybankaccname><trustaccno>1231231232</trustaccno><contributionnotdate>20170720</contributionnotdate><planid>281</planid><contributiondate>20170731</contributiondate><payserial>1</payserial><paybankcity></paybankcity></pensioninfo></pensiondata> 
+<?xml version="1.0" encoding="UTF-8"?> 
+        <msgtext>  
+          <grphdr>  
+            <version>1.0.0</version>  
+            <ref>102000002012090600000000000000000001</ref>  
+            <buscd>SYS01000</buscd> 
+            <tradsrc>RS</tradsrc>  
+            <sender>S66</sender>  
+        <recver>T10</recver>  
+        <dgst>摘要</dgst>  
+            <date>20170911</date>  
+        <time>100915</time>  
+          </grphdr>  
+          <busitext>  
+          </busitext>  
+        </msgtext>

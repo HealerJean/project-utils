@@ -2,16 +2,19 @@ package com.hlj.string;
 
 import java.io.UnsupportedEncodingException;
 
-import javax.swing.plaf.basic.BasicBorders.SplitPaneBorder;
-import javax.swing.text.ChangedCharSetException;
-
 public class StringTest {
 	public static void main(String[] args) {
 		String str = "abc";
 		StringTest stringTest = new StringTest();
 	//	stringTest.change(str);   
 		System.out.println(str); //输出 abc 不会改变的
-	//	Testsplit();
+	
+		
+	/**
+	 *  split 函数用法
+	 */	
+		//Testsplit();
+	
 	//	stringTest.testnull();
 		/**
 		 * 测试string 和byte数组的转化
@@ -20,9 +23,48 @@ public class StringTest {
 		/**
 		 * 
 		 */
-		strToBuffer();
+	//	strToBuffer();
+		
+		/**
+		 * 将字符串中所有的大写变成小写字母
+		 */
+		strUpperToCase();
 	}
 	
+	private static void strUpperToCase() {
+
+		String a = 	
+				"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+						"<PensionData>\n" + 
+						"    <Version>1.0.0</Version>\n" + 
+						"    <ref>S6620170911110955</ref>\n" + 
+						"<SendCode>T10</SendCode>\n" + 
+						"<ReceiveCode>S65</ReceiveCode>\n" + 
+						"<SendDate>20170911</SendDate>\n" + 
+						"<SendTime>235959</ SendTime >\n" + 
+						"<dgst>消息报文示例</dgst>\n" + 
+						"<AppCode>0000</AppCode>\n" + 
+						"<AppMsg>成功</AppMsg>\n" + 
+						"<DataSetType>\n" + 
+						"    \t<TypeCode>0101</TypeCode>\n" + 
+						"<TypeName>连通性测试</TypeName>\n" + 
+						"<RecordNumber>1</RecordNumber >\n" + 
+						"   \t\t<MainFlag>1</MainFlag>\n" + 
+						"</DataSetType>\n" + 
+						"  <PensionInfo>\n" + 
+						"  <Planinfo>\n" + 
+						"    <Appseriono>000000000000101000000001</Appseriono>\n" + 
+						"<Transtype>99</Transtype>\n" + 
+						"      <Planinfo>\n" + 
+						"  </PensionInfo>\n" + 
+						"</PensionData>";
+
+//replaceAll支持正则表达式，因此会对参数进行解析（两个参数均是），如replaceAll("\\d", "*")，而replace则不会，replace("\\d","*")就是替换"\\d"的字符串，而不会解析为正则。
+		
+		String finalString  = a.toLowerCase().replace(" ", ""); 
+		System.out.println(finalString); 
+	}
+
 	/**
 	 * 1、测试string 可不可以 +
 	 */

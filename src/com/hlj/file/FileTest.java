@@ -1,11 +1,19 @@
 package com.hlj.file;
 
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.StringWriter;
+import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
@@ -44,7 +52,7 @@ public class FileTest {
 		 * 判断是不是目录
 		 * 创建目录，即使路径不存在，也会创建相关路径，因为是mkdirs
 		 */
-		//		 createDirectory();
+		//	 createDirectory();
 
 		
 		/**
@@ -58,19 +66,74 @@ public class FileTest {
 		 * 5、删除目录
 		 * 
 		 */
-       //	File file	  = new File("C:/Users/qdkf/Desktop/项目/各省社保整理/ceshi");
-       //	delteFile(file);
+        //	File file	  = new File("C:/Users/qdkf/Desktop/项目/各省社保整理/ceshi");
+        //	delteFiles(file);
 		
 		/**
 		 * 6 、目录下读取文件内容进行匹配
 		 * 
 		 */
-		File file  = new File("C:/Users/qdkf/Desktop/项目/各省社保整理/数据包/数据包/广西社保");
-		getFileValue(file,"<typecode>1201</typecode>");
+		//	File file  = new File("C:\\Users\\qdkf\\Desktop\\项目\\各省社保整理\\数据包\\数据包\\福建社保--国寿联调数据包");
+		//	getFileValue(file,"datasettype");
+		
+		
+		/**
+		 * 7、获取txt文件内容
+		 * 
+		 */
+		//	String filePath = "D:\\test\\20170904\\9108_REQ_XML_T0120170904006463.xml";
+		//	getFileTextValue(filePath);
+			
+		/**
+		 * 8、按照行,一行一行读取内容	
+		 */
+	//	String filePath = "C:/Users/qdkf/Desktop/项目/江苏/STS01ToRST01_NJF01001_20170904_2017090465853776438363389189.txt";
+	//	getFileReadLineTextValue(filePath);
+	
+	   /**
+	    * 9、根据字符串生成内容
+	    * 只要修改code  city testType typecChoice  directChoice 
+	    */
+		String textContext = XmlTestContet.fuJianNJB02202End;
+		String code = "NJB02202-";             //修改位置 1 
+		String city = "福建-";           //修改位置  2
+		
+		String testType = "单位净值信息上传";          //修改位置  3 
+		
+		String typeOne = "发送报文-";
+    	String typeTwo = "响应报文-";
+		int typecChoice = 0; //1 响应报文                         //修改位置 4
+		String typecChoiceFinal = null;
+		if(typecChoice==1){                    
+			typecChoiceFinal = typeOne;
+		}else{
+			typecChoiceFinal = typeTwo;
+		}
+		
+		String directRS = "代理人发受托人-";
+		String directST = "受托人发代理人-";
+		int directChoice = 0; //1 代理人发受托人             //修改位置 5
+		String directChoiceFinal = null;
+		if(directChoice==1){
+			directChoiceFinal = directRS;
+		}else {
+			directChoiceFinal = directST;
+		}
+		
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd-HHmmss");
+		String ds =simpleDateFormat.format(new Date());
+		String fileName = city+typecChoiceFinal+code+ds+".xml";
+		
+		//例如 
+		String path = "D:/txtDirectory/"+city+"/"+testType+"/"+code+directChoiceFinal+"/"+typecChoiceFinal;
+		getTxtByTextContent(textContext,fileName,path);	
+	
 	}
 	
 	
-	
+
+
+
 
 	/**
 	 * 1、
@@ -167,14 +230,14 @@ public class FileTest {
 	  * 5、删除多个目录
 	  */
 	 
-	    public static void  delteFile(File file){
+	    public static void  delteFiles(File file){
 	    	//file.listFiles()是获取file这个对象也就是file这个目录下面的文件和文件夹的集合
 	        File[] files=file.listFiles(); 
 	        for(File f:files)
 	        {
 	            if(f.isDirectory())//递归调用
 	            {
-	                delteFile(f);
+	                delteFiles(f);
 	            }
 	            else {
 	                f.delete();
@@ -200,7 +263,7 @@ public class FileTest {
 	            {
 	            	getFileValue(f,content);
 	            }
-	            else { 
+	            else {  
 	            	String path = f.getPath();
 	                String xml = path.substring(path.lastIndexOf(".")+1, path.length());
 	            	if(xml.equals("xml")){
@@ -228,6 +291,98 @@ public class FileTest {
 	        }
 		}
 		
+
+		/**
+		 * 7、获取txt文件内容
+		 * 
+		 */
+		private static String getFileTextValue(String filePath) throws Exception {
+			// TODO Auto-generated method stub 
+			 FileInputStream fileInputStream = new FileInputStream(filePath);
+			 ByteArrayOutputStream byteOutputStream = new ByteArrayOutputStream();
+			 int len  = 0;
+			 byte[] buffer = new byte[1024];
+			 while((len = fileInputStream.read(buffer))!=-1){
+				 byteOutputStream.write(buffer, 0, len);
+			 }
+			 String txtValue = new String(byteOutputStream.toByteArray());
+			 System.out.println(txtValue);
+			 return txtValue;
+		}
+
+
+
+		/**
+		 * 8、按照行,一行一行读取txt内容	
+		 */
+		private static String getFileReadLineTextValue(String filePath) throws Exception {
 		
-	
+			 FileInputStream fileInputStream = new FileInputStream(filePath);
+			 ByteArrayOutputStream byteOutputStream = new ByteArrayOutputStream();
+			 int len  = 0;
+			 byte[] buffer = new byte[1024];
+			 while((len = fileInputStream.read(buffer))!=-1){
+				 byteOutputStream.write(buffer, 0, len);
+			 }
+			 byte[] txtByteArray = (byteOutputStream.toByteArray());
+			 
+			BufferedReader reader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(txtByteArray),"utf-8"));
+	     	String lineVal =null ;
+	     	int flagLength = 0;
+			while((lineVal = reader.readLine()) != null ){
+			
+				flagLength++;
+			 if(flagLength==1){
+				 System.out.println("第"+flagLength+"行的内容为"+lineVal);
+			 }
+			 else{
+				 System.out.println("第"+flagLength+"行的内容为"+lineVal);			 
+			 }
+			 
+			}
+	     	
+	     	
+			return null;
+		}
+
+		
+		  /**
+		    * 9、根据字符串生成内容
+		    * 只要修改code  city testType typecChoice  directChoice 
+		    */
+		public static void getTxtByTextContent(String textContext,String fileName,String path){
+
+			try {
+				
+				
+				File fileDirectory = new File(path);
+				if(!fileDirectory.exists()){
+					fileDirectory.mkdirs();
+				}
+				File fileTxt = new File(path+"/"+fileName) ;
+				if(!fileTxt.exists()){
+					fileTxt.createNewFile();
+				}
+				FileOutputStream outputStream = new FileOutputStream(fileTxt);
+					
+				byte[] buffer = textContext.getBytes("utf-8");
+				
+				outputStream.write(buffer);
+			System.out.println("成功"+path+"/"+fileName);
+				
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+			
+			
+		}		
+		
+
 }

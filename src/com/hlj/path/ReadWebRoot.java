@@ -9,6 +9,10 @@ import java.io.PrintWriter;
 import java.util.Properties;
 
 /*
+ * 如果取得项目的名称为 
+ * reques.getContextPath()
+ * ${pageContext.request.contextPath} 
+
 public class ReadSrc extends HttpServlet {
 
 
