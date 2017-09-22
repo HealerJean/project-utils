@@ -1,16 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-        <msgtext>  
-          <grphdr>  
-            <version>1.0.0</version>  
-            <ref>102000002012090600000000000000000001</ref>  
-            <buscd>SYS01000</buscd> 
-            <tradsrc>RS</tradsrc>  
-            <sender>S66</sender>  
-        <recver>T10</recver>  
-        <dgst>摘要</dgst>  
-            <date>20170911</date>  
-        <time>100915</time>  
-          </grphdr>  
-          <busitext>  
-          </busitext>  
-        </msgtext>
+<?xml version="1.0" encoding="utf-8"?>
+<pensiondata>
+  <version>1.0.0</version>
+  <sendcode>S65</sendcode>
+  <receivecode>T10</receivecode>
+  <sendername/>
+  <receivername/>
+  <senddate>20170922</senddate>
+  <sendtime>092401</sendtime>
+  <datasettype>
+    <typecode>0102</typecode>
+    <typename/>
+  </datasettype>
+  <appcode>0000</appcode>
+  <appmsg>正常</appmsg>
+  <oldAppCode>0000</oldAppCode>
+  <oldAppMsg></oldAppMsg>
+  <pensioninfo>
+  	<appseriono>4545645645645</appseriono>
+    <transtype>07</transtype> 	
+    <oldappseriono>RS20170920006992</oldappseriono>
+  </pensioninfo>
+  <oldpensioninfo/>
+</pensiondata> 
+
+
+
+

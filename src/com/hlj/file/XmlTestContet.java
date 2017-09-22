@@ -66,7 +66,7 @@ public interface XmlTestContet {
 	 * T10 to  R66
 	 * SYS02000
 	 */ 	
-	public final static String xinjiangjsbtSYS02000T10ToR66 =	
+	public final static String xinJiangJsbtSYS02000T10ToR66 =	
 	
 	"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
 	"<msgtext>\n" + 
@@ -93,7 +93,7 @@ public interface XmlTestContet {
 	 * R66 to T10 
 	 * SYS02000
 	 */ 	
-	public final static String xinjiangjsbtSYS02000R66ToT10 =	
+	public final static String xinJiangJsbtSYS02000R66ToT10 =	
 					"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + 
 					"<msgtext>\n" + 
 					"\t<grphdr>\n" + 
@@ -113,39 +113,1503 @@ public interface XmlTestContet {
 	
 
 
+/***start* 新疆新版*******新疆新版*******新疆新版*********新疆新版*********新疆新版*********新疆新版********************************/	
 
 	
 	/**
-	 * 新疆自治区新版 连通性测试 响应报文
-	 * T10 to R65
+	 * 新疆自治区新版 连通性测试 受托人->委托人
+	 * T10 to R65 发送报文
 	 * 0101
 	 */
-	public final static String xinjiangzzqnew0101T10ToR65 = 
+	public final static String xinJiangZzqMew0101T10ToR65 = 
 			"<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
-			"<pensiondata>\n" + 
-			"<version>1.0.0</version>\n" + 
-			"<ref>s6620170911110955</ref>\n" + 
-			"<sendcode>T10</sendcode>\n" + 
-			"<receivecode>S65</receivecode>\n" + 
-			"<senddate>20170911</senddate>\n" + 
-			"<sendtime>235959</sendtime>\n" + 
-			"<dgst>消息报文示例</dgst>\n" + 
-			"<appcode>0000</appcode>\n" + 
-			"<appmsg>成功</appmsg>\n" + 
-			"<datasettype>\n" + 
-			"\t<typecode>0101</typecode>\n" + 
-			"<typename>连通性测试</typename>\n" + 
-			"<recordnumber>1</recordnumber>\n" + 
-			"\t\t<mainflag>1</mainflag>\n" + 
-			"</datasettype>\n" + 
-			"<pensioninfo>\n" + 
-			"<planinfo>\n" + 
-			"<appseriono>000000000000101000000001</appseriono>\n" + 
-			"<transtype>99</transtype>\n" + 
-			"</planinfo>\n" + 
-			"</pensioninfo>\n" + 
-			"</pensiondata>";
+					"<pensiondata>"+
+					  "<version>1.0.0</version>"+
+					  "<sendcode>T10</sendcode>"+
+					  "<receivecode>S65</receivecode>"+
+					  "<sendername/>"+
+					  "<receivername/>"+
+					  "<senddate>20170915</senddate>"+
+					  "<sendtime>154656</sendtime>"+
+					  "<dgst>消息报文示例</dgst>"+
+					  "<datasettype>"+
+					    "<typecode>0101</typecode>"+
+					    "<typename>连通性测试</typename>"+
+					  "</datasettype>"+
+					  "<pensioninfo>"+
+					    "<appseriono>201700915T100101000000115</appseriono>"+
+					    "<transtype>99</transtype>"+
+					  "</pensioninfo>"+
+					"</pensiondata>";
 	
+	
+	/**
+	 * 新疆自治区新版 连通性测试 受托人 ->委托人
+	 * T10 to R65   响应报文
+	 * 0101
+	 */
+	public final static String xinJiangZzqNew0101T10ToR65End = 
+	
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+			"<pensiondata>\n" + 
+			"\t<version>1.0.0</version>\n" + 
+			"\t<sendcode>T10</sendcode>\n" + 
+			"\t<receivecode>S65</receivecode>\n" + 
+			"\t<sendername/>\n" + 
+			"\t<receivername/>\n" + 
+			"\t<senddate>20170915</senddate>\n" + 
+			"\t<sendtime>154656</sendtime>\n" + 
+			"\t<dgst>消息报文示例</dgst>\n" + 
+			"\t<datasettype>\n" + 
+			"\t\t<typecode>0101</typecode>\n" + 
+			"\t\t<typename>连通性测试</typename>\n" + 
+			"\t</datasettype>\n" + 
+			"\t<pensioninfo>\n" + 
+			"\t\t<appseriono>201700915T100101000000115</appseriono>\n" + 
+			"\t\t<transtype>99</transtype>\n" + 
+			"\t</pensioninfo>\n" + 
+			"\t<appcode>0000</appcode>\n" + 
+			"\t<appmsg/>\n" + 
+			"</pensiondata>";
+
+	
+	
+	
+	/**
+	 * 新疆自治区新版  委托人- >受托人
+	 * 连通性测试 发送报文
+	 * R65 to  T10
+	 * 0101
+	 */
+	public final static String xinJiangZzqNew0101RSToSTStart = 
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+			"<pensiondata>\n" + 
+			"\t<version>1.0.0</version>\n" + 
+			"\t<sendcode>S65</sendcode>\n" + 
+			"\t<receivecode>T10</receivecode>\n" + 
+			"\t<sendername/>\n" + 
+			"\t<receivername/>\n" + 
+			"\t<senddate>20170915</senddate>\n" + 
+			"\t<sendtime>170517</sendtime>\n" + 
+			"\t<dgst>消息报文示例</dgst>\n" + 
+			"\t<datasettype>\n" + 
+			"\t\t<typecode>0101</typecode>\n" + 
+			"\t\t<typename>连通性测试</typename>\n" + 
+			"\t</datasettype>\n" + 
+			"\t<pensioninfo>\n" + 
+			"\t\t<appseriono>20170915S650101000000044</appseriono>\n" + 
+			"\t\t<transtype>99</transtype>\n" + 
+			"\t</pensioninfo>\n" + 
+			"</pensiondata>";
+
+	
+	/**
+	 * 新疆自治区新版  委托人- >受托人
+	 * 连通性测试 响应报文
+	 * R65 to  T10
+	 * 0101
+	 */
+	public final static String xinJiangZzqNew0101RSToSTEnd = 
+		
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"\t<version>1.0.0</version>\n" + 
+		"\t<sendcode>S65</sendcode>\n" + 
+		"\t<receivecode>T10</receivecode>\n" + 
+		"\t<sendername/>\n" + 
+		"\t<receivername/>\n" + 
+		"\t<senddate>20170915</senddate>\n" + 
+		"\t<sendtime>173633</sendtime>\n" + 
+		"\t<dgst>消息报文示例</dgst>\n" + 
+		"\t<datasettype>\n" + 
+		"\t\t<typecode>0101</typecode>\n" + 
+		"\t\t<typename>连通性测试</typename>\n" + 
+		"\t</datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<appseriono>20170915S650101000000102</appseriono>\n" + 
+		"\t\t<transtype>99</transtype>\n" + 
+		"\t</pensioninfo>\n" + 
+		"\t<appcode>0000</appcode>\n" + 
+		"\t<appmsg/>\n" + 
+		"</pensiondata>";
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	/**
+	 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+	 * 计划基本信息下载 发送报文
+	 * 1101 
+	 */
+	public final static String xinJiangZzqNew1101RSToSTStart=											
+			
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+			"<pensiondata>\n" + 
+			"  <version>1.0.0</version>\n" + 
+			"  <sendcode>S65</sendcode>\n" + 
+			"  <receivecode>T10</receivecode>\n" + 
+			"  <sendername/>\n" + 
+			"  <receivername/>\n" + 
+			"  <senddate>20170915</senddate>\n" + 
+			"  <sendtime>181624</sendtime>\n" + 
+			"  <datasettype>\n" + 
+			"    <typecode>1101</typecode>\n" + 
+			"    <typename/>\n" + 
+			"\t</datasettype>\n" + 
+			"\t<pensioninfo>\n" + 
+			"\t\t<custaccountbankid>105</custaccountbankid>\n" + 
+			"\t\t<unifiedplanlicid>6500ZY00</unifiedplanlicid>\n" + 
+			"\t\t<memo/>\n" + 
+			"\t\t<appseriono>20170915S651101000000120</appseriono>\n" + 
+			"\t\t<trustorid>S65</trustorid>\n" + 
+			"\t\t<planlicdate/>\n" + 
+			"\t\t<lastupddate>20170915</lastupddate>\n" + 
+			"\t\t<investrate>0.3</investrate>\n" + 
+			"\t\t<custodian>中国建设银行</custodian>\n" + 
+			"\t\t<accountplanid>9002777</accountplanid>\n" + 
+			"\t\t<trusteeid>T10</trusteeid>\n" + 
+			"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+			"\t\t<transtype>02</transtype>\n" + 
+			"\t\t<planbegdate>20140908</planbegdate>\n" + 
+			"\t\t<trusteefee>0.001</trusteefee>\n" + 
+			"\t\t<unifiedcustodianid/>\n" + 
+			"\t\t<trustaccname>新疆职业年金受托财产专户</trustaccname>\n" + 
+			"\t\t<planatt>03</planatt>\n" + 
+			"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+			"\t\t<plantype>2</plantype>\n" + 
+			"\t\t<unifiedtrusteeid/>\n" + 
+			"\t\t<custodianfee>0.001</custodianfee>\n" + 
+			"\t\t<custodianid>C02</custodianid>\n" + 
+			"\t\t<planenddate/>\n" + 
+			"\t\t<trustaccno>1111111</trustaccno>\n" + 
+			"\t\t<planid>221</planid>\n" + 
+			"\t\t<drawrate>0.2</drawrate>\n" + 
+			"\t\t<trustconno/>\n" + 
+			"\t\t<unifiedplanname>新疆维吾尔自治区职业年金测试集合计划</unifiedplanname>\n" + 
+			"\t</pensioninfo>\n" + 
+			"</pensiondata>";
+
+	
+	/**
+	 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+	 * 计划基本信息下载 响应报文
+	 * 1101 
+	 */
+	public final static String xinJiangZzqNew1101RSToSTEnd=											
+
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S65</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170915</senddate>\n" + 
+		"  <sendtime>061625</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>1101</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg>正常</appmsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"  \t<appseriono>20170915S651101000000120</appseriono>\n" + 
+		"    <transtype>02</transtype>\n" + 
+		"  </pensioninfo>\n" + 
+		"</pensiondata>";
+
+				
+				
+				
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 投资组合信息推送  发送报文
+			 * 1102
+			 */
+	public final static String xinJiangZzqNew1102RSToSTStart=			
+				
+					"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+					"<pensiondata>\n" + 
+					"\t<version>1.0.0</version>\n" + 
+					"\t<sendcode>S65</sendcode>\n" + 
+					"\t<receivecode>T10</receivecode>\n" + 
+					"\t<sendername/>\n" + 
+					"\t<receivername/>\n" + 
+					"\t<senddate>20170918</senddate>\n" + 
+					"\t<sendtime>110701</sendtime>\n" + 
+					"\t<datasettype>\n" + 
+					"\t\t<typecode>1102</typecode>\n" + 
+					"\t\t<typename/>\n" + 
+					"\t</datasettype>\n" + 
+					"\t<pensioninfo>\n" + 
+					"\t\t<custaccountbankid/>\n" + 
+					"\t\t<memo/>\n" + 
+					"\t\t<appseriono>20170918S651102000000033</appseriono>\n" + 
+					"\t\t<portfoliobegdate>20140908</portfoliobegdate>\n" + 
+					"\t\t<investmanager/>\n" + 
+					"\t\t<portfoliooriprice/>\n" + 
+					"\t\t<rounding>02</rounding>\n" + 
+					"\t\t<lastupddate/>\n" + 
+					"\t\t<currency/>\n" + 
+					"\t\t<fixincmanager/>\n" + 
+					"\t\t<portfolioname>计划层定价</portfolioname>\n" + 
+					"\t\t<investrate>0.3</investrate>\n" + 
+					"\t\t<investratedesc/>\n" + 
+					"\t\t<portfoliotype/>\n" + 
+					"\t\t<custodian/>\n" + 
+					"\t\t<dealingperiod/>\n" + 
+					"\t\t<accountplanid/>\n" + 
+					"\t\t<portfoliostat>01</portfoliostat>\n" + 
+					"\t\t<firstpricedate>20171006</firstpricedate>\n" + 
+					"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+					"\t\t<transtype>02</transtype>\n" + 
+					"\t\t<trusteefee>0.001</trusteefee>\n" + 
+					"\t\t<trustaccname/>\n" + 
+					"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+					"\t\t<custodianfee>0.001</custodianfee>\n" + 
+					"\t\t<custodianid/>\n" + 
+					"\t\t<restrustaccname/>\n" + 
+					"\t\t<investmentrate/>\n" + 
+					"\t\t<trustaccno/>\n" + 
+					"\t\t<planid>221</planid>\n" + 
+					"\t\t<drawrate>0.2</drawrate>\n" + 
+					"\t\t<rescustactbankid/>\n" + 
+					"\t\t<investmantid/>\n" + 
+					"\t\t<stockmanager/>\n" + 
+					"\t\t<portfolioid>71Z0000</portfolioid>\n" + 
+					"\t\t<portfolioenddate/>\n" + 
+					"\t\t<rescustodian/>\n" + 
+					"\t\t<trusteefeedesc/>\n" + 
+					"\t\t<restrustaccno/>\n" + 
+					"\t\t<custodianfeedesc/>\n" + 
+					"\t</pensioninfo>\n" + 
+					"</pensiondata>";
+			
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 投资组合信息推送 响应报文
+			 * 1102
+			 */
+			public final static String xinJiangZzqNew1102RSToSTEnd=			
+						
+				"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+				"<pensiondata>\n" + 
+				"  <version>1.0.0</version>\n" + 
+				"  <sendcode>S65</sendcode>\n" + 
+				"  <receivecode>T10</receivecode>\n" + 
+				"  <sendername/>\n" + 
+				"  <receivername/>\n" + 
+				"  <senddate>20170918</senddate>\n" + 
+				"  <sendtime>110621</sendtime>\n" + 
+				"  <datasettype>\n" + 
+				"    <typecode>1102</typecode>\n" + 
+				"    <typename/>\n" + 
+				"  </datasettype>\n" + 
+				"  <appcode>0000</appcode>\n" + 
+				"  <appmsg>正常</appmsg>\n" + 
+				"  <pensioninfo>\n" + 
+				"  \t<appseriono>20170918S651102000000033</appseriono>\n" + 
+				"    <transtype>02</transtype>\n" + 
+				"  </pensioninfo>\n" + 
+				"</pensiondata>";
+			
+
+
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 年金管理人信息推送 发送报文
+			 * 1103 <licensetype>01</licensetype>
+			 */
+			public  static final String xinJiangZzqNew1103RsToStStart01 = 		
+				"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+				"<pensiondata>\n" + 
+				"\t<version>1.0.0</version>\n" + 
+				"\t<sendcode>S65</sendcode>\n" + 
+				"\t<receivecode>T10</receivecode>\n" + 
+				"\t<sendername/>\n" + 
+				"\t<receivername/>\n" + 
+				"\t<senddate>20170918</senddate>\n" + 
+				"\t<sendtime>114701</sendtime>\n" + 
+				"\t<datasettype>\n" + 
+				"\t\t<typecode>1103</typecode>\n" + 
+				"\t\t<typename/>\n" + 
+				"\t</datasettype>\n" + 
+				"\t<pensioninfo>\n" + 
+				"\t\t<planid>221</planid>\n" + 
+				"\t\t<transtype>04</transtype>\n" + 
+				"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+				"\t\t<appseriono>20170918S651103000000043</appseriono>\n" + 
+				"\t\t<rows>\n" + 
+				"\t\t\t<row>\n" + 
+				"\t\t\t\t<fax/>\n" + 
+				"\t\t\t\t<memo/>\n" + 
+				"\t\t\t\t<institutionorgid/>\n" + 
+				"\t\t\t\t<lastupddate>20170918</lastupddate>\n" + 
+				"\t\t\t\t<contactp>测试</contactp>\n" + 
+				"\t\t\t\t<subinstpostcode/>\n" + 
+				"\t\t\t\t<licensetype>01</licensetype>\n" + 
+				"\t\t\t\t<institutionid>T10</institutionid>\n" + 
+				"\t\t\t\t<institutiontype>03</institutiontype>\n" + 
+				"\t\t\t\t<subinstid/>\n" + 
+				"\t\t\t\t<address/>\n" + 
+				"\t\t\t\t<email/>\n" + 
+				"\t\t\t\t<licensenum>0103</licensenum>\n" + 
+				"\t\t\t\t<socialcreditcode/>\n" + 
+				"\t\t\t\t<institutionname>中国人寿养老保险股份有限公司</institutionname>\n" + 
+				"\t\t\t\t<subinstaddr/>\n" + 
+				"\t\t\t\t<telephone/>\n" + 
+				"\t\t\t</row>\n" + 
+				"\t\t</rows>\n" + 
+				"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+				"\t</pensioninfo>\n" + 
+				"</pensiondata>";
+
+			
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 年金管理人信息推送 发送报文
+			 * 1103 <licensetype>03</licensetype>
+			 */
+			public  static final String xinJiangZzqNew1103RsToStStart03 = 
+
+					"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+					"<pensiondata>\n" + 
+					"\t<version>1.0.0</version>\n" + 
+					"\t<sendcode>S65</sendcode>\n" + 
+					"\t<receivecode>T10</receivecode>\n" + 
+					"\t<sendername/>\n" + 
+					"\t<receivername/>\n" + 
+					"\t<senddate>20170918</senddate>\n" + 
+					"\t<sendtime>122301</sendtime>\n" + 
+					"\t<datasettype>\n" + 
+					"\t\t<typecode>1103</typecode>\n" + 
+					"\t\t<typename/>\n" + 
+					"\t</datasettype>\n" + 
+					"\t<pensioninfo>\n" + 
+					"\t\t<planid>221</planid>\n" + 
+					"\t\t<transtype>04</transtype>\n" + 
+					"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+					"\t\t<appseriono>20170918S651103000000053</appseriono>\n" + 
+					"\t\t<rows>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<fax/>\n" + 
+					"\t\t\t\t<memo/>\n" + 
+					"\t\t\t\t<institutionorgid/>\n" + 
+					"\t\t\t\t<lastupddate>20170918</lastupddate>\n" + 
+					"\t\t\t\t<contactp>测试111</contactp>\n" + 
+					"\t\t\t\t<subinstpostcode/>\n" + 
+					"\t\t\t\t<licensetype>03</licensetype>\n" + 
+					"\t\t\t\t<institutionid>C02</institutionid>\n" + 
+					"\t\t\t\t<institutiontype>01</institutiontype>\n" + 
+					"\t\t\t\t<subinstid/>\n" + 
+					"\t\t\t\t<address/>\n" + 
+					"\t\t\t\t<email/>\n" + 
+					"\t\t\t\t<licensenum>0132</licensenum>\n" + 
+					"\t\t\t\t<socialcreditcode/>\n" + 
+					"\t\t\t\t<institutionname>中国建设银行股份有限公司</institutionname>\n" + 
+					"\t\t\t\t<subinstaddr/>\n" + 
+					"\t\t\t\t<telephone/>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t</rows>\n" + 
+					"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+					"\t</pensioninfo>\n" + 
+					"</pensiondata>";
+
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 年金管理人信息推送 发送报文
+			 * 1103
+			 */
+			public  static final String xinJiangZzqNew1103RsToStEnd03 = 
+					
+				
+				"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+				"<pensiondata>\n" + 
+				"  <version>1.0.0</version>\n" + 
+				"  <sendcode>S65</sendcode>\n" + 
+				"  <receivecode>T10</receivecode>\n" + 
+				"  <sendername/>\n" + 
+				"  <receivername/>\n" + 
+				"  <senddate>20170918</senddate>\n" + 
+				"  <sendtime>122224</sendtime>\n" + 
+				"  <datasettype>\n" + 
+				"    <typecode>1103</typecode>\n" + 
+				"    <typename/>\n" + 
+				"  </datasettype>\n" + 
+				"  <appcode>0000</appcode>\n" + 
+				"  <appmsg>正常</appmsg>\n" + 
+				"  <pensioninfo>\n" + 
+				"  \t<appseriono>20170918S651103000000053</appseriono>\n" + 
+				"    <transtype>04</transtype>\n" + 
+				"  </pensioninfo>\n" + 
+				"</pensiondata>";
+
+			
+			
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 年金管理人信息推送 发送报文
+			 * 1103 <licensetype>04</licensetype>
+			 */
+			public  static final String xinJiangZzqNew1103RsToStStart04 = 		
+					
+					"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+					"<pensiondata>\n" + 
+					"\t<version>1.0.0</version>\n" + 
+					"\t<sendcode>S65</sendcode>\n" + 
+					"\t<receivecode>T10</receivecode>\n" + 
+					"\t<sendername/>\n" + 
+					"\t<receivername/>\n" + 
+					"\t<senddate>20170918</senddate>\n" + 
+					"\t<sendtime>115301</sendtime>\n" + 
+					"\t<datasettype>\n" + 
+					"\t\t<typecode>1103</typecode>\n" + 
+					"\t\t<typename/>\n" + 
+					"\t</datasettype>\n" + 
+					"\t<pensioninfo>\n" + 
+					"\t\t<planid>221</planid>\n" + 
+					"\t\t<transtype>04</transtype>\n" + 
+					"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+					"\t\t<appseriono>20170918S651103000000046</appseriono>\n" + 
+					"\t\t<rows>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<fax/>\n" + 
+					"\t\t\t\t<memo/>\n" + 
+					"\t\t\t\t<institutionorgid/>\n" + 
+					"\t\t\t\t<lastupddate>20170918</lastupddate>\n" + 
+					"\t\t\t\t<contactp>测试</contactp>\n" + 
+					"\t\t\t\t<subinstpostcode/>\n" + 
+					"\t\t\t\t<licensetype>04</licensetype>\n" + 
+					"\t\t\t\t<institutionid>I52</institutionid>\n" + 
+					"\t\t\t\t<institutiontype>2</institutiontype>\n" + 
+					"\t\t\t\t<subinstid/>\n" + 
+					"\t\t\t\t<address/>\n" + 
+					"\t\t\t\t<email/>\n" + 
+					"\t\t\t\t<licensenum>0159</licensenum>\n" + 
+					"\t\t\t\t<socialcreditcode/>\n" + 
+					"\t\t\t\t<institutionname>中国人寿养老保险股份有限公司</institutionname>\n" + 
+					"\t\t\t\t<subinstaddr/>\n" + 
+					"\t\t\t\t<telephone/>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t</rows>\n" + 
+					"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+					"\t</pensioninfo>\n" + 
+					"</pensiondata>";
+
+
+
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 定价日信息推送发送报文
+			 * Rs To St
+			 * 1104
+			 */
+			public  static final String xinJiangZzqNew1104RsToStStart = 
+					"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+					"<pensiondata>\n" + 
+					"  <version>1.0.0</version>\n" + 
+					"  <sendcode>S65</sendcode>\n" + 
+					"  <receivecode>T10</receivecode>\n" + 
+					"  <sendername/>\n" + 
+					"  <receivername/>\n" + 
+					"  <senddate>20170918</senddate>\n" + 
+					"  <sendtime>125701</sendtime>\n" + 
+					"  <datasettype>\n" + 
+					"    <typecode>1104</typecode>\n" + 
+					"    <typename/>\n" + 
+					"  </datasettype>\n" + 
+					"  <pensioninfo>\n" + 
+					"    <planid>221</planid>\n" + 
+					"    <transtype>99</transtype>\n" + 
+					"    <memo/>\n" + 
+					"    <planname>中国人寿养老保险股份有限公司</planname>\n" + 
+					"    <appseriono>20170918S651104000000060</appseriono>\n" + 
+					"    <accountplanid/>\n" + 
+					"    <year>2017</year>\n" + 
+					"    <lastupddate>20170918</lastupddate>\n" + 
+					"    <rows>\n" + 
+					"      <row>\n" + 
+					"        <status>1</status>\n" + 
+					"        <pricedate>20171009</pricedate>\n" + 
+					"      </row>\n" + 
+					"      <row>\n" + 
+					"        <status>1</status>\n" + 
+					"        <pricedate>20171230</pricedate>\n" + 
+					"      </row>\n" + 
+					"      <row>\n" + 
+					"        <status>1</status>\n" + 
+					"        <pricedate>20171025</pricedate>\n" + 
+					"      </row>\n" + 
+					"      <row>\n" + 
+					"        <status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171130</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171227</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171118</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171117</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171013</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171011</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171008</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171007</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171006</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171012</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171010</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t\t<row>\n" + 
+					"\t\t\t\t<status>1</status>\n" + 
+					"\t\t\t\t<pricedate>20171014</pricedate>\n" + 
+					"\t\t\t</row>\n" + 
+					"\t\t</rows>\n" + 
+					"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+					"\t</pensioninfo>\n" + 
+					"</pensiondata>";
+
+
+			
+			
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 定价日信息推送 响应报文
+			 * Rs To St
+			 * 1104
+			 */
+			public  static final String xinJiangZzqNew1104RsToStEnd = 
+
+				"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+				"<pensiondata>\n" + 
+				"  <version>1.0.0</version>\n" + 
+				"  <sendcode>S65</sendcode>\n" + 
+				"  <receivecode>T10</receivecode>\n" + 
+				"  <sendername/>\n" + 
+				"  <receivername/>\n" + 
+				"  <senddate>20170918</senddate>\n" + 
+				"  <sendtime>125624</sendtime>\n" + 
+				"  <datasettype>\n" + 
+				"    <typecode>1104</typecode>\n" + 
+				"    <typename/>\n" + 
+				"  </datasettype>\n" + 
+				"  <appcode>0000</appcode>\n" + 
+				"  <appmsg>正常</appmsg>\n" + 
+				"  <pensioninfo>\n" + 
+				"  \t<appseriono>20170918S651104000000060</appseriono>\n" + 
+				"    <transtype>99</transtype>\n" + 
+				"  </pensioninfo>\n" + 
+				"</pensiondata>";
+			
+		
+			
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 划款指令上传    发送报文
+			 * Rs To St
+			 * 1201
+			 */
+			public  static final String xinJiangZzqNew1201RsToStStart = 
+
+				"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+				"<pensiondata>\n" + 
+				"  <version>1.0.0</version>\n" + 
+				"  <sendcode>S65</sendcode>\n" + 
+				"  <receivecode>T10</receivecode>\n" + 
+				"  <sendername/>\n" + 
+				"\t<receivername/>\n" + 
+				"\t<senddate>20170918</senddate>\n" + 
+				"\t<sendtime>134301</sendtime>\n" + 
+				"\t<datasettype>\n" + 
+				"\t\t<typecode>1201</typecode>\n" + 
+				"\t\t<typename/>\n" + 
+				"\t</datasettype>\n" + 
+				"\t<pensioninfo>\n" + 
+				"\t\t<custaccountbankid>105</custaccountbankid>\n" + 
+				"\t\t<memo/>\n" + 
+				"\t\t<appseriono>20170918S651201000000064</appseriono>\n" + 
+				"\t\t<paybankprov/>\n" + 
+				"\t\t<trustorid/>\n" + 
+				"\t\t<collecttype/>\n" + 
+				"\t\t<currency/>\n" + 
+				"\t\t<paybank/>\n" + 
+				"\t\t<custodian/>\n" + 
+				"\t\t<contributionnotno>575</contributionnotno>\n" + 
+				"\t\t<accountplanid/>\n" + 
+				"\t\t<contribution>45011.6</contribution>\n" + 
+				"\t\t<paybankid/>\n" + 
+				"\t\t<contributionsum>45011.6</contributionsum>\n" + 
+				"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+				"\t\t<paybankaccno>1234567890987654</paybankaccno>\n" + 
+				"\t\t<transtype>04</transtype>\n" + 
+				"\t\t<trustaccname>新疆职业年金受托财产专户</trustaccname>\n" + 
+				"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+				"\t\t<trustorname/>\n" + 
+				"\t\t<paybankaccname>年金财务</paybankaccname>\n" + 
+				"\t\t<trustaccno>1111111</trustaccno>\n" + 
+				"\t\t<contributionnotdate>20170915</contributionnotdate>\n" + 
+				"\t\t<planid>221</planid>\n" + 
+				"\t\t<contributiondate/>\n" + 
+				"\t\t<payserial>1</payserial>\n" + 
+				"\t\t<paybankcity/>\n" + 
+				"\t</pensioninfo>\n" + 
+				"</pensiondata>";
+
+
+			/**
+			 * 新疆自治区新版 模拟 发送 委托人 ->受托人
+			 * 划款指令上传   响应报文
+			 * Rs To St
+			 * 1201
+			 */
+			public  static final String xinJiangZzqNew1201RsToStEnd = 
+				
+				
+				"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+				"<pensiondata>\n" + 
+				"  <version>1.0.0</version>\n" + 
+				"  <sendcode>S65</sendcode>\n" + 
+				"  <receivecode>T10</receivecode>\n" + 
+				"  <sendername/>\n" + 
+				"  <receivername/>\n" + 
+				"  <senddate>20170918</senddate>\n" + 
+				"  <sendtime>014223</sendtime>\n" + 
+				"  <datasettype>\n" + 
+				"    <typecode>1201</typecode>\n" + 
+				"    <typename/>\n" + 
+				"  </datasettype>\n" + 
+				"  <appcode>0000</appcode>\n" + 
+				"  <appmsg>正常</appmsg>\n" + 
+				"  <pensioninfo>\n" + 
+				"  \t<appseriono>20170918S651201000000064</appseriono>\n" + 
+				"    <transtype>04</transtype>\n" + 
+				"  </pensioninfo>\n" + 
+				"</pensiondata>";
+
+    /**
+	* 新疆自治区新版 模拟 发送 委托人 ->受托人
+	* 划款到账回执   发送报文
+	* St To Rs 
+	* 1203
+	*/			
+	public  static final String xinJiangZzqNew1203StToRsStart = 
+					
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>T10</sendcode>\n" + 
+		"  <receivecode>S65</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170918</senddate>\n" + 
+		"  <sendtime>180744</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>1203</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<accountplanid>9002777</accountplanid>\n" + 
+		"\t\t<appseriono>20170918T101203000000967</appseriono>\n" + 
+		"\t\t<transtype>04</transtype>\n" + 
+		"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+		"\t\t<planid>221</planid>\n" + 
+		"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+		"\t\t<enterpriseid/>\n" + 
+		"\t\t<enterprisename/>\n" + 
+		"\t\t<contributionnotno>575</contributionnotno>\n" + 
+		"\t\t<collecttype/>\n" + 
+		"\t\t<contributionsum>45011.6</contributionsum>\n" + 
+		"\t\t<currency/>\n" + 
+		"\t\t<custodian/>\n" + 
+		"\t\t<custaccountbankid>105</custaccountbankid>\n" + 
+		"\t\t<trustaccname>新疆职业年金受托财产专户</trustaccname>\n" + 
+		"\t\t<trustaccno>1111111</trustaccno>\n" + 
+		"\t\t<payserial>1</payserial>\n" + 
+		"\t\t<enterprisebank/>\n" + 
+		"\t\t<enterprisebankid/>\n" + 
+		"\t\t<enterprisebankaccname>年金财务</enterprisebankaccname>\n" + 
+		"\t\t<enterprisebankaccno>1234567890987654</enterprisebankaccno>\n" + 
+		"\t\t<enterprisebankprov/>\n" + 
+		"\t\t<enterprisebankcity/>\n" + 
+		"\t\t<contribution>45011.6</contribution>\n" + 
+		"\t\t<paidupamt>45011.6</paidupamt>\n" + 
+		"\t\t<paidupdate>20170918141200</paidupdate>\n" + 
+		"\t\t<paidupflag>1</paidupflag>\n" + 
+		"\t\t<paidupnotno>1234</paidupnotno>\n" + 
+		"\t\t<memo/>\n" + 
+		"\t</pensioninfo>\n" + 
+		"</pensiondata>";
+					
+					
+    /**
+	* 新疆自治区新版 模拟 发送 委托人 ->受托人
+	* 划款到账回执   响应报文
+	* St To Rs 
+	* 1203
+	*/			
+	public  static final String xinJiangZzqNew1203StToRsEnd = 
+			
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"\t<version>1.0.0</version>\n" + 
+		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<receivecode>S65</receivecode>\n" + 
+		"\t<sendername/>\n" + 
+		"\t<receivername/>\n" + 
+		"\t<senddate>20170918</senddate>\n" + 
+		"\t<sendtime>180744</sendtime>\n" + 
+		"\t<datasettype>\n" + 
+		"\t\t<typecode>1203</typecode>\n" + 
+		"\t\t<typename/>\n" + 
+		"\t</datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<appseriono>20170918T101203000000967</appseriono>\n" + 
+		"\t</pensioninfo>\n" + 
+		"\t<appcode>0000</appcode>\n" + 
+		"\t<appmsg/>\n" + 
+		"</pensiondata>";
+			
+
+	
+	
+	/**
+	 * 新疆自治区新版 模拟 发送 受托人 -> 委托人 
+	 * 单位净值信息上传    发送报文
+	 * St To  Rs
+	 * 1210
+	 */	
+	public  static final String xinJiangZzqNew1210StToRsStart = 
+				
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+			"<pensiondata>\n" + 
+			"  <version>1.0.0</version>\n" + 
+			"  <sendcode>T10</sendcode>\n" + 
+			"  <receivecode>S65</receivecode>\n" + 
+			"  <sendername/>\n" + 
+			"\t<receivername/>\n" + 
+			"\t<senddate>20170918</senddate>\n" + 
+			"\t<sendtime>184044</sendtime>\n" + 
+			"\t<datasettype>\n" + 
+			"\t\t<typecode>1210</typecode>\n" + 
+			"\t\t<typename/>\n" + 
+			"\t</datasettype>\n" + 
+			"\t<pensioninfo>\n" + 
+			"\t\t<appseriono>20170918T101210000000971</appseriono>\n" + 
+			"\t\t<transtype>04</transtype>\n" + 
+			"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+			"\t\t<planid>221</planid>\n" + 
+			"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+			"\t\t<infotype>1</infotype>\n" + 
+			"\t\t<portfolioid>71Z0000</portfolioid>\n" + 
+			"\t\t<portfolioname>计划层定价</portfolioname>\n" + 
+			"\t\t<assetvalue>1076340806.27</assetvalue>\n" + 
+			"\t\t<price>1000.0011</price>\n" + 
+			"\t\t<volume>1075158132.3276</volume>\n" + 
+			"\t\t<earnloss>01</earnloss>\n" + 
+			"\t\t<earn>107634.27</earn>\n" + 
+			"\t\t<navincrate>1634.2</navincrate>\n" + 
+			"\t\t<trustfee>0</trustfee>\n" + 
+			"\t\t<investfee>0</investfee>\n" + 
+			"\t\t<custodfee>0</custodfee>\n" + 
+			"\t\t<priceday>20170228</priceday>\n" + 
+			"\t\t<nextpriceday>20170627</nextpriceday>\n" + 
+			"\t\t<memo/>\n" + 
+			"\t\t<accountplanid>9002777</accountplanid>\n" + 
+			"\t\t<investmantid>C02</investmantid>\n" + 
+			"\t\t<investincom>0</investincom>\n" + 
+			"\t\t<investuncom>0</investuncom>\n" + 
+			"\t\t<currency>156</currency>\n" + 
+			"\t</pensioninfo>\n" + 
+			"</pensiondata>";
+
+	/**
+	 * 新疆自治区新版 模拟 发送 受托人 -> 委托人 
+	 * 单位净值信息上传    响应报文
+	 * St To  Rs
+	 * 1210
+	 */	
+	public  static final String xinJiangZzqNew1210StToRsEnd = 
+	
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"\t<version>1.0.0</version>\n" + 
+		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<receivecode>S65</receivecode>\n" + 
+		"\t<sendername/>\n" + 
+		"\t<receivername/>\n" + 
+		"\t<senddate>20170918</senddate>\n" + 
+		"\t<sendtime>184044</sendtime>\n" + 
+		"\t<datasettype>\n" + 
+		"\t\t<typecode>1210</typecode>\n" + 
+		"\t\t<typename/>\n" + 
+		"\t</datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<appseriono>20170918T101210000000971</appseriono>\n" + 
+		"\t</pensioninfo>\n" + 
+		"\t<appcode>0000</appcode>\n" + 
+		"\t<appmsg/>\n" + 
+		"</pensiondata>";
+
+	
+
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 资产估值明细下载    发送报文
+	 * Rs To St  
+	 * 1211
+	 */
+	public  static final String xinJiangZzqNew1211RsToStStart = 
+				
+		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"\t<version>1.0.0</version>\n" + 
+		"\t<sendcode>S65</sendcode>\n" + 
+		"\t<receivecode>T10</receivecode>\n" + 
+		"\t<sendername/>\n" + 
+		"\t<receivername/>\n" + 
+		"\t<senddate>20170919</senddate>\n" + 
+		"\t<sendtime>162101</sendtime>\n" + 
+		"\t<datasettype>\n" + 
+		"\t\t<typecode>1211</typecode>\n" + 
+		"\t\t<typename/>\n" + 
+		"\t</datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<transtype>04</transtype>\n" + 
+		"\t\t<planid>221</planid>\n" + 
+		"\t\t<appseriono>20170919S651211000000023</appseriono>\n" + 
+		"\t\t<portfolioid>71Z0000</portfolioid>\n" + 
+		"\t\t<priceday>20170228</priceday>\n" + 
+		"\t</pensioninfo>\n" + 
+		"</pensiondata>";
+
+	
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 资产估值明细下载    响应报文
+	 * Rs To St  
+	 * 1211
+	 */
+	public  static final String xinJiangZzqNew1211RsToStEnd = 		
+		
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S65</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170919</senddate>\n" + 
+		"  <sendtime>042027</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>1211</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"    <appcode>0000</appcode>\n" + 
+		"  \t<appmsg>正常</appmsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"  \t<appseriono>20170919S651211000000023</appseriono>\n" + 
+		"    <transtype>04</transtype>\n" + 
+		"    <appcode>0000</appcode>\n" + 
+		"  \t<appmsg>正常</appmsg>\n" + 
+		"  \t<planid>221</planid>\n" + 
+		"  \t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+		"  \t<planlicid>6500ZY201710</planlicid>\n" + 
+		"  \t<portfolioid>71Z0000</portfolioid>\n" + 
+		"  \t<portfolioname>计划层定价</portfolioname>\n" + 
+		"  \t<rows>\n" + 
+		"  \t</rows>\n" + 
+		" </pensioninfo>\n" + 
+		"</pensiondata>";
+
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 成交汇总报表上传   发送报文
+	 * Rs To St  
+	 * 1212
+	 */
+	public  static final String xinJiangZzqNew1212RsToStStart = 
+					 
+		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S45</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170919</senddate>\n" + 
+		"  <sendtime>170307</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>1212</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <pensioninfo>\n" + 
+		"    <totalsalesum>0</totalsalesum>\n" + 
+		"    <totalbuyamt>62000</totalbuyamt>\n" + 
+		"    <memo/>\n" + 
+		"    <appseriono>20170911S451212000000273</appseriono>\n" + 
+		"    <otherbuyvol/>\n" + 
+		"    <transsalevol/>\n" + 
+		"    <currency/>\n" + 
+		"    <portfolioname>计划层定价</portfolioname>\n" + 
+		"    <othersalevol/>\n" + 
+		"    <switchbuyvol/>\n" + 
+		"    <transsalesum/>\n" + 
+		"    <accountplanid>281</accountplanid>\n" + 
+		"\t\t<othersalesum/>\n" + 
+		"\t\t<begassetval>125534215.9</begassetval>\n" + 
+		"\t\t<begassetvol>104664178.6691</begassetvol>\n" + 
+		"\t\t<otherbuysum/>\n" + 
+		"\t\t<planlicid>2222223333</planlicid>\n" + 
+		"\t\t<paymentsalesum>0</paymentsalesum>\n" + 
+		"\t\t<noinvestbuyvol/>\n" + 
+		"\t\t<appreciation>1063072.79</appreciation>\n" + 
+		"\t\t<planname>中国人寿年金计划</planname>\n" + 
+		"\t\t<contribuyamt>62000</contribuyamt>\n" + 
+		"\t\t<totalsalevol>0</totalsalevol>\n" + 
+		"\t\t<finalassetvol>105550515.836</finalassetvol>\n" + 
+		"\t\t<paymentsalevol>0</paymentsalevol>\n" + 
+		"\t\t<noinvestsalevol/>\n" + 
+		"\t\t<priceday>20170830</priceday>\n" + 
+		"\t\t<totalbuyvol>886337.1669</totalbuyvol>\n" + 
+		"\t\t<repbatchno>319</repbatchno>\n" + 
+		"\t\t<planid>281</planid>\n" + 
+		"\t\t<sumtype>H</sumtype>\n" + 
+		"\t\t<switchsalevol/>\n" + 
+		"\t\t<price>1.1994</price>\n" + 
+		"\t\t<noinvestbuysum/>\n" + 
+		"\t\t<noinvestsalesum/>\n" + 
+		"\t\t<printday/>\n" + 
+		"\t\t<periodinvestsum>62000</periodinvestsum>\n" + 
+		"\t\t<portfolioid>T10Z0001</portfolioid>\n" + 
+		"\t\t<contribuyvol>886337.1669</contribuyvol>\n" + 
+		"\t\t<switchsalesum/>\n" + 
+		"\t\t<finalassetval>126597288.69</finalassetval>\n" + 
+		"\t\t<periodinvestvol>886337.1669</periodinvestvol>\n" + 
+		"\t\t<switchbuysum/>\n" + 
+		"\t</pensioninfo>\n" + 
+		"</pensiondata>";
+
+	
+	
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 成交汇总报表上传  响应报文
+	 * Rs To St  
+	 * 1212
+	 */
+	public  static final String xinJiangZzqNew1212RsToStEnd = 
+	
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S45</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170919</senddate>\n" + 
+		"  <sendtime>045937</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>1212</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg>正常</appmsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"  \t<appseriono>20170911S451212000000273</appseriono>\n" + 
+		"    <transtype></transtype>\n" + 
+		"  </pensioninfo>\n" + 
+		"</pensiondata>";
+
+	
+	
+
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 文件就绪通知（发放通知）    发送报文
+	 * Rs To St  
+	 * 1205
+	 */
+	public  static final String xinJiangZzqNew1205RsToStStart = 
+
+		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"\t<version>1.0.0</version>\n" + 
+		"\t<sendcode>S65</sendcode>\n" + 
+		"\t<receivecode>T10</receivecode>\n" + 
+		"\t<sendername/>\n" + 
+		"\t<receivername/>\n" + 
+		"\t<senddate>20170919</senddate>\n" + 
+		"\t<sendtime>184902</sendtime>\n" + 
+		"\t<datasettype>\n" + 
+		"\t\t<typecode>1205</typecode>\n" + 
+		"\t\t<typename/>\n" + 
+		"\t</datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<appseriono>20170919S651205000000100</appseriono>\n" + 
+		"\t\t<transtype>04</transtype>\n" + 
+		"\t\t<filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"\t\t<filepath>2017</filepath>\n" + 
+		"\t\t<planid>221</planid>\n" + 
+		"\t\t<accountplanid/>\n" + 
+		"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
+		"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+		"\t\t<paymentno>2068</paymentno>\n" + 
+		"\t\t<paycount>2</paycount>\n" + 
+		"\t\t<paysum>162.96</paysum>\n" + 
+		"\t\t<taxpayable>0</taxpayable>\n" + 
+		"\t\t<aftertaxpayamt>162.96</aftertaxpayamt>\n" + 
+		"\t\t<currency/>\n" + 
+		"\t\t<memo/>\n" + 
+		"\t\t<filesign>GMY9BLPT2H7fwuJlsQcMid3xT0yb3PQCsUOMLh9Qb/ijphKrExmjifNzUGyMCOd0nevL78lH1G1qf9zOEY/DXIRjkESpTIlzI4wqzwQegkyZ3/atTxfXdODGBVcLM2TzOayYiFQF736YedNSsh7JYOfY29BgAzRcMqWKspUqQHQ=</filesign>\n" + 
+		"\t\t<aeskey>VCOYky0JIjGrxDAY</aeskey>\n" + 
+		"\t</pensioninfo>\n" + 
+		"</pensiondata>";
+
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 文件就绪通知（发放通知）    响应报文
+	 * Rs To St  
+	 * 1205
+	 */
+	public  static final String xinJiangZzqNew1205RsToStEnd = 
+		
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S65</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170919</senddate>\n" + 
+		"  <sendtime>064825</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>1205</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg>正常</appmsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"  \t<appseriono>20170919S651205000000100</appseriono>\n" + 
+		"  \t <appcode>0000</appcode>\n" + 
+		" \t <appmsg>正常</appmsg>\n" + 
+		"    <filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"\t<filesign>GMY9BLPT2H7fwuJlsQcMid3xT0yb3PQCsUOMLh9Qb/ijphKrExmjifNzUGyMCOd0nevL78lH1G1qf9zOEY/DXIRjkESpTIlzI4wqzwQegkyZ3/atTxfXdODGBVcLM2TzOayYiFQF736YedNSsh7JYOfY29BgAzRcMqWKspUqQHQ=</filesign>\n" + 
+		"  </pensioninfo>\n" + 
+		"</pensiondata>";
+
+
+	/**
+	 * 新疆自治区新版    受托人 -> 委托人   
+	 * 文件就绪通知（发放通知）    发送报文
+	 * St To Rs   
+	 * 9208 关于1205
+	 */
+	public  static final String xinJiangZzqNew9208_1205StToRsStart = 
+			
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>T10</sendcode>\n" + 
+		"  <receivecode>S65</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170919</senddate>\n" + 
+		"  <sendtime>064826</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>9208</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg>正常</appmsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"  \t<appseriono>20170919T109208000000982</appseriono>\n" + 
+		"    <transtype>04</transtype>\n" + 
+		"    <filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"\t<result>0</result>\n" + 
+		"\t<errormsg/>\n" + 
+		"  </pensioninfo>\n" + 
+		"</pensiondata>";
+
+	
+	/**
+	 * 新疆自治区新版    受托人 -> 委托人   
+	 * 文件就绪通知（发放通知）    响应报文
+	 * St To Rs   
+	 * 9208 关于1205
+	 */
+	public  static final String xinJiangZzqNew9208_1205StToRsEnd = 
+		
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>T10</sendcode>\n" + 
+		"  <receivecode>S65</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170919</senddate>\n" + 
+		"  <sendtime>064826</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>9208</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg></appmsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"  \t<appseriono>20170919T109208000000982</appseriono>\n" + 
+		"    <transtype>04</transtype>\n" + 
+		"    <filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"\t<result>0</result>\n" + 
+		"\t<errormsg/>\n" + 
+		"  </pensioninfo>\n" + 
+		"</pensiondata>";
+
+	
+	
+
+
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 文件就绪通知（发放结果反馈通知）    发送报文
+	 * St To Rs  
+	 * 1208
+	 */
+	public  static final String xinJiangZzqNew1208StToRsStart = 
+	
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"\t<version>1.0.0</version>\n" + 
+		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<receivecode>S65</receivecode>\n" + 
+		"\t<sendername/>\n" + 
+		"\t<receivername/>\n" + 
+		"\t<senddate>20170920</senddate>\n" + 
+		"\t<sendtime>120314</sendtime>\n" + 
+		"\t<datasettype>\n" + 
+		"\t\t<typecode>1208</typecode>\n" + 
+		"\t\t<typename/>\n" + 
+		"\t</datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<appseriono>20170920T101208000000998</appseriono>\n" + 
+		"\t\t<transtype>04</transtype>\n" + 
+		"\t\t<planname>中国人寿年金计划</planname>\n" + 
+		"\t\t<planid>221</planid>\n" + 
+		"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
+		"\t\t<accountplanid>9002777</accountplanid>\n" + 
+		"\t\t<filename>STT10ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
+		"\t\t<filesign/>\n" + 
+		"\t\t<aeskey/>\n" + 
+		"\t\t<filepath/>\n" + 
+		"\t\t<paymentno>2068</paymentno>\n" + 
+		"\t\t<paycount>2</paycount>\n" + 
+		"\t\t<paysum>162.96</paysum>\n" + 
+		"\t\t<taxpayable>0</taxpayable>\n" + 
+		"\t\t<aftertaxpayamt>162.96</aftertaxpayamt>\n" + 
+		"\t\t<paysuccount>1</paysuccount>\n" + 
+		"\t\t<paysucsum>66.56</paysucsum>\n" + 
+		"\t\t<payfailcount>1</payfailcount>\n" + 
+		"\t\t<payfailsum>96.40</payfailsum>\n" + 
+		"\t\t<memo/>\n" + 
+		"\t</pensioninfo>\n" + 
+		"</pensiondata>";
+
+	/**
+	 * 新疆自治区新版   委托人->   受托人 
+	 * 文件就绪通知（发放结果反馈通知）    响应报文
+	 * St To Rs  
+	 * 1208
+	 */
+	public  static final String xinJiangZzqNew1208StToRsEnd = 
+		
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"\t<version>1.0.0</version>\n" + 
+		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<receivecode>S65</receivecode>\n" + 
+		"\t<sendername/>\n" + 
+		"\t<receivername/>\n" + 
+		"\t<senddate>20170920</senddate>\n" + 
+		"\t<sendtime>120314</sendtime>\n" + 
+		"\t<datasettype>\n" + 
+		"\t\t<typecode>1208</typecode>\n" + 
+		"\t\t<typename/>\n" + 
+		"\t</datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<filename>STT10ToRSS65_NJF02001_20170920_2068.txt.gz</filename>\n" + 
+		"\t\t<filesign>C++ZfDZNBQKcCa76DSMzmN224hU4IexvqOSTwoPQsIIOzBWLA+JxesibAu5LRvWX00QK6+CRsn88f6KvASD74VC2cWiXEdOOEW34gdnGz3gab6/XsJoPkjOp9iN4ZD7cPwzKRBzVqYQ/sGeLpO1QMwltBPwrcd0aBm0I6oQdss0=</filesign>\n" + 
+		"\t\t<appseriono>20170920T101208000000998</appseriono>\n" + 
+		"\t</pensioninfo>\n" + 
+		"\t<appcode>0000</appcode>\n" + 
+		"\t<appmsg/>\n" + 
+		"</pensiondata>";
+	
+	
+	/**
+	 * 新疆自治区新版    受托人 -> 委托人   
+	 * 文件就绪通知（发放结果反馈通知）    发送报文
+	 * Rs  To  St  
+	 * 9208 关于1208
+	 */
+	public  static final String xinJiangZzqNew9208_1208RsToStStart = 
+
+	"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+	"<pensiondata>\n" + 
+	"\t<version>1.0.0</version>\n" + 
+	"\t<sendcode>S65</sendcode>\n" + 
+	"\t<receivecode>T10</receivecode>\n" + 
+	"\t<sendername/>\n" + 
+	"\t<receivername/>\n" + 
+	"\t<senddate>20170920</senddate>\n" + 
+	"\t<sendtime>124019</sendtime>\n" + 
+	"\t<datasettype>\n" + 
+	"\t\t<typecode>9208</typecode>\n" + 
+	"\t\t<typename/>\n" + 
+	"\t</datasettype>\n" + 
+	"\t<pensioninfo>\n" + 
+	"\t\t<transtype>99</transtype>\n" + 
+	"\t\t<result>0</result>\n" + 
+	"\t\t<appseriono>20170920S659208000000019</appseriono>\n" + 
+	"\t\t<errormsg/>\n" + 
+	"\t\t<filename>STT10ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
+	"\t</pensioninfo>\n" + 
+	"</pensiondata>";
+	
+	
+	/**
+	 * 新疆自治区新版    受托人 -> 委托人   
+	 * 文件就绪通知（发放结果反馈通知）    响应报文
+	 * Rs  To  St  
+	 * 9208 关于1208
+	 */
+	public  static final String xinJiangZzqNew9208_1208RsToStEnd = 
+			
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S65</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170920</senddate>\n" + 
+		"  <sendtime>123939</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>9208</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg>正常</appmsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"   \t<appseriono>20170920S659208000000019</appseriono>\n" + 
+		"    <transtype>99</transtype>\n" + 
+		"    <filename>STT10ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
+		"\t<result>0</result>\n" + 
+		"\t<errormsg></errormsg>\n" + 
+		"  </pensioninfo>\n" + 
+		"</pensiondata>";
+	
+	
+	
+	/**
+	 * 新疆自治区新版    委托人 -> 受托人   
+	 * 通用交易查询    发送报文
+	 * St To Rs   
+	 * 0102
+	 */
+	public  static final String xinJiangZzqNew0102RsToStStart = 
+			
+		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S65</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170922</senddate>\n" + 
+		"  <sendtime>100740</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>0102</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <pensioninfo>\n" + 
+		"    <appseriono>20170922S650102000000002</appseriono>\n" + 
+		"    <transtype>07</transtype>\n" + 
+		"    <oldappseriono>20170921S651101000000016</oldappseriono>\n" + 
+		"  </pensioninfo>\n" + 
+		"  <oldpensioninfo>\n" + 
+		"    <custaccountbankid>105</custaccountbankid>\n" + 
+		"    <unifiedplanlicid>6500ZY00</unifiedplanlicid>\n" + 
+		"    <memo/>\n" + 
+		"    <appseriono>20170921S651101000000016</appseriono>\n" + 
+		"    <trustorid>S65</trustorid>\n" + 
+		"    <planlicdate/>\n" + 
+		"    <lastupddate>20170921</lastupddate>\n" + 
+		"    <investrate>0.3</investrate>\n" + 
+		"    <custodian>中国建设银行</custodian>\n" + 
+		"    <accountplanid>9002777</accountplanid>\n" + 
+		"    <trusteeid>T10</trusteeid>\n" + 
+		"    <planlicid>6500ZY201710</planlicid>\n" + 
+		"    <transtype>02</transtype>\n" + 
+		"    <planbegdate>20140908</planbegdate>\n" + 
+		"    <trusteefee>0.001</trusteefee>\n" + 
+		"    <unifiedcustodianid/>\n" + 
+		"    <trustaccname>新疆职业年金受托财产专户</trustaccname>\n" + 
+		"    <planatt>03</planatt>\n" + 
+		"    <planname>中国人寿养老保险股份有限公司</planname>\n" + 
+		"    <plantype>2</plantype>\n" + 
+		"    <unifiedtrusteeid/>\n" + 
+		"    <custodianfee>0.001</custodianfee>\n" + 
+		"    <custodianid>C01</custodianid>\n" + 
+		"    <planenddate/>\n" + 
+		"    <trustaccno>1111111</trustaccno>\n" + 
+		"    <planid>221</planid>\n" + 
+		"    <drawrate>0.2</drawrate>\n" + 
+		"    <trustconno/>\n" + 
+		"    <unifiedplanname>新疆维吾尔自治区职业年金测试集合计划</unifiedplanname>\n" + 
+		"  </oldpensioninfo>\n" + 
+		"</pensiondata>";
+
+	/**
+	 * 新疆自治区新版    委托人 -> 受托人   
+	 * 通用交易查询    响应报文
+	 * St To Rs   
+	 * 0102
+	 */
+	public  static final String xinJiangZzqNew0102RsToStEnd = 
+	
+
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>S65</sendcode>\n" + 
+		"  <receivecode>T10</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170922</senddate>\n" + 
+		"  <sendtime>100658</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>0102</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg>正常</appmsg>\n" + 
+		"  <oldAppCode>0000</oldAppCode>\n" + 
+		"  <oldAppMsg></oldAppMsg>\n" + 
+		"  <pensioninfo>\n" + 
+		"  \t<appseriono>20170922S650102000000002</appseriono>\n" + 
+		"    <transtype>07</transtype>\n" + 
+		"    <oldappseriono>20170921S651101000000016</oldappseriono>\n" + 
+		"  </pensioninfo>\n" + 
+		"  <oldpensioninfo/>\n" + 
+		"</pensiondata>";
+
+
+	/**
+	 * 新疆自治区新版    受托人 -> 委托人    
+	 * 通用交易查询    发送报文
+	 * St To Rs   
+	 * 0102
+	 */
+	public  static final String xinJiangZzqNew0102StToRsStart = 	
+		
+		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>T10</sendcode>\n" + 
+		"  <receivecode>S65</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170922</senddate>\n" + 
+		"  <sendtime>112204</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>0102</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"\t<pensioninfo>\n" + 
+		"\t\t<appseriono>20170922T100102000001069</appseriono>\n" + 
+		"\t\t<transtype>07</transtype>\n" + 
+		"\t\t<oldappseriono>201700915T100101000000115</oldappseriono>\n" + 
+		"\t</pensioninfo>\n" + 
+		"\t<oldpensioninfo>\n" + 
+		"\t\t<transtype>99</transtype>\n" + 
+		"\t</oldpensioninfo>\n" + 
+		"</pensiondata>";
+
+	/**
+	 * 新疆自治区新版    受托人 -> 委托人    
+	 * 通用交易查询    发送报文
+	 * St To Rs   
+	 * 0102
+	 */
+	public  static final String xinJiangZzqNew0102StToRsEnd = 	
+			
+		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>1.0.0</version>\n" + 
+		"  <sendcode>T10</sendcode>\n" + 
+		"  <receivecode>S65</receivecode>\n" + 
+		"  <sendername/>\n" + 
+		"  <receivername/>\n" + 
+		"  <senddate>20170922</senddate>\n" + 
+		"  <sendtime>112204</sendtime>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>0102</typecode>\n" + 
+		"    <typename/>\n" + 
+		"  </datasettype>\n" + 
+		"  <pensioninfo>\n" + 
+		"    <appseriono>20170922T100102000001069</appseriono>\n" + 
+		"    <transtype>07</transtype>\n" + 
+		"    <oldappseriono>201700915T100101000000115</oldappseriono>\n" + 
+		"  </pensioninfo>\n" + 
+		"  <appcode>0000</appcode>\n" + 
+		"  <appmsg/>\n" + 
+		"  <oldappcode>0000</oldappcode>\n" + 
+		"  <oldappmsg/>\n" + 
+		"  <oldpensioninfo>\n" + 
+		"    <appseriono>201700915T100101000000115</appseriono>\n" + 
+		"    <transtype>99</transtype>\n" + 
+		"  </oldpensioninfo>\n" + 
+		"</pensiondata>";
+
+/***end* 新疆新版*******新疆新版*******新疆新版*********新疆新版*********新疆新版*********新疆新版********************************/	
 	
 /***start*****福建****福建******福建*******福建***********福建********福建*****福建**********/
 	
@@ -348,4 +1812,97 @@ public interface XmlTestContet {
 	
 /***end*****福建****福建******福建*******福建***********福建********福建*****福建**********/
 	
+	
+/****start**江苏****江苏****江苏****江苏*****江苏*****江苏****江苏****江苏****江苏*******************************/
+	
+	
+	/**
+	 * 江苏 发送 委托人 ->受托人
+	 * 年金管理人信息推送 发送报文
+	 * 1103 
+	 */
+ 	public static final String jiangSu1103RsToStStart = 
+		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+		"<pensiondata>\n" + 
+		"  <version>V1.0</version>\n" + 
+		"  <sendcode>S32</sendcode>\n" + 
+		"  <receivecode>null</receivecode>\n" + 
+		"  <senddate>20170920</senddate>\n" + 
+		"  <sendtime>120356</sendtime>\n" + 
+		"  <dgst>年金管理人信息</dgst>\n" + 
+		"  <datasettype>\n" + 
+		"    <typecode>1103</typecode>\n" + 
+		"    <typename>年金管理人信息</typename>\n" + 
+		"  </datasettype>\n" + 
+		"  <pensioninfo>\n" + 
+		"    <appseriono>000120170920000553</appseriono>\n" + 
+		"    <transtype>2</transtype>\n" + 
+		"    <planid/>\n" + 
+		"    <accountplanid/>\n" + 
+		"    <planlicid>3600ZY20170920</planlicid>\n" + 
+		"    <rows>\n" + 
+		"      <row>\n" + 
+		"        <institutionid/>\n" + 
+		"        <institutionname/>\n" + 
+		"        <institutionorgid>null</institutionorgid>\n" + 
+		"        <socialcreditcode/>\n" + 
+		"        <institutiontype>01</institutiontype>\n" + 
+		"        <licensetype>01</licensetype>\n" + 
+		"        <licensenum>null</licensenum>\n" + 
+		"        <subinstid/>\n" + 
+		"        <subinstaddr/>\n" + 
+		"        <subinstpostcode/>\n" + 
+		"        <telephone>12580</telephone>\n" + 
+		"        <contactp>李磊2</contactp>\n" + 
+		"        <email/>\n" + 
+		"        <fax/>\n" + 
+		"        <address>北京市公安厅</address>\n" + 
+		"        <lastupddate>20170920</lastupddate>\n" + 
+		"        <memo/>\n" + 
+		"      </row>\n" + 
+		"      <row>\n" + 
+		"        <institutionid/>\n" + 
+		"        <institutionname/>\n" + 
+		"\t\t\t\t<institutionorgid>null</institutionorgid>\n" + 
+		"\t\t\t\t<socialcreditcode/>\n" + 
+		"\t\t\t\t<institutiontype>02</institutiontype>\n" + 
+		"\t\t\t\t<licensetype>02</licensetype>\n" + 
+		"\t\t\t\t<licensenum>null</licensenum>\n" + 
+		"\t\t\t\t<subinstid/>\n" + 
+		"\t\t\t\t<subinstaddr/>\n" + 
+		"\t\t\t\t<subinstpostcode/>\n" + 
+		"\t\t\t\t<telephone>010-68098143</telephone>\n" + 
+		"\t\t\t\t<contactp>杨明生</contactp>\n" + 
+		"\t\t\t\t<email>shifengyi@cebbank.com</email>\n" + 
+		"\t\t\t\t<fax>010-68098204</fax>\n" + 
+		"\t\t\t\t<address>北京市西城区金融大街中国人寿广场</address>\n" + 
+		"\t\t\t\t<lastupddate>20170920</lastupddate>\n" + 
+		"\t\t\t\t<memo/>\n" + 
+		"\t\t\t</row>\n" + 
+		"\t\t\t<row>\n" + 
+		"\t\t\t\t<institutionid/>\n" + 
+		"\t\t\t\t<institutionname/>\n" + 
+		"\t\t\t\t<institutionorgid>null</institutionorgid>\n" + 
+		"\t\t\t\t<socialcreditcode/>\n" + 
+		"\t\t\t\t<institutiontype>03</institutiontype>\n" + 
+		"\t\t\t\t<licensetype>03</licensetype>\n" + 
+		"\t\t\t\t<licensenum>null</licensenum>\n" + 
+		"\t\t\t\t<subinstid/>\n" + 
+		"\t\t\t\t<subinstaddr/>\n" + 
+		"\t\t\t\t<subinstpostcode/>\n" + 
+		"\t\t\t\t<telephone>12580</telephone>\n" + 
+		"\t\t\t\t<contactp>坚坚2</contactp>\n" + 
+		"\t\t\t\t<email/>\n" + 
+		"\t\t\t\t<fax/>\n" + 
+		"\t\t\t\t<address>北京市公安厅</address>\n" + 
+		"\t\t\t\t<lastupddate>20170920</lastupddate>\n" + 
+		"\t\t\t\t<memo/>\n" + 
+		"\t\t\t</row>\n" + 
+		"\t\t</rows>\n" + 
+		"\t</pensioninfo>\n" + 
+		"</pensiondata>";
+
+ /****end**江苏****江苏****江苏****江苏*****江苏*****江苏****江苏****江苏****江苏*******************************/
+ 	
+ 	
 }

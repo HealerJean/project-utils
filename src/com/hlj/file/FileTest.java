@@ -87,22 +87,22 @@ public class FileTest {
 		/**
 		 * 8、按照行,一行一行读取内容	
 		 */
-	//	String filePath = "C:/Users/qdkf/Desktop/项目/江苏/STS01ToRST01_NJF01001_20170904_2017090465853776438363389189.txt";
-	//	getFileReadLineTextValue(filePath);
+	   //	String filePath = "C:/Users/qdkf/Desktop/项目/江苏/STS01ToRST01_NJF01001_20170904_2017090465853776438363389189.txt";
+	   //	getFileReadLineTextValue(filePath);
 	
 	   /**
 	    * 9、根据字符串生成内容
 	    * 只要修改code  city testType typecChoice  directChoice 
 	    */
-		String textContext = XmlTestContet.fuJianNJB02202End;
-		String code = "NJB02202-";             //修改位置 1 
-		String city = "福建-";           //修改位置  2
+		String textContext = XmlTestContet.xinJiangZzqNew0102StToRsEnd;
+		String code = "0102-";             //修改位置 1 
+		String city = "新疆自治区新版-";           //修改位置  2
 		
-		String testType = "单位净值信息上传";          //修改位置  3 
+		String testType = "通用交易查询".trim();          //修改位置  3 
 		
 		String typeOne = "发送报文-";
     	String typeTwo = "响应报文-";
-		int typecChoice = 0; //1 响应报文                         //修改位置 4
+		int typecChoice = 0; //1发送报文                         //修改位置 4
 		String typecChoiceFinal = null;
 		if(typecChoice==1){                    
 			typecChoiceFinal = typeOne;
@@ -353,8 +353,7 @@ public class FileTest {
 		public static void getTxtByTextContent(String textContext,String fileName,String path){
 
 			try {
-				
-				
+			
 				File fileDirectory = new File(path);
 				if(!fileDirectory.exists()){
 					fileDirectory.mkdirs();

@@ -9,7 +9,7 @@ public class StringTest {
 	//	stringTest.change(str);   
 		System.out.println(str); //输出 abc 不会改变的
 	
-		
+		strBu();
 	/**
 	 *  split 函数用法
 	 */	
@@ -25,45 +25,24 @@ public class StringTest {
 		 */
 	//	strToBuffer();
 		
-		/**
-		 * 将字符串中所有的大写变成小写字母
-		 */
-		strUpperToCase();
+	
 	}
 	
-	private static void strUpperToCase() {
-
-		String a = 	
-				"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
-						"<PensionData>\n" + 
-						"    <Version>1.0.0</Version>\n" + 
-						"    <ref>S6620170911110955</ref>\n" + 
-						"<SendCode>T10</SendCode>\n" + 
-						"<ReceiveCode>S65</ReceiveCode>\n" + 
-						"<SendDate>20170911</SendDate>\n" + 
-						"<SendTime>235959</ SendTime >\n" + 
-						"<dgst>消息报文示例</dgst>\n" + 
-						"<AppCode>0000</AppCode>\n" + 
-						"<AppMsg>成功</AppMsg>\n" + 
-						"<DataSetType>\n" + 
-						"    \t<TypeCode>0101</TypeCode>\n" + 
-						"<TypeName>连通性测试</TypeName>\n" + 
-						"<RecordNumber>1</RecordNumber >\n" + 
-						"   \t\t<MainFlag>1</MainFlag>\n" + 
-						"</DataSetType>\n" + 
-						"  <PensionInfo>\n" + 
-						"  <Planinfo>\n" + 
-						"    <Appseriono>000000000000101000000001</Appseriono>\n" + 
-						"<Transtype>99</Transtype>\n" + 
-						"      <Planinfo>\n" + 
-						"  </PensionInfo>\n" + 
-						"</PensionData>";
-
-//replaceAll支持正则表达式，因此会对参数进行解析（两个参数均是），如replaceAll("\\d", "*")，而replace则不会，replace("\\d","*")就是替换"\\d"的字符串，而不会解析为正则。
+	public static void strBu(){
+		String strone  = "                      62089941                           221201708            6208994165010219650615410001  650102196506154100                                            张萍102           1                     6227004530305638582                                                                                              张萍00000000000007456000000000000000000000000000000745612                                                                                                                        ";
 		
-		String finalString  = a.toLowerCase().replace(" ", ""); 
-		System.out.println(finalString); 
+		System.out.println("张在第"+strone.indexOf("张"));
+		StringBuilder str = new StringBuilder("");
+		
+		for(int i = 0 ; i< 50; i++){
+			str.append(" ");
+		}
+		System.out.println("|"+str+"|"); 
+		System.out.println("50空格|"+str+"|");
+		
 	}
+	
+
 
 	/**
 	 * 1、测试string 可不可以 +
