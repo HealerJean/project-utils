@@ -51,7 +51,12 @@ public class StringTest {
 	private static void teststringadd() {
 		// TODO Auto-generated method stub
 	//	String s+="123"; //错误的
-	//	String s = s +"abc"; //错误的
+	//	String s = s +"abc"; //错误的 
+		
+		//下面这样是可以的
+		String a = "123";
+		String b = "";
+		 b += a;
 	}
 	
 	

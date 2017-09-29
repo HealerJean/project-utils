@@ -94,12 +94,12 @@ public class FileTest {
 	    * 9、根据字符串生成内容
 	    * 只要修改code  city testType typecChoice  directChoice 
 	    */
-		String textContext = XmlTestContet.xinJiangZzqNew0102StToRsEnd;
-		String code = "0102-";             //修改位置 1 
-		String city = "新疆自治区新版-";           //修改位置  2
+		String textContext = XmlTestContet.jiangSu1104RsToStEnd;
+		String code = "1104-";             //修改位置 1 
+		String city = "江苏-";           //修改位置  2
 		
-		String testType = "通用交易查询".trim();          //修改位置  3 
-		
+
+		String testType = getTestType("1104").trim();          //修改位置  3 
 		String typeOne = "发送报文-";
     	String typeTwo = "响应报文-";
 		int typecChoice = 0; //1发送报文                         //修改位置 4
@@ -112,7 +112,7 @@ public class FileTest {
 		
 		String directRS = "代理人发受托人-";
 		String directST = "受托人发代理人-";
-		int directChoice = 0; //1 代理人发受托人             //修改位置 5
+		int directChoice = 1; //1 代理人发受托人             //修改位置 5
 		String directChoiceFinal = null;
 		if(directChoice==1){
 			directChoiceFinal = directRS;
@@ -129,8 +129,45 @@ public class FileTest {
 		getTxtByTextContent(textContext,fileName,path);	
 	
 	}
-	
-	
+	      
+
+
+
+   public static String	getTestType(String str){
+			if(str.equals("0101")||str.equals("SYS00101")||str.equals("SYS02000")){
+				return "连通性测试";
+			}if(str.equals("0102")||str.equals("SYS01090")||str.equals("SYS02090")){
+				return "通用交易查询";
+			}if(str .equals("1101")||str.equals("NJB02101")){
+				return "计划基本信息下载";
+			}if(str .equals("1102")||str.equals("NJB02103")){
+				return "投资组合信息推送";
+			}if(str .equals("1103")||str.equals("NJB02102")){
+				return "年金管理人信息推送";
+			}if(str .equals("1104")||str.equals("NJB02206")){
+				return "定价日信息推送";
+			}if(str .equals("1201")||str.equals("NJB01201")){
+				return "划款指令上传";
+			}if(str .equals("1203")||str.equals("NJB02201")){
+				return "划款到账回执";
+			}if(str .equals("1210")||str.equals("NJB02202")){
+				return "单位净值信息上传";
+			}if(str .equals("1211")||str.equals("NJB01202")){
+				return "资产估值明细下载";
+			}if(str .equals("1212")||str.equals("NJB01203")){
+				return "成交汇总报表上传";
+			}if(str .equals("1205")||str.equals("NJB01901")){
+				return "文件就绪通知(发放通知)";
+			}if(str .equals("1208")||str.equals("NJB01902")){
+				return "文件就绪通知(发放结果反馈通知)";
+			}if(str .equals("9208")||str.equals("NJB02901")||str.equals("NJB02902")){
+				return "文件处理结果通知";
+			}
+
+			
+			return null;
+			
+		}
 
 
 
