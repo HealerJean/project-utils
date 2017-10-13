@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<msgtext>
+	<grphdr>
+		<version>1.0.0</version>
+		<ref>${ref}</ref>
+		<buscd>NJB01106</buscd>
+		<tradsrc>${tradsrc}</tradsrc>
+		<sender>${sender}</sender>
+		<recver>${recver}</recver>
+		<date>${date}</date>
+		<time>${time}</time>
+		<appcode>${appcode}</appcode>
+		<appmsg>${appmsg}</appmsg>
+	</grphdr>
+	<busitext>
+	</busitext>
+</msgtext>

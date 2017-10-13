@@ -267,3 +267,27 @@ freemarker.core.InvalidReferenceException: Expression x.name is undefined on lin
 2017-09-01 12:27:34[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
 2017-09-01 12:30:18[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
 2017-09-01 12:30:18[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:31:52[][main] INFO [com.hlj.xml.XmlEntry] {classPersonNum=classPersonNum, name=name, peoples=persons, xuexiao=school, persons=persons, banji=class, sex=sex, salary=salary, age=age, people=person}
+2017-10-13 14:31:53[][main] INFO [com.hlj.xml.XmlEntry] 2
+2017-10-13 14:31:53[][main] INFO [com.hlj.xml.XmlEntry] ’≈”ÓΩ˙
+2017-10-13 14:31:53[][main] INFO [com.hlj.xml.XmlEntry] 23
+2017-10-13 14:31:53[][main] INFO [com.hlj.xml.XmlEntry] 4992.2
+2017-10-13 14:31:53[][main] INFO [com.hlj.xml.XmlEntry] 54
+2017-10-13 14:36:18[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:36:18[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:36:34[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:36:34[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:36:53[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:36:53[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:37:04[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:37:04[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:37:17[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:37:17[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:39:16[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:39:16[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:39:37[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:39:37[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:39:42[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:39:42[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-10-13 14:39:50[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
+2017-10-13 14:39:50[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm

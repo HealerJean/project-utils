@@ -21,7 +21,8 @@ public class CreateXmlByVmFile
 
 
 	public static void main(String args[]) throws TemplateException, IOException{  
-	 
+
+
 		File file = new File(CreateXmlByVmFile.class.getResource("").getFile());
 		Map map =demo();  
 		String xml = 	createXmlFile(file,"CreateXmlByVmFile.vm", map);  		  
@@ -49,6 +50,7 @@ public class CreateXmlByVmFile
 	 */
 	public  static String createXmlFile(File fileDirectory,String TemplateName, Map dataMap) throws TemplateException, IOException     {    
 		    
+
 		       //得FreeMarker配置对象  
 		      // 创建Configuration对象    
 		  Configuration cfg = new Configuration();    		        
