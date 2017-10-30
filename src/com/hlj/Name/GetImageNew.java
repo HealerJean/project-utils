@@ -21,7 +21,7 @@ public class GetImageNew {
 	
 	//制作新名字
 		String newName = uuid+filename.substring(begainName, filename.length());
-		System.out.println(newName);
+		System.out.println("getUUIdName"+newName);
 		return newName; 
 
 	} 

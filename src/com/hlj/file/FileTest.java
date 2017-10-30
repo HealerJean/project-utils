@@ -94,7 +94,7 @@ public class FileTest {
 	    * 9、根据字符串生成内容
 	    * 只要修改code  city testType typecChoice  directChoice 
 	    */
-		String textContext = XmlTestContet.jiangSu1104RsToStEnd;
+		/*String textContext = XmlTestContet.jiangSu1104RsToStEnd;
 		String code = "1104-";             //修改位置 1 
 		String city = "江苏-";           //修改位置  2
 		
@@ -128,6 +128,13 @@ public class FileTest {
 		String path = "D:/txtDirectory/"+city+"/"+testType+"/"+code+directChoiceFinal+"/"+typecChoiceFinal;
 		getTxtByTextContent(textContext,fileName,path);	
 	
+	*/
+		
+		
+		/**
+		 * 获取当前 操作系统信息 以及路径问题
+		 */
+		testSeparator();
 	}
 	      
 
@@ -420,5 +427,34 @@ public class FileTest {
 			
 		}		
 		
+		
+		
+		public static void testSeparator(){
+			/**
+			 * 1、判断哪个系统
+			 */
+			String os = System.getProperty("os.name"); 
+			if(os.startsWith("Win")){
+				System.out.printf("This system is windows");
+				System.out.println(":::"+os);
+
+			}else {
+				
+			}
+
+			/**
+			 * 2、系统路径的代表符号 
+			 * / linux 
+			 * \ windows
+			 */
+			String fileSeparator = System.getProperty("file.separator");
+			System.out.println(fileSeparator); 
+			
+			
+			/**
+			 * 
+			 */
+			System.out.println(""+File.separator); 
+		}
 
 }
