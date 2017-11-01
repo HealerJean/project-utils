@@ -18,7 +18,7 @@ public class ClassLoader {
 	public static void main(String[] args) throws IOException {
 	
 		//通过流进行读取
-		getsrc();
+	//	getsrc();
 		/*
 		 *  使用工具进行读取
 		ToolsClassLoader toolsClassLoader = new ToolsClassLoader();
@@ -53,7 +53,7 @@ public class ClassLoader {
 	private static void getSrcPath() {
 		// TODO Auto-generated method stub
 		String srcPath =  ClassLoader.class.getClassLoader().getResource("ClassLoader.properties").getPath();
-
+			System.out.println(srcPath); 
 		try {
 			Properties properties = new Properties();
 

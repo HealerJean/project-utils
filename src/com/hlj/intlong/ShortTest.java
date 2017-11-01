@@ -7,15 +7,11 @@ public class ShortTest {
 		
 		
 		  
-		short s1 = 2;
-		s1 = s1 = 1;
-	//	System.out.println(s1);
-		
-		
+
 		/**
 		 * 1、double 测试
 		 */
-	//	DoubleTest();
+		DoubleTest();
 		
 		/**
 		 * 2、Integer
@@ -27,11 +23,31 @@ public class ShortTest {
 		 * 在大多数的商业计算中，一般采用java.math.BigDecimal类来进行精确计算。
 		 * http://www.cnblogs.com/chenssy/archive/2012/09/09/2677279.html
 		 */
-		  BigDecimal b1 = new BigDecimal(Double.toString(0.48));
+	/*	  BigDecimal b1 = new BigDecimal(Double.toString(0.48));
 		  BigDecimal b2 = BigDecimal.valueOf(0.48);
-		  System.out.println(b1); 
+		  System.out.println(b1+"|"+b2); 
+		  */
+		  
+		//  shortTest();
 	}
-
+	
+	
+	public static void shortTest(){
+		short s1 = 2;
+	//	s1=s1 +1;  错误,必须强制转型 才行 
+		s1 +=  2;
+		int a = 1;
+		a = a+1;
+		
+		System.out.println();
+		System.out.println(s1);
+		
+	}
+	
+	/**
+	 * 
+	 * 2、Integer
+	 */
 	private static void IntegerTest() {
 		String intString = "123";
 		int intA = Integer.parseInt(intString); //对象是int类型
@@ -55,5 +71,13 @@ public class ShortTest {
 		System.out.println("整数除法取余数"+aint/bint);
 
 		System.out.println("double除以int 得到的结果为double"+a/aint);
+		
+		float fa = 2.4f;
+		float fb = 1.2f;
+		float af = 1.11f;
+		float bf = 1.32f;
+		System.out.println(fa/fb);
+		System.out.println(af/bf); //0.84090906 
+	
 	}
 }

@@ -428,7 +428,12 @@ public class FileTest {
 		}		
 		
 		
-		
+		/**
+		 * 操作系统 路径符号判断
+		* @author  作者 HealerJean: 
+		* @version 创建时间：2017年11月1日 上午9:32:49 
+		*
+		 */
 		public static void testSeparator(){
 			/**
 			 * 1、判断哪个系统

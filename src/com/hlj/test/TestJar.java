@@ -1,5 +1,7 @@
 package com.hlj.test;
 
+import java.text.DecimalFormat;
+
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 /** 
  * @author зїеп HealerJean
@@ -8,6 +10,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
  */
 public class TestJar {
 	public static void main(String[] args) {
-		
-	}
+		DecimalFormat dfg = new DecimalFormat("###0");
+		System.out.println(dfg);
+ 	}
 }

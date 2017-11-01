@@ -4,43 +4,67 @@ import java.io.UnsupportedEncodingException;
 
 public class StringTest {
 	public static void main(String[] args) {
+
+		
+		/**
+		 * 1、测试string 可不可以 +
+		 */
+	//	teststringadd();
+		
+		/**
+		 * 2、测试null+字符串的值
+		 */
+	//	testnull() ;
+		
+		/**
+		 * 3、测试字符串是否改变
+		 */
 		String str = "abc";
 		StringTest stringTest = new StringTest();
-	//	stringTest.change(str);   
-		System.out.println(str); //输出 abc 不会改变的
-	
-		strBu();
-	/**
-	 *  split 函数用法
-	 */	
-		//Testsplit();
-	
-	//	stringTest.testnull();
+		/*
+		 stringTest.change(str);   
+		 System.out.println(str); //输出 abc 不会改变的
+	     */
+		
 		/**
-		 * 测试string 和byte数组的转化
+		 * 4、测试 split分割 
+		 */
+	//	Testsplit();
+		
+		
+		/**
+		 * 5、测试string 和byte数组的转化
 		 */
 	//	testbyteArray();
+		
+		
+		
+
 		/**
-		 * 
+		 * 6、String 和 StringBuffer之间的转化
 		 */
+
 	//	strToBuffer();
+		 
 		
-	
+		 /**
+		  * 
+		  * 7、数组 length
+		  *   String length()
+		 *
+		  */
+	//	 lengthAndSize()
+		
+		
+		 /**
+		  * 8、string ...
+		  */
+	//	printStringMain() ;
+		
+		array();
 	}
 	
-	public static void strBu(){
-		String strone  = "                      62089941                           221201708            6208994165010219650615410001  650102196506154100                                            张萍102           1                     6227004530305638582                                                                                              张萍00000000000007456000000000000000000000000000000745612                                                                                                                        ";
-		
-		System.out.println("张在第"+strone.indexOf("张"));
-		StringBuilder str = new StringBuilder("");
-		
-		for(int i = 0 ; i< 50; i++){
-			str.append(" ");
-		}
-		System.out.println("|"+str+"|"); 
-		System.out.println("50空格|"+str+"|");
-		
-	}
+
 	
 
 
@@ -63,7 +87,7 @@ public class StringTest {
 	
 	
 	/**
-	 * 测试null+字符串的值
+	 * 2、测试null+字符串的值
 	 */
 	private void testnull() {
 		// TODO Auto-generated method stub
@@ -75,8 +99,7 @@ public class StringTest {
 	
 	
 	/**
-	 * 测试字符串是否改变
-	 * @param str
+	 * 3、测试字符串是否改变
 	 */
 	void change(String str){
 		
@@ -84,7 +107,7 @@ public class StringTest {
 	}
 	
 	/**
-	 * 2、测试 split分割 
+	 * 4、测试 split分割 
 	 */
 	public static void Testsplit() {
 		// TODO Auto-generated method stub
@@ -100,7 +123,7 @@ String a = "abcdef";
 	}
 	
 	/**
-	 * 3、测试string 和byte数组的转化
+	 * 5、测试string 和byte数组的转化
 	 */
 	public static void testbyteArray(){
 		String str = "HealerJean";
@@ -117,7 +140,7 @@ String a = "abcdef";
 	}
 	
 	/**
-	 * String 和 StringBuffer之间的转化
+	 * 6、String 和 StringBuffer之间的转化
 	 */
 
 	 public static void strToBuffer() {
@@ -149,4 +172,59 @@ String a = "abcdef";
 	        String str3 = buffer3.toString();
 	        System.out.println(str3);
 	    }
+	 /**
+	  * 
+	  * 7、数组 length
+	  *   String length()
+	 *
+	  */
+	 public static void lengthAndSize(){
+		 String string  = "abcdefg" ;
+		 String strArray[] = {"1","2"};
+		 
+		 System.out.println(string.length()); 
+		 System.out.println(strArray.length); 
+		 //错误 System.out.println(strArray.size);
+	}
+	 
+	 /**
+	  * 8、string ...
+	  */
+	 public static void printString(String... str){  
+		  if(str.length==0){  
+		   System.out.println("没有传参数。");  
+		  }  
+		  for (int i = 0; i < str.length; i++) {  
+		   System.out.printf(str[i]);  
+		  }  
+	}  
+	
+	 public static void printStringMain() {  
+		  printString();  
+		  System.out.println("==========");  
+		  printString(new String[]{"我","和","你"});  
+		 }  
+	 
+	 /**
+	  * 9、数组的定义
+	  */
+	 
+	 public static void array(){
+	//1、	
+		 int[] a = new int[3]; //定义一个数组
+			a[0] = 1;
+			a[1] = 2;
+			a[2] = 3;
+		//	a[4] = 5; //超出限制 报错
+	//2、动态初始化
+		  int b[] ;
+		//  b[1] = 2;  没有给定大小，报错
+		  b = new int[5];
+	//3、 静态初始化
+		  int c[] = {1,4,2,3};
+	
+	//4、new 并直接静态赋值，不可写入大小
+		//  int d[] = new int[5]{1,2,3};
+		  int d[] = new int[]{1,2,3};
+	 }
 }

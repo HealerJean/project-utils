@@ -291,3 +291,7 @@ freemarker.core.InvalidReferenceException: Expression x.name is undefined on lin
 2017-10-13 14:39:42[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
 2017-10-13 14:39:50[][main] DEBUG [freemarker.cache] Could not find template in cache, creating new one; id=[CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed] ]
 2017-10-13 14:39:50[][main] DEBUG [freemarker.cache] Compiling FreeMarker template CreateXmlByVmFile.vm[zh_CN,UTF-8,parsed]  from E:\workspace\JavaWorkspace\CompanyOffer\bin\com\hlj\xml\CreateXmlByVmFile.vm
+2017-11-01 18:19:52[][main] INFO [com.hlj.log4j.Log4jTest] info
+2017-11-01 18:19:52[][main] ERROR [com.hlj.log4j.Log4jTest] error
+2017-11-01 18:19:52[][main] DEBUG [com.hlj.log4j.Log4jTest] debug
+2017-11-01 18:19:52[][main] WARN [com.hlj.log4j.Log4jTest] warn

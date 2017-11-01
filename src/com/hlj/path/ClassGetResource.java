@@ -13,7 +13,7 @@ public class ClassGetResource {
 		
 		//仅记，不可以使用其他类
 		String fileUrl = ClassGetResource.class.getResource("ClassGetResource.properties").getFile(); 
-
+			System.out.println(fileUrl); 
 		try {
 			Properties properties = new Properties();
 

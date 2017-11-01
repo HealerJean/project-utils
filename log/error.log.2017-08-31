@@ -1,5 +1,3 @@
-2017-08-18 17:21:52[][main] ERROR [com.hlj.log4j.Log4jTest] error
-2017-08-18 17:21:52[][main] WARN [com.hlj.log4j.Log4jTest] warn
 2017-08-31 15:17:22[][main] ERROR [freemarker.runtime] Expression ref is undefined on line 5, column 24 in CreateXmlByVmFile.vm.
 
 Expression ref is undefined on line 5, column 24 in CreateXmlByVmFile.vm.
@@ -184,5 +182,3 @@ freemarker.core.InvalidReferenceException: Expression x.name is undefined on lin
 	at freemarker.template.Template.process(Template.java:237)
 	at com.hlj.xml.ObjectToXmlUtil.createXmlFile(ObjectToXmlUtil.java:59)
 	at com.hlj.xml.ObjectToXmlUtil.main(ObjectToXmlUtil.java:80)
-2017-11-01 18:19:52[][main] ERROR [com.hlj.log4j.Log4jTest] error
-2017-11-01 18:19:52[][main] WARN [com.hlj.log4j.Log4jTest] warn
