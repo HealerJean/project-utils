@@ -1,3 +1,6 @@
 /ClassLoader.properties
 /CreateXmlByVmFile.vm
 /com
+/log4j.dtd
+/log4j.xml
+/log4j.properties
