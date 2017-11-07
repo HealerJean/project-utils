@@ -9,7 +9,7 @@ public class Log4jTest {
             int i = 1/0;
 
 		} catch (Exception e) {
-			e.printStackTrace();	
+			System.out.println(e.getMessage()); 	
 		}
         System.out.println("testlog");
         logger.info("info");  

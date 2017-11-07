@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -438,12 +440,16 @@ public class FileTest {
 			/**
 			 * 1¡¢ÅÐ¶ÏÄÄ¸öÏµÍ³
 			 */
+			
+			File directoryName	  = new File("D:"+File.separator+"test/txt.txt");
+			System.out.println(directoryName.getPath()); 
+					 
 			String os = System.getProperty("os.name"); 
 			if(os.startsWith("Win")){
 				System.out.printf("This system is windows");
 				System.out.println(":::"+os);
 
-			}else {
+			}else { //linux
 				
 			}
 
@@ -455,11 +461,10 @@ public class FileTest {
 			String fileSeparator = System.getProperty("file.separator");
 			System.out.println(fileSeparator); 
 			
-			
-			/**
-			 * 
-			 */
 			System.out.println(""+File.separator); 
+			
+			
+		
 		}
 
 }
