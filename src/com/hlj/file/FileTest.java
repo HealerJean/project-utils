@@ -75,8 +75,10 @@ public class FileTest {
 		 * 6 、目录下读取文件内容进行匹配
 		 * 
 		 */
-		//	File file  = new File("C:\\Users\\qdkf\\Desktop\\项目\\各省社保整理\\数据包\\数据包\\福建社保--国寿联调数据包");
-		//	getFileValue(file,"datasettype");
+			//File file  = new File("C:\\Users\\qdkf\\Desktop\\项目\\各省社保整理\\数据包\\数据包\\福建社保--国寿联调数据包");
+			File file  = new File("E:/study/HealerJean123.github.io");
+	
+			getFileValue(file,"asidetitle");
 		
 		
 		/**
@@ -134,9 +136,9 @@ public class FileTest {
 		
 		
 		/**
-		 * 获取当前 操作系统信息 以及路径问题
+		 *10、 获取当前 操作系统信息 以及路径问题
 		 */
-		testSeparator();
+	//	testSeparator();
 	}
 	      
 
@@ -312,7 +314,7 @@ public class FileTest {
 	            else {  
 	            	String path = f.getPath();
 	                String xml = path.substring(path.lastIndexOf(".")+1, path.length());
-	            	if(xml.equals("xml")){
+	           /* 	if(xml.equals("xml")){*/
 	            		FileInputStream fInputStream = new FileInputStream(f);
 	            		ByteArrayOutputStream outStream = new ByteArrayOutputStream();      
 	            		
@@ -331,7 +333,7 @@ public class FileTest {
 	                		System.out.println("内容为\n"+str); 
 	                		i++;
 	            		}
-	            	}            	
+	            /*	}   */         	
 	        		
 	            }
 	        }
@@ -431,7 +433,7 @@ public class FileTest {
 		
 		
 		/**
-		 * 操作系统 路径符号判断
+		 * 10、操作系统 路径符号判断
 		* @author  作者 HealerJean: 
 		* @version 创建时间：2017年11月1日 上午9:32:49 
 		*
