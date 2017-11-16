@@ -13,21 +13,23 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.apache.log4j.Logger;
+
+
 
 
 //½âÎöxml
 public class FieldPropetiesToXml {
-	static Logger logger = Logger.getLogger(XmlEntry.class);
+	static Logger logger = Logger.getLogger(FieldPropetiesToXml.class);
 	
 	public static void main(String[] args) {
 		FieldPropetiesToXml xmlTest = new FieldPropetiesToXml();
 		xmlTest.paraseXml(new XmlEntry());
-	} 
+	}  
 	public  String paraseXml(XmlEntry xmlEntry){
 		logger.info(getPropFileByBusCd().toString());
 
@@ -69,7 +71,7 @@ public class FieldPropetiesToXml {
 
 			
 		} catch (DocumentException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}  
 
@@ -108,10 +110,10 @@ public class FieldPropetiesToXml {
 				return pro;
 				
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			} catch (IOException e) { 
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			}
 			

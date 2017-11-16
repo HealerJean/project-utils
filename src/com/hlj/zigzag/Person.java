@@ -6,7 +6,6 @@ public class Person {
  String name = "z";
 int i;
 public Person(int i, String string) {
-	// TODO Auto-generated constructor stub
 	
 	this.name = string;
 	this.i = i;

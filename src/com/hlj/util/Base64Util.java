@@ -35,7 +35,7 @@ public class Base64Util {
 			bytes = str.getBytes("utf-8");
         return new String(Base64.encodeBase64(bytes)); 
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 		return null;
@@ -52,7 +52,7 @@ public class Base64Util {
 	        return new String(Base64.decodeBase64(bytes),"utf-8");  
 
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 		return null;

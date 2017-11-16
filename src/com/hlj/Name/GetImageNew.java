@@ -46,7 +46,7 @@ public static String endName(String filename){
 	//给一个路径 取得他的名字E:\WorkSpace\MyeclipseWork\.metadata\.me_tcat\webapps\ReadWebResourse\WEB-INF\classes\NamePath.properties
 
 	private void getPathName(String srcPath) {
-		// TODO Auto-generated method stub
+		// 
 		
 		String fileName = srcPath.substring(srcPath.lastIndexOf("\\")+1,srcPath.length());
 

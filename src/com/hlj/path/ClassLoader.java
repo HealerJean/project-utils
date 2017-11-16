@@ -29,7 +29,7 @@ public class ClassLoader {
 	}
 	
 	private static void getsrc() {
-		// TODO Auto-generated method stub
+		// 
 		
 		
 		//this.getClass = ReadClassLoader.class
@@ -42,16 +42,16 @@ public class ClassLoader {
 				System.out.println("类装载器 getResourceAsStream取得src下面的文件"+properties.getProperty("urlpath"));
 			}
 		catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}catch (IOException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 	
 	}
 	private static void getSrcPath() {
-		// TODO Auto-generated method stub
+		// 
 		String srcPath =  ClassLoader.class.getClassLoader().getResource("ClassLoader.properties").getPath();
 			System.out.println(srcPath); 
 		try {
@@ -61,7 +61,7 @@ public class ClassLoader {
 			properties.load(inputStream); 
 			System.out.println("类装载器 取得路径src下面的文件"+properties.getProperty("urlpath"));
 		}catch (IOException e) {
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			}
 		

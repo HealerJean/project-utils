@@ -75,7 +75,7 @@ public class FileTest {
 		 * 6 、目录下读取文件内容进行匹配
 		 * 
 		 */
-			//File file  = new File("C:\\Users\\qdkf\\Desktop\\项目\\各省社保整理\\数据包\\数据包\\福建社保--国寿联调数据包");
+			//File file  = new File("C:\\Users\\qdkf\\Desktop\\项目\\各省社保整理\\数据包\\数据包\\福建社保--人保联调数据包");
 			File file  = new File("E:/study/HealerJean123.github.io");
 	
 			getFileValue(file,"asidetitle");
@@ -302,7 +302,7 @@ public class FileTest {
 		 * 
 		 */
 		private static void getFileValue(File file,String content) throws Exception {
-			// TODO Auto-generated method stub
+			// 
 			//file.listFiles()是获取file这个对象也就是file这个目录下面的文件和文件夹的集合
 	        File[] files=file.listFiles(); 
 	        for(File f:files)
@@ -345,7 +345,7 @@ public class FileTest {
 		 * 
 		 */
 		private static String getFileTextValue(String filePath) throws Exception {
-			// TODO Auto-generated method stub 
+			//  
 			 FileInputStream fileInputStream = new FileInputStream(filePath);
 			 ByteArrayOutputStream byteOutputStream = new ByteArrayOutputStream();
 			 int len  = 0;
@@ -418,13 +418,13 @@ public class FileTest {
 			System.out.println("成功"+path+"/"+fileName);
 				
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			}catch (UnsupportedEncodingException e) {
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			} 
 			

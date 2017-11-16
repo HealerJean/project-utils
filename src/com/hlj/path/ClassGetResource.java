@@ -21,7 +21,7 @@ public class ClassGetResource {
 			properties.load(inputStream); 
 			System.out.println("类装载器 取得路径src下面的文件"+properties.getProperty("urlpath"));
 		}catch (IOException e) {
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			}
 		

@@ -10,7 +10,7 @@ public class TryTest {
 	}
 	//ø…“‘÷¥––
 	private void nocatch() {
-		// TODO Auto-generated method stub
+		// 
 		try {
 			System.out.println("123s");
 		} finally{
@@ -19,7 +19,7 @@ public class TryTest {
 	}
 	
 	private void manycatch() {
-		// TODO Auto-generated method stub
+		// 
 	
 		try {
 			System.out.println("123s");
@@ -31,7 +31,7 @@ public class TryTest {
 	}
 	
 		private int returnSx() {
-			// TODO Auto-generated method stub	
+			// 	
 		            try
 		              {
 		                  a = 2;

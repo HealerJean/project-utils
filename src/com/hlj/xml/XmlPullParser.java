@@ -19,7 +19,7 @@ public class CityPullParse {
 
             CityArray = ParseXml(parser);
         } catch (XmlPullParserException e) {
-            // TODO Auto-generated catch block
+            // 
             e.printStackTrace();
         }
         return CityArray;
@@ -82,10 +82,10 @@ public class CityPullParse {
                 eventType = parser.next();
             }
         } catch (XmlPullParserException e) {
-            // TODO Auto-generated catch block
+            // 
             e.printStackTrace();
         }catch (IOException e) {
-            // TODO Auto-generated catch block
+            // 
             e.printStackTrace();
         }
 

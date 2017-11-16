@@ -5,14 +5,15 @@ package com.hlj.publicTest;
  * 类说明 
  */
 
-public class PublicOrderTest {
-	
-}
 
-
- class A{
+class A{
 	 //不能够运行
 	 public static void main(String[] args) {
 			System.out.println("123");
 		}
 }
+
+public class PublicOrderTest {
+	
+}
+

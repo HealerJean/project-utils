@@ -1637,11 +1637,11 @@ public interface XmlTestContet {
 			"\t\t<aaz434>2200000000000026</aaz434>\n" + 
 			"\t\t<aae019_hj>981461.08</aae019_hj>\n" + 
 			"\t\t<aae010_tg>1111111</aae010_tg>\n" + 
-			"\t\t<aae009_tg>国寿</aae009_tg>\n" + 
+			"\t\t<aae009_tg>人保</aae009_tg>\n" + 
 			"\t\t<rows>\n" + 
 			"\t\t\t<row>\n" + 
 			"\t\t\t\t<aae010_sb>1111111</aae010_sb>\n" + 
-			"\t\t\t\t<aae009_sb>国寿</aae009_sb>\n" + 
+			"\t\t\t\t<aae009_sb>人保</aae009_sb>\n" + 
 			"\t\t\t\t<aae019>981461.08</aae019>\n" + 
 			"\t\t\t\t<bae275>01</bae275>\n" + 
 			"\t\t</row>\n" + 
@@ -1698,12 +1698,12 @@ public interface XmlTestContet {
 		"\t\t<aaz482>-8446744073709551073</aaz482>\n" + 
 		"\t\t<aaz434>2200000000000026</aaz434>\n" + 
 		"\t\t<aae010_tg>1111111</aae010_tg>\n" + 
-		"\t\t<aae009_tg>国寿</aae009_tg>\n" + 
+		"\t\t<aae009_tg>人保</aae009_tg>\n" + 
 		"\t\t<aae019_hj>981461.085</aae019_hj>\n" + 
 		"\t\t<rows>\n" + 
 		"\t\t\t<row>\n" + 
 		"\t\t\t\t<aae010_sb>1111111</aae010_sb>\n" + 
-		"\t\t\t\t<aae009_sb>国寿</aae009_sb>\n" + 
+		"\t\t\t\t<aae009_sb>人保</aae009_sb>\n" + 
 		"\t\t\t\t<aae019>981461.08</aae019>\n" + 
 		"\t\t\t\t<aie194>1</aie194>\n" + 
 		"\t\t\t\t<aae036_tg>20170912174853</aae036_tg>\n" + 
@@ -1770,7 +1770,7 @@ public interface XmlTestContet {
 			"\t\t<rows>\n" + 
 			"\t\t\t<row>\n" + 
 			"\t\t\t\t<aaz430>2200000000000026</aaz430>\n" + 
-			"\t\t\t\t<aie138>国寿计划</aie138>\n" + 
+			"\t\t\t\t<aie138>人保计划</aie138>\n" + 
 			"\t\t\t\t<aaz429>200000000000000723</aaz429>\n" + 
 			"\t\t\t\t<aie136>20170930</aie136>\n" + 
 			"\t\t\t\t<aie134>1.0050</aie134>\n" + 

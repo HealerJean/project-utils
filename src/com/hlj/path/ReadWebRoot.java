@@ -38,7 +38,7 @@ public class ReadSrc extends HttpServlet {
 	}
 	
 	private void getRealPath() {
-		// TODO Auto-generated method stub
+		// 
 		String srcPath = this.getServletContext().getRealPath("/WEB-INF/classes/NamePath.properties");
 		System.out.println("src的绝对路径为"+srcPath);
 		
@@ -53,10 +53,10 @@ public class ReadSrc extends HttpServlet {
 				System.out.println("取得src下面的文件"+properties.getProperty("urlpath"));
 			}
 		catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}catch (IOException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 	}
@@ -73,7 +73,7 @@ public class ReadSrc extends HttpServlet {
 			System.out.println("取得webroot下面的文件"+properties.getProperty("urlpath"));
 		
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 	}
@@ -81,7 +81,7 @@ public class ReadSrc extends HttpServlet {
 	
 	//取得src目录下面的资源	
 	private void getSrc() {
-		// TODO Auto-generated method stub
+		// 
 try {
 		InputStream inputStream = this.getServletContext().getResourceAsStream("/WEB-INF/classes/NamePath.properties");
 			Properties properties = new Properties();
@@ -89,7 +89,7 @@ try {
 			System.out.println("取得src目录下面的资源	"+properties.getProperty("urlpath"));
 		
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 	}
@@ -105,7 +105,7 @@ try {
 				System.out.println("取得包com.hlj.tools下面的文件"+properties.getProperty("urlpath"));
 			
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				// 
 				e.printStackTrace();
 			}
 		}

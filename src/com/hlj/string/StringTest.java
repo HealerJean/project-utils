@@ -73,7 +73,7 @@ public class StringTest {
 	 */
 	
 	private static void teststringadd() {
-		// TODO Auto-generated method stub
+		// 
 	//	String s+="123"; //错误的
 	//	String s = s +"abc"; //错误的 
 		
@@ -90,7 +90,7 @@ public class StringTest {
 	 * 2、测试null+字符串的值
 	 */
 	private void testnull() {
-		// TODO Auto-generated method stub
+		// 
 		String testString = null+"abc";
 		System.out.println(testString);
 
@@ -110,7 +110,7 @@ public class StringTest {
 	 * 4、测试 split分割 
 	 */
 	public static void Testsplit() {
-		// TODO Auto-generated method stub
+		// 
 String a = "abcdef";
 	String []aStrings  = a.split("");
 	System.out.println("0输出"+aStrings[0]+"*"); //输出* 表示索引为0的时候，不存在数据 
@@ -134,7 +134,7 @@ String a = "abcdef";
 			System.out.println("byte数组："+byteArray+"\n"+"string:"+strByte);
 
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
+			// 
 			e.printStackTrace();
 		}
 	}
