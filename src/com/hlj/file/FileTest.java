@@ -62,7 +62,7 @@ public class FileTest {
 		 * 第一个文件以及路径必须存在， 否则fileInputStream会报错
 		 * 第二个文件可以不存在,但是路径必须存在，如果路径不存在则FileOutSteam会报错
 		 */
-		// copyFile("D:/test/healerjean/file.txt","D:/test/copyFile/file2.txt");
+		 copyFile("D:/test/healerjean/file.txt","D:/test/copyFile/file2.txt");
 		
 		/**
 		 * 5、删除目录
@@ -76,9 +76,9 @@ public class FileTest {
 		 * 
 		 */
 			//File file  = new File("C:\\Users\\qdkf\\Desktop\\项目\\各省社保整理\\数据包\\数据包\\福建社保--人保联调数据包");
-			File file  = new File("E:/study/HealerJean123.github.io");
+		//	File file  = new File("E:/study/HealerJean123.github.io");
 	
-			getFileValue(file,"asidetitle");
+		//	getFileValue(file,"asidetitle");
 		
 		
 		/**

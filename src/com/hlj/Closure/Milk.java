@@ -7,17 +7,15 @@ package com.hlj.Closure;
 public class Milk {
 	
 	public final static String name = "纯牛奶";//名称
-	
 	private static int num = 16;//数量
-	
-	public Milk()
-	{
+	private int otherparam = 10;
+	public Milk(){
 		System.out.println(name+"：16/每箱");
 	}
 	
 	/**
 	 * 闭包，通过调用Active的方法实现对Milk私有变量num进行修改。
-	 * @return 返回一个喝牛奶的动作
+	 * @return 返回一个喝牛奶的动作 ，和下面的了内部类操作是一样的
 	 */
 	public Active HaveMeals(){
 		return new Active(){
@@ -31,6 +29,19 @@ public class Milk {
 			}
 		};
 	}
+	
+/*	public class HaveMeals implements Active{
+		
+        	@Override
+			public void drink(){
+				if(num == 0){
+					System.out.println("木有了，都被你丫喝完了.");
+					return;
+				}
+				num--;
+				System.out.println("喝掉一瓶牛奶");
+			}
+	}*/
 	
 	/**
 	 * 获取剩余数量
