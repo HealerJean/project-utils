@@ -10,13 +10,13 @@ public interface XmlTestContet {
 	
 	/**
 	 * 新疆建设兵团 连通性测试   响应报文
-	 * T10 to R66
+	 * T15 to R66
 	 * SYS01000
 	 */ 	
 	/*	if("SYS01000".equals(eaMessage.getHeadvo().getBuscd())){				
-			String feedxml=XmlTestContet.xinjiangjsbt1010T10ToR65;	 
+			String feedxml=XmlTestContet.xinjiangjsbT1510T15ToR65;	 
 	 */
-	public final static String xinjiangjsbtSYS01000T10ToR66 =
+	public final static String xinjiangjsbtSYS01000T15ToR66 =
 			"<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
 			"<msgtext>\n" + 
 			"  <grphdr>\n" + 
@@ -24,7 +24,7 @@ public interface XmlTestContet {
 			"    <ref>102000002012090600000000000000000001</ref>\n" + 
 			"    <buscd>SYS01000</buscd>\n" + 
 			"    <tradsrc>ST</tradsrc>\n" + 
-			"    <sender>T10</sender>\n" + 
+			"    <sender>T15</sender>\n" + 
 			"<recver>S66</recver>\n" + 
 			"<dgst>摘要</dgst>\n" + 
 			"    <date>20170911</date>\n" + 
@@ -39,10 +39,10 @@ public interface XmlTestContet {
 
 	/**
 	 * 新疆建设兵团 连通性测试  发送报文
-	 * R66 to T10
+	 * R66 to T15
 	 * SYS01000
 	 */ 	
-	public final static String xinjiangjsbtSYS01000R66ToT10 =
+	public final static String xinjiangjsbtSYS01000R66ToT15 =
 
 "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
 "        <msgtext>\n" + 
@@ -52,7 +52,7 @@ public interface XmlTestContet {
 "            <buscd>SYS01000</buscd>\n" + 
 "            <tradsrc>RS</tradsrc>\n" + 
 "            <sender>S66</sender>\n" + 
-"        <recver>T10</recver>\n" + 
+"        <recver>T15</recver>\n" + 
 "        <dgst>摘要</dgst>\n" + 
 "            <date>20170911</date>\n" + 
 "        <time>100915</time>\n" + 
@@ -63,10 +63,10 @@ public interface XmlTestContet {
 
 	/**
 	 * 新疆建设兵团 连通性测试  发送报文
-	 * T10 to  R66
+	 * T15 to  R66
 	 * SYS02000
 	 */ 	
-	public final static String xinJiangJsbtSYS02000T10ToR66 =	
+	public final static String xinJiangJsbtSYS02000T15ToR66 =	
 	
 	"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
 	"<msgtext>\n" + 
@@ -75,7 +75,7 @@ public interface XmlTestContet {
 	"    <ref>S6620170911110939</ref>\n" + 
 	"    <buscd>SYS02000</buscd>\n" + 
 	"    <tradsrc>ST</tradsrc>\n" + 
-	"    <sender>T10</sender>\n" + 
+	"    <sender>T15</sender>\n" + 
 	"<recver>S66</recver>\n" + 
 	"<dgst>摘要</dgst>\n" + 
 	"    <date>20170911</date>\n" + 
@@ -90,10 +90,10 @@ public interface XmlTestContet {
 
 	/**
 	 * 新疆建设兵团 连通性测试  发送报文
-	 * R66 to T10 
+	 * R66 to T15 
 	 * SYS02000
 	 */ 	
-	public final static String xinJiangJsbtSYS02000R66ToT10 =	
+	public final static String xinJiangJsbtSYS02000R66ToT15 =	
 					"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + 
 					"<msgtext>\n" + 
 					"\t<grphdr>\n" + 
@@ -101,7 +101,7 @@ public interface XmlTestContet {
 					"\t\t<ref/>\n" + 
 					"\t\t<buscd>SYS02000</buscd>\n" + 
 					"\t\t<tradsrc>ST</tradsrc>\n" + 
-					"\t\t<sender>T10</sender>\n" + 
+					"\t\t<sender>T15</sender>\n" + 
 					"\t\t<recver>S66</recver>\n" + 
 					"\t\t<date>20170911</date>\n" + 
 					"\t\t<time>112936</time>\n" + 
@@ -118,14 +118,14 @@ public interface XmlTestContet {
 	
 	/**
 	 * 新疆自治区新版 连通性测试 受托人->委托人
-	 * T10 to R65 发送报文
+	 * T15 to R65 发送报文
 	 * 0101
 	 */
-	public final static String xinJiangZzqMew0101T10ToR65 = 
+	public final static String xinJiangZzqMew0101T15ToR65 = 
 			"<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
 					"<pensiondata>"+
 					  "<version>1.0.0</version>"+
-					  "<sendcode>T10</sendcode>"+
+					  "<sendcode>T15</sendcode>"+
 					  "<receivecode>S65</receivecode>"+
 					  "<sendername/>"+
 					  "<receivername/>"+
@@ -137,7 +137,7 @@ public interface XmlTestContet {
 					    "<typename>连通性测试</typename>"+
 					  "</datasettype>"+
 					  "<pensioninfo>"+
-					    "<appseriono>201700915T100101000000115</appseriono>"+
+					    "<appseriono>201700915T150101000000115</appseriono>"+
 					    "<transtype>99</transtype>"+
 					  "</pensioninfo>"+
 					"</pensiondata>";
@@ -145,15 +145,15 @@ public interface XmlTestContet {
 	
 	/**
 	 * 新疆自治区新版 连通性测试 受托人 ->委托人
-	 * T10 to R65   响应报文
+	 * T15 to R65   响应报文
 	 * 0101
 	 */
-	public final static String xinJiangZzqNew0101T10ToR65End = 
+	public final static String xinJiangZzqNew0101T15ToR65End = 
 	
 			"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 			"<pensiondata>\n" + 
 			"\t<version>1.0.0</version>\n" + 
-			"\t<sendcode>T10</sendcode>\n" + 
+			"\t<sendcode>T15</sendcode>\n" + 
 			"\t<receivecode>S65</receivecode>\n" + 
 			"\t<sendername/>\n" + 
 			"\t<receivername/>\n" + 
@@ -165,7 +165,7 @@ public interface XmlTestContet {
 			"\t\t<typename>连通性测试</typename>\n" + 
 			"\t</datasettype>\n" + 
 			"\t<pensioninfo>\n" + 
-			"\t\t<appseriono>201700915T100101000000115</appseriono>\n" + 
+			"\t\t<appseriono>201700915T150101000000115</appseriono>\n" + 
 			"\t\t<transtype>99</transtype>\n" + 
 			"\t</pensioninfo>\n" + 
 			"\t<appcode>0000</appcode>\n" + 
@@ -178,7 +178,7 @@ public interface XmlTestContet {
 	/**
 	 * 新疆自治区新版  委托人- >受托人
 	 * 连通性测试 发送报文
-	 * R65 to  T10
+	 * R65 to  T15
 	 * 0101
 	 */
 	public final static String xinJiangZzqNew0101RSToSTStart = 
@@ -186,7 +186,7 @@ public interface XmlTestContet {
 			"<pensiondata>\n" + 
 			"\t<version>1.0.0</version>\n" + 
 			"\t<sendcode>S65</sendcode>\n" + 
-			"\t<receivecode>T10</receivecode>\n" + 
+			"\t<receivecode>T15</receivecode>\n" + 
 			"\t<sendername/>\n" + 
 			"\t<receivername/>\n" + 
 			"\t<senddate>20170915</senddate>\n" + 
@@ -206,7 +206,7 @@ public interface XmlTestContet {
 	/**
 	 * 新疆自治区新版  委托人- >受托人
 	 * 连通性测试 响应报文
-	 * R65 to  T10
+	 * R65 to  T15
 	 * 0101
 	 */
 	public final static String xinJiangZzqNew0101RSToSTEnd = 
@@ -215,7 +215,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
 		"\t<sendcode>S65</sendcode>\n" + 
-		"\t<receivecode>T10</receivecode>\n" + 
+		"\t<receivecode>T15</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
 		"\t<senddate>20170915</senddate>\n" + 
@@ -256,7 +256,7 @@ public interface XmlTestContet {
 			"<pensiondata>\n" + 
 			"  <version>1.0.0</version>\n" + 
 			"  <sendcode>S65</sendcode>\n" + 
-			"  <receivecode>T10</receivecode>\n" + 
+			"  <receivecode>T15</receivecode>\n" + 
 			"  <sendername/>\n" + 
 			"  <receivername/>\n" + 
 			"  <senddate>20170915</senddate>\n" + 
@@ -276,7 +276,7 @@ public interface XmlTestContet {
 			"\t\t<investrate>0.3</investrate>\n" + 
 			"\t\t<custodian>中国建设银行</custodian>\n" + 
 			"\t\t<accountplanid>9002777</accountplanid>\n" + 
-			"\t\t<trusteeid>T10</trusteeid>\n" + 
+			"\t\t<trusteeid>T15</trusteeid>\n" + 
 			"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
 			"\t\t<transtype>02</transtype>\n" + 
 			"\t\t<planbegdate>20140908</planbegdate>\n" + 
@@ -310,7 +310,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S65</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170915</senddate>\n" + 
@@ -341,7 +341,7 @@ public interface XmlTestContet {
 					"<pensiondata>\n" + 
 					"\t<version>1.0.0</version>\n" + 
 					"\t<sendcode>S65</sendcode>\n" + 
-					"\t<receivecode>T10</receivecode>\n" + 
+					"\t<receivecode>T15</receivecode>\n" + 
 					"\t<sendername/>\n" + 
 					"\t<receivername/>\n" + 
 					"\t<senddate>20170918</senddate>\n" + 
@@ -406,7 +406,7 @@ public interface XmlTestContet {
 				"<pensiondata>\n" + 
 				"  <version>1.0.0</version>\n" + 
 				"  <sendcode>S65</sendcode>\n" + 
-				"  <receivecode>T10</receivecode>\n" + 
+				"  <receivecode>T15</receivecode>\n" + 
 				"  <sendername/>\n" + 
 				"  <receivername/>\n" + 
 				"  <senddate>20170918</senddate>\n" + 
@@ -436,7 +436,7 @@ public interface XmlTestContet {
 				"<pensiondata>\n" + 
 				"\t<version>1.0.0</version>\n" + 
 				"\t<sendcode>S65</sendcode>\n" + 
-				"\t<receivecode>T10</receivecode>\n" + 
+				"\t<receivecode>T15</receivecode>\n" + 
 				"\t<sendername/>\n" + 
 				"\t<receivername/>\n" + 
 				"\t<senddate>20170918</senddate>\n" + 
@@ -459,7 +459,7 @@ public interface XmlTestContet {
 				"\t\t\t\t<contactp>测试</contactp>\n" + 
 				"\t\t\t\t<subinstpostcode/>\n" + 
 				"\t\t\t\t<licensetype>01</licensetype>\n" + 
-				"\t\t\t\t<institutionid>T10</institutionid>\n" + 
+				"\t\t\t\t<institutionid>T15</institutionid>\n" + 
 				"\t\t\t\t<institutiontype>03</institutiontype>\n" + 
 				"\t\t\t\t<subinstid/>\n" + 
 				"\t\t\t\t<address/>\n" + 
@@ -488,7 +488,7 @@ public interface XmlTestContet {
 					"<pensiondata>\n" + 
 					"\t<version>1.0.0</version>\n" + 
 					"\t<sendcode>S65</sendcode>\n" + 
-					"\t<receivecode>T10</receivecode>\n" + 
+					"\t<receivecode>T15</receivecode>\n" + 
 					"\t<sendername/>\n" + 
 					"\t<receivername/>\n" + 
 					"\t<senddate>20170918</senddate>\n" + 
@@ -540,7 +540,7 @@ public interface XmlTestContet {
 				"<pensiondata>\n" + 
 				"  <version>1.0.0</version>\n" + 
 				"  <sendcode>S65</sendcode>\n" + 
-				"  <receivecode>T10</receivecode>\n" + 
+				"  <receivecode>T15</receivecode>\n" + 
 				"  <sendername/>\n" + 
 				"  <receivername/>\n" + 
 				"  <senddate>20170918</senddate>\n" + 
@@ -571,7 +571,7 @@ public interface XmlTestContet {
 					"<pensiondata>\n" + 
 					"\t<version>1.0.0</version>\n" + 
 					"\t<sendcode>S65</sendcode>\n" + 
-					"\t<receivecode>T10</receivecode>\n" + 
+					"\t<receivecode>T15</receivecode>\n" + 
 					"\t<sendername/>\n" + 
 					"\t<receivername/>\n" + 
 					"\t<senddate>20170918</senddate>\n" + 
@@ -624,7 +624,7 @@ public interface XmlTestContet {
 					"<pensiondata>\n" + 
 					"  <version>1.0.0</version>\n" + 
 					"  <sendcode>S65</sendcode>\n" + 
-					"  <receivecode>T10</receivecode>\n" + 
+					"  <receivecode>T15</receivecode>\n" + 
 					"  <sendername/>\n" + 
 					"  <receivername/>\n" + 
 					"  <senddate>20170918</senddate>\n" + 
@@ -724,7 +724,7 @@ public interface XmlTestContet {
 				"<pensiondata>\n" + 
 				"  <version>1.0.0</version>\n" + 
 				"  <sendcode>S65</sendcode>\n" + 
-				"  <receivecode>T10</receivecode>\n" + 
+				"  <receivecode>T15</receivecode>\n" + 
 				"  <sendername/>\n" + 
 				"  <receivername/>\n" + 
 				"  <senddate>20170918</senddate>\n" + 
@@ -755,7 +755,7 @@ public interface XmlTestContet {
 				"<pensiondata>\n" + 
 				"  <version>1.0.0</version>\n" + 
 				"  <sendcode>S65</sendcode>\n" + 
-				"  <receivecode>T10</receivecode>\n" + 
+				"  <receivecode>T15</receivecode>\n" + 
 				"  <sendername/>\n" + 
 				"\t<receivername/>\n" + 
 				"\t<senddate>20170918</senddate>\n" + 
@@ -809,7 +809,7 @@ public interface XmlTestContet {
 				"<pensiondata>\n" + 
 				"  <version>1.0.0</version>\n" + 
 				"  <sendcode>S65</sendcode>\n" + 
-				"  <receivecode>T10</receivecode>\n" + 
+				"  <receivecode>T15</receivecode>\n" + 
 				"  <sendername/>\n" + 
 				"  <receivername/>\n" + 
 				"  <senddate>20170918</senddate>\n" + 
@@ -837,7 +837,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
-		"  <sendcode>T10</sendcode>\n" + 
+		"  <sendcode>T15</sendcode>\n" + 
 		"  <receivecode>S65</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
@@ -849,7 +849,7 @@ public interface XmlTestContet {
 		"  </datasettype>\n" + 
 		"\t<pensioninfo>\n" + 
 		"\t\t<accountplanid>9002777</accountplanid>\n" + 
-		"\t\t<appseriono>20170918T101203000000967</appseriono>\n" + 
+		"\t\t<appseriono>20170918T151203000000967</appseriono>\n" + 
 		"\t\t<transtype>04</transtype>\n" + 
 		"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
 		"\t\t<planid>221</planid>\n" + 
@@ -892,7 +892,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
-		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<sendcode>T15</sendcode>\n" + 
 		"\t<receivecode>S65</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
@@ -903,7 +903,7 @@ public interface XmlTestContet {
 		"\t\t<typename/>\n" + 
 		"\t</datasettype>\n" + 
 		"\t<pensioninfo>\n" + 
-		"\t\t<appseriono>20170918T101203000000967</appseriono>\n" + 
+		"\t\t<appseriono>20170918T151203000000967</appseriono>\n" + 
 		"\t</pensioninfo>\n" + 
 		"\t<appcode>0000</appcode>\n" + 
 		"\t<appmsg/>\n" + 
@@ -923,7 +923,7 @@ public interface XmlTestContet {
 			"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 			"<pensiondata>\n" + 
 			"  <version>1.0.0</version>\n" + 
-			"  <sendcode>T10</sendcode>\n" + 
+			"  <sendcode>T15</sendcode>\n" + 
 			"  <receivecode>S65</receivecode>\n" + 
 			"  <sendername/>\n" + 
 			"\t<receivername/>\n" + 
@@ -934,7 +934,7 @@ public interface XmlTestContet {
 			"\t\t<typename/>\n" + 
 			"\t</datasettype>\n" + 
 			"\t<pensioninfo>\n" + 
-			"\t\t<appseriono>20170918T101210000000971</appseriono>\n" + 
+			"\t\t<appseriono>20170918T151210000000971</appseriono>\n" + 
 			"\t\t<transtype>04</transtype>\n" + 
 			"\t\t<planname>中国人寿养老保险股份有限公司</planname>\n" + 
 			"\t\t<planid>221</planid>\n" + 
@@ -973,7 +973,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
-		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<sendcode>T15</sendcode>\n" + 
 		"\t<receivecode>S65</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
@@ -984,7 +984,7 @@ public interface XmlTestContet {
 		"\t\t<typename/>\n" + 
 		"\t</datasettype>\n" + 
 		"\t<pensioninfo>\n" + 
-		"\t\t<appseriono>20170918T101210000000971</appseriono>\n" + 
+		"\t\t<appseriono>20170918T151210000000971</appseriono>\n" + 
 		"\t</pensioninfo>\n" + 
 		"\t<appcode>0000</appcode>\n" + 
 		"\t<appmsg/>\n" + 
@@ -1004,7 +1004,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
 		"\t<sendcode>S65</sendcode>\n" + 
-		"\t<receivecode>T10</receivecode>\n" + 
+		"\t<receivecode>T15</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
 		"\t<senddate>20170919</senddate>\n" + 
@@ -1035,7 +1035,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S65</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170919</senddate>\n" + 
@@ -1073,7 +1073,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S45</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170919</senddate>\n" + 
@@ -1120,7 +1120,7 @@ public interface XmlTestContet {
 		"\t\t<noinvestsalesum/>\n" + 
 		"\t\t<printday/>\n" + 
 		"\t\t<periodinvestsum>62000</periodinvestsum>\n" + 
-		"\t\t<portfolioid>T10Z0001</portfolioid>\n" + 
+		"\t\t<portfolioid>T15Z0001</portfolioid>\n" + 
 		"\t\t<contribuyvol>886337.1669</contribuyvol>\n" + 
 		"\t\t<switchsalesum/>\n" + 
 		"\t\t<finalassetval>126597288.69</finalassetval>\n" + 
@@ -1143,7 +1143,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S45</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170919</senddate>\n" + 
@@ -1175,7 +1175,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
 		"\t<sendcode>S65</sendcode>\n" + 
-		"\t<receivecode>T10</receivecode>\n" + 
+		"\t<receivecode>T15</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
 		"\t<senddate>20170919</senddate>\n" + 
@@ -1187,7 +1187,7 @@ public interface XmlTestContet {
 		"\t<pensioninfo>\n" + 
 		"\t\t<appseriono>20170919S651205000000100</appseriono>\n" + 
 		"\t\t<transtype>04</transtype>\n" + 
-		"\t\t<filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"\t\t<filename>RSS65ToSTT15_NJF01001_20170919_2068.txt.gz</filename>\n" + 
 		"\t\t<filepath>2017</filepath>\n" + 
 		"\t\t<planid>221</planid>\n" + 
 		"\t\t<accountplanid/>\n" + 
@@ -1217,7 +1217,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S65</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170919</senddate>\n" + 
@@ -1232,7 +1232,7 @@ public interface XmlTestContet {
 		"  \t<appseriono>20170919S651205000000100</appseriono>\n" + 
 		"  \t <appcode>0000</appcode>\n" + 
 		" \t <appmsg>正常</appmsg>\n" + 
-		"    <filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"    <filename>RSS65ToSTT15_NJF01001_20170919_2068.txt.gz</filename>\n" + 
 		"\t<filesign>GMY9BLPT2H7fwuJlsQcMid3xT0yb3PQCsUOMLh9Qb/ijphKrExmjifNzUGyMCOd0nevL78lH1G1qf9zOEY/DXIRjkESpTIlzI4wqzwQegkyZ3/atTxfXdODGBVcLM2TzOayYiFQF736YedNSsh7JYOfY29BgAzRcMqWKspUqQHQ=</filesign>\n" + 
 		"  </pensioninfo>\n" + 
 		"</pensiondata>";
@@ -1249,7 +1249,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
-		"  <sendcode>T10</sendcode>\n" + 
+		"  <sendcode>T15</sendcode>\n" + 
 		"  <receivecode>S65</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
@@ -1262,9 +1262,9 @@ public interface XmlTestContet {
 		"  <appcode>0000</appcode>\n" + 
 		"  <appmsg>正常</appmsg>\n" + 
 		"  <pensioninfo>\n" + 
-		"  \t<appseriono>20170919T109208000000982</appseriono>\n" + 
+		"  \t<appseriono>20170919T159208000000982</appseriono>\n" + 
 		"    <transtype>04</transtype>\n" + 
-		"    <filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"    <filename>RSS65ToSTT15_NJF01001_20170919_2068.txt.gz</filename>\n" + 
 		"\t<result>0</result>\n" + 
 		"\t<errormsg/>\n" + 
 		"  </pensioninfo>\n" + 
@@ -1282,7 +1282,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
-		"  <sendcode>T10</sendcode>\n" + 
+		"  <sendcode>T15</sendcode>\n" + 
 		"  <receivecode>S65</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
@@ -1295,9 +1295,9 @@ public interface XmlTestContet {
 		"  <appcode>0000</appcode>\n" + 
 		"  <appmsg></appmsg>\n" + 
 		"  <pensioninfo>\n" + 
-		"  \t<appseriono>20170919T109208000000982</appseriono>\n" + 
+		"  \t<appseriono>20170919T159208000000982</appseriono>\n" + 
 		"    <transtype>04</transtype>\n" + 
-		"    <filename>RSS65ToSTT10_NJF01001_20170919_2068.txt.gz</filename>\n" + 
+		"    <filename>RSS65ToSTT15_NJF01001_20170919_2068.txt.gz</filename>\n" + 
 		"\t<result>0</result>\n" + 
 		"\t<errormsg/>\n" + 
 		"  </pensioninfo>\n" + 
@@ -1318,7 +1318,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
-		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<sendcode>T15</sendcode>\n" + 
 		"\t<receivecode>S65</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
@@ -1329,13 +1329,13 @@ public interface XmlTestContet {
 		"\t\t<typename/>\n" + 
 		"\t</datasettype>\n" + 
 		"\t<pensioninfo>\n" + 
-		"\t\t<appseriono>20170920T101208000000998</appseriono>\n" + 
+		"\t\t<appseriono>20170920T151208000000998</appseriono>\n" + 
 		"\t\t<transtype>04</transtype>\n" + 
 		"\t\t<planname>中国人寿年金计划</planname>\n" + 
 		"\t\t<planid>221</planid>\n" + 
 		"\t\t<planlicid>6500ZY201710</planlicid>\n" + 
 		"\t\t<accountplanid>9002777</accountplanid>\n" + 
-		"\t\t<filename>STT10ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
+		"\t\t<filename>STT15ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
 		"\t\t<filesign/>\n" + 
 		"\t\t<aeskey/>\n" + 
 		"\t\t<filepath/>\n" + 
@@ -1363,7 +1363,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
-		"\t<sendcode>T10</sendcode>\n" + 
+		"\t<sendcode>T15</sendcode>\n" + 
 		"\t<receivecode>S65</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
@@ -1374,9 +1374,9 @@ public interface XmlTestContet {
 		"\t\t<typename/>\n" + 
 		"\t</datasettype>\n" + 
 		"\t<pensioninfo>\n" + 
-		"\t\t<filename>STT10ToRSS65_NJF02001_20170920_2068.txt.gz</filename>\n" + 
+		"\t\t<filename>STT15ToRSS65_NJF02001_20170920_2068.txt.gz</filename>\n" + 
 		"\t\t<filesign>C++ZfDZNBQKcCa76DSMzmN224hU4IexvqOSTwoPQsIIOzBWLA+JxesibAu5LRvWX00QK6+CRsn88f6KvASD74VC2cWiXEdOOEW34gdnGz3gab6/XsJoPkjOp9iN4ZD7cPwzKRBzVqYQ/sGeLpO1QMwltBPwrcd0aBm0I6oQdss0=</filesign>\n" + 
-		"\t\t<appseriono>20170920T101208000000998</appseriono>\n" + 
+		"\t\t<appseriono>20170920T151208000000998</appseriono>\n" + 
 		"\t</pensioninfo>\n" + 
 		"\t<appcode>0000</appcode>\n" + 
 		"\t<appmsg/>\n" + 
@@ -1395,7 +1395,7 @@ public interface XmlTestContet {
 	"<pensiondata>\n" + 
 	"\t<version>1.0.0</version>\n" + 
 	"\t<sendcode>S65</sendcode>\n" + 
-	"\t<receivecode>T10</receivecode>\n" + 
+	"\t<receivecode>T15</receivecode>\n" + 
 	"\t<sendername/>\n" + 
 	"\t<receivername/>\n" + 
 	"\t<senddate>20170920</senddate>\n" + 
@@ -1409,7 +1409,7 @@ public interface XmlTestContet {
 	"\t\t<result>0</result>\n" + 
 	"\t\t<appseriono>20170920S659208000000019</appseriono>\n" + 
 	"\t\t<errormsg/>\n" + 
-	"\t\t<filename>STT10ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
+	"\t\t<filename>STT15ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
 	"\t</pensioninfo>\n" + 
 	"</pensiondata>";
 	
@@ -1426,7 +1426,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S65</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170920</senddate>\n" + 
@@ -1440,7 +1440,7 @@ public interface XmlTestContet {
 		"  <pensioninfo>\n" + 
 		"   \t<appseriono>20170920S659208000000019</appseriono>\n" + 
 		"    <transtype>99</transtype>\n" + 
-		"    <filename>STT10ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
+		"    <filename>STT15ToRSS65_NJF02001_20170920_2068.txt</filename>\n" + 
 		"\t<result>0</result>\n" + 
 		"\t<errormsg></errormsg>\n" + 
 		"  </pensioninfo>\n" + 
@@ -1460,7 +1460,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S65</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170922</senddate>\n" + 
@@ -1485,7 +1485,7 @@ public interface XmlTestContet {
 		"    <investrate>0.3</investrate>\n" + 
 		"    <custodian>中国建设银行</custodian>\n" + 
 		"    <accountplanid>9002777</accountplanid>\n" + 
-		"    <trusteeid>T10</trusteeid>\n" + 
+		"    <trusteeid>T15</trusteeid>\n" + 
 		"    <planlicid>6500ZY201710</planlicid>\n" + 
 		"    <transtype>02</transtype>\n" + 
 		"    <planbegdate>20140908</planbegdate>\n" + 
@@ -1520,7 +1520,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S65</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170922</senddate>\n" + 
@@ -1553,7 +1553,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
-		"  <sendcode>T10</sendcode>\n" + 
+		"  <sendcode>T15</sendcode>\n" + 
 		"  <receivecode>S65</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
@@ -1564,9 +1564,9 @@ public interface XmlTestContet {
 		"    <typename/>\n" + 
 		"  </datasettype>\n" + 
 		"\t<pensioninfo>\n" + 
-		"\t\t<appseriono>20170922T100102000001069</appseriono>\n" + 
+		"\t\t<appseriono>20170922T150102000001069</appseriono>\n" + 
 		"\t\t<transtype>07</transtype>\n" + 
-		"\t\t<oldappseriono>201700915T100101000000115</oldappseriono>\n" + 
+		"\t\t<oldappseriono>201700915T150101000000115</oldappseriono>\n" + 
 		"\t</pensioninfo>\n" + 
 		"\t<oldpensioninfo>\n" + 
 		"\t\t<transtype>99</transtype>\n" + 
@@ -1584,7 +1584,7 @@ public interface XmlTestContet {
 		"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
-		"  <sendcode>T10</sendcode>\n" + 
+		"  <sendcode>T15</sendcode>\n" + 
 		"  <receivecode>S65</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
@@ -1595,16 +1595,16 @@ public interface XmlTestContet {
 		"    <typename/>\n" + 
 		"  </datasettype>\n" + 
 		"  <pensioninfo>\n" + 
-		"    <appseriono>20170922T100102000001069</appseriono>\n" + 
+		"    <appseriono>20170922T150102000001069</appseriono>\n" + 
 		"    <transtype>07</transtype>\n" + 
-		"    <oldappseriono>201700915T100101000000115</oldappseriono>\n" + 
+		"    <oldappseriono>201700915T150101000000115</oldappseriono>\n" + 
 		"  </pensioninfo>\n" + 
 		"  <appcode>0000</appcode>\n" + 
 		"  <appmsg/>\n" + 
 		"  <oldappcode>0000</oldappcode>\n" + 
 		"  <oldappmsg/>\n" + 
 		"  <oldpensioninfo>\n" + 
-		"    <appseriono>201700915T100101000000115</appseriono>\n" + 
+		"    <appseriono>201700915T150101000000115</appseriono>\n" + 
 		"    <transtype>99</transtype>\n" + 
 		"  </oldpensioninfo>\n" + 
 		"</pensiondata>";
@@ -1819,7 +1819,7 @@ public interface XmlTestContet {
 	
 	/**
 	 * 江苏 连通性测试 委托人-> 受托人
-	 * S32  to  T10 发送报文
+	 * S32  to  T15 发送报文
 	 * 0101
 	 */
 	public final static String jiangSu0101RsToStStart = 
@@ -1828,7 +1828,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>V1.0</version>\n" + 
 		"  <sendcode>S32</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <senddate>20170929</senddate>\n" + 
 		"  <sendtime>104750</sendtime>\n" + 
 		"  <dgst>连通性测试</dgst>\n" + 
@@ -1845,7 +1845,7 @@ public interface XmlTestContet {
 	
 	/**
 	 * 江苏 连通性测试 委托人-> 受托人
-	 * S32  to  T10 响应报文
+	 * S32  to  T15 响应报文
 	 * 0101
 	 */
 	public final static String jiangSu0101RsToStEnd = 
@@ -1854,7 +1854,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"\t<version>1.0.0</version>\n" + 
 		"\t<sendcode>S32</sendcode>\n" + 
-		"\t<receivecode>T10</receivecode>\n" + 
+		"\t<receivecode>T15</receivecode>\n" + 
 		"\t<sendername/>\n" + 
 		"\t<receivername/>\n" + 
 		"\t<senddate>20170929</senddate>\n" + 
@@ -1876,7 +1876,7 @@ public interface XmlTestContet {
 	/**
 	* 江苏  委托人-> 受托人
 	* 计划基本信息下载
-	* T10 to S32   发送报文 
+	* T15 to S32   发送报文 
 	* 0101
 	*/
 	public final static String jiangSu1101RsToStStart = 
@@ -1886,7 +1886,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>V1.0</version>\n" + 
 		"  <sendcode>S32</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <senddate>20170929</senddate>\n" + 
 		"  <sendtime>111609</sendtime>\n" + 
 		"  <dgst>计划基本信息</dgst>\n" + 
@@ -1937,7 +1937,7 @@ public interface XmlTestContet {
 	/**
 	 * 江苏  委托人-> 受托人
 	 * 计划基本信息下载
-	 * T10 to S32   响应报文 
+	 * T15 to S32   响应报文 
 	 * 0101
 	 */
 	public final static String jiangSu1101RsToStEnd = 
@@ -1947,7 +1947,7 @@ public interface XmlTestContet {
 	"<pensiondata>\n" + 
 	"  <version>1.0.0</version>\n" + 
 	"  <sendcode>S32</sendcode>\n" + 
-	"  <receivecode>T10</receivecode>\n" + 
+	"  <receivecode>T15</receivecode>\n" + 
 	"  <sendername/>\n" + 
 	"  <receivername/>\n" + 
 	"  <senddate>20170929</senddate>\n" + 
@@ -1978,7 +1978,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>V1.0</version>\n" + 
 		"  <sendcode>S32</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <senddate>20170929</senddate>\n" + 
 		"  <sendtime>124120</sendtime>\n" + 
 		"  <dgst>投资组合信息</dgst>\n" + 
@@ -2046,7 +2046,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S32</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170929</senddate>\n" + 
@@ -2083,7 +2083,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>V1.0</version>\n" + 
 		"  <sendcode>S32</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <senddate>20170929</senddate>\n" + 
 		"  <sendtime>132821</sendtime>\n" + 
 		"  <dgst>定价日信息</dgst>\n" + 
@@ -2133,7 +2133,7 @@ public interface XmlTestContet {
 		"<pensiondata>\n" + 
 		"  <version>1.0.0</version>\n" + 
 		"  <sendcode>S32</sendcode>\n" + 
-		"  <receivecode>T10</receivecode>\n" + 
+		"  <receivecode>T15</receivecode>\n" + 
 		"  <sendername/>\n" + 
 		"  <receivername/>\n" + 
 		"  <senddate>20170929</senddate>\n" + 

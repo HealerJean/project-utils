@@ -72,12 +72,13 @@ public class ShortTest {
 
 		System.out.println("double除以int 得到的结果为double"+a/aint);
 		
+		float ia = 1;
 		float fa = 2.4f;
 		float fb = 1.2f;
 		float af = 1.11f;
 		float bf = 1.32f;
 		System.out.println(fa/fb);
-		System.out.println(af/bf); //0.84090906 
+		System.out.println(af/bf); //0.84090906  //8位
 	
 	}
 }

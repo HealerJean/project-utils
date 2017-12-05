@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<xuexiao>  <!-- firstElement -->
+    <sex>2</sex>
+    <people>  <!-- twoElement -->
+      		  <name>张宇晋</name>  
+      		  <age>23</age>  
+      		  <salary>4992.2</salary>        		      		
+   	</people>  
+    <banji>
+    	<classPersonNum>54</classPersonNum>
+    </banji>
+</xuexiao>

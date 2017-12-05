@@ -73,14 +73,15 @@ public class StringTest {
 	 */
 	
 	private static void teststringadd() {
-		// 
-	//	String s+="123"; //错误的
-	//	String s = s +"abc"; //错误的 
+
+		//未提前定义好对象
+		//String m = m +"abc"; //错误的 
 		
-		//下面这样是可以的
+		//如果提前定义对象，是可以的
 		String a = "123";
 		String b = "";
-		 b += a;
+		 b += "abc";
+		 b = b + "a";
 	}
 	
 	
@@ -224,7 +225,7 @@ String a = "abcdef";
 		  int c[] = {1,4,2,3};
 	
 	//4、new 并直接静态赋值，不可写入大小
-		//  int d[] = new int[5]{1,2,3};
+		//  int d[] = new int[5]{1,2,3}; 错误
 		  int d[] = new int[]{1,2,3};
 	 }
 }
