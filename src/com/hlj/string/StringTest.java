@@ -2,6 +2,8 @@ package com.hlj.string;
 
 import java.io.UnsupportedEncodingException;
 
+import org.junit.Test;
+
 public class StringTest {
 	public static void main(String[] args) {
 
@@ -227,5 +229,20 @@ String a = "abcdef";
 	//4、new 并直接静态赋值，不可写入大小
 		//  int d[] = new int[5]{1,2,3}; 错误
 		  int d[] = new int[]{1,2,3};
+	 }
+	 
+	 @Test
+	 public void testStringBuffer(){
+		 String str = "str";
+		 String str1 = str;
+		 str = "str";
+		 if(str==str1){
+			 System.out.println("地址相同");
+		 }
+		 if(str.equals(str1)){
+			 System.out.println("str equals str2"); 
+	 	}
+		 StringBuffer sBuffer = new StringBuffer("123");
+		//报错 sBuffer = "12";
 	 }
 }

@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="lib/file/commons-net-3.6.jar"/>
 	<classpathentry kind="lib" path="lib/util/commons-codec-1.4.jar"/>
 	<classpathentry kind="lib" path="lib/xml/freemarker-2.3.16.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

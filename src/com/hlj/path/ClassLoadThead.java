@@ -17,7 +17,7 @@ public class ClassLoadThead {
 		//无 / 正常显示 
 		URL urlThread_ =Thread.currentThread().getContextClassLoader().getResource("");
 		System.out.println("urlThread_"+urlThread_);
-		// 有 / null
+		// 有 / null 
 		URL urlThread_1 =Thread.currentThread().getContextClassLoader().getResource("/");
 		System.out.println("urlThread_1:位空：：："+urlThread_1);
 
@@ -26,7 +26,7 @@ public class ClassLoadThead {
 		System.out.println("urlClassLoader_"+urlClassLoader_);
 
 		// 有 / null
-		URL urlClassLoader_1 = FileTest.class.getClassLoader().getResource("");
+		URL urlClassLoader_1 = FileTest.class.getClassLoader().getResource("/");
 		System.out.println("urlClassLoader_1"+urlClassLoader_1);
 
 	}
