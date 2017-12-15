@@ -5,7 +5,8 @@ import java.lang.reflect.Method;
 
 public class MethodTest {
     public static void main(String[] args) {
-       // two getMethodSome();
+       // two 
+    	getMethodSome();
     	// one getMethods();
     }
 

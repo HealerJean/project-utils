@@ -5,7 +5,7 @@ package com.hlj.publicTest.finals;
  * 类说明 
  */
 public class FinalTest {
-	//1、final 定义必须给出值，否则错误
+	//1、final 全局变量 定义必须给出值，否则错误
 	//final static String aString ;
 	final static String aString = null ;
 	
