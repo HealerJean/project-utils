@@ -21,12 +21,15 @@ public class StringTest {
 		/**
 		 * 3、测试字符串是否改变
 		 */
-		String str = "abc";
+		String str = "a";
 		StringTest stringTest = new StringTest();
-		/*
-		 stringTest.change(str);   
-		 System.out.println(str); //输出 abc 不会改变的
-	     */
+		int i = 1;
+		int a[] = {1,2,3};
+		String abc[] = {"a","b","c"};
+		 stringTest.change(str,i,a,abc);   
+		 System.out.println(str+i); //输出 abc 不会改变的
+	    System.out.println(a[2]);
+	    System.out.println(abc[2]);
 		
 		/**
 		 * 4、测试 split分割 
@@ -63,7 +66,6 @@ public class StringTest {
 		  */
 	//	printStringMain() ;
 		
-		array();
 	}
 	
 
@@ -92,21 +94,28 @@ public class StringTest {
 	/**
 	 * 2、测试null+字符串的值
 	 */
-	private void testnull() {
+	@Test
+	public void testnull() {
 		// 
 		String testString = null+"abc";
 		System.out.println(testString);
-
-	}
+		
+		int i = 2222;
+		String testIntString = "abc"+(i+1);
+		String testIntStringNo = "abc"+i+1;
+		System.out.println("加括号"+testIntString+"\n"+"不加括号"+testIntStringNo);
+	} 
 	
 	
 	
 	/**
 	 * 3、测试字符串是否改变
 	 */
-	void change(String str){
-		
-		str  = "ghj";
+	void change(String str,int i,int[]a,String abc[]){
+		 i   =  123;
+		str  = "abc";
+		a[2] = 56;
+		abc[2] = "ef";
 	}
 	
 	/**
@@ -211,8 +220,8 @@ String a = "abcdef";
 	 /**
 	  * 9、数组的定义
 	  */
-	 
-	 public static void array(){
+	 @Test
+	 public  void array(){
 	//1、	
 		 int[] a = new int[3]; //定义一个数组
 			a[0] = 1;
