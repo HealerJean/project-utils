@@ -5,8 +5,5 @@ package com.hlj.publicTest.abstracts;
  * @Description:
  */
 public abstract class AbstractClass implements AbstractInterface {
-	/**
-	 * 其实这里已经具备了抽象方法
-	 *
-	 */
+
 }

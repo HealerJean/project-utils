@@ -14,8 +14,15 @@ public class AbstractSon extends AbstractClass{
 	 */
 	@Override
 	public int a() {
-		// TODO Auto-generated method stub
+		System.out.println("HealerJean");
 		return 0;
 	}
+
+	@Override
+	public int b() {
+		return 0;
+	}
+
+
 
 }

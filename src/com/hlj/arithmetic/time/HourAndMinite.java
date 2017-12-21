@@ -21,7 +21,7 @@ public class HourAndMinite {
 	 * @date   :2017年11月23日 下午3:22:27 
 	 * @Description: 
 	分针为计算单位
-	时针 小时每分钟走 360/12（个标志位）/60（分钟） = 0.5度
+	时针 小时r每分钟走 360/12（个标志位）/60（分钟） = 0.5度
 	分针 360/60 = 6 度
 	
 	秒针为计算单位
@@ -38,7 +38,7 @@ public class HourAndMinite {
      */  
     public static void main(String[] args) {  
         int count =0;  
-        for(int h=1; h<=24; h++){   //从第一小时开始算，不算12点开始重合的次数
+        for(int h=1; h<=12; h++){   //从第一小时开始算，不算12点开始重合的次数
             for(int m=0; m<=60; m++){  
             	//这里是最关键的， 因为小时走的度数不可能都是整数30*h，这里为了方便计算
             	// 给分钟变慢 变成6度-0.5度 =这样就相当于是以时针不变，分钟在动。
@@ -47,7 +47,6 @@ public class HourAndMinite {
                 ////分针一直在追赶时针和，那在接近重合的合时候的夹角不会超过6度，并且为正
                 if(0 < gap && gap < 6.0){  
                 
-                    System.out.println(gap);
                     System.out.println(h + ":" + m);  
                     count++;  
                 } 

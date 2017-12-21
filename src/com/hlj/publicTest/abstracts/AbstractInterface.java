@@ -6,5 +6,6 @@ package com.hlj.publicTest.abstracts;
  */
 public interface AbstractInterface {
 	
-	public int a();
+	public abstract int a();
+	int b();
 }
