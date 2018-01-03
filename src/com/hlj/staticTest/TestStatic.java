@@ -12,7 +12,6 @@ public class TestStatic {
 	public static void main(String[] args) {
 		TestStatic testStatic = new TestStatic();
 		testStatic.b1();
-		
 	}
 	public static void a(){
 	/* ´íÎóµÄ

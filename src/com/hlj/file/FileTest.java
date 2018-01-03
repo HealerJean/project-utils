@@ -382,6 +382,8 @@ public class FileTest {
 				flagLength++;
 			 if(flagLength==1){
 				 System.out.println("第"+flagLength+"行的内容为"+lineVal);
+				 System.out.println(lineVal.substring(0,7));
+				 System.out.println(lineVal.substring(0,8));
 			 }
 			 else{
 				 System.out.println("第"+flagLength+"行的内容为"+lineVal);			 

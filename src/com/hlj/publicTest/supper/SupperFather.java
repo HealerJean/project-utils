@@ -19,5 +19,5 @@ public class SupperFather {
 	
 	public void otheMethod(){
 		System.out.println("SupperFather Method Test Supper");
-	}
+	}	
 }

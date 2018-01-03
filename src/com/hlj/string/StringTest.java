@@ -27,9 +27,9 @@ public class StringTest {
 		int a[] = {1,2,3};
 		String abc[] = {"a","b","c"};
 		 stringTest.change(str,i,a,abc);   
-		 System.out.println(str+i); //输出 abc 不会改变的
-	    System.out.println(a[2]);
-	    System.out.println(abc[2]);
+		 System.out.println(str+i); //a1 不会改变
+	    System.out.println(a[2]); //56
+	    System.out.println(abc[2]); //ef
 		
 		/**
 		 * 4、测试 split分割 
@@ -240,19 +240,46 @@ String a = "abcdef";
 		//  int d[] = new int[5]{1,2,3}; 错误
 		  int d[] = new int[]{1,2,3};
 	 }
+
 	 
+	 /***
+	  * 10、substring 截取的是字节还是字符
+	  * String类的length()方法是以unicode代码单元，换言之就是char的个数为来统计的。
+	  * 所以使用subString等截取出来的子串都不会出现半个汉字的情况，
+	   		因为java一个char类型可以存放一个汉字（2个字节）。
+	   		
+	  * 而如果以字节byte来截取字符串，就会出现半个汉字的情况。
+	  	
+	  	思路：汉字的unicode编码都是负数，如果这些负数字节在截取的字节数组中成对出现，说明不会截取到半个汉字。
+	  	如果不是成对出现，则会截取到半个汉字，需要将最后一个字节舍去。
+	  * 按字节数截取字符串, 不能截出半个汉字, 如果是半个汉字则舍去!
+	  */
 	 @Test
-	 public void testStringBuffer(){
-		 String str = "str";
-		 String str1 = str;
-		 str = "str";
-		 if(str==str1){
-			 System.out.println("地址相同");
-		 }
-		 if(str.equals(str1)){
-			 System.out.println("str equals str2"); 
-	 	}
-		 StringBuffer sBuffer = new StringBuffer("123");
-		//报错 sBuffer = "12";
-	 }
+	 public void testSubStringByteOr(){
+		String source = "我是一abcd个好人cccc";
+		 int byteCount = 8; //表示截取多少个
+			        byte[] byteArr = source.getBytes();
+			        System.out.println("字节大小为"+byteArr.length);
+			        int count = 0;
+			        // 统计要截取的那部分字节中负数的个数
+			        for (int i = 0; i < byteCount; i++) {
+			            if (byteArr[i] < 0) {
+			            	System.out.println(i);
+			                count++;
+			            }
+			        }
+			        System.out.println("负数的个数为"+count); 
+			        
+			        // 负数成对出现 则不会出现半个汉字
+			        if (count % 2 == 0)
+			            System.out.println(new String(byteArr, 0, byteCount));
+			        // 负数个数不是偶数，则有半个汉字
+			        else
+			            System.out.println(new String(byteArr, 0, byteCount - 1));
+			    }
+
+		
+
+	 
+	 
 }

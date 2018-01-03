@@ -2,6 +2,7 @@ package com.hlj.extend;
 
 class A{
 	
+	// private String aString = "父亲变量";
 	String aString = "父亲变量";
 		public void aString(){
 		System.out.println("父亲方法");

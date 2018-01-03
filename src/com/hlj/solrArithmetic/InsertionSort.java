@@ -109,7 +109,7 @@ public class InsertionSort {
      * */ 
     @Test
     public void bubbleSort1() {  
-        int arr[] = { 49, 38, 65, 97, 76, 13, 27, 50 };
+        int arr[] = { 49, 38, 65,  76, 13, 27, 50 ,97};
         int  n = arr.length;
         int i = 0;  
         int j = 0;  
@@ -148,11 +148,11 @@ public class InsertionSort {
         int k = 0;  
         int tmp = 0;  
         int flag = n;   
-        for (i = 0; i < flag; ++i) {  
-            k = flag;  
+        for (i = 0; i < flag-1; ++i) {  
+            k = flag;   
             flag = 0;  
-            for (j = 0; j < k; ++j) {  
-                if (arr[j] < arr[j + 1]) {  
+            for (j = 0; j < k-i; ++j) {  
+                if (arr[j] > arr[j + 1]) {  
                     flag = j;  
                     tmp = arr[j];  
                     arr[j] = arr[j + 1];  

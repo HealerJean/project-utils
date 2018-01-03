@@ -18,6 +18,8 @@ public class Supper extends  SupperFather{
 		super();
 		System.out.println( "Son supper constructor");
 		System.out.println("---------------------");
+
+		Supper supper = new Supper(); //死循环 还会调用父类
 	}
 	
 	/**
@@ -27,9 +29,8 @@ public class Supper extends  SupperFather{
 	 */
 	public Supper(String str){
 		// 1、什么都不写会主动调用父类中的 supper()
-		
 		// 2、会调用父类中的有参构造器 ，不会调用无参构造器
-		super(str); 
+		super(str);
 		System.out.println( "Son supper param constructor");
 		System.out.println("---------------------");
 
@@ -42,10 +43,11 @@ public class Supper extends  SupperFather{
 		1、 super() 等 相同类型 只能用在构造器中
 		2、super.父类方法  可以放在任意方法的任意位置
 	 */
+	@Override
 	public void otheMethod(){
-		super.otheMethod();
+		//super.otheMethod();
 		System.out.println("Supper Method Test Supper");
-		super.otheMethod();
+		//super.otheMethod();
 		System.out.println("---------------------");
 
 	}
