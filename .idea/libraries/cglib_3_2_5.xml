@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cglib-3.2.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/DynamicProxy/cglib-3.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

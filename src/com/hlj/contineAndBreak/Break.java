@@ -2,8 +2,10 @@ package com.hlj.contineAndBreak;
 public class Break {
 	public static void main(String[] args) {
 		Break test2 = new Break();
-		test2.add(5);
+		//test2.add(5);
+		test2.breakOut();
 	}
+
 
 	private void add(int a) { 
 		// 
@@ -17,5 +19,19 @@ public class Break {
 			}
 		}
 	} 
-	// 1 1 
+	// 1 1
+
+	private void breakOut(){
+		//标签自己写
+		a:
+		for(int i=0;i<3;i++){
+			for(int j=0;j<3;j++){
+				System.out.println(i+"---"+j);
+				//当j=2时结束outer标识符指定的循环
+				if(j==2){
+					break a;
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ibatis-sqlmap-3.0-beta-10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ibatis-sqlmap-3.0-beta-10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.16.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/ibatis-sqlmap-3.0-beta-10.jar!/" />
+    </SOURCES>
+  </library>
+</component>

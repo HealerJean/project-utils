@@ -1,8 +1,7 @@
-ï»¿package com.hlj.Name;
+package com.hlj.Name;
 
 import java.util.UUID;
 
-import org.omg.CORBA.StringHolder;
 
 public class GetImageNew {
 	public static String getUUIdName(String filename){
@@ -10,30 +9,30 @@ public class GetImageNew {
 		String uuid = UUID.randomUUID().toString();
 		
 	//	System.out.println(uuid);
-		//ç°åœ¨è€ƒè™‘  å°†æ–‡ä»¶åfilename.jpg å˜ä¸º 	uuId.jpg
+		//ÏÖÔÚ¿¼ÂÇ  ½«ÎÄ¼şÃûfilename.jpg ±äÎª 	uuId.jpg
 	//	String filename= "abcdefghijklmn.jpg";
 		int begainName = filename.lastIndexOf(".");
-	//å–å¾—æ–‡ä»¶çš„å‰é¢çš„åå­—
+	//È¡µÃÎÄ¼şµÄÇ°ÃæµÄÃû×Ö
 	//	String newName = filename.substring(0, filename.lastIndexOf("."));
 	
-		// è·å–åç¼€å å› ä¸ºæ˜¯åŒ…å¤´ä¸åŒ…å°¾æ‰€ä»¥å°±ç›´æ¥length
+		// »ñÈ¡ºó×ºÃû ÒòÎªÊÇ°üÍ·²»°üÎ²ËùÒÔ¾ÍÖ±½Ólength
 	//	String newName = filename.substring(begainName, filename.length());
 	
-	//åˆ¶ä½œæ–°åå­—
+	//ÖÆ×÷ĞÂÃû×Ö
 		String newName = uuid+filename.substring(begainName, filename.length());
 		System.out.println("getUUIdName"+newName);
 		return newName; 
 
 	} 
 	
-	//å¾—åˆ°æ–‡ä»¶åçš„å‰ç¼€
+	//µÃµ½ÎÄ¼şÃûµÄÇ°×º
 	public static String startName(String filename){
 		
 		String startName = filename.substring(0, filename.lastIndexOf("."));
 		System.out.println(startName);
 		return startName;
 	}
-	//å¾—åˆ°æ–‡ä»¶åçš„åç¼€
+	//µÃµ½ÎÄ¼şÃûµÄºó×º
 public static String endName(String filename){
 		
 		int begainName = filename.lastIndexOf(".");
@@ -43,7 +42,7 @@ public static String endName(String filename){
 	}
 
 	
-	//ç»™ä¸€ä¸ªè·¯å¾„ å–å¾—ä»–çš„åå­—E:\WorkSpace\MyeclipseWork\.metadata\.me_tcat\webapps\ReadWebResourse\WEB-INF\classes\NamePath.properties
+	//¸øÒ»¸öÂ·¾¶ È¡µÃËûµÄÃû×ÖE:\WorkSpace\MyeclipseWork\.metadata\.me_tcat\webapps\ReadWebResourse\WEB-INF\classes\NamePath.properties
 
 	private void getPathName(String srcPath) {
 		// 
