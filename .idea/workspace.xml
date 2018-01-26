@@ -1,171 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b2e4b52-ebd0-4352-9faa-d69102299e49" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/cglib_3_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_net_3_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/freemarker_2_3_16.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ibatis_sqlmap_3_0_beta_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hlj/contineAndBreak/While.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CompanyOffer.iml" afterPath="$PROJECT_DIR$/CompanyOffer.iml" />
-      <change beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/Active.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/Active.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Seller$doHomeWork.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Seller$doHomeWork.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Seller.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Seller.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Student$doHomeWork.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Student$doHomeWork.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Student.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/Student.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/SuperCalculator.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/SuperCalculator.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/TestMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/TestMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/doJob.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/CallBack/doJob.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/Milk$1.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/Milk$1.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/Milk.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/Milk.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Closure/PersonMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Closure/PersonMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Name/GetImageNew.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Name/GetImageNew.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Serializable/SerializableOne.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Serializable/SerializableOne.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Serializable/SerializableStatic.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Serializable/SerializableStatic.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/Array.class" afterPath="$PROJECT_DIR$/bin/com/hlj/arithmetic/Array.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/TrueOrFalse.class" afterPath="$PROJECT_DIR$/bin/com/hlj/arithmetic/TrueOrFalse.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/killperson/Person.class" afterPath="$PROJECT_DIR$/bin/com/hlj/arithmetic/killperson/Person.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/killperson/SRsf.class" afterPath="$PROJECT_DIR$/bin/com/hlj/arithmetic/killperson/SRsf.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/time/HourAndMinite.class" afterPath="$PROJECT_DIR$/bin/com/hlj/arithmetic/time/HourAndMinite.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/construster/TestConstruster.class" afterPath="$PROJECT_DIR$/bin/com/hlj/construster/TestConstruster.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/MailSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/MailSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/Provider.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/Provider.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/SendMailFactory.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/SendMailFactory.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/SendSmsFactory.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/SendSmsFactory.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/Sender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/Sender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/SmsSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/SmsSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/Test.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AbstractFactory/Test.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/AdvancedMediaPlayer.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/AdvancedMediaPlayer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/AudioPlayer.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/AudioPlayer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/MediaAdapter.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/MediaAdapter.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/MediaPlayer.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/MediaPlayer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/Mp4Player.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/Mp4Player.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/TestMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/TestMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/VlcPlayer.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/VlcPlayer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/readme" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/AdapterPattern/readme" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Item/Burger.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Item/Burger.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Item/ColdDrink.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Item/ColdDrink.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Item/Item.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Item/Item.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Meal.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Meal.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/MealBuilder.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/MealBuilder.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Packing/Bottle.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Packing/Bottle.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Packing/Packing.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Packing/Packing.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Packing/Wrapper.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/Packing/Wrapper.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/TestMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/TestMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/readme" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/readme" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/ChickenBurger.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/ChickenBurger.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/Coke.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/Coke.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/Pepsi.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/Pepsi.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/VegBurger.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Builder/shop/VegBurger.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/Circle.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/Circle.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/Rectangle.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/Rectangle.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/RedShapeDecorator.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/RedShapeDecorator.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/Shape.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/Shape.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/ShapeDecorator.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/ShapeDecorator.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/TestMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Decorator/TestMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/FactoryTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/FactoryTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/MailSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/MailSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/SendFactory.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/SendFactory.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/Sender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/Sender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/SmsSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/general/SmsSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/FactoryTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/FactoryTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/MailSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/MailSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/SendFactory.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/SendFactory.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/Sender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/Sender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/SmsSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/manyMethod/SmsSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/FactoryTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/FactoryTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/MailSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/MailSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/SendFactory.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/SendFactory.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/Sender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/Sender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/SmsSender.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/FactoryMethod/staticpattern/SmsSender.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Singleton/one/Singleton.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Singleton/one/Singleton.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Singleton/one/SingletonFinal.class" afterPath="$PROJECT_DIR$/bin/com/hlj/designpatterns/Singleton/one/SingletonFinal.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/dg/Dg.class" afterPath="$PROJECT_DIR$/bin/com/hlj/dg/Dg.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/equils/EquilsTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/equils/EquilsTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/extend/A.class" afterPath="$PROJECT_DIR$/bin/com/hlj/extend/A.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/extend/MultiCale.class" afterPath="$PROJECT_DIR$/bin/com/hlj/extend/MultiCale.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/extend/SimleCale.class" afterPath="$PROJECT_DIR$/bin/com/hlj/extend/SimleCale.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/extend/TestBl.class" afterPath="$PROJECT_DIR$/bin/com/hlj/extend/TestBl.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/file/FileTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/file/FileTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/file/FtpUtil.class" afterPath="$PROJECT_DIR$/bin/com/hlj/file/FtpUtil.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/file/GetNatFile.class" afterPath="$PROJECT_DIR$/bin/com/hlj/file/GetNatFile.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/file/XmlTestContet.class" afterPath="$PROJECT_DIR$/bin/com/hlj/file/XmlTestContet.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/forTest/ForTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/forTest/ForTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/FourMain$FX.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/FourMain$FX.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/FourMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/FourMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/OneMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/OneMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsNoUse$FX.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsNoUse$FX.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsNoUse.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsNoUse.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsUse$FX.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsUse$FX.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsUse.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeGenericsUse.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeMain$FX.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeMain$FX.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/ThreeMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/generics/TwoMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/generics/TwoMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/ijj/Ijj.class" afterPath="$PROJECT_DIR$/bin/com/hlj/ijj/Ijj.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/intlong/ShortTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/intlong/ShortTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/log4j/Log4jTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/log4j/Log4jTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/path/ClassGetResource.class" afterPath="$PROJECT_DIR$/bin/com/hlj/path/ClassGetResource.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/path/ClassLoadThead.class" afterPath="$PROJECT_DIR$/bin/com/hlj/path/ClassLoadThead.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/path/ClassLoader.class" afterPath="$PROJECT_DIR$/bin/com/hlj/path/ClassLoader.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/path/FileInputStreamTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/path/FileInputStreamTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/TestAbstract.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/TestAbstract.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/TestExtendAbstract.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/TestExtendAbstract.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/TestPublic.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/TestPublic.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/finals/FinalTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/finals/FinalTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/interfaces/InterFaceMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/interfaces/InterFaceMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/interfaces/InterfaceMe.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/interfaces/InterfaceMe.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/privates/Bmain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/privates/Bmain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/privates/PrivateTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/privates/PrivateTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/privates/Son.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/privates/Son.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/publics/A.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/publics/A.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/publicTest/publics/PublicOrderTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/publicTest/publics/PublicOrderTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/reflex/ClassTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/reflex/ClassTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/reflex/ConstructorPerson.class" afterPath="$PROJECT_DIR$/bin/com/hlj/reflex/ConstructorPerson.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/reflex/ConstructorTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/reflex/ConstructorTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/reflex/MethodPerson.class" afterPath="$PROJECT_DIR$/bin/com/hlj/reflex/MethodPerson.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/reflex/MethodTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/reflex/MethodTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/string/StringTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/string/StringTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/switchName/SwitchTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/switchName/SwitchTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/FourMyThread.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/FourMyThread.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/FourNewMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/FourNewMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/FourSync.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/FourSync.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/MyThread.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/MyThread.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/OneMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/OneMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/Sync.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/Sync.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/TeoSync.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/TeoSync.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeForOneMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeForOneMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeForTwoMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeForTwoMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeOneMyThread.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeOneMyThread.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeOneSync.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeOneSync.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeTeoSync.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeTeoSync.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeTwoMyThread.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/ThreeTwoMyThread.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/TwoMain.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/TwoMain.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/TwoMyThread.class" afterPath="$PROJECT_DIR$/bin/com/hlj/synchronizedTest/TwoMyThread.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/test/TestJar.class" afterPath="$PROJECT_DIR$/bin/com/hlj/test/TestJar.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/thread/Testthread.class" afterPath="$PROJECT_DIR$/bin/com/hlj/thread/Testthread.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/trycatch/IsRun.class" afterPath="$PROJECT_DIR$/bin/com/hlj/trycatch/IsRun.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/trycatch/TryTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/trycatch/TryTest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/txt/GetTxtLineTextValue.class" afterPath="$PROJECT_DIR$/bin/com/hlj/txt/GetTxtLineTextValue.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/util/Base64Util.class" afterPath="$PROJECT_DIR$/bin/com/hlj/util/Base64Util.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/xml/CreateXmlByVmFile.class" afterPath="$PROJECT_DIR$/bin/com/hlj/xml/CreateXmlByVmFile.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/xml/FieldPropetiesToXml.class" afterPath="$PROJECT_DIR$/bin/com/hlj/xml/FieldPropetiesToXml.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/xml/XmlEntry.class" afterPath="$PROJECT_DIR$/bin/com/hlj/xml/XmlEntry.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/xml/XmlFormat.class" afterPath="$PROJECT_DIR$/bin/com/hlj/xml/XmlFormat.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/yc/ChushufuException.class" afterPath="$PROJECT_DIR$/bin/com/hlj/yc/ChushufuException.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/yc/ChushulingException.class" afterPath="$PROJECT_DIR$/bin/com/hlj/yc/ChushulingException.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/yc/Numbertest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/yc/Numbertest.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/yc/TestYc.class" afterPath="$PROJECT_DIR$/bin/com/hlj/yc/TestYc.class" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/Name/GetImageNew.java" afterPath="$PROJECT_DIR$/src/com/hlj/Name/GetImageNew.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/contineAndBreak/Break.java" afterPath="$PROJECT_DIR$/src/com/hlj/contineAndBreak/Break.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/contineAndBreak/Continue.java" afterPath="$PROJECT_DIR$/src/com/hlj/contineAndBreak/Continue.java" />
-    </list>
+    <list default="true" id="6b2e4b52-ebd0-4352-9faa-d69102299e49" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -223,8 +59,8 @@
       <file leaf-file-name="While.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/hlj/contineAndBreak/While.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -329,28 +165,6 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="CompanyOffer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompanyOffer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompanyOffer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompanyOffer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompanyOffer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompanyOffer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hlj" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompanyOffer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompanyOffer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hlj" type="462c0819:PsiDirectoryNode" />
-              <item name="contineAndBreak" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="CompanyOffer" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -550,12 +364,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516695822214</updated>
-      <workItem from="1516695834841" duration="2577000" />
+      <workItem from="1516695834841" duration="2662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2577000" />
+    <option name="totallyTimeSpent" value="2662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -571,7 +385,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2039312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -582,7 +396,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -693,8 +507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/contineAndBreak/While.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding />
         </state>
       </provider>
