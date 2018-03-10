@@ -292,8 +292,110 @@ public class ArraylistTest {
 //		Collection
 //		List<E>
 	}
-	
-	
-	
-	
+
+	/**
+	 * 这种是错误的
+	 */
+	@Test
+	public void testRemoveAll(){
+		PersonRemove personRemove1 = new PersonRemove("1","a");
+		PersonRemove personRemove2 = new PersonRemove("2","a");
+		PersonRemove personRemove3 = new PersonRemove("3","a");
+		PersonRemove personRemoveNew1 =  new PersonRemove("1","a");
+		PersonRemove personRemoveNew2 =  new PersonRemove("2","a");
+		PersonRemove personRemoveNew3 =  new PersonRemove("3","a");
+
+		PersonRemove personRemoveNew4 =  new PersonRemove("4","a");
+		PersonRemove personRemoveNew5 =  new PersonRemove("5","a");
+
+
+		List<PersonRemove> personRemovesFirst = new ArrayList<>();
+		personRemovesFirst.add(personRemove1);
+		personRemovesFirst.add(personRemove2);
+		personRemovesFirst.add(personRemove3);
+
+		List<PersonRemove> personRemovesLast = new ArrayList<>();
+		personRemovesLast.add(personRemoveNew1);
+		personRemovesLast.add(personRemoveNew2);
+		personRemovesLast.add(personRemoveNew3);
+		personRemovesLast.add(personRemoveNew4);
+		personRemovesLast.add(personRemoveNew5);
+
+		personRemovesLast.remove(personRemovesFirst);
+		for (PersonRemove personRemove :personRemovesLast){
+			System.out.println(personRemove.getId());
+		}
+
+	}
+
+	@Test
+	public void testRemoveAllSuccess(){
+		PersonRemove personRemove1 = new PersonRemove("1","a");
+		PersonRemove personRemove2 = new PersonRemove("2","a");
+		PersonRemove personRemove3 = new PersonRemove("3","a");
+		PersonRemove personRemoveNew1 =  new PersonRemove("1","a");
+		PersonRemove personRemoveNew2 =  new PersonRemove("2","a");
+		PersonRemove personRemoveNew3 =  new PersonRemove("3","a");
+
+		PersonRemove personRemoveNew4 =  new PersonRemove("4","a");
+		PersonRemove personRemoveNew5 =  new PersonRemove("5","a");
+
+
+		List<PersonRemove> personRemovesFirst = new ArrayList<>();
+		personRemovesFirst.add(personRemove1);
+		personRemovesFirst.add(personRemove2);
+		personRemovesFirst.add(personRemove3);
+
+		List<PersonRemove> personRemovesLast = new ArrayList<>();
+		personRemovesLast.add(personRemoveNew1);
+		personRemovesLast.add(personRemoveNew2);
+		personRemovesLast.add(personRemoveNew3);
+		personRemovesLast.add(personRemoveNew4);
+		personRemovesLast.add(personRemoveNew5);
+
+		// personRemovesLast.remove(personRemovesFirst);
+
+		List<PersonRemove> personRemoves = new ArrayList<>();
+		personRemoves.addAll(personRemovesLast);
+
+		for (PersonRemove personRemove :personRemoves){
+			System.out.println(personRemove.getId());
+		}
+		System.out.println("----------");
+
+		for(PersonRemove personRemoveL :personRemovesLast ){
+			for (PersonRemove personRemoveF:personRemovesFirst){
+				if(personRemoveF.getId().equals(personRemoveL.getId())){
+					personRemoves.remove(personRemoveL);
+				}
+			}
+		}
+		for (PersonRemove personRemove :personRemoves){
+			System.out.println(personRemove.getId());
+		}
+
+	}
+
+
+	/**
+	 * 取出集合 appsAppDataLast 减去 与  appsAppDataFirst 重复的对象
+	 * @param appsAppDataLast
+	 * @param appsAppDataFirst
+	 * @return
+	 */
+//	public List<AppsAppData> getRemoveAll(List<AppsAppData> appsAppDataFirst,List<AppsAppData> appsAppDataLast){
+//
+//		List<AppsAppData> appsAppDatas = new ArrayList<>();
+//		appsAppDatas.addAll(appsAppDataLast);
+//
+//		for(AppsAppData appsAppDataL :appsAppDataLast ){
+//			for (AppsAppData appsAppDataF:appsAppDataFirst){
+//				if(appsAppDataL.getTrackId().equals(appsAppDataF.getTrackId())){
+//					appsAppDatas.remove(appsAppDataL);
+//				}
+//			}
+//		}
+//		return appsAppDatas;
+//	}
+
 }

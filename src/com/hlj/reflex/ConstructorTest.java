@@ -4,41 +4,41 @@ import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
 
-//½âÆÊÀàµÄ¹¹Ôìº¯Êý£¬´´½¨ÀàµÄ¶ÔÏó  
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½  
 public class ConstructorTest {  
     
 		
 	public static void main(String[] args) throws Exception {
-		//ÎÞ²Î¹¹ÔìÆ÷ 
+		//ï¿½Þ²Î¹ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		test1() ;
-		//ÓÐ²Î¹¹ÔìÆ÷ test2();
-		//Ë½ÓÐ¹¹ÔìÆ÷
+		//ï¿½Ð²Î¹ï¿½ï¿½ï¿½ï¿½ï¿½ test2();
+		//Ë½ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½
 		//test3();
 	}
 	
-  //·´Éä¹¹Ôìº¯Êý£ºpublic Person()   ÎÞ²Î¹¹ÔìÆ÷
+  //ï¿½ï¿½ï¿½ä¹¹ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½public PersonRemove()   ï¿½Þ²Î¹ï¿½ï¿½ï¿½ï¿½ï¿½
   public static void test1() throws Exception{  
         
       Class clazz = Class.forName("com.hlj.reflex.ConstructorPerson");  
-      Constructor c = clazz.getConstructor();   //Ò»Ñù
+      Constructor c = clazz.getConstructor();   //Ò»ï¿½ï¿½
     //  Constructor c = clazz.getConstructor(null);  
 
-      System.out.println(c);   //´òÓ¡ public com.hlj.reflex.ConstructorPerson() 
+      System.out.println(c);   //ï¿½ï¿½Ó¡ public com.hlj.reflex.ConstructorPerson() 
 
   
   }  
     
     
     
-  //·´Éä¹¹Ôìº¯Êý£ºpublic Person(String name)  
+  //ï¿½ï¿½ï¿½ä¹¹ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½public PersonRemove(String name)
   public static void test2() throws Exception{  
         
       Class clazz = Class.forName("com.hlj.reflex.ConstructorPerson");  
       Constructor c = clazz.getConstructor(String.class);  
-      System.out.println(c);   //´òÓ¡ public com.hlj.reflex.ConstructorPerson(java.lang.String)
-      ConstructorPerson person = (ConstructorPerson)c.newInstance("²âÊÔ³É¹¦");  //´òÓ¡ ÓÐ²Î String str ¹¹ÔìÆ÷ 
+      System.out.println(c);   //ï¿½ï¿½Ó¡ public com.hlj.reflex.ConstructorPerson(java.lang.String)
+      ConstructorPerson person = (ConstructorPerson)c.newInstance("ï¿½ï¿½ï¿½Ô³É¹ï¿½");  //ï¿½ï¿½Ó¡ ï¿½Ð²ï¿½ String str ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
         
-      System.out.println(person.str); //´òÓ¡ ²âÊÔ³É¹¦  
+      System.out.println(person.str); //ï¿½ï¿½Ó¡ ï¿½ï¿½ï¿½Ô³É¹ï¿½  
   }  
     
     
@@ -47,14 +47,14 @@ public class ConstructorTest {
     
     
     
-  //·´ÉäË½ÓÐµÄ¹¹Ôìº¯Êý£ºprivate Person(String  str1 ,int n )  
+  //ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ÐµÄ¹ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½private PersonRemove(String  str1 ,int n )
   public static void test3() throws Exception{  
       Class clazz = Class.forName("com.hlj.reflex.ConstructorPerson");  
       Constructor c = clazz.getDeclaredConstructor(String.class,int.class);  
         
-      c.setAccessible(true);//±©Á¦·´Éä  
+      c.setAccessible(true);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
        
-      ConstructorPerson p = (ConstructorPerson) c.newInstance("Ë½ÓÐ¹¹ÔìÆ÷",2);  
+      ConstructorPerson p = (ConstructorPerson) c.newInstance("Ë½ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½",2);  
         
       System.out.println(p.str);  
   }  
