@@ -15,6 +15,6 @@ import java.lang.annotation.ElementType;
 public @interface FieldInfo {
 	
 	
-	    String value() default ""; //如果只有这个注解，则，直接    @MethodInfo("Healerjean");
+	    String value() default ""; //?????????????????    @MethodInfo("Healerjean");
 	    
 }

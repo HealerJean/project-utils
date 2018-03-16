@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javase-3.3.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/util/QRcode/javase-3.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
