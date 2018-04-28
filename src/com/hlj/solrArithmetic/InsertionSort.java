@@ -11,19 +11,19 @@ public class InsertionSort {
 
 	 
               
-       
+
     /**
-     * 1、直接插入排序 
+     * 1、直接插入排序 ：个人理解，就是往后移动，依次把小的放到前面来
      */
     @Test
     public  void insertionSort() {
      int[] a = { 49, 38, 65, 97, 76, 13, 27, 50 };
      System.out.println("----------插入排序开始：---------");
      print(a);
-        int tmp; 
-        for (int i = 1; i < a.length; i++) {
-            for (int j = i; j > 0; j--) {
-                if (a[j] < a[j - 1]) {
+        int tmp;
+        for (int i = 1; i < a.length; i++) {//从i等于1开始表示a[1] 也即是从第二个数字开始进行比较，进行n-1趟排序
+            for (int j = i; j > 0; j--) { //将i赋值给i，也就是将当前未排序数据的位置赋值给j，进行已经有序队列中，的插入
+                if (a[j] < a[j - 1]) { //进行从小到大的排序，然后进行赋值 职业的话，就能够得到有序数组a 和未排序的数组
                     tmp = a[j - 1];
                     a[j - 1] = a[j];
                     a[j] = tmp;
@@ -32,12 +32,14 @@ public class InsertionSort {
             System.out.printf("第"+i+"趟排序结果,");
             print(a);
         }
-        
+
         System.out.print("最终插入排序结果： ");
         print(a);
         System.out.println("--------------------");
     }
-    
+
+
+
     
     /**
      	2、希尔排序.最小缩量排序  比如 8/8 个数字 4 2 1
@@ -109,28 +111,24 @@ public class InsertionSort {
      * */ 
     @Test
     public void bubbleSort1() {  
-        int arr[] = { 49, 38, 65,  76, 13, 27, 50 ,97};
-        int  n = arr.length;
-        int i = 0;  
-        int j = 0;  
-        int tmp = 0;  
-        int flag = 0;   
-        for (i = 0; i < n; ++i) {  
-            flag = 0;  
-            for (j = 0; j < n - 1 - i; ++j) {  
-                if (arr[j] > arr[j + 1]) {  
-                    flag = 1;  
-                    tmp = arr[j];  
-                    arr[j] = arr[j + 1];  
-                    arr[j + 1] = tmp;  
+        int a[] = { 49, 38, 65,  76, 13, 27, 50 ,97};
+
+        for (int i = 0; i <  a.length-1; ++i) {
+            int  flag = 0;
+            for ( int j = 0; j <  a.length - 1 - i; ++j) {
+                if (a[j] > a[j + 1]) {
+                    flag = 1;
+                    int tmp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = tmp;
                 }  
             }  
-            if (flag == 0) {  
+            if (flag == 0) { //当一趟比较没有发送交换的时间表示一件有序
                 break;  
             }  
         } 
         
-        print(arr);
+        print(a);
 
     }  
       
@@ -139,30 +137,7 @@ public class InsertionSort {
      * 用一个变量记录下最后一个发生交换的位置，后面没有发生交换的已经有序 
      * 所以可以用这个值来作为下一次比较结束的位置 
      * */  
-    @Test
-    public void bubbleSort2() {  
-        int arr[] = { 49, 38, 65, 97, 76, 13, 27, 50 };
-        int  n = arr.length;
-        int i = 0;  
-        int j = 0;  
-        int k = 0;  
-        int tmp = 0;  
-        int flag = n;   
-        for (i = 0; i < flag-1; ++i) {  
-            k = flag;   
-            flag = 0;  
-            for (j = 0; j < k-i; ++j) {  
-                if (arr[j] > arr[j + 1]) {  
-                    flag = j;  
-                    tmp = arr[j];  
-                    arr[j] = arr[j + 1];  
-                    arr[j + 1] = tmp;  
-                }  
-            }  
-        }     
-        print(arr);
 
-    }   
     
     
     

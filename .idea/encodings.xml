@@ -7,5 +7,8 @@
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/javase-3.3.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/dg/Dg.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/path/ClassLoader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/thread" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/ArrayListMultiThread.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/CountDownLatchDemo.java" charset="UTF-8" />
   </component>
 </project>
