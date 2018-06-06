@@ -19,7 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="module-library">
       <library name="dom4j-1.6.1.jar">
         <CLASSES>
@@ -92,15 +92,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="freemarker-2.3.16" level="project" />
-    <orderEntry type="library" name="commons-codec-1.4" level="project" />
-    <orderEntry type="library" name="dom4j-1.6.1" level="project" />
-    <orderEntry type="library" name="ibatis-sqlmap-3.0-beta-10" level="project" />
-    <orderEntry type="library" name="commons-net-3.6" level="project" />
-    <orderEntry type="library" name="cglib-3.2.5" level="project" />
-    <orderEntry type="library" name="core-3.3.2" level="project" />
-    <orderEntry type="library" name="javase-3.3.2" level="project" />
-    <orderEntry type="library" name="hamcrest-all-1.3" level="project" />
   </component>
 </module>
