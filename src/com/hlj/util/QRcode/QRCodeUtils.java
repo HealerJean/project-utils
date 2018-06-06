@@ -252,9 +252,9 @@ public class QRCodeUtils {
      */
     @Test
     public void testWriteQRImgWithLogo() throws Exception{
-        String logoPath = "/Users/healerjean/Desktop/study/HealerJean123.github.io/assets/img/logo.png";
+        String logoPath = "/Users/healerjean/Desktop/duodianyouhuilogo.png";
         String outPath = "/Users/healerjean/Desktop";
-        QRCodeUtils.writeQRImg("http://blog.healerjean.top", outPath,logoPath);
+        QRCodeUtils.writeQRImg("http://test.dangqugame.cn/duodian/youhui/redirectTaoKouLing?taokouling=гд3hxo0EfH68Xгд", outPath,logoPath);
     }
 
     /**

@@ -42,7 +42,7 @@ public class ArraylistTest {
     }
     
     /**
-     * 1、测试remove方法 remove(object 或者是 index)
+     * 1、测试remove方法 remove(object 或者是 index(int))
      */
 	@Test
 	public  void RemoveMethod() {
@@ -260,30 +260,39 @@ public class ArraylistTest {
 	}
 	
 	/**
-	 8、list set方法根据索引插入数据
+	 8、list set方法根据索引插入并且替换数据
 	 */
 	
 	@Test
 	public void setInsert(){
-		
-	    List<String> list  =   new  ArrayList<String>(); 
-	      list.add("aaa");
-	      list.add("bbb");
-	      list.add("aaa");
-	      list.add("aba");
-	      list.add("aaa");
+		String a="A",b="B",c="C",d="D",e="E";
+		List<String>list=new ArrayList<>();
+		list.add(a);
+		list.add(e);
+		list.add(d);
+		Iterator<String>first=list.iterator();
+		System.out.printf("修改前集合中的元素是：");
+		while(first.hasNext()){
+			System.out.print(first.next()+"    ");
+		}
 
-	     System.out.println("list.set 插入前"); 
-	     for (String str : list) {
-			System.out.println(str); 
-		 }
-	     
-	     
-	      list.set(1, "123");
-		  System.out.println("list.set 插入123后"); 
-	      for (String str : list) {
-			System.out.println(str); 
-		 }
+		System.out.println();
+	    String temp=	list.set(1, b); //直接替换了上面的索引为1的元素2,并将原来位置上的数据返回
+		System.out.println(temp); //E
+		System.out.printf("set修改集合后的元素是：");
+		Iterator second=list.iterator();
+		while(second.hasNext()){
+			System.out.print(second.next()+"    ");
+		}
+
+
+		System.out.println();
+		list.add(2,c);//在索引为2的位置插入了元素c，然后向后移动一位
+		Iterator second2=list.iterator();
+		System.out.printf("修改集合后的元素是：");
+		while(second2.hasNext()){
+			System.out.print(second2.next()+"    ");
+		}
 
 	}
 	

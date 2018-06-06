@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b2e4b52-ebd0-4352-9faa-d69102299e49" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hlj/HashCode/MapMain.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hlj/HashCode/Person.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hlj/thread/AtomicLong/OriginMain.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hlj/Arraylist/ListForEach.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hlj/util/QRcode/ManyImage.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/solrArithmetic/InsertionSort.class" afterPath="$PROJECT_DIR$/bin/com/hlj/solrArithmetic/InsertionSort.class" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/util/QRcode/WaterMarkUtils.class" afterPath="$PROJECT_DIR$/bin/com/hlj/util/QRcode/WaterMarkUtils.class" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/solrArithmetic/InsertionSort.java" afterPath="$PROJECT_DIR$/src/com/hlj/solrArithmetic/InsertionSort.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/ArrayListMultiThread.java" afterPath="$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/ArrayListMultiThread.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/CountDownLatchDemo.java" afterPath="$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/CountDownLatchDemo.java" />
+      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Arraylist/ArraylistTest.class" afterPath="$PROJECT_DIR$/bin/com/hlj/Arraylist/ArraylistTest.class" />
+      <change beforePath="$PROJECT_DIR$/bin/com/hlj/util/QRcode/QRCodeUtils.class" afterPath="$PROJECT_DIR$/bin/com/hlj/util/QRcode/QRCodeUtils.class" />
+      <change beforePath="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" afterPath="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/hlj/util/QRcode/QRCodeUtils.java" afterPath="$PROJECT_DIR$/src/com/hlj/util/QRcode/QRCodeUtils.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +36,54 @@
     <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="ChartGraphics.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="365" column="0" lean-forward="true" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#450#482#0" expanded="true" />
+                <element signature="e#5445#5453#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Font.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/awt/Font.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5368">
+              <caret line="311" column="28" lean-forward="false" selection-start-line="311" selection-start-column="28" selection-end-line="311" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QRCodeUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/QRCodeUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5148">
+              <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManyImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ManyImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1430">
+              <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +96,20 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>short</find>
+      <find>Array</find>
+      <find>Iterator</find>
+      <find>modCountmodCount</find>
+      <find>mod</find>
+      <find>Itr</find>
+      <find>ite</find>
+      <find>expectedModCount</find>
+      <find>modCount</find>
+      <find>remove</find>
+      <find>removeremove</find>
+      <find>二维码</find>
+      <find>tip_2_top</find>
+      <find>imageQR</find>
+      <find>qhjPriceFont</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,16 +130,20 @@
         <option value="$PROJECT_DIR$/src/com/hlj/string/StringTest.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/Arraylist/AppsAppData.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/Arraylist/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
         <option value="$PROJECT_DIR$/lib/util/QRcode/pom.fxml" />
         <option value="$PROJECT_DIR$/lib/util/QRcode/pom.xml" />
-        <option value="$PROJECT_DIR$/src/com/hlj/util/QRcode/QRCodeUtils.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/util/QRcode/WaterMarkUtils.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/thread/AtomicLong/OriginMain.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/HashCode/Person.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/HashCode/MapMain.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/solrArithmetic/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/forTest/ForTest.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/Arraylist/ListForEach.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/util/QRcode/QRCodeUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/util/QRcode/ManyImage.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java" />
       </list>
     </option>
   </component>
@@ -138,6 +201,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,26 +226,21 @@
               <item name="CompanyOffer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hlj" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CompanyOffer" type="b2602c69:ProjectViewProjectNode" />
               <item name="CompanyOffer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hlj" type="462c0819:PsiDirectoryNode" />
-              <item name="yc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompanyOffer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="QRcode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -211,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InsertionSort.bubbleSort1">
+  <component name="RunManager" selected="Application.ChartGraphics">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -219,14 +279,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="MapMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ChartGraphics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.hlj.HashCode.*" />
+          <option name="PATTERN" value="com.hlj.util.QRcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.hlj.HashCode.MapMain" />
+      <option name="MAIN_CLASS_NAME" value="com.hlj.util.QRcode.ChartGraphics" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -238,14 +298,33 @@
       <module name="CompanyOffer" />
       <envs />
     </configuration>
-    <configuration name="OriginMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ListForEach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.hlj.thread.AtomicLong.*" />
+          <option name="PATTERN" value="com.hlj.Arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.hlj.thread.AtomicLong.OriginMain" />
+      <option name="MAIN_CLASS_NAME" value="com.hlj.Arraylist.ListForEach" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CompanyOffer" />
+      <envs />
+    </configuration>
+    <configuration name="ManyImage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hlj.util.QRcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hlj.util.QRcode.ManyImage" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -271,19 +350,19 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="InsertionSort.bubbleSort1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListForEach.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.hlj.solrArithmetic.*" />
+          <option name="PATTERN" value="com.hlj.Arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="CompanyOffer" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hlj.solrArithmetic" />
-      <option name="MAIN_CLASS_NAME" value="com.hlj.solrArithmetic.InsertionSort" />
-      <option name="METHOD_NAME" value="bubbleSort1" />
+      <option name="PACKAGE_NAME" value="com.hlj.Arraylist" />
+      <option name="MAIN_CLASS_NAME" value="com.hlj.Arraylist.ListForEach" />
+      <option name="METHOD_NAME" value="remove" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -296,44 +375,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="InsertionSort.bubbleSort2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QRCodeUtils.testWriteQRImgWithLogo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.hlj.solrArithmetic.*" />
+          <option name="PATTERN" value="com.hlj.util.QRcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="CompanyOffer" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hlj.solrArithmetic" />
-      <option name="MAIN_CLASS_NAME" value="com.hlj.solrArithmetic.InsertionSort" />
-      <option name="METHOD_NAME" value="bubbleSort2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="InsertionSort.insertionSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hlj.solrArithmetic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CompanyOffer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hlj.solrArithmetic" />
-      <option name="MAIN_CLASS_NAME" value="com.hlj.solrArithmetic.InsertionSort" />
-      <option name="METHOD_NAME" value="insertionSort" />
+      <option name="PACKAGE_NAME" value="com.hlj.util.QRcode" />
+      <option name="MAIN_CLASS_NAME" value="com.hlj.util.QRcode.QRCodeUtils" />
+      <option name="METHOD_NAME" value="testWriteQRImgWithLogo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -407,19 +461,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.OriginMain" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MapMain" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.InsertionSort.insertionSort" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.InsertionSort.bubbleSort2" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.InsertionSort.bubbleSort1" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ListForEach" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ListForEach.remove" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.QRCodeUtils.testWriteQRImgWithLogo" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ManyImage" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ChartGraphics" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.InsertionSort.bubbleSort1" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.InsertionSort.bubbleSort2" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.InsertionSort.insertionSort" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MapMain" />
-        <item index="4" class="java.lang.String" itemvalue="Application.OriginMain" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ChartGraphics" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ManyImage" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.QRCodeUtils.testWriteQRImgWithLogo" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ListForEach.remove" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ListForEach" />
       </list>
     </recent_temporary>
   </component>
@@ -447,46 +501,53 @@
       <workItem from="1523504740100" duration="2563000" />
       <workItem from="1524466312976" duration="9561000" />
       <workItem from="1524899633507" duration="198000" />
+      <workItem from="1525744192388" duration="8634000" />
+      <workItem from="1526005770017" duration="2105000" />
+      <workItem from="1527759985285" duration="12770000" />
+      <workItem from="1528106255050" duration="2083000" />
+      <workItem from="1528108389646" duration="2291000" />
+      <workItem from="1528165160783" duration="2620000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InsertionSort_bubbleSort1 - 2018.04.24 at 14h 24m 15s.xml">
-      <configuration name="InsertionSort.bubbleSort1" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_setInsert - 2018.05.08 at 10h 26m 32s.xml">
+      <configuration name="ArraylistTest.setInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSort_bubbleSort1 - 2018.04.24 at 14h 24m 31s.xml">
-      <configuration name="InsertionSort.bubbleSort1" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_setInsert - 2018.05.08 at 10h 30m 18s.xml">
+      <configuration name="ArraylistTest.setInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSort_bubbleSort1 - 2018.04.24 at 14h 26m 11s.xml">
-      <configuration name="InsertionSort.bubbleSort1" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_setInsert - 2018.05.08 at 10h 31m 20s.xml">
+      <configuration name="ArraylistTest.setInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSort_bubbleSort2 - 2018.04.24 at 14h 23m 45s.xml">
-      <configuration name="InsertionSort.bubbleSort2" configurationId="JUnit" />
+    <history-entry file="ListForEach_remove - 2018.05.08 at 12h 13m 46s.xml">
+      <configuration name="ListForEach.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSort_insertionSort - 2018.04.23 at 14h 54m 59s.xml">
-      <configuration name="InsertionSort.insertionSort" configurationId="JUnit" />
+    <history-entry file="ListForEach_remove - 2018.05.08 at 12h 14m 50s.xml">
+      <configuration name="ListForEach.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WaterMarkUtils_testWarterCode - 2018.03.14 at 11h 23m 41s.xml">
-      <configuration name="WaterMarkUtils.testWarterCode" configurationId="JUnit" />
+    <history-entry file="ListForEach_remove - 2018.05.08 at 12h 15m 24s.xml">
+      <configuration name="ListForEach.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WaterMarkUtils_testWarterCode - 2018.03.14 at 11h 24m 10s.xml">
-      <configuration name="WaterMarkUtils.testWarterCode" configurationId="JUnit" />
+    <history-entry file="ListForEach_remove - 2018.05.08 at 12h 16m 24s.xml">
+      <configuration name="ListForEach.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WaterMarkUtils_testWarterCode - 2018.03.14 at 11h 25m 03s.xml">
-      <configuration name="WaterMarkUtils.testWarterCode" configurationId="JUnit" />
+    <history-entry file="QRCodeUtils_testWriteQRImgWithLogo - 2018.05.31 at 17h 47m 42s.xml">
+      <configuration name="QRCodeUtils.testWriteQRImgWithLogo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WaterMarkUtils_testWarterCode - 2018.03.14 at 11h 25m 35s.xml">
-      <configuration name="WaterMarkUtils.testWarterCode" configurationId="JUnit" />
+    <history-entry file="QRCodeUtils_testWriteQRImgWithLogo - 2018.05.31 at 17h 48m 53s.xml">
+      <configuration name="QRCodeUtils.testWriteQRImgWithLogo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WaterMarkUtils_testWarterCode - 2018.03.14 at 11h 26m 40s.xml">
-      <configuration name="WaterMarkUtils.testWarterCode" configurationId="JUnit" />
+    <history-entry file="QRCodeUtils_testWriteQRImgWithLogo - 2018.05.31 at 17h 56m 34s.xml">
+      <configuration name="QRCodeUtils.testWriteQRImgWithLogo" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27157000" />
+    <option name="totallyTimeSpent" value="57660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-200" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -495,12 +556,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23928945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mybatis datasource" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2012848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21983914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -508,8 +570,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39916405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39916405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -533,112 +595,24 @@
           <line>7</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java</url>
+          <line>357</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/contineAndBreak/While.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/contineAndBreak/Continue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/AppsAppData.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/SortEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/PersonRemove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/arithmetic/killperson/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="250" column="24" lean-forward="false" selection-start-line="250" selection-start-column="24" selection-end-line="250" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/annotation/field/FieldInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/annotation/field/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/arithmetic/Array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/arithmetic/TrueOrFalse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/annotation/field/FieldEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/clone/CloneMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/clone/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/clone/StudentLow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/Closure/Milk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -738,26 +712,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/util/QRcode/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/QRCodeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5060">
-          <caret line="254" column="27" lean-forward="false" selection-start-line="254" selection-start-column="27" selection-end-line="254" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/WaterMarkUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5126">
-          <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+        <state relative-caret-position="506">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -838,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/HashCode/HashTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/solrArithmetic/1、直接插入排序.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -854,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="132" column="7" lean-forward="false" selection-start-line="105" selection-start-column="4" selection-end-line="132" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +842,142 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/forTest/ForTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/HashCode/HashTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/generics/ThreeMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/generics/ThreeGenericsNoUse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/generics/FourMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/generics/OneMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="160" column="37" lean-forward="false" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="200" column="28" lean-forward="false" selection-start-line="200" selection-start-column="28" selection-end-line="200" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/PersonRemove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/SortEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1892">
+          <caret line="111" column="7" lean-forward="false" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11396">
+          <caret line="556" column="25" lean-forward="false" selection-start-line="556" selection-start-column="25" selection-end-line="556" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ListForEach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/WaterMarkUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="365" column="0" lean-forward="true" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#482#0" expanded="true" />
+            <element signature="e#5445#5453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/awt/Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5368">
+          <caret line="311" column="28" lean-forward="false" selection-start-line="311" selection-start-column="28" selection-end-line="311" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/QRCodeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5148">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ManyImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1430">
+          <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
