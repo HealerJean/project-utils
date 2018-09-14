@@ -407,4 +407,44 @@ public class ArraylistTest {
 //		return appsAppDatas;
 //	}
 
+
+	/**
+	 * @Desc:  list ÄæĞò ½µĞò ÔöĞò
+	 * @Date:  2018/8/9 ÉÏÎç11:43.
+	 */
+
+	@Test
+	public void CollectionsReverse(){
+
+		List<Long> ids  = new ArrayList<>();
+		ids.add(1L);
+		ids.add(3L);
+		ids.add(4l);
+		ids.add(8L);
+		ids.add(5L);
+		ids.add(10L);
+		ids.add(10L);
+		ids.add(19L);
+		ids.add(18L);
+		ids.add(14L);
+		ids.add(12L);
+
+
+
+		//ÄæĞò  [12, 14, 18, 19, 10, 10, 5, 8, 4, 3, 1]
+		Collections.reverse(ids);
+		System.out.println("ÄæĞò   "+ids);
+
+		//Ä¬ÈÏÉıĞò [1, 3, 4, 5, 8, 10, 10, 12, 14, 18, 19]
+		Collections.sort(ids);
+		System.out.println("Ä¬ÈÏÉıĞò"+ids);
+
+		//½µĞòCollections.reverseOrder() [19, 18, 14, 12, 10, 10, 8, 5, 4, 3, 1]
+		Collections.sort(ids, Collections.reverseOrder());
+		System.out.println("½µĞò   "+ids);
+
+	}
+
+
+
 }

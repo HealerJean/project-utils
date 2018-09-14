@@ -43,7 +43,6 @@ public class CreateXmlByVmFile
 		}
 	/**
 	 * 
-	 * @param filePath 模板的路径
 	 * @param TemplateName 模板的名字
 	 * @param dataMap 数据源
 	 * @return

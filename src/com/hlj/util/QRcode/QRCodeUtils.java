@@ -29,10 +29,10 @@ import org.junit.Test;
 public class QRCodeUtils {
 
     // 二维码宽度
-    private static Integer WIDTH_PIX = 300;
+    private static Integer WIDTH_PIX = 109;
 
     // 二维码高度
-    private static Integer HEIGHT_PIX = 300;
+    private static Integer HEIGHT_PIX = 109;
 
     // 生成文件类型
     private static String TYPE = "png";
@@ -179,6 +179,43 @@ public class QRCodeUtils {
         return outPutImage;
     }
 
+
+    public static BufferedImage writeQRImg(String text) throws Exception {
+        // 配置参数
+        Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
+        // 字符编码
+        hints.put(EncodeHintType.CHARACTER_SET, CHAR_TYPE);
+
+        // 容错级别
+        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+
+        // 设置空白边距的宽度
+        hints.put(EncodeHintType.MARGIN, 1); // 默认是4
+
+        // 1、生成二维码
+        BitMatrix bitMatrix = new MultiFormatWriter().encode(text, BarcodeFormat.QR_CODE, WIDTH_PIX, HEIGHT_PIX, hints);
+
+        // 2、获取二维码宽高
+        int codeWidth = bitMatrix.getWidth();
+        int codeHeight = bitMatrix.getHeight();
+
+        // 3、将二维码放入缓冲流
+        BufferedImage image = new BufferedImage(codeWidth, codeHeight, BufferedImage.TYPE_INT_RGB);
+
+        for (int i = 0; i < codeWidth; i++) {
+            for (int j = 0; j < codeHeight; j++) {
+                // 4、循环将二维码内容定入图片
+                //判断 BitMatrix 是否存在像素
+                image.setRGB(i, j, bitMatrix.get(i, j) ? COLOR_BLACK : COLOR_WHITE);
+            }
+        }
+
+        return image;
+    }
+
+
+
+
     /**
      * 获取二维码图片
      *
@@ -252,7 +289,7 @@ public class QRCodeUtils {
      */
     @Test
     public void testWriteQRImgWithLogo() throws Exception{
-        String logoPath = "/Users/healerjean/Desktop/duodianyouhuilogo.png";
+        String logoPath = "/Users/healerjean/Desktop/images/duodianyouhuilogo.png";
         String outPath = "/Users/healerjean/Desktop";
         QRCodeUtils.writeQRImg("http://test.dangqugame.cn/duodian/youhui/redirectTaoKouLing?taokouling=￥3hxo0EfH68X￥", outPath,logoPath);
     }

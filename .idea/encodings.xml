@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="GBK" />
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/core-3.3.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/hamcrest-all-1.3.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/javase-3.3.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/dg/Dg.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Interface/Demo01.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Interface/Demo03InterfaceDefaultPack" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo0.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo01Lambda.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo01LambdaPack/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo02CallbackValue.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo03MethodRef.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo04ObjectRef.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo06Delay.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo07AsParams.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo08AsCallbackValue.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo09Cousumer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo10Supplier.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo11Predicate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo12Function.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo01Filter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo04Limit.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo05Skip.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo06Map.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo06MapPack/Student.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo08ForEach.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo09Method.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo10Element.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo11Concurrence.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo12Collect.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo13Array.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectors.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectorsPack/Student.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/path/ClassLoader.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/ArrayListMultiThread.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/CountDownLatchDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/utils" charset="UTF-8" />
   </component>
 </project>
