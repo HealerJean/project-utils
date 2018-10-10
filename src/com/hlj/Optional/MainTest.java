@@ -175,8 +175,12 @@ public class MainTest {
 
         //另一个例子是Optional值不满足filter指定的条件。
         Optional<String> anotherName = Optional.of("Sana");
-        Optional<String> shortName = anotherName.filter((value) -> value.length() > 6);
+        Optional<String> shortName = anotherName.filter(value -> value.length() > 6);
         //输出：name长度不足6字符
         System.out.println(shortName.orElse("The name is less than 6 characters"));
     }
+
+
+
+
 }

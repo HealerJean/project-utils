@@ -2,7 +2,6 @@ package com.hlj.java8.Stream;
 
 import com.hlj.java8.Stream.Demo10ElementPack.Person;
 import org.junit.Test;
-import sun.security.acl.PermissionImpl;
 
 import java.util.ArrayList;
 import java.util.List;

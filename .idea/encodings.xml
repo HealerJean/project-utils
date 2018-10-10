@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/core-3.3.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/hamcrest-all-1.3.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/javase-3.3.2.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/clone/CloneMain.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/dg/Dg.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Interface/Demo01.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Interface/Demo03InterfaceDefaultPack" charset="UTF-8" />
@@ -33,6 +34,7 @@
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo11Concurrence.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo12Collect.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo13Array.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo16FindAny.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectors.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectorsPack/Student.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/path/ClassLoader.java" charset="GBK" />
@@ -40,6 +42,5 @@
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/ArrayListMultiThread.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/CountDownLatchDemo.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ChartGraphics.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/hlj/utils" charset="UTF-8" />
   </component>
 </project>

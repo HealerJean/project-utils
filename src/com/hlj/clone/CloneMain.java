@@ -4,17 +4,17 @@ import org.junit.Test;
 
 /** 
  * @author : HealerJean
- * @date   £º 2017Äê12ÔÂ28ÈÕ ÏÂÎç3:36:56 
+ * @date   ï¼š 2017å¹´12æœˆ28æ—¥ ä¸‹åˆ3:36:56 
  * @Description:
  */
 public class CloneMain {
 	
 	/**
-	 1¡¢ = ¸´ÖÆ
-	 	Àí½â£º»ù±¾Êı¾İÀàĞÍ£¬Ëü¸´ÖÆÖ®ºó£¬²»»á¸Ä±ä£¬
-	 	Èç¹ûÊÇ ¶ÔÏó£¬²»¹ÜÓĞÃ»ÓĞnew£¬ĞÂÉú³ÉµÄ¸Ä±ä£¬¾ÉµÄ×ÔÈ»»á¸Ä±ä¡£ 
-	 	Ô­Òò³öÔÚ(stu2 = stu1) ÕâÒ»¾ä¡£¸ÃÓï¾äµÄ×÷ÓÃÊÇ½«stu1µÄÒıÓÃ¸³Öµ¸østu2£¬
-		ÕâÑù£¬stu1ºÍstu2Ö¸ÏòÄÚ´æ¶ÑÖĞÍ¬Ò»¸ö¶ÔÏó
+	 1ã€ = å¤åˆ¶
+	 	ç†è§£ï¼šåŸºæœ¬æ•°æ®ç±»å‹ï¼Œå®ƒå¤åˆ¶ä¹‹åï¼Œä¸ä¼šæ”¹å˜ï¼Œ
+	 	å¦‚æœæ˜¯ å¯¹è±¡ï¼Œä¸ç®¡æœ‰æ²¡æœ‰newï¼Œæ–°ç”Ÿæˆçš„æ”¹å˜ï¼Œæ—§çš„è‡ªç„¶ä¼šæ”¹å˜ã€‚ 
+	 	åŸå› å‡ºåœ¨(stu2 = stu1) è¿™ä¸€å¥ã€‚è¯¥è¯­å¥çš„ä½œç”¨æ˜¯å°†stu1çš„å¼•ç”¨èµ‹å€¼ç»™stu2ï¼Œ
+		è¿™æ ·ï¼Œstu1å’Œstu2æŒ‡å‘å†…å­˜å †ä¸­åŒä¸€ä¸ªå¯¹è±¡
 
 	 */
 	@Test
@@ -28,47 +28,47 @@ public class CloneMain {
 		Person personOne = new Person();
 		personOne.setId(123L);
 		
-		//Ô­Òò³öÔÚ(personTwo = personOne) ÕâÒ»¾ä¡£¸ÃÓï¾äµÄ×÷ÓÃÊÇ½«personOneµÄÒıÓÃ¸³Öµ¸øpersonTwo£¬
-		//ÕâÑù£¬personOneºÍpersonTwoÖ¸ÏòÄÚ´æ¶ÑÖĞÍ¬Ò»¸ö¶ÔÏó¡£ÈçÍ¼£º
+		//åŸå› å‡ºåœ¨(personTwo = personOne) è¿™ä¸€å¥ã€‚è¯¥è¯­å¥çš„ä½œç”¨æ˜¯å°†personOneçš„å¼•ç”¨èµ‹å€¼ç»™personTwoï¼Œ
+		//è¿™æ ·ï¼ŒpersonOneå’ŒpersonTwoæŒ‡å‘å†…å­˜å †ä¸­åŒä¸€ä¸ªå¯¹è±¡ã€‚å¦‚å›¾ï¼š
 		Person personTwo = personOne;
 		
 		
 		System.out.println(personTwo.hashCode());
 		personTwo.setId(234l);;
 		personTwo.setName("HealerJean"); 
-		System.out.println("personTwo:"+personTwo.getId()+"¡¢Name:"+personTwo.getName()); //234
-		System.out.println("personOne:"+personOne.getId()+"¡¢Name:"+personOne.getName());  //234
+		System.out.println("personTwo:"+personTwo.getId()+"ã€Name:"+personTwo.getName()); //234
+		System.out.println("personOne:"+personOne.getId()+"ã€Name:"+personOne.getName());  //234
 		
 		System.out.println();
 		Person personThree = new Person();
 		personThree = personOne;
 		personThree.setId(456L);
-		System.out.println("personThree:"+personThree.getId()+"¡¢Name:"+personThree.getName());  //456
-		System.out.println("personOne:"+personOne.getId()+"¡¢Name:"+personOne.getName());  //456
+		System.out.println("personThree:"+personThree.getId()+"ã€Name:"+personThree.getName());  //456
+		System.out.println("personOne:"+personOne.getId()+"ã€Name:"+personOne.getName());  //456
 
 		/**
 		a=2b=4
-		personTwo:234¡¢Name:HealerJean
-		personOne:234¡¢Name:HealerJean
+		personTwo:234ã€Name:HealerJean
+		personOne:234ã€Name:HealerJean
 		
-		personThree:456¡¢Name:HealerJean
-		personOne:456¡¢Name:HealerJean
+		personThree:456ã€Name:HealerJean
+		personOne:456ã€Name:HealerJean
 
 		 */
 	
 	}
 	
 	/**
-	2¡¢Ç³¸´ÖÆ
-		1¡¢ÏÈ¹Û²ìObjectÖĞµÄclone·½·¨£¬ÀïÃæµÄ·½·¨ÊÇProtected £¬ÎªÁËÎÒÃÇµÄÀà¿ÉÒÔÓÃ£¬ĞèÒªÖØĞ´Õâ¸öclone·½·¨
+	2ã€æµ…å¤åˆ¶
+		1ã€å…ˆè§‚å¯ŸObjectä¸­çš„cloneæ–¹æ³•ï¼Œé‡Œé¢çš„æ–¹æ³•æ˜¯Protected ï¼Œä¸ºäº†æˆ‘ä»¬çš„ç±»å¯ä»¥ç”¨ï¼Œéœ€è¦é‡å†™è¿™ä¸ªcloneæ–¹æ³•
     	protected native Object clone() throws CloneNotSupportedException;
-		2¡¢±»¸´ÖÆµÄÀà£¬±ØĞëÊµÏÖCloneable½Ó¿Ú£¬²»ÊµÏÖµÄ»°ÔÚµ÷ÓÃclone·½·¨»áÅ×³öCloneNotSupportedExceptionÒì³£) 
-		¸Ã½Ó¿ÚÎª±ê¼Ç½Ó¿Ú(²»º¬ÈÎºÎ·½·¨)
+		2ã€è¢«å¤åˆ¶çš„ç±»ï¼Œå¿…é¡»å®ç°Cloneableæ¥å£ï¼Œä¸å®ç°çš„è¯åœ¨è°ƒç”¨cloneæ–¹æ³•ä¼šæŠ›å‡ºCloneNotSupportedExceptionå¼‚å¸¸) 
+		è¯¥æ¥å£ä¸ºæ ‡è®°æ¥å£(ä¸å«ä»»ä½•æ–¹æ³•)
 	
-		½á¹û£ºÕâÁ½¸ö²»ÊÇÍ¬Ò»¸ö¶ÔÏó
+		ç»“æœï¼šè¿™ä¸¤ä¸ªä¸æ˜¯åŒä¸€ä¸ªå¯¹è±¡
 		
-		£º ±»¸´ÖÆ¶ÔÏóµÄËùÓĞ±äÁ¿¶¼º¬ÓĞÓëÔ­À´µÄ¶ÔÏóÏàÍ¬µÄÖµ£¬¶øËùÓĞµÄ¶ÔÆäËû¶ÔÏóµÄÒıÓÃÈÔÈ»Ö¸ÏòÔ­À´µÄ¶ÔÏó¡£
-		 »»ÑÔÖ®£¬Ç³¸´ÖÆ½ö½ö¸´ÖÆËù¿¼ÂÇµÄ¶ÔÏó£¬¶ø²»¸´ÖÆËüËùÒıÓÃµÄ¶ÔÏó¡£
+		ï¼š è¢«å¤åˆ¶å¯¹è±¡çš„æ‰€æœ‰å˜é‡éƒ½å«æœ‰ä¸åŸæ¥çš„å¯¹è±¡ç›¸åŒçš„å€¼ï¼Œè€Œæ‰€æœ‰çš„å¯¹å…¶ä»–å¯¹è±¡çš„å¼•ç”¨ä»ç„¶æŒ‡å‘åŸæ¥çš„å¯¹è±¡ã€‚
+		 æ¢è¨€ä¹‹ï¼Œæµ…å¤åˆ¶ä»…ä»…å¤åˆ¶æ‰€è€ƒè™‘çš„å¯¹è±¡ï¼Œè€Œä¸å¤åˆ¶å®ƒæ‰€å¼•ç”¨çš„å¯¹è±¡ã€‚
 	 */
 	@Test
 	public void lowCopy(){
@@ -76,81 +76,81 @@ public class CloneMain {
         stu1.setNumber(12345); 
         StudentLow stu2 = (StudentLow)stu1.clone(); 
          
-        System.out.println("Ñ§Éú1:" + stu1.getNumber()); 
-        System.out.println("Ñ§Éú2:" + stu2.getNumber()); 
+        System.out.println("å­¦ç”Ÿ1:" + stu1.getNumber()); 
+        System.out.println("å­¦ç”Ÿ2:" + stu2.getNumber()); 
          
-        stu2.setNumber(54321);  //Õâ¸öÊÇ¸´ÖÆ¹ıÀ´µÄ£¬Ñ§Éú2¸Ä±äÁË£¬Ñ§Éú1ÊÇ²»»á±äµÃ
+        stu2.setNumber(54321);  //è¿™ä¸ªæ˜¯å¤åˆ¶è¿‡æ¥çš„ï¼Œå­¦ç”Ÿ2æ”¹å˜äº†ï¼Œå­¦ç”Ÿ1æ˜¯ä¸ä¼šå˜å¾—
      
-        System.out.println("Ñ§Éú1:" + stu1.getNumber()); 
-        System.out.println("Ñ§Éú2:" + stu2.getNumber()); 
+        System.out.println("å­¦ç”Ÿ1:" + stu1.getNumber()); 
+        System.out.println("å­¦ç”Ÿ2:" + stu2.getNumber()); 
         
-        System.out.println(("Ñ§Éú1ºÍÑ§Éú2ÊÇÍ¬Ò»¸ö¶ÔÏóÂğ"+(stu1==stu2)));
+        System.out.println(("å­¦ç”Ÿ1å’Œå­¦ç”Ÿ2æ˜¯åŒä¸€ä¸ªå¯¹è±¡å—"+(stu1==stu2)));
         
 	}
 	
 	/**
 	 * 
-	3¡¢Ç³¸´ÖÆÖĞ¼ÓÈë¶ÔÏó£¬²âÊÔ¹Û²ìÒı³öÉî¸´ÖÆ
+	3ã€æµ…å¤åˆ¶ä¸­åŠ å…¥å¯¹è±¡ï¼Œæµ‹è¯•è§‚å¯Ÿå¼•å‡ºæ·±å¤åˆ¶
 
-	Ç³¸´ÖÆÖ»ÊÇ¸´ÖÆÁËaddr±äÁ¿µÄÒıÓÃ£¬²¢Ã»ÓĞÕæÕıµÄ¿ª±ÙÁíÒ»¿é¿Õ¼ä£¬½«Öµ¸´ÖÆºóÔÙ½«ÒıÓÃ·µ»Ø¸øĞÂ¶ÔÏó¡£
-	ËùÒÔ£¬ÎªÁË´ïµ½ÕæÕıµÄ¸´ÖÆ¶ÔÏó£¬¶ø²»ÊÇ´¿´âÒıÓÃ¸´ÖÆ¡£
-	ÎÒÃÇĞèÒª½«AddressÀà¿É¸´ÖÆ»¯£¬²¢ÇÒĞŞ¸ÄSudentÖĞµÄclone·½·¨ ¾ßÌå¹Û²ì4
+	æµ…å¤åˆ¶åªæ˜¯å¤åˆ¶äº†addrå˜é‡çš„å¼•ç”¨ï¼Œå¹¶æ²¡æœ‰çœŸæ­£çš„å¼€è¾Ÿå¦ä¸€å—ç©ºé—´ï¼Œå°†å€¼å¤åˆ¶åå†å°†å¼•ç”¨è¿”å›ç»™æ–°å¯¹è±¡ã€‚
+	æ‰€ä»¥ï¼Œä¸ºäº†è¾¾åˆ°çœŸæ­£çš„å¤åˆ¶å¯¹è±¡ï¼Œè€Œä¸æ˜¯çº¯ç²¹å¼•ç”¨å¤åˆ¶ã€‚
+	æˆ‘ä»¬éœ€è¦å°†Addressç±»å¯å¤åˆ¶åŒ–ï¼Œå¹¶ä¸”ä¿®æ”¹Sudentä¸­çš„cloneæ–¹æ³• å…·ä½“è§‚å¯Ÿ4
 	 */
 	@Test
 	public void noDeepCopy(){
 		
 	        AddressNo addr = new AddressNo(); 
-	        addr.setAdd("º¼ÖİÊĞ"); 
+	        addr.setAdd("æ­å·å¸‚"); 
 	        StudentNoDeep stu1 = new StudentNoDeep(); 
 	        stu1.setNumber(123); 
 	        stu1.setAddr(addr); 
 	         
 	        StudentNoDeep stu2 = (StudentNoDeep)stu1.clone(); 
 	         
-	        System.out.println("Ñ§Éú1:" + stu1.getNumber() + ",µØÖ·:" + stu1.getAddr().getAdd()); 
-	        System.out.println("Ñ§Éú2:" + stu2.getNumber() + ",µØÖ·:" + stu2.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ1:" + stu1.getNumber() + ",åœ°å€:" + stu1.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ2:" + stu2.getNumber() + ",åœ°å€:" + stu2.getAddr().getAdd()); 
 	   
 	       
-	        //Í¬Ò»¸öµØÖ·addr ¸Ä±äÁËÄÚÈİ£¬ÏÂÃæµÄstu1ºÍstu2¶¼»á¸Ä±ä
-	        addr.setAdd("Ì«Ô­ÊĞ");
+	        //åŒä¸€ä¸ªåœ°å€addr æ”¹å˜äº†å†…å®¹ï¼Œä¸‹é¢çš„stu1å’Œstu2éƒ½ä¼šæ”¹å˜
+	        addr.setAdd("å¤ªåŸå¸‚");
 	       
-	        //ÏÂÃæÊÇĞÂ¿ª±ÙµÄµØÖ·£¬ËùÒÔ»á¸Ä±ä£¬µ«ÊÇ¶¼»á¸÷×Ô¸Ä±ä×Ô¼ºµÄ¶«Î÷¡£²»»á»¥ÏàÓ°Ïì
+	        //ä¸‹é¢æ˜¯æ–°å¼€è¾Ÿçš„åœ°å€ï¼Œæ‰€ä»¥ä¼šæ”¹å˜ï¼Œä½†æ˜¯éƒ½ä¼šå„è‡ªæ”¹å˜è‡ªå·±çš„ä¸œè¥¿ã€‚ä¸ä¼šäº’ç›¸å½±å“
 	       // stu2.setAddr(getAddressNo()); 
 	       // stu1.setAddr(getAddressNo()); 
 
-	        System.out.println("Ñ§Éú1:" + stu1.getNumber() + ",µØÖ·:" + stu1.getAddr().getAdd()); 
-	        System.out.println("Ñ§Éú2:" + stu2.getNumber() + ",µØÖ·:" + stu2.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ1:" + stu1.getNumber() + ",åœ°å€:" + stu1.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ2:" + stu2.getNumber() + ",åœ°å€:" + stu2.getAddr().getAdd()); 
 	}
 	
 	
 	public AddressNo getAddressNo(){
 		  AddressNo addr = new AddressNo(); 
-	       addr.setAdd("Ì«Ô­ÊĞ"); 
+	       addr.setAdd("å¤ªåŸå¸‚"); 
 	       return addr;
 	}
 	
 	/**
-	 Éî¸´ÖÆ
+	 æ·±å¤åˆ¶
 	 */
 	@Test
 	public void deepCopy(){
 		
 	        Address addr = new Address(); 
-	        addr.setAdd("º¼ÖİÊĞ"); 
+	        addr.setAdd("æ­å·å¸‚"); 
 	        StudentHaveDeep stu1 = new StudentHaveDeep(); 
 	        stu1.setNumber(123); 
 	        stu1.setAddr(addr); 
 	         
 	        StudentHaveDeep stu2 = (StudentHaveDeep)stu1.clone(); 
 	         
-	        System.out.println("Ñ§Éú1:" + stu1.getNumber() + ",µØÖ·:" + stu1.getAddr().getAdd()); 
-	        System.out.println("Ñ§Éú2:" + stu2.getNumber() + ",µØÖ·:" + stu2.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ1:" + stu1.getNumber() + ",åœ°å€:" + stu1.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ2:" + stu2.getNumber() + ",åœ°å€:" + stu2.getAddr().getAdd()); 
 	
 
-	        addr.setAdd("Ì«Ô­ÊĞ");
+	        addr.setAdd("å¤ªåŸå¸‚");
 	        
-	        System.out.println("Ñ§Éú1:" + stu1.getNumber() + ",µØÖ·:" + stu1.getAddr().getAdd()); 
-	        System.out.println("Ñ§Éú2:" + stu2.getNumber() + ",µØÖ·:" + stu2.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ1:" + stu1.getNumber() + ",åœ°å€:" + stu1.getAddr().getAdd()); 
+	        System.out.println("å­¦ç”Ÿ2:" + stu2.getNumber() + ",åœ°å€:" + stu2.getAddr().getAdd()); 
 	}
 	
 	public native void test();
