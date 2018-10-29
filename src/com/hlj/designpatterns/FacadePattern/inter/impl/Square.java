@@ -15,3 +15,4 @@ public class Square implements Shape {
 	      System.out.println("Square::draw()");
 	   }
 }
+

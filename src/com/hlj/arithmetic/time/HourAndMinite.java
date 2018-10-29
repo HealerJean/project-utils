@@ -1,5 +1,7 @@
 package com.hlj.arithmetic.time;
 
+import org.junit.Test;
+
 import java.util.Scanner;
 
 /** 
@@ -95,4 +97,7 @@ public class HourAndMinite {
 	23:59 应该是24：00
 共重合：22次
    */
+
+
+
 }  

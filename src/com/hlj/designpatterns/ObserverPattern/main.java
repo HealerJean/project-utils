@@ -6,7 +6,7 @@ import com.hlj.designpatterns.ObserverPattern.abstractClass.son.OctalObserver;
 import com.hlj.designpatterns.ObserverPattern.inter.Subject;
 
 /** 
- * @author : HealerJean
+ * @author : HealerJean 观察者模式
  * @date   ： 2017年12月15日 下午2:31:12 
  * @Description:
  */

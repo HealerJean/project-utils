@@ -5,5 +5,5 @@ package com.hlj.designpatterns.AbstractFactory;
  * 类说明  抽象工厂模式
  */
 public interface Sender {  
-    public void Send();  
+     void Send();
 }  

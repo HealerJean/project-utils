@@ -5,7 +5,9 @@ import com.hlj.arithmetic.Array;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -21,7 +23,13 @@ public class Demo13Array {
         Stream<String> stream = Stream.of("aaa","BBB","CCC");
         String[] strings = stream.toArray(String[]::new);//数组的构造器引用 和zMap中的Person::new有点像
 
+        //数据转换为集合
+        String[] arrays = new String[]{"a", "b", "c"};
+        List<String> list = Arrays.stream(arrays).collect(Collectors.toList());
 
+
+        //集合转换为数组
+        strings = list.stream().toArray(String[]::new);
 
     }
 }

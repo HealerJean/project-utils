@@ -4,6 +4,6 @@ package com.hlj.designpatterns.AbstractFactory;
  * @version 创建时间：2017年9月26日 上午9:34:33 
  * 类说明  抽象工厂模式
  */
-public interface Provider {  
-    public Sender produce();  
-}  
+public interface SendFactory {
+     Sender produce();
+}

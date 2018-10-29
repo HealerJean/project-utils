@@ -76,7 +76,7 @@ public class FileTest {
 		 * 
 		 */
 			//File file  = new File("C:\\Users\\qdkf\\Desktop\\项目\\各省社保整理\\数据包\\数据包\\福建社保--人保联调数据包");
-		//	File file  = new File("E:/study/HealerJean123.github.io");
+		//	File file  = new File("E:/study/HealerJean.github.io");
 	
 		//	getFileValue(file,"asidetitle");
 		

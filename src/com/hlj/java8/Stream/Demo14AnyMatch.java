@@ -29,7 +29,7 @@ public class Demo14AnyMatch {
         System.out.println("-------------");
         System.out.println(list.stream().allMatch(s->s.startsWith("张")));
         System.out.println("-------------");
-        System.out.println(list.stream().noneMatch(s->s.equals("张三丰")));
+        System.out.println(!list.stream().noneMatch(s->s.equals("张三丰")));
 
 
     }

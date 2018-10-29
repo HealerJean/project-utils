@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * °Ñ·¸ÈËÎ§³ÇÒ»È¦£¬Ã¿´ÎÉ±µôµÚÆß¸ö£¬ÓÖ´ÓµÚ°Ë¸ö¿ªÊ¼É±µôµÚÆß¸ö£¬Ö±µ½Ê£ÏÂ×îºóÒ»¸ö
+ * æŠŠçŠ¯äººå›´åŸä¸€åœˆï¼Œæ¯æ¬¡æ€æ‰ç¬¬ä¸ƒä¸ªï¼Œåˆä»ç¬¬å…«ä¸ªå¼€å§‹æ€æ‰ç¬¬ä¸ƒä¸ªï¼Œç›´åˆ°å‰©ä¸‹æœ€åä¸€ä¸ª
  */
 public class SRsf {
 
@@ -14,13 +14,13 @@ public class SRsf {
 
 		int s = scanner.nextInt();
 		List<Person> personlist = new ArrayList<Person>();
-		System.out.println("ÈËÔ±ÓĞ£º");
+		System.out.println("äººå‘˜æœ‰ï¼š");
 		for (int i = 1; i < s; i++) {
-			Person person = new Person(i, "" + i + "ºÅ");
+			Person person = new Person(i, "" + i + "å·");
 			personlist.add(person);
 			System.out.print(person.getName() + ",");
 		}
-		List<Person> list = killBody(personlist); // ¿ªÊ¼É±µÚÒ»¸öÈË£¬È»ºó×¼±¸½øÈëwhileÑ­»·
+		List<Person> list = killBody(personlist); // å¼€å§‹æ€ç¬¬ä¸€ä¸ªäººï¼Œç„¶åå‡†å¤‡è¿›å…¥whileå¾ªç¯
 		while (list.size() > 6) {
 			list = killBody(list);
 		}
@@ -29,7 +29,7 @@ public class SRsf {
 	public static List<Person> killBody(List<Person> personlist) {
 		List<Person> personlisttemp = new ArrayList<Person>();
 
-		int num = 0; // i = 7 ¾ÍÊÇµÚ8 ¸öÈË£¬Õâ¾Í8¿ªÊ¼¼ÆÊıÁË
+		int num = 0; // i = 7 å°±æ˜¯ç¬¬8 ä¸ªäººï¼Œè¿™å°±8å¼€å§‹è®¡æ•°äº†
 		for (int i = 7; i < personlist.size(); i++) {
 			personlisttemp.add(num, personlist.get(i));
 			num += 1;
@@ -41,7 +41,7 @@ public class SRsf {
 		}
 
 		System.out.println();
-		System.out.println("É±ÈË£º");
+		System.out.println("æ€äººï¼š");
 		for (int i = 0; i < personlisttemp.size(); i++) {
 			Person person = personlisttemp.get(i);
 			System.out.print(person.getName() + ",");

@@ -1,6 +1,6 @@
-package com.hlj.util.QRcode;
+package com.hlj.util.job;
 
-import com.sun.jndi.toolkit.url.Uri;
+import com.hlj.util.QRcode.QrCodeUtils;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -9,8 +9,6 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.math.BigDecimal;
 import java.net.URL;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * @Desc:
@@ -25,14 +23,15 @@ public class MainService {
         File file = new File("/Users/healerjean/Desktop/id.jpg");
         FileOutputStream outputStream = new FileOutputStream(file);
 
+        BufferedImage urlimage = ImageIO.read(new URL("https://img.alicdn.com/imgextra/i1/3694212174/TB21Wb_jlsmBKNjSZFFXXcT9VXa_!!3694212174.jpg"));
 
-        BufferedImage imageQR  = ReduceImgTest.getBufferedImageByUrl("https://img.alicdn.com/imgextra/i1/3694212174/TB21Wb_jlsmBKNjSZFFXXcT9VXa_!!3694212174.jpg",375*2,375*2);
+        BufferedImage imageQR  = QrCodeUtils.reduceImg(urlimage,375*2,375*2,null);
 
         URL u = new URL("http://admore.oss-cn-beijing.aliyuncs.com/admin/duodianyouhui/itemgood/6a4507a16213460ab3476a3204a9e5bc.png");
 
         BufferedImage titleLab = ImageIO.read(u);
 
-        BufferedImage  ErWeiMaImage = QRCodeUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44");
+        BufferedImage  ErWeiMaImage =  QrCodeUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44",109,109,3);
 
         String title = "AAAAAAAAAAAAAA千妇恋-日本进口温和控油洗面奶30g";
         BigDecimal originPrice =new BigDecimal("88.9");
@@ -47,7 +46,7 @@ public class MainService {
         String lable = "包邮,七天无理由退换,新品爆款";
 
 
-        BufferedImage bufferedImage =ChartGraphics. graphicsGenerationlovely(imageQR, ErWeiMaImage,titleLab,title,originPrice,nowPrice,couponPrice+"",description,lable);
+        BufferedImage bufferedImage = ChartGraphics. graphicsGenerationlovely(imageQR, ErWeiMaImage,titleLab,title,originPrice,nowPrice,couponPrice+"",description,lable);
 
 
 //
@@ -137,7 +136,7 @@ public class MainService {
             bili = 630 ;
         }
 
-        BufferedImage bufferedImageFinal =  ReduceImgTest.reduceImg(bufferedImage, 375*3, bili*3, null);
+        BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
 
         ImageIO.write(bufferedImageFinal, "jpg", outputStream);
 

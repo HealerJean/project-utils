@@ -1,4 +1,4 @@
-package com.hlj.util.QRcode;
+package com.hlj.util.job;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;

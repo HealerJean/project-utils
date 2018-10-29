@@ -8,8 +8,8 @@ public class Test {
 	  
     public static void main(String[] args) {  
     	//使用哪个，new哪个对象即可（和我在中科软中遇到的情况情况是一样的）
-        Provider provider = new SendMailFactory();  
-        Sender sender = provider.produce();  
+        SendFactory sendFactory = new SendMailFactory();
+        Sender sender = sendFactory.produce();
         sender.Send();  
     }  
 } 

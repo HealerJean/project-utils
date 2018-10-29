@@ -1,6 +1,5 @@
 package com.hlj.arithmetic.killperson;
 
-import javax.swing.Spring;
 
 public class Person {
 	String name = "z";

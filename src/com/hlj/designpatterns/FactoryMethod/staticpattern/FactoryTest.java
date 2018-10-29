@@ -10,4 +10,4 @@ public class FactoryTest {
         Sender sender = SendFactory.produceMail();  
         sender.Send();  
     }  
-}  
+}

@@ -33,4 +33,6 @@ public class Singleton {
     public Object readResolve() {  
         return instance;  
     }  
-}  
+}
+
+
