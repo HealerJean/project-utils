@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * @Desc: anyMatch 匹配任一元素 allMatch匹配所有元素 noneMatch 不匹配的所有元素
+ *          返回值 为true false
  * @Author HealerJean
  * @Date 2018/9/14  上午11:48.
  */

@@ -241,8 +241,8 @@ public class ArraylistTest {
 		
 		java.util.List<Integer> list = new ArrayList<Integer>();
 		java.util.List<Integer> list1 = new ArrayList<Integer>();
-		list.add(1);  list.add(2); list.add(3);
-		
+		list.add(1);  list.add(2); list.add(3); list.add(1);
+
 		list1.add(2); list1.add(3); list1.add(4);
 		
 		//list和list1的并集：

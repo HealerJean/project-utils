@@ -1,10 +1,12 @@
 package com.hlj.java8.Stream;
 
+import com.hlj.arithmetic.killperson.Person;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @Desc:
@@ -26,8 +28,13 @@ public class Demo16FindAny {
         list.add("张三丰");
 
 
-       Optional<String> s =  list.stream().findFirst();
+        System.out.println(list.contains("q"));
 
-        System.out.println(s.orElse(null));
+       Optional<String> lists =  list.stream().filter(s->s.equals("z")).findFirst();
+
+        AtomicBoolean filter = new AtomicBoolean(false);
+        filter.set(true);
+        System.out.println(filter.get());
+
     }
 }

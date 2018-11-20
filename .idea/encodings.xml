@@ -36,13 +36,13 @@
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo12Collect.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo13Array.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo16FindAny.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo17Sorted.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectors.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectorsPack/Student.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/path/ClassLoader.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/ArrayListMultiThread.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/CountDownLatchDemo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/ManyImage.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/ChartGraphics.java" charset="UTF-8" />
   </component>
 </project>
