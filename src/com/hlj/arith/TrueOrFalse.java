@@ -1,4 +1,4 @@
-package com.hlj.arithmetic;
+package com.hlj.arith;
 /** 
  * @author : HealerJean
  * @date   ： 2017年11月23日 下午4:35:29 

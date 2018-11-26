@@ -72,7 +72,7 @@ public class QrCodeUtils {
         // 构建叠加层
         BufferedImage buffImg = null;
         try {
-            buffImg = imageAndImages(ImageIO.read(new File(sourceFilePath)), ImageIO.read(new File(innerImageFilePath)),525, 1375,450 ,450, 1.0f);
+            buffImg = imageAndImages(ImageIO.read(new File(sourceFilePath)), ImageIO.read(new File(innerImageFilePath)),595, 1000,245 ,245, 1.0f);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -135,7 +135,7 @@ public class QrCodeUtils {
     @Test
     public void testWriteQRImg(){
         String text = "http://blog.healerjean.top";
-        BufferedImage  noLogoImage = writeQRImg(text,200,200, 4 );
+        BufferedImage  noLogoImage = writeQRImg(text,200,200, 0 );
         //存储到本地
         String saveFilePath = "/Users/healerjean/Desktop/new.png";
         saveImageToLocalDir(noLogoImage, saveFilePath);

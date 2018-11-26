@@ -1,10 +1,7 @@
 package com.hlj.java8.Stream;
 
-import com.hlj.Arraylist.ArraylistTest;
-import com.hlj.arithmetic.Array;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

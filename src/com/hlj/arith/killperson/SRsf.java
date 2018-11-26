@@ -1,4 +1,4 @@
-package com.hlj.arithmetic.killperson;
+package com.hlj.arith.killperson;
 
 import java.util.ArrayList;
 import java.util.List;

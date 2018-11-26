@@ -1,179 +1,12 @@
 package com.hlj.util.job;
+
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
-import java.io.*;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
-
-import javax.imageio.ImageIO;
 
 public class ChartGraphics {
-    private BufferedImage image;
-    private int imageWidth = 900;  //图片的宽度
-    private int imageHeight = 1480; //图片的高度
-    //生成图片文件
-    @SuppressWarnings("restriction")
-    public void createImage(String fileLocation) {
-        BufferedOutputStream bos = null;
-        if(image != null){
-            try {
-                FileOutputStream fos = new FileOutputStream(fileLocation);
-                bos = new BufferedOutputStream(fos);
-
-                JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(bos);
-                encoder.encode(image);
-                bos.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }finally{
-                if(bos!=null){//关闭输出流
-                    try {
-                        bos.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
-    }
-
-    public void graphicsGeneration(String name, String id, String classname, String imgurl) {
-        int H_title = 30;     //头部高度
-        int H_mainPic = 940;  //轮播广告高度
-        int H_tip = 60;  //上网提示框高度
-        int H_btn = 25;  //按钮栏的高度
-        int tip_2_top = (H_title+H_mainPic);
-        int btns_2_top = tip_2_top+H_tip+20;
-        int btn1_2_top = btns_2_top+10;
-        int btn2_2_top = btn1_2_top+H_btn;
-        int shops_2_top = btn2_2_top+H_btn+20;
-        int W_btn = 280;  //按钮栏的宽度
-
-        image = new BufferedImage(imageWidth, imageHeight, BufferedImage.TYPE_INT_RGB);
-        //设置图片的背景色
-        Graphics2D main = image.createGraphics();
-        main.setColor(Color.white);
-        main.fillRect(0, 0, imageWidth, imageHeight);
-
-        //***********************页面头部
-        Graphics title = image.createGraphics();
-        //设置区域颜色
-        title.setColor(new Color(143, 0, 0));
-        //填充区域并确定区域大小位置
-        title.fillRect(0, 0, imageWidth, H_title);
-        //设置字体颜色，先设置颜色，再填充内容
-        title.setColor(Color.white);
-        //设置字体
-        Font titleFont = new Font("宋体", Font.BOLD, 14);
-        title.setFont(titleFont);
-        title.drawString("my head", 100, (H_title)/2+5);
-
-        //***********************插入中间广告图
-        Graphics mainPic = image.getGraphics();
-        BufferedImage bimg = null;
-        try {
-            bimg = javax.imageio.ImageIO.read(new java.io.File(imgurl));
-        } catch (Exception e) {}
-
-        if(bimg!=null){
-            mainPic.drawImage(bimg, 0, H_title, imageWidth, H_mainPic, null);
-            mainPic.dispose();
-        }
-        //***********************设置下面的提示框
-
-        Graphics2D tip = image.createGraphics();
-        //设置区域颜色
-        tip.setColor(new Color(255, 120, 89));
-        //填充区域并确定区域大小位置
-        tip.fillRect(0, tip_2_top, imageWidth, H_tip);
-        //设置字体颜色，先设置颜色，再填充内容
-        tip.setColor(Color.white);
-        //设置字体
-        Font tipFont = new Font("宋体", Font.PLAIN, 14);
-        tip.setFont(tipFont);
-        tip.drawString("登录成功，本次认证时间1小时", 60, tip_2_top+(H_tip)/2-10);
-        tip.drawString("正在返回商家主页", 100, tip_2_top+(H_tip)/2+10);
-
-
-
-        //***********************设置下面的按钮块
-        //设置字体颜色，先设置颜色，再填充内容
-        tip.setColor(Color.black);
-        tip.drawString("您可以选择的操作：", 20, btns_2_top);
-        tip.drawString("下面的小图标：", 20, shops_2_top);
-        //***********************按钮
-        Font btnFont = new Font("宋体", Font.BOLD, 14);
-        Graphics2D btn1 = image.createGraphics();
-        btn1.setColor(new Color(41,192 , 50));//#29C65A
-        btn1.fillRect(10, btn1_2_top, W_btn, H_btn);
-        btn1.setColor(Color.BLACK);
-        btn1.drawRect(10, btn1_2_top, W_btn, H_btn);
-        //btn1 文本
-        btn1.setColor(Color.white);
-        btn1.setFont(btnFont);
-        btn1.drawString("单击我啊", 120, btn1_2_top+(H_btn/2)+5);
-
-        Graphics2D btn2 = image.createGraphics();
-        btn2.setColor(new Color(141,120 , 22));//#29C65A
-        btn2.fillRect(10, btn2_2_top, W_btn, H_btn);
-        btn2.setColor(Color.BLACK);
-        btn2.drawRect(10, btn2_2_top, W_btn, H_btn);
-        //btn2文本
-        btn2.setColor(Color.white);
-        btn2.setFont(btnFont);
-        btn2.drawString("单击我啊", 120, btn2_2_top+(H_btn/2)+5);
-
-        createImage("/Users/healerjean/Desktop/newChartGraphics.png");
-
-    }
-
-//    public static void main(String[] args) {
-//        ChartGraphics cg = new ChartGraphics();
-//        try {
-//            cg.graphicsGeneration("ewew", "1", "12", "/Users/healerjean/Desktop/WechatIMG155.jpeg");
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-
-    public static List<String> getStrList(String inputString, int length) {
-        int size = inputString.length() / length;
-        if (inputString.length() % length != 0) {
-            size += 1;
-        }
-        return getStrList(inputString, length, size);
-    }
-
-
-    public static List<String> getStrList(String inputString, int length,
-                                          int size) {
-        List<String> list = new ArrayList<String>();
-        for (int index = 0; index < size; index++) {
-            String childStr = substring(inputString, index * length,
-                    (index + 1) * length);
-            list.add(childStr);
-        }
-        return list;
-    }
-
-
-    public static String substring(String str, int f, int t) {
-        if (f > str.length())
-            return null;
-        if (t > str.length()) {
-            return str.substring(f, str.length());
-        } else {
-            return str.substring(f, t);
-        }
-    }
-
-
 
 
     public static BufferedImage graphicsGenerationlovely(BufferedImage imageQR,  BufferedImage ImageerWeiMa,
@@ -185,116 +18,62 @@ public class ChartGraphics {
                                                          String description,
                                                          String label
     ) {
+//小编推荐 去掉
+        String tuijian = description ;
+        StringBuffer s1= null;
+        String oneLine = "",otherLine = "";
+        if(tuijian.length()>21){
+            oneLine = tuijian.substring(0,21);
+            otherLine = tuijian.substring(21,tuijian.length());
+        }else {
+            oneLine =    tuijian ;
+        }
 
-
-
-
-
-        BufferedImage lineSizeBufferedImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
-
-        FontMetrics metricsLineSizeBufferedImage = lineSizeBufferedImage.createGraphics().getFontMetrics();
-        //总共字符串的像素，已经限制的宽度像素
-        int tuiJianStrLenth = metricsLineSizeBufferedImage.stringWidth(description.toString());// str要打印的字符串
-        int StrPixelOtherTuiJianWidth =0; //第一行之外的其他字符串的像素长度
-        int oneTuiJianWidth = 252 ;// 252 ; // 电脑上 252; //第一行像素长度
-        int twoTuiJianWidth = 312; //312 //第二行像素长度
-        int tuiJiangLineSize = 1 ; //推荐语 行数
-        int charIndex = 0 ;  //第一行换行处的 字符串index位置
-        StringBuilder finalStrOtherTuiJian = new StringBuilder();
-
-        StringBuilder sbOneTuiJian = new StringBuilder();// 存储每一行的字符串
-        if(oneTuiJianWidth< tuiJianStrLenth){
-            for (int i1 = 0; i1 < description.length(); i1++) {
-                char ch = description.charAt(i1);
-                sbOneTuiJian.append(ch);
-                //已经添加的字符串的长度通过 bounds2.getWidth() 获取
-                Rectangle2D bounds2 = metricsLineSizeBufferedImage.getStringBounds(sbOneTuiJian.toString(), null);
-                int tempStrPi1exlWi1dth = (int) bounds2.getWidth();
-                if (tempStrPi1exlWi1dth > oneTuiJianWidth) { //当已经添加的超过我们给出限制的宽度进行换行
-                    charIndex = i1 ;
-                    break;
+        if(otherLine!=null){
+            s1 = new StringBuffer(otherLine);
+            if(tuijian.length()>26) {
+                int n = tuijian.length() / 26; //看看有几行
+                for (int index = 26; index < tuijian.length(); index += 26, n--) {
+                    if (n > 1) {
+                        s1.insert(index, '\n');
+                    }
                 }
+            }   else {
+                s1 = new StringBuffer();
+                s1.append(otherLine);
             }
         }
-        if(charIndex!=0){
-            finalStrOtherTuiJian = new StringBuilder( description.substring(charIndex, description.length()));
-            StrPixelOtherTuiJianWidth = metricsLineSizeBufferedImage.stringWidth(finalStrOtherTuiJian.toString()) ;// str要打印的字符串
-            tuiJiangLineSize = (int) Math.ceil(StrPixelOtherTuiJianWidth * 1.0 / twoTuiJianWidth) + tuiJiangLineSize;// 算出行数
-        }
-
-
+        String otherFinal = s1.toString();
+        List<String> strs = Arrays.asList(otherFinal.split("\n"));
 
         //整体图的高度和宽度
         int bili =0 ;
         int lovelyImageHeight =0 ;
-        if(tuiJiangLineSize==1){//第二行开始 0 数据
+        if(strs.size()==0){//第二行开始 0 数据
             bili = 630-60 ;
-        }else if(tuiJiangLineSize==2){ //1条数据
+        }else if(strs.size()==1){ //1条数据
             bili = 630-40 ;
-        }else if(tuiJiangLineSize==3){ //2条数据
+        }else if(strs.size()==2){ //2条数据
             bili = 630 -20 ;
         }else {
             bili = 630 ;
         }
 
-
-//
-//
-//        String tuijian = description ;
-//        StringBuffer s1= null;
-//        String oneLine = "",otherLine = "";
-//        if(tuijian.length()>21){
-//            oneLine = tuijian.substring(0,21);
-//            otherLine = tuijian.substring(21,tuijian.length());
-//        }else {
-//            oneLine =    tuijian ;
-//        }
-//
-//        if(otherLine!=null){
-//            s1 = new StringBuffer(otherLine);
-//            if(tuijian.length()>26) {
-//                int n = tuijian.length() / 26; //看看有几行
-//                for (int index = 26; index < tuijian.length(); index += 26, n--) {
-//                    if (n > 1) {
-//                        s1.insert(index, '\n');
-//                    }
-//                }
-//            }   else {
-//                s1.append(otherLine);
-//            }
-//        }
-//        String otherFinal = s1.toString();
-//        List<String> strs = Arrays.asList(otherFinal.split("\n"));
-//
-//        //整体图的高度和宽度
-//        int bili =0 ;
-//        int lovelyImageHeight =0 ;
-//        if(strs.size()==0){//第二行开始 0 数据
-//            bili = 630-60 ;
-//        }else if(strs.size()==1){ //1条数据
-//            bili = 630-40 ;
-//        }else if(strs.size()==2){ //2条数据
-//            bili = 630 -20 ;
-//        }else {
-//            bili = 630 ;
-//        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //整体图的高度和宽度
         int  lovelyImageWidth = 375*30;
-        lovelyImageHeight = bili*30;
+         lovelyImageHeight = bili*30;
+
+
+
+
+
+//小编推荐加上
+//        int  lovelyImageWidth = 375*30;
+//        int lovelyImageHeight = 534*30;
+
+
+
+
         //整体图合成
         BufferedImage bufferedImage = new BufferedImage(lovelyImageWidth, lovelyImageHeight, BufferedImage.TYPE_INT_RGB);
         //设置图片的背景色
@@ -317,106 +96,23 @@ public class ChartGraphics {
         fixTuiJian.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
 
 
+//小编推荐去掉
 
-//        FontMetrics metricsLineSizeBufferedImage = lineSizeBufferedImage.createGraphics().getFontMetrics();
-//        //总共字符串的像素，已经限制的宽度像素
-//        int tuiJianStrLenth = metricsLineSizeBufferedImage.stringWidth(description.toString());// str要打印的字符串
-//        int StrPixelOtherTuiJianWidth ; //第一行之外的其他字符串的像素长度
-//        int oneTuiJianWidth = 252; //第一行像素长度
-//        int twoTuiJianWidth = 252; //第二行像素长度
-//        int tuiJiangLineSize = 1 ; //推荐语 行数
-//        int charIndex = 0 ;  //第一行换行处的 字符串index位置
-//        StringBuilder finalStrOtherTuiJian = new StringBuilder();
-//
-
-
-        //总共字符串的像素，已经限制的宽度像素
-
-//        sbOneTuiJian = new StringBuilder();// 存储每一行的字符串
-
-
-//        if(oneTuiJianWidth< tuiJianStrLenth){
-//            for (int i1 = 0; i1 < description.length(); i1++) {
-//                char ch = description.charAt(i1);
-//                sbOneTuiJian.append(ch);
-//                //已经添加的字符串的长度通过 bounds2.getWidth() 获取
-//                Rectangle2D bounds2 = metricsLineSizeBufferedImage.getStringBounds(sbOneTuiJian.toString(), null);
-//                int tempStrPi1exlWi1dth = (int) bounds2.getWidth();
-//                if (tempStrPi1exlWi1dth > oneTuiJianWidth) { //当已经添加的超过我们给出限制的宽度进行换行
-//                    fixTuiJian.drawString(description.substring(0,i1), 85*30, 560*30);
-//                    oneHangSizeTuiJian = i1;
-//                    break;
-//                }
-//            }
-//        }else {
-//            fixTuiJian.drawString(description, 85*30, 560*30);
-//        }
-
-        if(charIndex!=0){
-            fixTuiJian.drawString(description.substring(0,charIndex), 85*30, 560*30);
-            //算出行数
-            int lineSize = (int) Math.ceil(StrPixelOtherTuiJianWidth * 1.0 / twoTuiJianWidth);// 算出行数
-            if (twoTuiJianWidth < StrPixelOtherTuiJianWidth) { // 页面宽度（width）小于 字符串长度
-                StringBuilder sb = new StringBuilder();// 存储每一行的字符串
-                int j = 0;
-                int tempStart = 0;
-                String tempStrs[] = new String[lineSize];// 存储换行之后每一行的字符串
-                for (int i1 = 0; i1 < finalStrOtherTuiJian.length(); i1++) {
-                    char ch = finalStrOtherTuiJian.charAt(i1);
-                    sb.append(ch);
-                    //已经添加的字符串的长度通过 bounds2.getWidth() 获取
-                    Rectangle2D bounds2 = metricsLineSizeBufferedImage.getStringBounds(sb.toString(), null);
-                    int tempStrPi1exlWi1dth = (int) bounds2.getWidth();
-                    if (tempStrPi1exlWi1dth > twoTuiJianWidth) { //当已经添加的超过我们给出限制的宽度进行换行
-                        tempStrs[j++] = finalStrOtherTuiJian.substring(tempStart, i1); //一开始是从0开始
-                        tempStart = i1; //当第一行有了数据之后 会将i1给到临时开始位置 tempStart
-                        sb.delete(0, sb.length()); // 对sb内容进行清空，给他赋予下一行开始的字符
-                        sb.append(ch);
-                    }
-
-                    // 最后一行
-                    if (i1 == finalStrOtherTuiJian.length() - 1) {
-                        tempStrs[j] = finalStrOtherTuiJian.substring(tempStart);
-                    }
-                }
-                for (int i = 0; i < tempStrs.length; i++) {
-                    if(i ==0){
-                        fixTuiJian.drawString(tempStrs[i], 20*30, 580*30);
-                    }else if(i  ==1){
-                        fixTuiJian.drawString(tempStrs[i], 20*30, 600*30);
-                    }else  if(i == 2){
-                        fixTuiJian.drawString(tempStrs[i], 20*30, 620*30);
-                    }
-                }
-            } else {
-                fixTuiJian.drawString(finalStrOtherTuiJian.toString(), 20*30, 580*30);
-            }
-
-        }else {
-            fixTuiJian.drawString(description, 85*30, 560*30);
+        if(oneLine!="") {
+            fixTuiJian.drawString(oneLine, 85*30, 560*30);
         }
 
-
-
-//
-//
-//        if(oneLine!="") {
-//            fixTuiJian.drawString(oneLine, 85*30, 560*30);
-//        }
-//
-//        if(otherFinal!=""){ //第二行开始只显示3行
-//            for(int m = 0 ;m <strs.size();m++){
-//                if(m ==0){
-//                    fixTuiJian.drawString(strs.get(m), 20*30, 580*30);
-//                }else if(m  ==1){
-//                    fixTuiJian.drawString(strs.get(m), 20*30, 600*30);
-//                }else  if(m == 2){
-//                    fixTuiJian.drawString(strs.get(m), 20*30, 620*30);
-//                }
-//            }
-//        }
-//
-
+        if(otherFinal!=""){ //第二行开始只显示3行
+            for(int m = 0 ;m <strs.size();m++){
+                if(m ==0){
+                    fixTuiJian.drawString(strs.get(m), 20*30, 580*30);
+                }else if(m  ==1){
+                    fixTuiJian.drawString(strs.get(m), 20*30, 600*30);
+                }else  if(m == 2){
+                    fixTuiJian.drawString(strs.get(m), 20*30, 620*30);
+                }
+            }
+        }
 
 
 
@@ -493,6 +189,7 @@ public class ChartGraphics {
         推荐文子.drawRect(20*30,546*30,338*30,88*30);
 
 
+
         //天猫
         graphicsQR.drawImage(
                 titleLab.getScaledInstance( 34*30, 17*30 ,Image.SCALE_SMOOTH), 21*30, 393*30, null);
@@ -510,84 +207,44 @@ public class ChartGraphics {
 
 
 
-//        StringBuffer s1titleOtherLine= null;
-//        String titleOneLine = "",titleOtherLine = "";
-//        if(title.length()>10){
-//            titleOneLine = title.substring(0,10);
-//            titleOtherLine = title.substring(10,title.length());
-//        }else {
-//            titleOneLine =    title ;
-//        }
-//
-//        if(titleOtherLine!=null){
-//            s1titleOtherLine = new StringBuffer(titleOtherLine);
-//            if(title.length()>13) {
-//                int n = title.length() / 13; //看看有几行
-//                for (int index = 13; index < title.length(); index += 13, n--) {
-//                    if (n > 1) {
-//                        s1titleOtherLine.insert(index, '\n');
-//                    }
-//                }
-//            }   else {
-//                s1titleOtherLine.append(titleOtherLine);
-//            }
-//        }
-//        String titleOtherFinal = s1titleOtherLine.toString();
-//        List<String> titleStrs = Arrays.asList(titleOtherFinal.split("\n"));
-//
-//        if(titleOneLine!="") {
-//            fixed.drawString(titleOneLine, 58*30, 408*30);
-//
-//        }
-//
-//        if(titleOtherFinal!=""){ //第二行开始只显示1行
-//            for(int m = 0 ;m <titleStrs.size();m++){
-//                if(m ==0){
-//                    fixed.drawString(titleStrs.get(m), 21*30, 432*30);
-//                }
-//            }
-//        }
+        StringBuffer s1titleOtherLine= null;
+        String titleOneLine = "",titleOtherLine = "";
+        if(title.length()>10){
+            titleOneLine = title.substring(0,10);
+            titleOtherLine = title.substring(10,title.length());
+        }else {
+            titleOneLine =    title ;
+        }
 
+        if(titleOtherLine!=null){
+            s1titleOtherLine = new StringBuffer(titleOtherLine);
+            if(title.length()>13) {
+                int n = title.length() / 13; //看看有几行
+                for (int index = 13; index < title.length(); index += 13, n--) {
+                    if (n > 1) {
+                        s1titleOtherLine.insert(index, '\n');
+                    }
+                }
+            }   else {
+                s1titleOtherLine = new StringBuffer();
+                s1titleOtherLine.append(titleOtherLine);
+            }
+        }
+        String titleOtherFinal = s1titleOtherLine.toString();
+        List<String> titleStrs = Arrays.asList(titleOtherFinal.split("\n"));
 
+        if(titleOneLine!="") {
+            fixed.drawString(titleOneLine, 58*30, 408*30);
 
+        }
 
-
-
-        FontMetrics metrics = bufferedImage.createGraphics().getFontMetrics();
-        //总共字符串的像素，已经限制的宽度像素
-        int StrPixelWidth = metrics.stringWidth(title.toString());// str要打印的字符串
-        int oneTitleWidth = 120; //电脑上是120
-
-        StringBuilder sbOne = new StringBuilder();// 存储每一行的字符串
-        int oneHangSize = 0 ;
-        if(oneTitleWidth< StrPixelWidth){
-            for (int i1 = 0; i1 < title.length(); i1++) {
-                char ch = title.charAt(i1);
-                sbOne.append(ch);
-                //已经添加的字符串的长度通过 bounds2.getWidth() 获取
-                Rectangle2D bounds2 = metrics.getStringBounds(sbOne.toString(), null);
-                int tempStrPi1exlWi1dth = (int) bounds2.getWidth();
-                if (tempStrPi1exlWi1dth > oneTitleWidth) { //当已经添加的超过我们给出限制的宽度进行换行
-                    fixed.drawString(title.substring(0,i1), 58*30, 408*30);
-                    oneHangSize = i1;
-                    break;
+        if(titleOtherFinal!=""){ //第二行开始只显示1行
+            for(int m = 0 ;m <titleStrs.size();m++){
+                if(m ==0){
+                    fixed.drawString(titleStrs.get(m), 21*30, 432*30);
                 }
             }
-        }else {
-            fixed.drawString(title, 58*30, 408*30);
         }
-
-        if(oneHangSize!=0){
-            StringBuilder finalStrOther = new StringBuilder( title.substring(oneHangSize, title.length()));
-            if(finalStrOther!=null&&finalStrOther.length()>0){
-                fixed.drawString(finalStrOther.toString(), 21*30, 432*30);
-
-            }
-        }
-
-
-
-
 
 
         Graphics2D fixNowPriceshixiao  = bufferedImage.createGraphics();
@@ -693,14 +350,14 @@ public class ChartGraphics {
 
 
 
-        //小编推荐
+//小编推荐 去掉，后期可以加上
         Graphics2D fixsptjwenzi = bufferedImage.createGraphics();
         fixsptjwenzi.setColor(new Color(77,77,77));
         Font sptjFont = new Font("PingFang SC", Font.BOLD,13*30);
         fixsptjwenzi.setFont(sptjFont);
         fixsptjwenzi.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         fixsptjwenzi.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
-        String sptjwenzi =  "小编推荐：";
+        String sptjwenzi =  "豆豆君：";
         fixsptjwenzi.drawString(sptjwenzi, 20*30, 560*30);
 
 

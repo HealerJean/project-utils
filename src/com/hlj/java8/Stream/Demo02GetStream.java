@@ -1,9 +1,7 @@
 package com.hlj.java8.Stream;
 
-import com.hlj.arithmetic.Array;
 import org.junit.Test;
 
-import java.io.InputStream;
 import java.util.*;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;

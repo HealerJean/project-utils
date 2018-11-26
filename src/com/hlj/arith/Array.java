@@ -1,4 +1,4 @@
-package com.hlj.arithmetic;
+package com.hlj.arith;
 
 public class Array {
 	public static void main(String[] args) {

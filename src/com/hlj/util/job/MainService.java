@@ -3,17 +3,17 @@ package com.hlj.util.job;
 import com.hlj.util.QRcode.QrCodeUtils;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.math.BigDecimal;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Desc:
  * @Author HealerJean
- * @Date 2018/6/29  ÉÏÎç11:10.
+ * @Date 2018/6/29  ä¸Šåˆ11:10.
  */
 public class MainService {
 
@@ -31,114 +31,72 @@ public class MainService {
 
         BufferedImage titleLab = ImageIO.read(u);
 
-        BufferedImage  ErWeiMaImage =  QrCodeUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44",109,109,3);
+        BufferedImage  ErWeiMaImage =  QrCodeUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44",300,300,3);
 
-        String title = "AAAAAAAAAAAAAAÇ§¸¾Áµ-ÈÕ±¾½ø¿ÚÎÂºÍ¿ØÓÍÏ´ÃæÄÌ30g";
+        String title = "AAAAAAAAAAAAAAåƒå¦‡æ‹-æ—¥æœ¬è¿›å£æ¸©å’Œæ§æ²¹æ´—é¢å¥¶30g";
         BigDecimal originPrice =new BigDecimal("88.9");
         BigDecimal  nowPrice  =new BigDecimal("39.9");
         BigDecimal couponPrice  =new BigDecimal("10");
 
-//        String description = "²¼ÒÂ²»¶şÆì½¢µê£¬Ö®Ç°ÍÆ¼öÒÂ²»¶şÆì½¢µêÖ®Ç°ÍÆ";
-//        String description = "²¼ÒÂ²»¶şÆì½¢µê£¬Ö®Ç°ÍÆ²¼ÒÂ²»¶şÆì½¢µê£¬Ö®Ç°ÍÆÖ®Ç°ÍÆ²¼ÒÂ²»¶şÆì½¢µêÖ®Ç°ÍÆ²¼ÒÂ²»¶şÆì½¢µêÖ®Ç°ÍÆ²¼ÒÂ²»¶şÆì½¢µêÖ®Ç°ÍÆ²¼ÒÂ²»¶şÆì½¢µê";
+//        String description = "å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ï¼Œä¹‹å‰æ¨èè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨";
+        String description = "å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ï¼Œä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ï¼Œä¹‹å‰æ¨ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨å¸ƒè¡£ä¸äºŒæ——èˆ°åº—";
 
-        String description = "AAAAAAAAAAAAAA²¼ÒÂ²»¶şÆì½¢µê£¬Ö®Ç°ÍÆ¼öÒÂ²»¶şÆì½¢µêÖ®Ç°ÍÆ";
+//        String description = "AAAAAAAAAAAAAAå¸ƒè¡£ä¸äºŒæ——èˆ°åº—ï¼Œä¹‹å‰æ¨èè¡£ä¸äºŒæ——èˆ°åº—ä¹‹å‰æ¨";
 
-        String lable = "°üÓÊ,ÆßÌìÎŞÀíÓÉÍË»»,ĞÂÆ·±¬¿î";
+        String lable = "åŒ…é‚®,ä¸ƒå¤©æ— ç†ç”±é€€æ¢,æ–°å“çˆ†æ¬¾";
 
 
         BufferedImage bufferedImage = ChartGraphics. graphicsGenerationlovely(imageQR, ErWeiMaImage,titleLab,title,originPrice,nowPrice,couponPrice+"",description,lable);
 
+            String tuijian = description ;
+            StringBuffer s1= null;
+            String oneLine = "",otherLine = "";
+            if(tuijian.length()>21){
+                oneLine = tuijian.substring(0,21);
+                otherLine = tuijian.substring(21,tuijian.length());
+            }else {
+                oneLine =    tuijian ;
+            }
 
-//
-//        String tuijian = description ;
-//        StringBuffer s1= null;
-//        String oneLine = "",otherLine = "";
-//        if(tuijian.length()>21){
-//            oneLine = tuijian.substring(0,21);
-//            otherLine = tuijian.substring(21,tuijian.length());
-//        }else {
-//            oneLine =    tuijian ;
-//        }
-//
-//        if(otherLine!=null){
-//            s1 = new StringBuffer(otherLine);
-//            if(tuijian.length()>26) {
-//                int n = tuijian.length() / 26; //¿´¿´ÓĞ¼¸ĞĞ
-//                for (int index = 26; index < tuijian.length(); index += 26, n--) {
-//                    if (n > 1) {
-//                        s1.insert(index, '\n');
-//                    }
-//                }
-//            }   else {
-//                s1.append(otherLine);
-//            }
-//        }
-//        String otherFinal = s1.toString();
-//        List<String> strs = Arrays.asList(otherFinal.split("\n"));
-//
-//        //ÕûÌåÍ¼µÄ¸ß¶ÈºÍ¿í¶È
-//        int bili =0 ;
-//        int lovelyImageHeight =0 ;
-//        if(strs.size()==0){//µÚ¶şĞĞ¿ªÊ¼ 0 Êı¾İ
-//            bili = 630-60 ;
-//        }else if(strs.size()==1){ //1ÌõÊı¾İ
-//            bili = 630-40 ;
-//        }else if(strs.size()==2){ //2ÌõÊı¾İ
-//            bili = 630 -20 ;
-//        }else {
-//            bili = 630 ;
-//        }
-
-
-
-        BufferedImage lineSizeBufferedImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
-
-        FontMetrics metricsLineSizeBufferedImage = lineSizeBufferedImage.createGraphics().getFontMetrics();
-        //×Ü¹²×Ö·û´®µÄÏñËØ£¬ÒÑ¾­ÏŞÖÆµÄ¿í¶ÈÏñËØ
-        int tuiJianStrLenth = metricsLineSizeBufferedImage.stringWidth(description.toString());// strÒª´òÓ¡µÄ×Ö·û´®
-        int StrPixelOtherTuiJianWidth =0; //µÚÒ»ĞĞÖ®ÍâµÄÆäËû×Ö·û´®µÄÏñËØ³¤¶È
-        int oneTuiJianWidth = 252 ;// 252 ; // µçÄÔÉÏ 252; //µÚÒ»ĞĞÏñËØ³¤¶È
-        int twoTuiJianWidth = 312; //312 //µÚ¶şĞĞÏñËØ³¤¶È
-        int tuiJiangLineSize = 1 ; //ÍÆ¼öÓï ĞĞÊı
-        int charIndex = 0 ;  //µÚÒ»ĞĞ»»ĞĞ´¦µÄ ×Ö·û´®indexÎ»ÖÃ
-        StringBuilder finalStrOtherTuiJian = new StringBuilder();
-
-        StringBuilder sbOneTuiJian = new StringBuilder();// ´æ´¢Ã¿Ò»ĞĞµÄ×Ö·û´®
-        if(oneTuiJianWidth< tuiJianStrLenth){
-            for (int i1 = 0; i1 < description.length(); i1++) {
-                char ch = description.charAt(i1);
-                sbOneTuiJian.append(ch);
-                //ÒÑ¾­Ìí¼ÓµÄ×Ö·û´®µÄ³¤¶ÈÍ¨¹ı bounds2.getWidth() »ñÈ¡
-                Rectangle2D bounds2 = metricsLineSizeBufferedImage.getStringBounds(sbOneTuiJian.toString(), null);
-                int tempStrPi1exlWi1dth = (int) bounds2.getWidth();
-                if (tempStrPi1exlWi1dth > oneTuiJianWidth) { //µ±ÒÑ¾­Ìí¼ÓµÄ³¬¹ıÎÒÃÇ¸ø³öÏŞÖÆµÄ¿í¶È½øĞĞ»»ĞĞ
-                    charIndex = i1 ;
-                    break;
+            if(otherLine!=null){
+                s1 = new StringBuffer(otherLine);
+                if(tuijian.length()>26) {
+                    int n = tuijian.length() / 26; //çœ‹çœ‹æœ‰å‡ è¡Œ
+                    for (int index = 26; index < tuijian.length(); index += 26, n--) {
+                        if (n > 1) {
+                            s1.insert(index, '\n');
+                        }
+                    }
+                }   else {
+                    s1.append(otherLine);
                 }
             }
-        }
-        if(charIndex!=0){
-            finalStrOtherTuiJian = new StringBuilder( description.substring(charIndex, description.length()));
-            StrPixelOtherTuiJianWidth = metricsLineSizeBufferedImage.stringWidth(finalStrOtherTuiJian.toString()) ;// strÒª´òÓ¡µÄ×Ö·û´®
-            tuiJiangLineSize = (int) Math.ceil(StrPixelOtherTuiJianWidth * 1.0 / twoTuiJianWidth) + tuiJiangLineSize;// Ëã³öĞĞÊı
-        }
+            String otherFinal = s1.toString();
+            List<String> strs = Arrays.asList(otherFinal.split("\n"));
 
+            //æ•´ä½“å›¾çš„é«˜åº¦å’Œå®½åº¦
+            int bili =0 ;
+            int lovelyImageHeight =0 ;
+            if(strs.size()==0){//ç¬¬äºŒè¡Œå¼€å§‹ 0 æ•°æ®
+                bili = 590-60 ;
+            }else if(strs.size()==1){ //1æ¡æ•°æ®
+                bili = 590-40 ;
+            }else if(strs.size()==2){ //2æ¡æ•°æ®
+                bili = 590 -20 ;
+            }else {
+                bili = 590 ;
+            }
 
-        //ÕûÌåÍ¼µÄ¸ß¶ÈºÍ¿í¶È
-        int bili =0 ;
-        if(tuiJiangLineSize==1){//µÚ¶şĞĞ¿ªÊ¼ 0 Êı¾İ
-            bili = 630-60 ;
-        }else if(tuiJiangLineSize==2){ //1ÌõÊı¾İ
-            bili = 630-40 ;
-        }else if(tuiJiangLineSize==3){ //2ÌõÊı¾İ
-            bili = 630 -20 ;
-        }else {
-            bili = 630 ;
-        }
+       BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
 
-        BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
+         //ä¸‹é¢è¿™ä¸ªæ˜¯å»æ‰ å°ç¼–æ¨èè¯­
+//        BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, 534*3, null);
 
         ImageIO.write(bufferedImageFinal, "jpg", outputStream);
 
     }
 }
+
+
+
+

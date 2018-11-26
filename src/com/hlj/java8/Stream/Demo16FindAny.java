@@ -1,6 +1,5 @@
 package com.hlj.java8.Stream;
 
-import com.hlj.arithmetic.killperson.Person;
 import org.junit.Test;
 
 import java.util.ArrayList;

@@ -10,7 +10,7 @@ import java.util.Set;
 
 import org.junit.Test;
 
-import com.hlj.arithmetic.killperson.Person;
+import com.hlj.arith.killperson.Person;
 
 /** 
  * @author зїеп HealerJean
