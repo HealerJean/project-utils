@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b2e4b52-ebd0-4352-9faa-d69102299e49" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/Arraylist/ArraylistTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/hlj/Arraylist/ArraylistTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/Array.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/TrueOrFalse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/killperson/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/killperson/SRsf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/arithmetic/time/HourAndMinite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/java8/Stream/Demo02GetStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/hlj/java8/Stream/Demo02GetStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/java8/Stream/Demo13Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/hlj/java8/Stream/Demo13Array.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/java8/Stream/Demo16FindAny.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/hlj/java8/Stream/Demo16FindAny.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/util/QRcode/QRCodeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/hlj/util/QRcode/QRCodeUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/util/job/ChartGraphics.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/hlj/util/job/ChartGraphics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/hlj/util/job/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/hlj/util/job/MainService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/arithmetic/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/arith/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/arithmetic/TrueOrFalse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/arith/TrueOrFalse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/arithmetic/killperson/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/arith/killperson/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/arithmetic/killperson/SRsf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/arith/killperson/SRsf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/arithmetic/readme" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/arith/readme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/arithmetic/time/HourAndMinite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/arith/time/HourAndMinite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo02GetStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo02GetStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo13Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo13Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo16FindAny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo16FindAny.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/util/QRcode/QrCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/util/QRcode/QrCodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/util/job/ChartGraphics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/util/job/ChartGraphics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/util/job/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/util/job/MainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hlj/map/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/map/MapTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,8 +65,8 @@
     <session id="-1911691494">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
@@ -101,18 +75,18 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="137" />
+          <entry key="java" value="139" />
           <entry key="kt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="137" />
+          <entry key="JAVA" value="139" />
           <entry key="Kotlin" value="2" />
         </counts>
       </usages-collector>
@@ -120,13 +94,13 @@
         <counts>
           <entry key="dummy" value="16" />
           <entry key="ft" value="19" />
-          <entry key="java" value="2860" />
+          <entry key="java" value="2947" />
           <entry key="kt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2860" />
+          <entry key="JAVA" value="2947" />
           <entry key="Kotlin" value="32" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="VTL" value="19" />
@@ -135,30 +109,21 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hlj/arith/time/HourAndMinite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hlj/map/MapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="34" column="61" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="61" />
+            <state relative-caret-position="242">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
+            <state relative-caret-position="385">
+              <caret line="1058" column="21" lean-forward="true" selection-start-line="1058" selection-start-column="21" selection-end-line="1058" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -178,9 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CreateXmlByVmFile</find>
-      <find>attrC</find>
-      <find>Optional</find>
       <find>:</find>
       <find>Student</find>
       <find>Student:</find>
@@ -208,6 +170,9 @@
       <find>秒针</find>
       <find>rever</find>
       <find>Collections</find>
+      <find>Segment</find>
+      <find>put</find>
+      <find>tryLock</find>
     </findStrings>
     <replaceStrings>
       <replace>*2</replace>
@@ -226,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo05Skip.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo08ForEach.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/java8/Interface/Demo03InterfaceDefaultPack/MyInterface.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo15MaxMin.java" />
@@ -277,6 +241,7 @@
         <option value="$PROJECT_DIR$/src/com/hlj/util/ihaidou/HttpHelper.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/util/ihaidou/UpdateImage.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/util/job/ChartGraphics.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/map/MapTest.java" />
       </list>
     </option>
   </component>
@@ -324,7 +289,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,21 +313,13 @@
               <item name="project-utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hlj" type="462c0819:PsiDirectoryNode" />
-              <item name="arith" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-utils" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hlj" type="462c0819:PsiDirectoryNode" />
-              <item name="arith" type="462c0819:PsiDirectoryNode" />
-              <item name="time" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,7 +328,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543211563848" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543227979039" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -714,7 +671,8 @@
       <workItem from="1542696493662" duration="4302000" />
       <workItem from="1542777922024" duration="2510000" />
       <workItem from="1542940345170" duration="5563000" />
-      <workItem from="1542960904189" duration="4834000" />
+      <workItem from="1542960904189" duration="4860000" />
+      <workItem from="1543223186393" duration="2998000" />
     </task>
     <servers />
   </component>
@@ -751,13 +709,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297834000" />
+    <option name="totallyTimeSpent" value="300858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-200" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26391864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671306" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -894,13 +852,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/designpatterns/FacadePattern/ShapeMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/designpatterns/FacadePattern/inter/impl/Square.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1181,9 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,24 +1142,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/map/MapTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/arith/time/HourAndMinite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="61" />
+        <state relative-caret-position="539">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
+        <state relative-caret-position="9372">
+          <caret line="440" selection-start-line="440" selection-end-line="440" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/arith/time/HourAndMinite.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="385">
+          <caret line="1058" column="21" lean-forward="true" selection-start-line="1058" selection-start-column="21" selection-end-line="1058" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/map/MapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
