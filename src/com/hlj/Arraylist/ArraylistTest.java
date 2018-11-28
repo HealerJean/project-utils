@@ -1,48 +1,45 @@
 package com.hlj.Arraylist;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
+import com.hlj.arith.Array;
+import com.sun.deploy.util.StringUtils;
 import org.junit.Test;
 
 import com.hlj.arith.killperson.Person;
 
 /** 
- * @author ×÷Õß HealerJean
- * @version ´´½¨Ê±¼ä£º2017Äê9ÔÂ13ÈÕ ÏÂÎç4:43:59 
- * ÀàËµÃ÷ 
+ * @author ä½œè€… HealerJean
+ * @version åˆ›å»ºæ—¶é—´ï¼š2017å¹´9æœˆ13æ—¥ ä¸‹åˆ4:43:59 
+ * ç±»è¯´æ˜ 
  */
 public class ArraylistTest {
 
   
     /**
-     * 2¡¢Éè¶¨arraylist×î´óµÄsize
-     * ArrayListÖĞÃ»ÓĞÖµÊ±£¬ÔòsizeÎª0 
-     * ²»¹Üsize³õÊ¼»¯Îª¼¸ ÆäÊµÊÇÃ»ÓĞÒâÒåµÄ£¬Ö»»á¶¯Ì¬µÄµÄµÃµ½ËüµÄ´óĞ¡
+     * 2ã€è®¾å®šarraylistæœ€å¤§çš„size
+     * ArrayListä¸­æ²¡æœ‰å€¼æ—¶ï¼Œåˆ™sizeä¸º0 
+     * ä¸ç®¡sizeåˆå§‹åŒ–ä¸ºå‡  å…¶å®æ˜¯æ²¡æœ‰æ„ä¹‰çš„ï¼Œåªä¼šåŠ¨æ€çš„çš„å¾—åˆ°å®ƒçš„å¤§å°
      */
 	@Test
     public  void NewArraylist(){
     	
     	List<String> strs = new ArrayList<String>(2);
-    	//ÀïÃæÃ»ÓĞÖµ ×ÔÈ»Ö®ÀàµÃµ½µÄ ´óĞ¡Îª 0
+    	//é‡Œé¢æ²¡æœ‰å€¼ è‡ªç„¶ä¹‹ç±»å¾—åˆ°çš„ å¤§å°ä¸º 0
     	System.out.println(strs.size());
     	
-    	strs.add("µÚÒ»¸ösize");
-    	strs.add("µÚÒ»¸ösize");
-    	strs.add("µÚÒ»¸ösize");
-    	strs.add("µÚÒ»¸ösize");
+    	strs.add("ç¬¬ä¸€ä¸ªsize");
+    	strs.add("ç¬¬ä¸€ä¸ªsize");
+    	strs.add("ç¬¬ä¸€ä¸ªsize");
+    	strs.add("ç¬¬ä¸€ä¸ªsize");
     	System.out.println(strs.size());
 
     	
     }
     
     /**
-     * 1¡¢²âÊÔremove·½·¨ remove(object »òÕßÊÇ index(int))
+     * 1ã€æµ‹è¯•removeæ–¹æ³• remove(object æˆ–è€…æ˜¯ index(int))
      */
 	@Test
 	public  void RemoveMethod() {
@@ -63,7 +60,7 @@ public class ArraylistTest {
         
         empList.add("String one");  
         empList.remove(0);
-        System.out.println("remove 0 Ò²¾ÍÊÇÈ¥µôÁË String two");
+        System.out.println("remove 0 ä¹Ÿå°±æ˜¯å»æ‰äº† String two");
         Iterator it2 = empList.iterator();  
         while(it2.hasNext()){  
             String emp = (String)it2.next();  
@@ -73,7 +70,7 @@ public class ArraylistTest {
 	}  
 	
 	/**
-	3¡¢ list ·ÅÈëÓĞË³Ğò
+	3ã€ list æ”¾å…¥æœ‰é¡ºåº
 	 */
 	@Test
 	public void listHaveAddSort(){
@@ -81,19 +78,19 @@ public class ArraylistTest {
 		Person person = new Person(0, "HealerJean");
 		Person person2 = new Person(0, "HealerJean");
 		persons.add(0,person);
-		persons.add(3,person2); //±¨´í£¬ÒòÎªÃ»ÓĞ 2
+		persons.add(3,person2); //æŠ¥é”™ï¼Œå› ä¸ºæ²¡æœ‰ 2
 	}
 	
 	
 	/**
-	 4¡¢list ÅÅĞò
+	 4ã€list æ’åº
 	 */
 	@Test
 	public void listSort(){
 	/**
-	 * 1¡¢list ÄÚ²¿IntegerÅÅĞò
+	 * 1ã€list å†…éƒ¨Integeræ’åº
 	 */
-        System.out.println("1¡¢list ÄÚ²¿IntegerÅÅĞò");
+        System.out.println("1ã€list å†…éƒ¨Integeræ’åº");
 		List<Integer> nums = new ArrayList<Integer>();  
         nums.add(3);  
         nums.add(5);  
@@ -104,9 +101,9 @@ public class ArraylistTest {
         System.out.println(nums);  
         
     	/**
-    	 * 2¡¢list ÄÚ²¿¶ÔÏó
+    	 * 2ã€list å†…éƒ¨å¯¹è±¡
     	 */
-    	System.out.println("2¡¢list ÄÚ²¿¶ÔÏó");	   
+    	System.out.println("2ã€list å†…éƒ¨å¯¹è±¡");	   
         List<SortEntry> sortEntries = new ArrayList<SortEntry>();  
         sortEntries.add(new SortEntry(23, 100));  
         sortEntries.add(new SortEntry(27, 98));  
@@ -117,9 +114,9 @@ public class ArraylistTest {
   
             @Override  
             public int compare(SortEntry o1, SortEntry o2) {  
-                int i = o1.getScore() - o2.getScore();  //ÏÈ°´ÕÕÄêÁäÅÅĞò  
+                int i = o1.getScore() - o2.getScore();  //å…ˆæŒ‰ç…§å¹´é¾„æ’åº  
                 if(i == 0){  
-                    return o1.getAge() - o2.getAge();  //Èç¹ûÄêÁäÏàµÈÁËÔÙÓÃ·ÖÊı½øĞĞÅÅĞò  
+                    return o1.getAge() - o2.getAge();  //å¦‚æœå¹´é¾„ç›¸ç­‰äº†å†ç”¨åˆ†æ•°è¿›è¡Œæ’åº  
                 }  
                 return i;  
             }  
@@ -132,7 +129,7 @@ public class ArraylistTest {
 	
 	
 	/**
-	 5¡¢list È¥ÖØ
+	 5ã€list å»é‡
 	 */
 	@Test
 	public void deleteSim(){
@@ -145,11 +142,11 @@ public class ArraylistTest {
 	}
 	
 	/**
-	 1¡¢set¼¯ºÏÈ¥ÖØ£¬²»´òÂÒË³Ğò
+	 1ã€seté›†åˆå»é‡ï¼Œä¸æ‰“ä¹±é¡ºåº
 	 */
 	public void deleteSimSet(){
 		
-		System.out.println("1¡¢set¼¯ºÏÈ¥ÖØ£¬²»´òÂÒË³Ğò");
+		System.out.println("1ã€seté›†åˆå»é‡ï¼Œä¸æ‰“ä¹±é¡ºåº");
 		 List<String> list  =   new  ArrayList<String>(); 
         list.add("aaa");
         list.add("bbb");
@@ -164,14 +161,14 @@ public class ArraylistTest {
                newList.add(cd);
            }
        }
-        System.out.println( "È¥ÖØºóµÄ¼¯ºÏ£º " + newList); 
+        System.out.println( "å»é‡åçš„é›†åˆï¼š " + newList); 
 	}
 	
 	 /**
-	   2¡¢±éÀúºóÅĞ¶Ï¸³¸øÁíÒ»¸ölist¼¯ºÏ
+	   2ã€éå†ååˆ¤æ–­èµ‹ç»™å¦ä¸€ä¸ªlisté›†åˆ
 	 */
 	public void delteSimIfContain(){
-      System.out.println("2¡¢±éÀúºóÅĞ¶Ï¸³¸øÁíÒ»¸ölist¼¯ºÏ");
+      System.out.println("2ã€éå†ååˆ¤æ–­èµ‹ç»™å¦ä¸€ä¸ªlisté›†åˆ");
       List<String> list  =   new  ArrayList<String>(); 
       list.add("aaa");
       list.add("bbb");
@@ -185,15 +182,15 @@ public class ArraylistTest {
              newList.add(cd);
          }
      }
-      System.out.println( "È¥ÖØºóµÄ¼¯ºÏ£º " + newList); 
+      System.out.println( "å»é‡åçš„é›†åˆï¼š " + newList); 
 	}
 	
 	/**
-	3¡¢set.addAll(); 
+	3ã€set.addAll(); 
 	   list.add(Set)
 	 */
 	public void delteSimAddAllSet(){
-	      System.out.println("2¡¢±éÀúºóÅĞ¶Ï¸³¸øÁíÒ»¸ölist¼¯ºÏ");
+	      System.out.println("2ã€éå†ååˆ¤æ–­èµ‹ç»™å¦ä¸€ä¸ªlisté›†åˆ");
 
 		  List<String> list  =   new  ArrayList<String>(); 
 	         list.add("aaa");
@@ -207,7 +204,7 @@ public class ArraylistTest {
 	         set.addAll(list);
 	         newList.addAll(set);
 
-	         System.out.println( "È¥ÖØºóµÄ¼¯ºÏ£º " + newList); 
+	         System.out.println( "å»é‡åçš„é›†åˆï¼š " + newList); 
 	}
 	
 	
@@ -215,7 +212,7 @@ public class ArraylistTest {
 	
 	/**
 	 * 
-	6¡¢Çå³ılist¼¯ºÏ list.clear();
+	6ã€æ¸…é™¤listé›†åˆ list.clear();
 	 */
 	@Test
 	public void clear(){
@@ -229,12 +226,12 @@ public class ArraylistTest {
 	      
 	      list.clear();
 	
-	      System.out.println( "list.clear list´óĞ¡ " + list.size()); 
+	      System.out.println( "list.clear listå¤§å° " + list.size()); 
 		}
 	
 	/**
 	 * 
-	7¡¢list ²¢¼¯addAll£¬½»¼¯retainAll£¬²î¼¯removeAll
+	7ã€list å¹¶é›†addAllï¼Œäº¤é›†retainAllï¼Œå·®é›†removeAll
 	 */
 	@Test
 	public void retainAllAndremoveAll(){
@@ -245,12 +242,12 @@ public class ArraylistTest {
 
 		list1.add(2); list1.add(3); list1.add(4);
 		
-		//listºÍlist1µÄ²¢¼¯£º
+		//listå’Œlist1çš„å¹¶é›†ï¼š
 	//	list.addAll(list1); //1 2 3 2 3 4 
 		
-		//listºÍlist1µÄ½»¼¯£º
+		//listå’Œlist1çš„äº¤é›†ï¼š
 	//	list.retainAll(list1); // 2 3  
-		//listºÍlist1µÄ²î¼¯£º
+		//listå’Œlist1çš„å·®é›†ï¼š
 		list.removeAll(list1);  //1
 
 		for (Integer integer : list) {
@@ -260,7 +257,7 @@ public class ArraylistTest {
 	}
 	
 	/**
-	 8¡¢list set·½·¨¸ù¾İË÷Òı²åÈë²¢ÇÒÌæ»»Êı¾İ
+	 8ã€list setæ–¹æ³•æ ¹æ®ç´¢å¼•æ’å…¥å¹¶ä¸”æ›¿æ¢æ•°æ®
 	 */
 	
 	@Test
@@ -271,15 +268,15 @@ public class ArraylistTest {
 		list.add(e);
 		list.add(d);
 		Iterator<String>first=list.iterator();
-		System.out.printf("ĞŞ¸ÄÇ°¼¯ºÏÖĞµÄÔªËØÊÇ£º");
+		System.out.printf("ä¿®æ”¹å‰é›†åˆä¸­çš„å…ƒç´ æ˜¯ï¼š");
 		while(first.hasNext()){
 			System.out.print(first.next()+"    ");
 		}
 
 		System.out.println();
-	    String temp=	list.set(1, b); //Ö±½ÓÌæ»»ÁËÉÏÃæµÄË÷ÒıÎª1µÄÔªËØ2,²¢½«Ô­À´Î»ÖÃÉÏµÄÊı¾İ·µ»Ø
+	    String temp=	list.set(1, b); //ç›´æ¥æ›¿æ¢äº†ä¸Šé¢çš„ç´¢å¼•ä¸º1çš„å…ƒç´ 2,å¹¶å°†åŸæ¥ä½ç½®ä¸Šçš„æ•°æ®è¿”å›
 		System.out.println(temp); //E
-		System.out.printf("setĞŞ¸Ä¼¯ºÏºóµÄÔªËØÊÇ£º");
+		System.out.printf("setä¿®æ”¹é›†åˆåçš„å…ƒç´ æ˜¯ï¼š");
 		Iterator second=list.iterator();
 		while(second.hasNext()){
 			System.out.print(second.next()+"    ");
@@ -287,9 +284,9 @@ public class ArraylistTest {
 
 
 		System.out.println();
-		list.add(2,c);//ÔÚË÷ÒıÎª2µÄÎ»ÖÃ²åÈëÁËÔªËØc£¬È»ºóÏòºóÒÆ¶¯Ò»Î»
+		list.add(2,c);//åœ¨ç´¢å¼•ä¸º2çš„ä½ç½®æ’å…¥äº†å…ƒç´ cï¼Œç„¶åå‘åç§»åŠ¨ä¸€ä½
 		Iterator second2=list.iterator();
-		System.out.printf("ĞŞ¸Ä¼¯ºÏºóµÄÔªËØÊÇ£º");
+		System.out.printf("ä¿®æ”¹é›†åˆåçš„å…ƒç´ æ˜¯ï¼š");
 		while(second2.hasNext()){
 			System.out.print(second2.next()+"    ");
 		}
@@ -303,7 +300,7 @@ public class ArraylistTest {
 	}
 
 	/**
-	 * ÕâÖÖÊÇ´íÎóµÄ
+	 * è¿™ç§æ˜¯é”™è¯¯çš„
 	 */
 	@Test
 	public void testRemoveAll(){
@@ -387,7 +384,7 @@ public class ArraylistTest {
 
 
 	/**
-	 * È¡³ö¼¯ºÏ appsAppDataLast ¼õÈ¥ Óë  appsAppDataFirst ÖØ¸´µÄ¶ÔÏó
+	 * å–å‡ºé›†åˆ appsAppDataLast å‡å» ä¸  appsAppDataFirst é‡å¤çš„å¯¹è±¡
 	 * @param appsAppDataLast
 	 * @param appsAppDataFirst
 	 * @return
@@ -409,8 +406,8 @@ public class ArraylistTest {
 
 
 	/**
-	 * @Desc:  list ÄæĞò ½µĞò ÔöĞò
-	 * @Date:  2018/8/9 ÉÏÎç11:43.
+	 * @Desc:  list é€†åº é™åº å¢åº
+	 * @Date:  2018/8/9 ä¸Šåˆ11:43.
 	 */
 
 	@Test
@@ -431,20 +428,55 @@ public class ArraylistTest {
 
 
 
-		//ÄæĞò  [12, 14, 18, 19, 10, 10, 5, 8, 4, 3, 1]
+		//é€†åº  [12, 14, 18, 19, 10, 10, 5, 8, 4, 3, 1]
 		Collections.reverse(ids);
-		System.out.println("ÄæĞò   "+ids);
+		System.out.println("é€†åº   "+ids);
 
-		//Ä¬ÈÏÉıĞò [1, 3, 4, 5, 8, 10, 10, 12, 14, 18, 19]
+		//é»˜è®¤å‡åº [1, 3, 4, 5, 8, 10, 10, 12, 14, 18, 19]
 		Collections.sort(ids);
-		System.out.println("Ä¬ÈÏÉıĞò"+ids);
+		System.out.println("é»˜è®¤å‡åº"+ids);
 
-		//½µĞòCollections.reverseOrder() [19, 18, 14, 12, 10, 10, 8, 5, 4, 3, 1]
+		//é™åºCollections.reverseOrder() [19, 18, 14, 12, 10, 10, 8, 5, 4, 3, 1]
 		Collections.sort(ids, Collections.reverseOrder());
-		System.out.println("½µĞò   "+ids);
+		System.out.println("é™åº   "+ids);
 
 	}
 
+
+	@Test
+	public void cover(){
+
+		String array[] = {"1","2","3"};
+        List<String> list ;
+        String str ;
+		//1ã€æ•°ç»„è½¬åŒ–ä¸ºé›†åˆ
+		 list =  Arrays.stream(array).collect(Collectors.toList());
+        //2ã€
+		list =  Arrays.asList(array);
+
+        //2ã€é›†åˆè½¬æ¢ä¸ºæ•°ç»„
+        array =  list.stream().toArray(String[]::new);
+        //2ã€
+        array =  list.toArray(new String[0]);
+
+        //é›†åˆè½¬åŒ–ä¸ºé€—å·çš„å­—ç¬¦ä¸²
+        //1ã€
+         str =    list.stream().collect(Collectors.joining(","));
+        System.out.println(str);
+        //2ã€
+        str = StringUtils.join(list,"," );
+        System.out.println(str);
+
+        //1ã€æ•°ç»„è½¬åŒ–ä¸ºå¸¦é€—å·çš„å­—ç¬¦ä¸²
+        str = Arrays.stream(array).collect(Collectors.joining(","));
+        System.out.println(str);
+
+        //é€—å·å­—ç¬¦ä¸²è½¬åŒ–ä¸ºæ•°ç»„
+        array = str.split(",");
+        //é€—å·å­—ç¬¦ä¸²è½¬åŒ–ä¸ºé›†åˆ
+        list = Arrays.asList(str.split(",")) ;
+
+	}
 
 
 }

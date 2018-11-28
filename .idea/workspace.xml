@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b2e4b52-ebd0-4352-9faa-d69102299e49" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/hlj/map/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/map/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +66,8 @@
     <session id="-1911691494">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
-          <entry key="project.open.time.1" value="6" />
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
@@ -75,18 +76,18 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="139" />
+          <entry key="java" value="159" />
           <entry key="kt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="139" />
+          <entry key="JAVA" value="159" />
           <entry key="Kotlin" value="2" />
         </counts>
       </usages-collector>
@@ -94,13 +95,13 @@
         <counts>
           <entry key="dummy" value="16" />
           <entry key="ft" value="19" />
-          <entry key="java" value="2947" />
+          <entry key="java" value="3582" />
           <entry key="kt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2947" />
+          <entry key="JAVA" value="3582" />
           <entry key="Kotlin" value="32" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="VTL" value="19" />
@@ -109,21 +110,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hlj/map/MapTest.java">
+        <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo03MethodRef.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="1058" column="21" lean-forward="true" selection-start-line="1058" selection-start-column="21" selection-end-line="1058" selection-end-column="21" />
+            <state relative-caret-position="484">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -232,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/com/hlj/util/QRcode/ReduceImgTest.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/util/QRcode/WaterMarkUtils.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo16FindAny.java" />
-        <option value="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo14AnyMatch.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo17Sorted.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/arith/killperson/SRsf.java" />
@@ -242,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/com/hlj/util/ihaidou/UpdateImage.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/util/job/ChartGraphics.java" />
         <option value="$PROJECT_DIR$/src/com/hlj/map/MapTest.java" />
+        <option value="$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" />
       </list>
     </option>
   </component>
@@ -289,6 +281,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -313,13 +306,35 @@
               <item name="project-utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hlj" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="Arraylist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hlj" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hlj" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="Lambda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hlj" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="Stream" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,7 +343,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543227979039" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543386594303" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -366,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HourAndMinite">
+  <component name="RunManager" selected="JUnit.ArraylistTest.cover">
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -483,17 +498,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo17Sorted.sorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArraylistTest.cover" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-utils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hlj.java8.Stream.*" />
+          <option name="PATTERN" value="com.hlj.Arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hlj.java8.Stream" />
-      <option name="MAIN_CLASS_NAME" value="com.hlj.java8.Stream.Demo17Sorted" />
-      <option name="METHOD_NAME" value="sorted" />
+      <option name="PACKAGE_NAME" value="com.hlj.Arraylist" />
+      <option name="MAIN_CLASS_NAME" value="com.hlj.Arraylist.ArraylistTest" />
+      <option name="METHOD_NAME" value="cover" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -559,19 +574,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ChartGraphics" />
-      <item itemvalue="JUnit.Demo17Sorted.sorted" />
       <item itemvalue="Application.MainService" />
       <item itemvalue="JUnit.QrCodeUtils.testimageAndImages" />
       <item itemvalue="JUnit.QrCodeUtils.testWriteQRImg" />
       <item itemvalue="Application.HourAndMinite" />
+      <item itemvalue="JUnit.ArraylistTest.cover" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArraylistTest.cover" />
         <item itemvalue="Application.HourAndMinite" />
         <item itemvalue="JUnit.QrCodeUtils.testimageAndImages" />
         <item itemvalue="JUnit.QrCodeUtils.testWriteQRImg" />
         <item itemvalue="Application.MainService" />
-        <item itemvalue="JUnit.Demo17Sorted.sorted" />
       </list>
     </recent_temporary>
   </component>
@@ -672,50 +687,51 @@
       <workItem from="1542777922024" duration="2510000" />
       <workItem from="1542940345170" duration="5563000" />
       <workItem from="1542960904189" duration="4860000" />
-      <workItem from="1543223186393" duration="2998000" />
+      <workItem from="1543223186393" duration="3035000" />
+      <workItem from="1543384985691" duration="1609000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 38m 39s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 12m 24s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 39m 12s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 13m 27s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 39m 25s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 14m 22s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 39m 44s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 14m 31s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testWriteQRImg - 2018.11.23 at 10h 40m 04s.xml">
-      <configuration name="QrCodeUtils.testWriteQRImg" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 17m 07s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 40m 31s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 18m 02s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 40m 57s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 18m 30s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 41m 26s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 19m 46s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 42m 13s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 20m 28s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QrCodeUtils_testimageAndImages - 2018.11.23 at 10h 42m 47s.xml">
-      <configuration name="QrCodeUtils.testimageAndImages" configurationId="JUnit" />
+    <history-entry file="ArraylistTest_cover - 2018.11.28 at 14h 21m 37s.xml">
+      <configuration name="ArraylistTest.cover" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300858000" />
+    <option name="totallyTimeSpent" value="302504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-200" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671306" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27034262" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -728,8 +744,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49785867" weight="0.3066528" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50214136" side_tool="true" weight="0.32848233" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49732333" weight="0.2993763" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50267667" side_tool="true" weight="0.3066528" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32848233" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32744282" />
       <window_info anchor="bottom" id="Tail" order="11" />
@@ -852,13 +868,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/designpatterns/FacadePattern/inter/impl/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/designpatterns/FacadePattern/inter/impl/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -901,27 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo07Concat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo10Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo11Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo0.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -929,45 +917,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo02GetStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo15MaxMin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo08ForEach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo09Method.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo05Skip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo04Limit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1038,59 +991,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo14AnyMatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo06Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo03Count.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo01Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="36" column="24" selection-start-line="26" selection-start-column="2" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo17Sorted.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo01Lambda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo13Array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -1149,10 +1053,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/map/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9372">
-          <caret line="440" selection-start-line="440" selection-end-line="440" />
+        <state relative-caret-position="242">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1163,10 +1067,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hlj/map/MapTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo01Lambda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="572">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo01Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo03Count.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo04Limit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo05Skip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo06Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo07Concat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo15MaxMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo08ForEach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo10Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo11Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="460" lean-forward="true" selection-start-line="460" selection-end-line="460" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo14AnyMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo13Array.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/Demo02GetStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hlj/java8/Lambda/Demo03MethodRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
