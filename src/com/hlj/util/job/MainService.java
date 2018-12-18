@@ -7,8 +7,6 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.math.BigDecimal;
 import java.net.URL;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * @Desc:
@@ -46,51 +44,60 @@ public class MainService {
         String lable = "包邮,七天无理由退换,新品爆款";
 
 
-        BufferedImage bufferedImage = ChartGraphics. graphicsGenerationlovely(imageQR, ErWeiMaImage,titleLab,title,originPrice,nowPrice,couponPrice+"",description,lable);
+        CouponAdzoneFoodieTag couponAdzoneFoodieTag = new CouponAdzoneFoodieTag() ;
 
-            String tuijian = description ;
-            StringBuffer s1= null;
-            String oneLine = "",otherLine = "";
-            if(tuijian.length()>21){
-                oneLine = tuijian.substring(0,21);
-                otherLine = tuijian.substring(21,tuijian.length());
-            }else {
-                oneLine =    tuijian ;
-            }
+        BufferedImage bufferedImage = ChartGraphics. graphicsGenerationlovely(imageQR, ErWeiMaImage,titleLab,title,originPrice,nowPrice,couponPrice+"",description,lable, couponAdzoneFoodieTag);
 
-            if(otherLine!=null){
-                s1 = new StringBuffer(otherLine);
-                if(tuijian.length()>26) {
-                    int n = tuijian.length() / 26; //看看有几行
-                    for (int index = 26; index < tuijian.length(); index += 26, n--) {
-                        if (n > 1) {
-                            s1.insert(index, '\n');
-                        }
-                    }
-                }   else {
-                    s1.append(otherLine);
-                }
-            }
-            String otherFinal = s1.toString();
-            List<String> strs = Arrays.asList(otherFinal.split("\n"));
+//        有小编推荐 start-----------------------------------------------------------------------------------------------------------------------------
+//
+//            String tuijian = description ;
+//            StringBuffer s1= null;
+//            String oneLine = "",otherLine = "";
+//            if(tuijian.length()>21){
+//                oneLine = tuijian.substring(0,21);
+//                otherLine = tuijian.substring(21,tuijian.length());
+//            }else {
+//                oneLine =    tuijian ;
+//            }
+//
+//            if(otherLine!=null){
+//                s1 = new StringBuffer(otherLine);
+//                if(tuijian.length()>26) {
+//                    int n = tuijian.length() / 26; //看看有几行
+//                    for (int index = 26; index < tuijian.length(); index += 26, n--) {
+//                        if (n > 1) {
+//                            s1.insert(index, '\n');
+//                        }
+//                    }
+//                }   else {
+//                    s1.append(otherLine);
+//                }
+//            }
+//            String otherFinal = s1.toString();
+//            List<String> strs = Arrays.asList(otherFinal.split("\n"));
+//
+//            //整体图的高度和宽度
+//            int bili =0 ;
+//            int lovelyImageHeight =0 ;
+//            if(strs.size()==0){//第二行开始 0 数据
+//                bili = 590-60 ;
+//            }else if(strs.size()==1){ //1条数据
+//                bili = 590-40 ;
+//            }else if(strs.size()==2){ //2条数据
+//                bili = 590 -20 ;
+//            }else {
+//                bili = 590 ;
+//            }
+//
+//       BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
+//        有小编推荐去 end-----------------------------------------------------------------------------------------------------------------------------
 
-            //整体图的高度和宽度
-            int bili =0 ;
-            int lovelyImageHeight =0 ;
-            if(strs.size()==0){//第二行开始 0 数据
-                bili = 590-60 ;
-            }else if(strs.size()==1){ //1条数据
-                bili = 590-40 ;
-            }else if(strs.size()==2){ //2条数据
-                bili = 590 -20 ;
-            }else {
-                bili = 590 ;
-            }
 
-       BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
+//        下面这个是没有小编推荐语的时候
+//         BufferedImage bufferedImageFinal =  ChartGraphics.reduceImg(bufferedImage, 375*3, 534*3, null);
 
-         //下面这个是去掉 小编推荐语
-//        BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, 534*3, null);
+
+        BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, 677*3, null);
 
         ImageIO.write(bufferedImageFinal, "jpg", outputStream);
 

@@ -1,12 +1,22 @@
 package com.hlj.util.job;
 
+
+
+import com.google.zxing.common.StringUtils;
+
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.math.BigDecimal;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
 public class ChartGraphics {
+
+
 
 
     public static BufferedImage graphicsGenerationlovely(BufferedImage imageQR,  BufferedImage ImageerWeiMa,
@@ -16,64 +26,56 @@ public class ChartGraphics {
                                                          BigDecimal  nowPrice  ,
                                                          String couponPrice       ,
                                                          String description,
-                                                         String label
+                                                         String label,
+                                                         CouponAdzoneFoodieTag couponAdzoneFoodieTag
     ) {
 //小编推荐 去掉
-        String tuijian = description ;
-        StringBuffer s1= null;
-        String oneLine = "",otherLine = "";
-        if(tuijian.length()>21){
-            oneLine = tuijian.substring(0,21);
-            otherLine = tuijian.substring(21,tuijian.length());
-        }else {
-            oneLine =    tuijian ;
-        }
-
-        if(otherLine!=null){
-            s1 = new StringBuffer(otherLine);
-            if(tuijian.length()>26) {
-                int n = tuijian.length() / 26; //看看有几行
-                for (int index = 26; index < tuijian.length(); index += 26, n--) {
-                    if (n > 1) {
-                        s1.insert(index, '\n');
-                    }
-                }
-            }   else {
-                s1 = new StringBuffer();
-                s1.append(otherLine);
-            }
-        }
-        String otherFinal = s1.toString();
-        List<String> strs = Arrays.asList(otherFinal.split("\n"));
-
-        //整体图的高度和宽度
-        int bili =0 ;
-        int lovelyImageHeight =0 ;
-        if(strs.size()==0){//第二行开始 0 数据
-            bili = 630-60 ;
-        }else if(strs.size()==1){ //1条数据
-            bili = 630-40 ;
-        }else if(strs.size()==2){ //2条数据
-            bili = 630 -20 ;
-        }else {
-            bili = 630 ;
-        }
-
-        //整体图的高度和宽度
-        int  lovelyImageWidth = 375*30;
-         lovelyImageHeight = bili*30;
-
-
-
-
-
-//小编推荐加上
+//        String tuijian = description ;
+//        StringBuffer s1= null;
+//        String oneLine = "",otherLine = "";
+//        if(tuijian.length()>21){
+//            oneLine = tuijian.substring(0,21);
+//            otherLine = tuijian.substring(21,tuijian.length());
+//        }else {
+//            oneLine =    tuijian ;
+//        }
+//
+//        if(otherLine!=null){
+//            s1 = new StringBuffer(otherLine);
+//            if(tuijian.length()>26) {
+//                int n = tuijian.length() / 26; //看看有几行
+//                for (int index = 26; index < tuijian.length(); index += 26, n--) {
+//                    if (n > 1) {
+//                        s1.insert(index, '\n');
+//                    }
+//                }
+//            }   else {
+//                s1 = new StringBuffer();
+//                s1.append(otherLine);
+//            }
+//        }
+//        String otherFinal = s1.toString();
+//        List<String> strs = Arrays.asList(otherFinal.split("\n"));
+//
+//        //整体图的高度和宽度
+//        int bili =0 ;
+//        int lovelyImageHeight =0 ;
+//        if(strs.size()==0){//第二行开始 0 数据
+//            bili = 630-60 ;
+//        }else if(strs.size()==1){ //1条数据
+//            bili = 630-40 ;
+//        }else if(strs.size()==2){ //2条数据
+//            bili = 630 -20 ;
+//        }else {
+//            bili = 630 ;
+//        }
+//
+//        //整体图的高度和宽度
 //        int  lovelyImageWidth = 375*30;
-//        int lovelyImageHeight = 534*30;
+//        lovelyImageHeight = bili*30;
 
-
-
-
+        int  lovelyImageWidth = 375*30;
+        int lovelyImageHeight = 677*30;
         //整体图合成
         BufferedImage bufferedImage = new BufferedImage(lovelyImageWidth, lovelyImageHeight, BufferedImage.TYPE_INT_RGB);
         //设置图片的背景色
@@ -97,100 +99,148 @@ public class ChartGraphics {
 
 
 //小编推荐去掉
-
-        if(oneLine!="") {
-            fixTuiJian.drawString(oneLine, 85*30, 560*30);
-        }
-
-        if(otherFinal!=""){ //第二行开始只显示3行
-            for(int m = 0 ;m <strs.size();m++){
-                if(m ==0){
-                    fixTuiJian.drawString(strs.get(m), 20*30, 580*30);
-                }else if(m  ==1){
-                    fixTuiJian.drawString(strs.get(m), 20*30, 600*30);
-                }else  if(m == 2){
-                    fixTuiJian.drawString(strs.get(m), 20*30, 620*30);
-                }
-            }
-        }
-
-
-
-
-
-
-        BasicStroke stokeLineKuang = new   BasicStroke(   40f   ); //12
-
-
-        Graphics2D 标题 = bufferedImage.createGraphics();
-        标题.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        标题.setColor(new Color(247,108,45));
-        标题.setStroke(stokeLineKuang);
-        标题.drawRect(0,375*30,238*30,158*30);
-
-
-
-        Graphics2D 标题文字 = bufferedImage.createGraphics();
-        标题文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        标题文字.setColor(new Color(247,108,45));
-        标题文字.setStroke(stokeLineKuang);
-        标题文字.drawRect(21*30,390*30,210*30,48*30);
-
-
-        Graphics2D 现价 = bufferedImage.createGraphics();
-        现价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        现价.setColor(new Color(247,108,45));
-        现价.setStroke(stokeLineKuang);
-        现价.drawRect(20*30,446*30,63*30,16*30);//16.5
-
-
-        Graphics2D 券后价 = bufferedImage.createGraphics();
-        券后价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        券后价.setColor(new Color(247,108,45));
-        券后价.setStroke(stokeLineKuang);
-        券后价.drawRect(84*30,465*30,101*30,28*30); //100.5
-
-
-
-        Graphics2D 二维码 = bufferedImage.createGraphics();
-        二维码.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        二维码.setColor(new Color(247,108,45));
-        二维码.setStroke(stokeLineKuang);
-        二维码.drawRect(232*30,394*30,124*30,120*30);
-
-
-        Graphics2D 二维码内 = bufferedImage.createGraphics();
-        二维码内.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        二维码内.setColor(new Color(247,108,45));
-        二维码内.setStroke(stokeLineKuang);
-        二维码内.drawRect(240*30,397*30,109*30,109*30);
-
-        Graphics2D 二维码文字 = bufferedImage.createGraphics();
-        二维码文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        二维码文字.setColor(new Color(247,108,45));
-        二维码文字.setStroke(stokeLineKuang);
-        二维码文字.drawRect(249*30,507*30,90*30,14*30);
+//
+//        if(oneLine!="") {
+//            fixTuiJian.drawString(oneLine, 85*30, 560*30);
+//        }
+//
+//        if(otherFinal!=""){ //第二行开始只显示3行
+//            for(int m = 0 ;m <strs.size();m++){
+//                if(m ==0){
+//                    fixTuiJian.drawString(strs.get(m), 20*30, 580*30);
+//                }else if(m  ==1){
+//                    fixTuiJian.drawString(strs.get(m), 20*30, 600*30);
+//                }else  if(m == 2){
+//                    fixTuiJian.drawString(strs.get(m), 20*30, 620*30);
+//                }
+//            }
+//        }
 
 
 
 
 
-        Graphics2D 推荐 = bufferedImage.createGraphics();
-        推荐.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        推荐.setColor(new Color(247,108,45));
-        推荐.setStroke(stokeLineKuang);
-        推荐.drawRect(0,533*30,375*30,123*30);
+//
+//        BasicStroke stokeLineKuang = new   BasicStroke(   40f   ); //12
+//
+//
+//        Graphics2D 标题 = bufferedImage.createGraphics();
+//        标题.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        标题.setColor(new Color(247,108,45));
+//        标题.setStroke(stokeLineKuang);
+//        标题.drawRect(0,375*30,238*30,158*30);
+//
+//
+//
+//        Graphics2D 标题文字 = bufferedImage.createGraphics();
+//        标题文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        标题文字.setColor(new Color(247,108,45));
+//        标题文字.setStroke(stokeLineKuang);
+//        标题文字.drawRect(21*30,390*30,210*30,48*30);
+//
+//
+//        Graphics2D 现价 = bufferedImage.createGraphics();
+//        现价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        现价.setColor(new Color(247,108,45));
+//        现价.setStroke(stokeLineKuang);
+//        现价.drawRect(20*30,446*30,63*30,16*30);//16.5
+//
+//
+//        Graphics2D 券后价 = bufferedImage.createGraphics();
+//        券后价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        券后价.setColor(new Color(247,108,45));
+//        券后价.setStroke(stokeLineKuang);
+//        券后价.drawRect(84*30,465*30,101*30,28*30); //100.5
+//
+//
+//
+//        Graphics2D 二维码 = bufferedImage.createGraphics();
+//        二维码.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        二维码.setColor(new Color(247,108,45));
+//        二维码.setStroke(stokeLineKuang);
+//        二维码.drawRect(232*30,394*30,124*30,120*30);
+//
+//
+//        Graphics2D 二维码内 = bufferedImage.createGraphics();
+//        二维码内.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        二维码内.setColor(new Color(247,108,45));
+//        二维码内.setStroke(stokeLineKuang);
+//        二维码内.drawRect(240*30,397*30,109*30,109*30);
+//
+//        Graphics2D 二维码文字 = bufferedImage.createGraphics();
+//        二维码文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        二维码文字.setColor(new Color(247,108,45));
+//        二维码文字.setStroke(stokeLineKuang);
+//        二维码文字.drawRect(249*30,507*30,90*30,14*30);
+//
+//
+//
+//
+//
+//        Graphics2D 推荐 = bufferedImage.createGraphics();
+//        推荐.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        推荐.setColor(new Color(247,108,45));
+//        推荐.setStroke(stokeLineKuang);
+////      推荐.drawRect(0,533*30,375*30,123*30); //小编推荐
+//        推荐.drawRect(0,533*30,375*30,148*30); //话痨
+//
+//
+////        Graphics2D 推荐文子 = bufferedImage.createGraphics();
+////        推荐文子.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+////        推荐文子.setColor(new Color(247,108,45));
+////        推荐文子.setStroke(stokeLineKuang);
+////        推荐文子.drawRect(20*30,546*30,338*30,88*30);
+//
+//
+//
+//        Graphics2D 头像 = bufferedImage.createGraphics();
+//        头像.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        头像.setColor(new Color(247,108,45));
+//        头像.setStroke(stokeLineKuang);
+//        头像.drawRect(20*30,550*30,44*30,44*30);
+//
+//
+//
+//
+//
+//        Graphics2D 名字 = bufferedImage.createGraphics();
+//        名字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        名字.setColor(new Color(247,108,45));
+//        名字.setStroke(stokeLineKuang);
+//        名字.drawRect(76*30,550*30,80*30,28*30);
+//
+//
+//
+//        Graphics2D 个性标签 = bufferedImage.createGraphics();
+//        个性标签.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        个性标签.setColor(new Color(247,108,45));
+//        个性标签.setStroke(stokeLineKuang);
+//        个性标签.drawRect(76*30,580*30,80*30,15*30);
+//
+//
+//
+//
+//        Graphics2D 话痨 = bufferedImage.createGraphics();
+//        话痨.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        话痨.setColor(new Color(247,108,45));
+//        话痨.setStroke(stokeLineKuang);
+//        话痨.drawRect(20*30,600*30,335*30,68*30);
+//
+//
+//
+//        Graphics2D 话痨内容 = bufferedImage.createGraphics();
+//        话痨内容.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        话痨内容.setColor(new Color(247,108,45));
+//        话痨内容.setStroke(stokeLineKuang);
+//        话痨内容.drawRect(32*30,612*30,311*30,44*30);
+//
+//
+//
 
 
-        Graphics2D 推荐文子 = bufferedImage.createGraphics();
-        推荐文子.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        推荐文子.setColor(new Color(247,108,45));
-        推荐文子.setStroke(stokeLineKuang);
-        推荐文子.drawRect(20*30,546*30,338*30,88*30);
 
 
-
-        //天猫
+        //二维码图片
         graphicsQR.drawImage(
                 titleLab.getScaledInstance( 34*30, 17*30 ,Image.SCALE_SMOOTH), 21*30, 393*30, null);
 
@@ -351,14 +401,14 @@ public class ChartGraphics {
 
 
 //小编推荐 去掉，后期可以加上
-        Graphics2D fixsptjwenzi = bufferedImage.createGraphics();
-        fixsptjwenzi.setColor(new Color(77,77,77));
-        Font sptjFont = new Font("PingFang SC", Font.BOLD,13*30);
-        fixsptjwenzi.setFont(sptjFont);
-        fixsptjwenzi.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        fixsptjwenzi.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
-        String sptjwenzi =  "豆豆君：";
-        fixsptjwenzi.drawString(sptjwenzi, 20*30, 560*30);
+//        Graphics2D fixsptjwenzi = bufferedImage.createGraphics();
+//        fixsptjwenzi.setColor(new Color(77,77,77));
+//        Font sptjFont = new Font("PingFang SC", Font.BOLD,13*30);
+//        fixsptjwenzi.setFont(sptjFont);
+//        fixsptjwenzi.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        fixsptjwenzi.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
+//        String sptjwenzi =  "小编推荐：";
+//        fixsptjwenzi.drawString(sptjwenzi, 20*30, 560*30);
 
 
 
@@ -560,7 +610,196 @@ public class ChartGraphics {
         }
 
 
+
+
+
+        try {
+            URL personImg = new URL(couponAdzoneFoodieTag.getPersonImgUrl());
+            BufferedImage personBufferImage = ImageIO.read(personImg);
+            //上面的大图
+            graphicsQR.drawImage(personBufferImage, 20*30,545*30,44*30,44*30, null);
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+
+        //固定文字 title
+        Graphics2D name = bufferedImage.createGraphics();
+        name.setColor(new Color(54, 54, 54));
+        Font fixedFontName = new Font("PingFang SC", Font.BOLD, 16*30);
+        name.setFont(fixedFontName);
+        //失真处理
+        name.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        name.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
+        name.drawString(couponAdzoneFoodieTag.getName(), 76*30, 566*30);
+
+
+
+
+        Graphics2D hualaoRect = bufferedImage.createGraphics();
+        hualaoRect.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        hualaoRect.setColor(new Color(0,0,0,15));
+        hualaoRect.fillRoundRect(20*30,600*30,335*30,68*30,0,0);//涂一个圆角矩形块
+
+
+        //话痨内容hualaoContent
+        Graphics2D hualaoContent = bufferedImage.createGraphics();
+        hualaoContent.setColor(new Color(37,37,37));
+        Font hualaoContentFont = new Font("PingFang SC", Font.PLAIN, 14*30);
+        hualaoContent.setFont(hualaoContentFont);
+        hualaoContent.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        hualaoContent.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
+
+        String hualaoAll = couponAdzoneFoodieTag.getContent() ;
+        String hualaoAllOneLine = "",hualaoAllOtherLine = "";
+        if(hualaoAll.length()>23){
+            hualaoAllOneLine = hualaoAll.substring(0,22);
+            hualaoAllOtherLine = hualaoAll.substring(22,hualaoAll.length());
+        }else {
+            hualaoAllOneLine =    hualaoAll ;
+        }
+
+        if(hualaoAllOneLine!="") {
+            if(hualaoAllOtherLine==""){
+                hualaoContent.drawString(hualaoAllOneLine, 32*30, 635*30);
+            }else {
+                hualaoContent.drawString(hualaoAllOneLine, 32*30, 625*30);
+            }
+        }
+
+        if(hualaoAllOtherLine!=""){ //第二行开始只显示1行
+            hualaoContent.drawString(hualaoAllOtherLine, 32*30, 652*30);
+        }
+
+
+        //个性化标签
+        Graphics2D editorTagRect = bufferedImage.createGraphics();
+        editorTagRect.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        editorTagRect.setColor(new Color(255,156,83,50));
+
+        Graphics2D editorTag = bufferedImage.createGraphics();
+        editorTag.setColor(new Color(254,127,0));
+        Font editorTagFont = new Font("PingFang SC", Font.PLAIN, 12*30);
+        editorTag.setFont(editorTagFont);
+        editorTag.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        editorTag.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
+
+
+        String editorTagStr = couponAdzoneFoodieTag.getTag() ;
+        String tagArrays[] = editorTagStr.split(",");
+        int tagWidth [] = new int[5];
+        int editorJianJu = 5 ;
+        for(int i = 0 ; i<tagArrays.length;i++){
+
+            if(i==0){
+                editorTagRect.fillRoundRect(76*30,575*30,(tagArrays[i].length()*11)*30,15*30,0,0);//涂一个圆角矩形块
+                editorTag.drawString(tagArrays[i], 77*30, 587*30);
+                tagWidth[0] =  (tagArrays[i].length()*11) ;
+            }
+            if(i==1){
+                editorTagRect.fillRoundRect((76+tagWidth[0]+editorJianJu)*30,575*30,(tagArrays[i].length()*11)*30,15*30,0,0);//涂一个圆角矩形块
+                editorTag.drawString(tagArrays[i], (77+tagWidth[0]+editorJianJu)*30, 587*30);
+                tagWidth[1] = tagArrays[i].length()*11 + 76+tagWidth[0]+editorJianJu; //标签的宽度加
+            }
+            if(i==2){
+                editorTagRect.fillRoundRect((tagWidth[1]+editorJianJu)*30,575*30,(tagArrays[i].length()*11)*30,15*30,0,0);//涂一个圆角矩形块
+                editorTag.drawString(tagArrays[i], (tagWidth[1]+editorJianJu+1)*30, 587*30);
+            }
+
+        }
+
+//        //个性化标签 一行
+//        Graphics2D editorTagRect = bufferedImage.createGraphics();
+//        editorTagRect.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        editorTagRect.setColor(new Color(255,156,83,50));
+//        editorTagRect.fillRoundRect(76*30,580*30,couponAdzoneFoodieTag.getTagLength()*30,15*30,0,0);//涂一个圆角矩形块
+//
+//
+//
+//        Graphics2D editorTag = bufferedImage.createGraphics();
+//        editorTag.setColor(new Color(254,127,0));
+//        Font editorTagFont = new Font("PingFang SC", Font.PLAIN, 12*30);
+//        editorTag.setFont(editorTagFont);
+//        editorTag.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        editorTag.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
+//        editorTag.drawString(couponAdzoneFoodieTag.getTag(), 76*30, 592*30);
+
+
+
+
+
+
         return bufferedImage;
     }
+
+
+
+    /**
+     * 指定图片宽度和高度和压缩比例对图片进行压缩
+     *
+     * @param widthdist
+     *            压缩后图片的宽度
+     * @param heightdist
+     *            压缩后图片的高度
+     * @param rate
+     *            压缩的比例
+     */
+    public static BufferedImage reduceImg(BufferedImage bufferedImage, int widthdist, int heightdist, Float rate) {
+        try {
+
+            // 如果比例不为空则说明是按比例压缩
+            if (rate != null && rate > 0) {
+                //获得源图片的宽高存入数组中
+                int[] results = getImgWidthHeight(bufferedImage);
+                if (results == null || results[0] == 0 || results[1] == 0) {
+                    return null;
+                } else {
+                    //按比例缩放或扩大图片大小，将浮点型转为整型
+                    widthdist = (int) (results[0] * rate);
+                    heightdist = (int) (results[1] * rate);
+                }
+            }
+            // 开始读取文件并进行压缩
+            Image src = (Image) bufferedImage;
+
+            // 构造一个类型为预定义图像类型之一的 BufferedImage
+            BufferedImage tag = new BufferedImage((int) widthdist, (int) heightdist, BufferedImage.TYPE_INT_RGB);
+
+            //绘制图像  getScaledInstance表示创建此图像的缩放版本，返回一个新的缩放版本Image,按指定的width,height呈现图像
+            //Image.SCALE_SMOOTH,选择图像平滑度比缩放速度具有更高优先级的图像缩放算法。
+            tag.getGraphics().drawImage(src.getScaledInstance(widthdist, heightdist, Image.SCALE_SMOOTH), 0, 0, null);
+
+            return tag;
+        } catch (Exception ef) {
+            ef.printStackTrace();
+        }
+        return  null;
+    }
+
+    /**
+     * 获取图片宽度和高度
+     *
+     * @return 返回图片的宽度
+     */
+    public static int[] getImgWidthHeight(BufferedImage bufferedImage) {
+        int result[] = { 0, 0 };
+        try {
+            // 获得文件输入流
+            // 从流里将图片写入缓冲图片区
+            result[0] =bufferedImage.getWidth(null); // 得到源图片宽
+            result[1] =bufferedImage.getHeight(null);// 得到源图片高
+        } catch (Exception ef) {
+            ef.printStackTrace();
+        }
+
+        return result;
+    }
+
 
 }

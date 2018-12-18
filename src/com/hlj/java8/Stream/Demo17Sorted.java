@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 作者 ：HealerJean
  * 日期 ：2018/11/7  下午2:55.
- * 类描述：
+ * 类描述： sorted 排序
  */
 public class Demo17Sorted {
 
