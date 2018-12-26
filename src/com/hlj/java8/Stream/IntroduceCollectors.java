@@ -93,12 +93,12 @@ public class IntroduceCollectors {
 		return students.stream()
 				.collect(Collectors.counting());
 	}
-	@Test//11
+	@Test//11∂
 	public void countingTestCase() {
 		System.out.println(collectors.countingTest(students));
 	}
 
-	
+
 	/**
 	 * 4.1、 通过省份将学生分组到List中。
 	 */
@@ -112,7 +112,7 @@ public class IntroduceCollectors {
 	public void groupingByToListCase() {
 		System.out.println(collectors.groupingByToList(students));//{Liaoning=[Student [name=Leo, id=2344, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Liaoning, phoneNumber=123456, email=, gender=M, course=null, height=175.5, weight=50.0], Student [name=Eline, id=4697, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Liaoning, phoneNumber=123456, email=, gender=F, course=null, height=188.5, weight=54.0], Student [name=Chrich, id=8799, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Liaoning, phoneNumber=123456, email=, gender=F, course=null, height=155.5, weight=75.0]], Shannxi=[Student [name=Ice, id=1234, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Shannxi, phoneNumber=123456, email=, gender=M, course=null, height=170.5, weight=65.0], Student [name=Mark, id=4345, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Shannxi, phoneNumber=123456, email=, gender=M, course=null, height=169.5, weight=70.0], Student [name=Bing, id=5677, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Shannxi, phoneNumber=123456, email=, gender=M, course=null, height=166.5, weight=67.0], Student [name=Amy, id=5675, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Shannxi, phoneNumber=123456, email=, gender=F, course=null, height=156.5, weight=78.0], Student [name=Lily, id=7567, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Shannxi, phoneNumber=123456, email=, gender=F, course=null, height=167.5, weight=66.0], Student [name=Timiy, id=4677, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Shannxi, phoneNumber=123456, email=, gender=F, course=null, height=182.5, weight=68.0]], Fujian=[Student [name=Will, id=4552, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Fujian, phoneNumber=123456, email=, gender=M, course=null, height=176.5, weight=45.0], Student [name=Yuan, id=4554, birthday=Mon Sep 10 19:38:10 CST 2018, scores=null, from=Fujian, phoneNumber=123456, email=, gender=M, course=null, height=180.5, weight=56.0]]}
 	}
-
+∂
 
 	/**
 	 * 4.2、通过省份将学生分组到Set中。

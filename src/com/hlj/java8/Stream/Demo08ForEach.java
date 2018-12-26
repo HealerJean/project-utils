@@ -3,6 +3,7 @@ package com.hlj.java8.Stream;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -45,4 +46,29 @@ public class Demo08ForEach {
     public static void methodStaticConsume(){
         System.out.println("静态高手在民间");
     }
+
+
+    @Test
+    public void remove(){
+
+        LinkedList<Long> orderIds  =new LinkedList<>();
+        orderIds.add(1L);
+        orderIds.add(2L);
+        orderIds.add(3L);
+
+        List<Long> ids = new ArrayList<>() ;
+
+        int i ;
+        for(i=0;i<=2;i++){
+                ids.add( orderIds.getFirst());
+                orderIds.removeFirst();
+        }
+
+        System.out.println(ids);
+        System.out.println(orderIds);
+
+
+    }
+
+
 }
