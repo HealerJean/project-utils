@@ -6,13 +6,14 @@
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/hamcrest-all-1.3.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lib/util/QRcode/javase-3.3.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ArraylistTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/Arraylist/ListForEach.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/IgnoreNullBean/JavaBeanUtil.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/hlj/IgnoreNullBean/TestMain.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/IgnoreNullBean/data/User.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/IgnoreNullBean/data/UserNow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/arith/killperson/SRsf.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/arith/time/HourAndMinite.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/clone/CloneMain.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/codeOptimize/StringTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/dg/Dg.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Interface/Demo01.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Interface/Demo03InterfaceDefaultPack" charset="UTF-8" />
@@ -46,12 +47,14 @@
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectors.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/java8/Stream/IntroduceCollectorsPack/Student.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/path/ClassLoader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/string/StringTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/ArrayListMultiThread.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/thread/highconcurrency/CountDownLatchDemo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/ChartGraphics.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/CouponAdzoneFoodieTag.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/MainService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/util/QRcode/BufferedImageUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/authorZi/ChartGraphicsZi.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/authorZi/CouponAdzoneFoodieTagZi.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/authorZi/MainServiceZi.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/description/ChartGraphicsDescription.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/hlj/util/job/description/MainServiceDescription.java" charset="UTF-8" />
   </component>

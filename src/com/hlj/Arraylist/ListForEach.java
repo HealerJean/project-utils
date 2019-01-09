@@ -9,20 +9,20 @@ import java.util.List;
 /**
  * @Description
  * @Author HealerJean
- * @Date 2018/5/8  ÉÏÎç9:53.
+ * @Date 2018/5/8  ä¸Šåˆ9:53.
  */
 public class ListForEach {
 
     /**
-         List¶ÔÏóÓĞÒ»¸ö³ÉÔ±±äÁ¿modCount£¬Ëü´ú±í¸ÃList¶ÔÏó±»ĞŞ¸ÄµÄ´ÎÊı£¬Ã¿¶ÔList¶ÔÏóĞŞ¸ÄÒ»´Î£¬modCount¶¼»á¼Ó1.
+         Listå¯¹è±¡æœ‰ä¸€ä¸ªæˆå‘˜å˜é‡modCountï¼Œå®ƒä»£è¡¨è¯¥Listå¯¹è±¡è¢«ä¿®æ”¹çš„æ¬¡æ•°ï¼Œæ¯å¯¹Listå¯¹è±¡ä¿®æ”¹ä¸€æ¬¡ï¼ŒmodCountéƒ½ä¼šåŠ 1.
 
-     ¡¡¡¡ItrÀàÀïÓĞÒ»¸ö³ÉÔ±±äÁ¿expectedModCount£¬ËüµÄÖµÎª´´½¨Itr¶ÔÏóµÄÊ±ºòListµÄmodCountÖµ¡£
-       ÓÃ´Ë±äÁ¿À´¼ìÑéÔÚµü´ú¹ı³ÌÖĞList¶ÔÏóÊÇ·ñ±»ĞŞ¸ÄÁË£¬Èç¹û±»ĞŞ¸ÄÁËÔòÅ×³öjava.util.ConcurrentModificationExceptionÒì³£¡£
-       ÔÚÃ¿´Îµ÷ÓÃItr¶ÔÏóµÄnext()»òÕßremove·½·¨µÄÊ±ºò¶¼»áµ÷ÓÃcheckForComodification()·½·¨½øĞĞÒ»´Î¼ìÑé£¬
-       checkForComodification()·½·¨ÖĞ×öµÄ¹¤×÷¾ÍÊÇ±È½ÏexpectedModCount ºÍmodCountµÄÖµÊÇ·ñÏàµÈ£¬Èç¹û²»ÏàµÈ£¬
-      ¾ÍÈÏÎª»¹ÓĞÆäËû¶ÔÏóÕıÔÚ¶Ôµ±Ç°µÄList½øĞĞ²Ù×÷£¬ÄÇ¸ö¾Í»áÅ×³öConcurrentModificationExceptionÒì³£¡£
+     ã€€ã€€Itrç±»é‡Œæœ‰ä¸€ä¸ªæˆå‘˜å˜é‡expectedModCountï¼Œå®ƒçš„å€¼ä¸ºåˆ›å»ºItrå¯¹è±¡çš„æ—¶å€™Listçš„modCountå€¼ã€‚
+       ç”¨æ­¤å˜é‡æ¥æ£€éªŒåœ¨è¿­ä»£è¿‡ç¨‹ä¸­Listå¯¹è±¡æ˜¯å¦è¢«ä¿®æ”¹äº†ï¼Œå¦‚æœè¢«ä¿®æ”¹äº†åˆ™æŠ›å‡ºjava.util.ConcurrentModificationExceptionå¼‚å¸¸ã€‚
+       åœ¨æ¯æ¬¡è°ƒç”¨Itrå¯¹è±¡çš„next()æˆ–è€…removeæ–¹æ³•çš„æ—¶å€™éƒ½ä¼šè°ƒç”¨checkForComodification()æ–¹æ³•è¿›è¡Œä¸€æ¬¡æ£€éªŒï¼Œ
+       checkForComodification()æ–¹æ³•ä¸­åšçš„å·¥ä½œå°±æ˜¯æ¯”è¾ƒexpectedModCount å’ŒmodCountçš„å€¼æ˜¯å¦ç›¸ç­‰ï¼Œå¦‚æœä¸ç›¸ç­‰ï¼Œ
+      å°±è®¤ä¸ºè¿˜æœ‰å…¶ä»–å¯¹è±¡æ­£åœ¨å¯¹å½“å‰çš„Listè¿›è¡Œæ“ä½œï¼Œé‚£ä¸ªå°±ä¼šæŠ›å‡ºConcurrentModificationExceptionå¼‚å¸¸ã€‚
 
-      ½«list¶ÔÏóÀïÃæµÄ¡°c"É¾³ıÁË£¬Í¬Ê±list¶ÔÏóµÄmodCountÖµ¼Ó1£¬µ«ÊÇItr¶ÔÏóµÄexpectedModCountÃ»ÓĞ±ä£¬ËûÃÇ¿Ï¶¨ÊÇ²»ÏàµÈÁË¡£µÈÔÙÒ»´ÎÖ´ĞĞnext()·½·¨µÄÊ±ºòµ÷ÓÃÁËcheckForComodification()·½·¨£¬ÕâÊ±ºò¾ÍÅ×³öÒì³£ÁË¡£
+      å°†listå¯¹è±¡é‡Œé¢çš„â€œc"åˆ é™¤äº†ï¼ŒåŒæ—¶listå¯¹è±¡çš„modCountå€¼åŠ 1ï¼Œä½†æ˜¯Itrå¯¹è±¡çš„expectedModCountæ²¡æœ‰å˜ï¼Œä»–ä»¬è‚¯å®šæ˜¯ä¸ç›¸ç­‰äº†ã€‚ç­‰å†ä¸€æ¬¡æ‰§è¡Œnext()æ–¹æ³•çš„æ—¶å€™è°ƒç”¨äº†checkForComodification()æ–¹æ³•ï¼Œè¿™æ—¶å€™å°±æŠ›å‡ºå¼‚å¸¸äº†ã€‚
      */
 
     public static void main(String[] args) {
@@ -34,18 +34,19 @@ public class ListForEach {
         list.add("d");
         list.add("e");
         Iterator iterator = list.iterator();
-        while(iterator.hasNext()){
-            String str = (String) iterator.next();
-//            if(str.equals("c")){ //a b checkForComodification
-//                list.remove(str);
-//            }
-            if(str.equals("d")){ // a b c
-                //ËüÊÇÍ¨¹ıItrµÄ¶ÔÏóµÄcursorÓëList¶ÔÏóµÄsizeÖµÀ´ÅĞ¶ÏÊÇ·ñ»¹ÓĞÎ´µü´úµÄ¶ÔÏó£¬
-                // µ±±éÀúÍê¡°d"µÄÊ±ºòcursor=4£¬É¾³ı¡±d"µÄÊ±ºò£¬List¶ÔÏóµÄsize¾Í»á¼õ1£¬sizeÊ×ÏÈÎª5£¬ºóÀ´±äÎª4£¬
-                // ÕâÊ±ºòcursorºÍsizeÊÇÏàµÈµÄ£¬hasNext()·½·¨·µ»ØµÄÊÇfalse£¬¾ÍÈÏÎª±éÀú½áÊøÁË£¬
-                // ËùÒÔÉ¾³ıÒÔºóÃ»ÓĞ½øÈ¥Ö´ĞĞnext()·½·¨ÁË£¬¾ÍÃ»ÓĞÅ×³öÒì³£ÁË£¬µ±È»"e"Ò²Ã»ÓĞÊä³öÀ´¡£
+        while(iterator.hasNext()){       //åˆšè¿›æ¥cursorä¸º0 
+            String str = (String) iterator.next();           //ç¬¬ä¸€æ¬¡nextä¹‹åæ¸¸æ ‡ä¸º1ï¼ŒæŒ‡å‘çš„æ˜¯ä¸‹ä¸€ä¸ªç´¢å¼•ï¼Œä¸listå¯¹è±¡sizeåˆ¤æ–­æ˜¯å¦æœ‰æœªè¿­ä»£çš„å¯¹è±¡
+          if(str.equals("c")){ //a b checkForComodification
                 list.remove(str);
-            }else{
+          }
+//            if(str.equals("d")){ // a b c
+//                //å®ƒæ˜¯é€šè¿‡Itrçš„å¯¹è±¡çš„cursorä¸Listå¯¹è±¡çš„sizeå€¼æ¥åˆ¤æ–­æ˜¯å¦è¿˜æœ‰æœªè¿­ä»£çš„å¯¹è±¡ï¼Œ
+//                // å½“éå†å®Œâ€œd"çš„æ—¶å€™cursor=4ï¼Œåˆ é™¤â€d"çš„æ—¶å€™ï¼ŒListå¯¹è±¡çš„sizeå°±ä¼šå‡1ï¼Œsizeé¦–å…ˆä¸º5ï¼Œåæ¥å˜ä¸º4ï¼Œ
+//                // è¿™æ—¶å€™cursorå’Œsizeæ˜¯ç›¸ç­‰çš„ï¼ŒhasNext()æ–¹æ³•è¿”å›çš„æ˜¯falseï¼Œå°±è®¤ä¸ºéå†ç»“æŸäº†ï¼Œ
+//                // æ‰€ä»¥åˆ é™¤ä»¥åæ²¡æœ‰è¿›å»æ‰§è¡Œnext()æ–¹æ³•äº†ï¼Œå°±æ²¡æœ‰æŠ›å‡ºå¼‚å¸¸äº†ï¼Œå½“ç„¶"e"ä¹Ÿæ²¡æœ‰è¾“å‡ºæ¥ã€‚
+//                list.remove(str);   //
+//            }
+            else{
                 System.out.println(str);
             }
         }
@@ -63,15 +64,15 @@ public class ListForEach {
         list.add("eeeeee");
 
         Iterator it = list.iterator();
-        //it.remove(); //É¾³ıµÄÊÇÉÏÒ»¸öÔªËØ IllegalStateException
+        //it.remove(); //åˆ é™¤çš„æ˜¯ä¸Šä¸€ä¸ªå…ƒç´  IllegalStateException
         int i = 0;
         String s = null;
         while(it.hasNext()){
             if(i==2){
-//              list.remove(it.next()); Èç¹ûÓÃlist.remove(it.next());»á±¨Òì³£checkForComodification
-                it.remove();
+//              list.remove(it.next()); å¦‚æœç”¨list.remove(it.next());ä¼šæŠ¥å¼‚å¸¸checkForComodification
+                it.remove();//removeçš„æ˜¯b removeä¹‹åcursorä¼šå‡1,å› ä¸ºcursoræŒ‡å‘çš„æ˜¯ä¸‹ä¸€ä¸ªç´¢å¼•ï¼Œåˆ é™¤ä¹‹åä¸‹ä¸€ä¸ªç´¢å¼•å°±ä¼šå‡1ï¼Œç„¶ålistä¸ªæ•°ä¼šå‡1
             }
-            System.out.println("µÚ"+i+"¸öÔªËØ"+it.next());
+            System.out.println("ç¬¬"+i+"ä¸ªå…ƒç´ "+it.next());
             i++ ;
         }
         System.out.println("----------------");

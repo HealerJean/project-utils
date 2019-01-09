@@ -1,8 +1,6 @@
-package com.hlj.util.job;
+package com.hlj.util.job.authorZi;
 
-
-
-import com.google.zxing.common.StringUtils;
+import com.hlj.util.QRcode.BufferedImageUtils;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -14,7 +12,7 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
-public class ChartGraphics {
+public class ChartGraphicsZi{
 
 
 
@@ -27,7 +25,9 @@ public class ChartGraphics {
                                                          String couponPrice       ,
                                                          String description,
                                                          String label,
-                                                         CouponAdzoneFoodieTag couponAdzoneFoodieTag
+                                                         CouponAdzoneFoodieTagZi couponAdzoneFoodieTag,
+                                                         int lovelyImageWidth,
+                                                         int lovelyImageHeight
     ) {
 //小编推荐 去掉
 //        String tuijian = description ;
@@ -74,8 +74,8 @@ public class ChartGraphics {
 //        int  lovelyImageWidth = 375*30;
 //        lovelyImageHeight = bili*30;
 
-        int  lovelyImageWidth = 375*30;
-        int lovelyImageHeight = 677*30;
+
+
         //整体图合成
         BufferedImage bufferedImage = new BufferedImage(lovelyImageWidth, lovelyImageHeight, BufferedImage.TYPE_INT_RGB);
         //设置图片的背景色
@@ -120,122 +120,121 @@ public class ChartGraphics {
 
 
 
-//
-//        BasicStroke stokeLineKuang = new   BasicStroke(   40f   ); //12
-//
-//
-//        Graphics2D 标题 = bufferedImage.createGraphics();
-//        标题.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        标题.setColor(new Color(247,108,45));
-//        标题.setStroke(stokeLineKuang);
-//        标题.drawRect(0,375*30,238*30,158*30);
-//
-//
-//
-//        Graphics2D 标题文字 = bufferedImage.createGraphics();
-//        标题文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        标题文字.setColor(new Color(247,108,45));
-//        标题文字.setStroke(stokeLineKuang);
-//        标题文字.drawRect(21*30,390*30,210*30,48*30);
-//
-//
-//        Graphics2D 现价 = bufferedImage.createGraphics();
-//        现价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        现价.setColor(new Color(247,108,45));
-//        现价.setStroke(stokeLineKuang);
-//        现价.drawRect(20*30,446*30,63*30,16*30);//16.5
-//
-//
-//        Graphics2D 券后价 = bufferedImage.createGraphics();
-//        券后价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        券后价.setColor(new Color(247,108,45));
-//        券后价.setStroke(stokeLineKuang);
-//        券后价.drawRect(84*30,465*30,101*30,28*30); //100.5
-//
-//
-//
-//        Graphics2D 二维码 = bufferedImage.createGraphics();
-//        二维码.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        二维码.setColor(new Color(247,108,45));
-//        二维码.setStroke(stokeLineKuang);
-//        二维码.drawRect(232*30,394*30,124*30,120*30);
-//
-//
-//        Graphics2D 二维码内 = bufferedImage.createGraphics();
-//        二维码内.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        二维码内.setColor(new Color(247,108,45));
-//        二维码内.setStroke(stokeLineKuang);
-//        二维码内.drawRect(240*30,397*30,109*30,109*30);
-//
-//        Graphics2D 二维码文字 = bufferedImage.createGraphics();
-//        二维码文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        二维码文字.setColor(new Color(247,108,45));
-//        二维码文字.setStroke(stokeLineKuang);
-//        二维码文字.drawRect(249*30,507*30,90*30,14*30);
-//
-//
-//
-//
-//
-//        Graphics2D 推荐 = bufferedImage.createGraphics();
-//        推荐.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        推荐.setColor(new Color(247,108,45));
-//        推荐.setStroke(stokeLineKuang);
-////      推荐.drawRect(0,533*30,375*30,123*30); //小编推荐
-//        推荐.drawRect(0,533*30,375*30,148*30); //话痨
-//
-//
-////        Graphics2D 推荐文子 = bufferedImage.createGraphics();
-////        推荐文子.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-////        推荐文子.setColor(new Color(247,108,45));
-////        推荐文子.setStroke(stokeLineKuang);
-////        推荐文子.drawRect(20*30,546*30,338*30,88*30);
-//
-//
-//
-//        Graphics2D 头像 = bufferedImage.createGraphics();
-//        头像.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        头像.setColor(new Color(247,108,45));
-//        头像.setStroke(stokeLineKuang);
-//        头像.drawRect(20*30,550*30,44*30,44*30);
-//
-//
-//
-//
-//
-//        Graphics2D 名字 = bufferedImage.createGraphics();
-//        名字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        名字.setColor(new Color(247,108,45));
-//        名字.setStroke(stokeLineKuang);
-//        名字.drawRect(76*30,550*30,80*30,28*30);
-//
-//
-//
-//        Graphics2D 个性标签 = bufferedImage.createGraphics();
-//        个性标签.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        个性标签.setColor(new Color(247,108,45));
-//        个性标签.setStroke(stokeLineKuang);
-//        个性标签.drawRect(76*30,580*30,80*30,15*30);
-//
-//
-//
-//
-//        Graphics2D 话痨 = bufferedImage.createGraphics();
-//        话痨.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        话痨.setColor(new Color(247,108,45));
-//        话痨.setStroke(stokeLineKuang);
-//        话痨.drawRect(20*30,600*30,335*30,68*30);
-//
-//
-//
-//        Graphics2D 话痨内容 = bufferedImage.createGraphics();
-//        话痨内容.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-//        话痨内容.setColor(new Color(247,108,45));
-//        话痨内容.setStroke(stokeLineKuang);
-//        话痨内容.drawRect(32*30,612*30,311*30,44*30);
-//
-//
-//
+
+        BasicStroke stokeLineKuang = new   BasicStroke(   40f   ); //12
+
+
+        Graphics2D 标题 = bufferedImage.createGraphics();
+        标题.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        标题.setColor(new Color(247,108,45));
+        标题.setStroke(stokeLineKuang);
+        标题.drawRect(0,375*30,238*30,158*30);
+
+
+
+        Graphics2D 标题文字 = bufferedImage.createGraphics();
+        标题文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        标题文字.setColor(new Color(247,108,45));
+        标题文字.setStroke(stokeLineKuang);
+        标题文字.drawRect(21*30,390*30,210*30,48*30);
+
+
+        Graphics2D 现价 = bufferedImage.createGraphics();
+        现价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        现价.setColor(new Color(247,108,45));
+        现价.setStroke(stokeLineKuang);
+        现价.drawRect(20*30,446*30,63*30,16*30);//16.5
+
+
+        Graphics2D 券后价 = bufferedImage.createGraphics();
+        券后价.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        券后价.setColor(new Color(247,108,45));
+        券后价.setStroke(stokeLineKuang);
+        券后价.drawRect(84*30,465*30,101*30,28*30); //100.5
+
+
+
+        Graphics2D 二维码 = bufferedImage.createGraphics();
+        二维码.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        二维码.setColor(new Color(247,108,45));
+        二维码.setStroke(stokeLineKuang);
+        二维码.drawRect(232*30,394*30,124*30,120*30);
+
+
+        Graphics2D 二维码内 = bufferedImage.createGraphics();
+        二维码内.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        二维码内.setColor(new Color(247,108,45));
+        二维码内.setStroke(stokeLineKuang);
+        二维码内.drawRect(240*30,397*30,109*30,109*30);
+
+        Graphics2D 二维码文字 = bufferedImage.createGraphics();
+        二维码文字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        二维码文字.setColor(new Color(247,108,45));
+        二维码文字.setStroke(stokeLineKuang);
+        二维码文字.drawRect(249*30,507*30,90*30,14*30);
+
+
+
+
+
+        Graphics2D 推荐 = bufferedImage.createGraphics();
+        推荐.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        推荐.setColor(new Color(247,108,45));
+        推荐.setStroke(stokeLineKuang);
+//      推荐.drawRect(0,533*30,375*30,123*30); //小编推荐
+        推荐.drawRect(0,533*30,375*30,148*30); //话痨
+
+
+//        Graphics2D 推荐文子 = bufferedImage.createGraphics();
+//        推荐文子.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//        推荐文子.setColor(new Color(247,108,45));
+//        推荐文子.setStroke(stokeLineKuang);
+//        推荐文子.drawRect(20*30,546*30,338*30,88*30);
+
+
+
+        Graphics2D 头像 = bufferedImage.createGraphics();
+        头像.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        头像.setColor(new Color(247,108,45));
+        头像.setStroke(stokeLineKuang);
+        头像.drawRect(20*30,550*30,44*30,44*30);
+
+
+
+
+
+        Graphics2D 名字 = bufferedImage.createGraphics();
+        名字.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        名字.setColor(new Color(247,108,45));
+        名字.setStroke(stokeLineKuang);
+        名字.drawRect(76*30,550*30,80*30,28*30);
+
+
+
+        Graphics2D 个性标签 = bufferedImage.createGraphics();
+        个性标签.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        个性标签.setColor(new Color(247,108,45));
+        个性标签.setStroke(stokeLineKuang);
+        个性标签.drawRect(76*30,580*30,80*30,15*30);
+
+
+
+
+        Graphics2D 话痨 = bufferedImage.createGraphics();
+        话痨.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        话痨.setColor(new Color(247,108,45));
+        话痨.setStroke(stokeLineKuang);
+        话痨.drawRect(20*30,600*30,335*30,68*30);
+
+
+
+        Graphics2D 话痨内容 = bufferedImage.createGraphics();
+        话痨内容.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        话痨内容.setColor(new Color(247,108,45));
+        话痨内容.setStroke(stokeLineKuang);
+        话痨内容.drawRect(32*30,612*30,311*30,44*30);
+
+
 
 
 
@@ -641,41 +640,61 @@ public class ChartGraphics {
 
 
 
-
-        Graphics2D hualaoRect = bufferedImage.createGraphics();
-        hualaoRect.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        hualaoRect.setColor(new Color(0,0,0,15));
-        hualaoRect.fillRoundRect(20*30,600*30,335*30,68*30,0,0);//涂一个圆角矩形块
-
-
         //话痨内容hualaoContent
         Graphics2D hualaoContent = bufferedImage.createGraphics();
         hualaoContent.setColor(new Color(37,37,37));
         Font hualaoContentFont = new Font("PingFang SC", Font.PLAIN, 14*30);
         hualaoContent.setFont(hualaoContentFont);
-        hualaoContent.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         hualaoContent.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
 
-        String hualaoAll = couponAdzoneFoodieTag.getContent() ;
-        String hualaoAllOneLine = "",hualaoAllOtherLine = "";
-        if(hualaoAll.length()>23){
-            hualaoAllOneLine = hualaoAll.substring(0,22);
-            hualaoAllOtherLine = hualaoAll.substring(22,hualaoAll.length());
+
+        Graphics2D hualaoRect = bufferedImage.createGraphics();
+        hualaoRect.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        hualaoRect.setColor(new Color(0,0,0,15));
+
+
+        FontMetrics fm = hualaoContent.getFontMetrics();
+        int hualaoFirstLineWight = fm.stringWidth(couponAdzoneFoodieTag.getContent());
+
+        if(hualaoFirstLineWight<=(311*30*2)) {
+            hualaoRect.fillRoundRect(20*30,600*30,335*30,68*30,0,0);//涂一个圆角矩形块
+        }else if((hualaoFirstLineWight>311*30*2)&&hualaoFirstLineWight<=(311*30*3)) {
+            hualaoRect.fillRoundRect(20*30,600*30,335*30,95*30,0,0);//涂一个圆角矩形块
+        }else if((hualaoFirstLineWight>311*30*3)) {
+            hualaoRect.fillRoundRect(20*30,600*30,335*30,120*30,0,0);//涂一个圆角矩形块
+        }
+
+        if(hualaoFirstLineWight<=311*30){
+                hualaoContent.drawString(couponAdzoneFoodieTag.getContent(), 32*30, 635*30);
         }else {
-            hualaoAllOneLine =    hualaoAll ;
+            BufferedImageUtils.drawString(hualaoContent,couponAdzoneFoodieTag.getContent(),25*30,311*30,4,32*30,630*30,true,false);
         }
 
-        if(hualaoAllOneLine!="") {
-            if(hualaoAllOtherLine==""){
-                hualaoContent.drawString(hualaoAllOneLine, 32*30, 635*30);
-            }else {
-                hualaoContent.drawString(hualaoAllOneLine, 32*30, 625*30);
-            }
-        }
 
-        if(hualaoAllOtherLine!=""){ //第二行开始只显示1行
-            hualaoContent.drawString(hualaoAllOtherLine, 32*30, 652*30);
-        }
+
+//
+//        for(int i = 0  ; i<hualaoList.size() ;i++){
+//            if(hualaoList.size()==1){
+//                hualaoContent.drawString(hualaoList.get(0), 32*30, 635*30);
+//            }else {
+//                if(i==0){
+//                    hualaoContent.drawString(hualaoList.get(i), 32*30, 625*30);
+//                }else if(i==1){
+//                     hualaoContent.drawString(hualaoList.get(i), 32*30, 652*30);
+//                }else if(i==2){
+//                    hualaoContent.drawString(hualaoList.get(i), 32*30, 682*30);
+//                }else if(i==3){
+//                    hualaoContent.drawString(hualaoList.get(i), 32*30, 712*30);
+//                }
+//            }
+//        }
+
+
+
+
+
+
+
 
 
         //个性化标签

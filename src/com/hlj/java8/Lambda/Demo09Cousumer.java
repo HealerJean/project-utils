@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 
 /**
  *  Consumer在 stream中相当于是 ForEach()中执行
- * @Desc:  Consumer 是我们进行消费掉传入的参数
+ * @Desc:  Consumer 是我们进行消费掉传入的参数()
  *
  * accept andThen
  *

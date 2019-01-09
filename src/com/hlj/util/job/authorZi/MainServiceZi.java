@@ -1,8 +1,9 @@
-package com.hlj.util.job;
+package com.hlj.util.job.authorZi;
 
-import com.hlj.util.QRcode.QrCodeUtils;
+import com.hlj.util.QRcode.BufferedImageUtils;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.math.BigDecimal;
@@ -13,7 +14,7 @@ import java.net.URL;
  * @Author HealerJean
  * @Date 2018/6/29  上午11:10.
  */
-public class MainService {
+public class MainServiceZi {
 
     public static void main(String[] args) throws Exception {
 
@@ -23,30 +24,67 @@ public class MainService {
 
         BufferedImage urlimage = ImageIO.read(new URL("https://img.alicdn.com/imgextra/i1/3694212174/TB21Wb_jlsmBKNjSZFFXXcT9VXa_!!3694212174.jpg"));
 
-        BufferedImage imageQR  = QrCodeUtils.reduceImg(urlimage,375*2,375*2,null);
+        BufferedImage imageQR  = BufferedImageUtils.reduceImg(urlimage,375*2,375*2,null);
 
         URL u = new URL("http://admore.oss-cn-beijing.aliyuncs.com/admin/duodianyouhui/itemgood/6a4507a16213460ab3476a3204a9e5bc.png");
 
         BufferedImage titleLab = ImageIO.read(u);
 
-        BufferedImage  ErWeiMaImage =  QrCodeUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44",300,300,3);
+        BufferedImage  ErWeiMaImage =  BufferedImageUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44",300,300,3);
 
         String title = "AAAAAAAAAAAAAA千妇恋-日本进口温和控油洗面奶30g";
         BigDecimal originPrice =new BigDecimal("88.9");
         BigDecimal  nowPrice  =new BigDecimal("39.9");
         BigDecimal couponPrice  =new BigDecimal("10");
-
-//        String description = "布衣不二旗舰店，之前推荐衣不二旗舰店之前推";
-        String description = "布衣不二旗舰店，之前推布衣不二旗舰店，之前推之前推布衣不二旗舰店之前推布衣不二旗舰店之前推布衣不二旗舰店之前推布衣不二旗舰店之前推之前推布衣不二旗舰店之前推布衣不二旗舰店之前推布衣不二旗舰店之前推布衣不二旗舰店";
-
-//        String description = "AAAAAAAAAAAAAA布衣不二旗舰店，之前推荐衣不二旗舰店之前推";
-
+        String description = "布衣不二旗舰店，之前推布衣不二旗舰店，";
         String lable = "包邮,七天无理由退换,新品爆款";
 
 
-        CouponAdzoneFoodieTag couponAdzoneFoodieTag = new CouponAdzoneFoodieTag() ;
+        CouponAdzoneFoodieTagZi couponAdzoneFoodieTag = new CouponAdzoneFoodieTagZi() ;
 
-        BufferedImage bufferedImage = ChartGraphics. graphicsGenerationlovely(imageQR, ErWeiMaImage,titleLab,title,originPrice,nowPrice,couponPrice+"",description,lable, couponAdzoneFoodieTag);
+
+
+        //整体图合成
+        BufferedImage temp = new BufferedImage(375, 677, BufferedImage.TYPE_INT_RGB);
+        //设置图片的背景色
+        Graphics2D main = temp.createGraphics();
+        main.fillRect(0, 0, 375, 677);
+
+        int lovelyImageWidth = 375*30,lovelyImageHeight =677*30 ;
+        //话痨内容hualaoContent
+        Graphics2D hualaoContent = temp.createGraphics();
+        hualaoContent.setColor(new Color(37,37,37));
+        Font hualaoContentFont = new Font("PingFang SC", Font.PLAIN, 14*30);
+        hualaoContent.setFont(hualaoContentFont);
+        hualaoContent.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
+
+        FontMetrics fm = hualaoContent.getFontMetrics();
+        int hualaoFirstLineWight = fm.stringWidth(couponAdzoneFoodieTag.getContent());
+
+        if(hualaoFirstLineWight<=(311*30*2)) {
+            lovelyImageWidth = 375*30;
+            lovelyImageHeight = 677*30;
+        }else if((hualaoFirstLineWight>311*30*2)&&hualaoFirstLineWight<=(311*30*3)) {
+            lovelyImageWidth = 375*30;
+            lovelyImageHeight = 707*30;
+        }else if((hualaoFirstLineWight>311*30*3)) {
+            lovelyImageWidth = 375*30;
+            lovelyImageHeight = 730*30;
+        }
+
+//        List<String> hualaoList = StringTool.getStrList(couponAdzoneFoodieTag.getContent() ,22 );
+//        if(hualaoList.size()<=2){
+//
+//        }if(hualaoList.size()==3){
+//            lovelyImageWidth = 375*30;
+//            lovelyImageHeight = 707*30;
+//        }if(hualaoList.size()>3){
+//            lovelyImageWidth = 375*30;
+//            lovelyImageHeight = 730*30;
+//        }
+
+
+        BufferedImage bufferedImage = ChartGraphicsZi.graphicsGenerationlovely(imageQR, ErWeiMaImage,titleLab,title,originPrice,nowPrice,couponPrice+"",description,lable, couponAdzoneFoodieTag,lovelyImageWidth,lovelyImageHeight);
 
 //        有小编推荐 start-----------------------------------------------------------------------------------------------------------------------------
 //
@@ -89,7 +127,7 @@ public class MainService {
 //                bili = 590 ;
 //            }
 //
-//       BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
+//       BufferedImage bufferedImageFinal =  BufferedImageUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
 //        有小编推荐去 end-----------------------------------------------------------------------------------------------------------------------------
 
 
@@ -97,7 +135,9 @@ public class MainService {
 //         BufferedImage bufferedImageFinal =  ChartGraphics.reduceImg(bufferedImage, 375*3, 534*3, null);
 
 
-        BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, 677*3, null);
+
+
+        BufferedImage bufferedImageFinal =  BufferedImageUtils.reduceImg(bufferedImage, lovelyImageWidth/10, lovelyImageHeight/10, null);
 
         ImageIO.write(bufferedImageFinal, "jpg", outputStream);
 

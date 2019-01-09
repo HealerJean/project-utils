@@ -1,12 +1,11 @@
-package com.hlj.util.job;
-
+package com.hlj.util.job.authorZi;
 
 /**
  * 作者 ：HealerJean
  * 日期 ：2018/12/6  下午6:50.
  * 类描述：
  */
-public class CouponAdzoneFoodieTag {
+public class CouponAdzoneFoodieTagZi {
 
     String  personImgUrl = "http://image.dangqugame.cn/personimage/mike.png" ;
 
@@ -16,7 +15,7 @@ public class CouponAdzoneFoodieTag {
 //    String tag =" #四次元少女#,#吃货#,#四通一达都有熟人#" ;
 
 
-    String content = "“布衣不二旗舰店布衣不二旗舰店布衣不二旗舰店布衣不二旗舰店布衣不二旗舰店布衣不二旗舰店”";
+    String content = "111122223所以比传统纸巾更环保。巾更环保111122223所以比传统纸巾更环保巾更环保111122223所以比传统纸巾更环保巾更环保";
 
 
     public String getPersonImgUrl() {

@@ -4,19 +4,19 @@ import org.junit.Test;
 
 /** 
  * @author : HealerJean
- * @date   £º 2017Äê12ÔÂ15ÈÕ ÉÏÎç9:58:04 
+ * @date   ï¼š 2017å¹´12æœˆ15æ—¥ ä¸Šåˆ9:58:04 
  * @Description:
  */
 public class StringTest {
 	
 	/**
-	 * ±È½ÏËÙ¶È
-	String.toString() ¡·  String.valueOf() >  i + ""
+	 * æ¯”è¾ƒé€Ÿåº¦
+	String.toString() ã€‹  String.valueOf() >  i + ""
 	 * @author :HealerJean: 
-	 ½á¹û
-	 String.valueOf()£º21ms
-	 Integer.toString()£º6ms
-	 i + ""£º38ms
+	 ç»“æžœ
+	 String.valueOf()ï¼š21ms
+	 Integer.toString()ï¼š6ms
+	 i + ""ï¼š38ms
 	 */
 	@Test
 	public void testSpeed() {
@@ -30,19 +30,19 @@ public class StringTest {
 		        String str = String.valueOf(i);
 		    }   
 		    
-		    System.out.println("String.valueOf()£º" + (System.currentTimeMillis() - startTime) + "ms");
+		    System.out.println("String.valueOf()ï¼š" + (System.currentTimeMillis() - startTime) + "ms");
 		    startTime = System.currentTimeMillis();
 		    for (int j = 0; j < loopTime; j++)
 		    {
 		        String str = i.toString();
 		    }    
 		    
-		    System.out.println("Integer.toString()£º" + (System.currentTimeMillis() - startTime) + "ms");
+		    System.out.println("Integer.toString()ï¼š" + (System.currentTimeMillis() - startTime) + "ms");
 		    startTime = System.currentTimeMillis();
 		    for (int j = 0; j < loopTime; j++)
 		    {
 		        String str = i + "";
 		    }    
-		    System.out.println("i + \"\"£º" + (System.currentTimeMillis() - startTime) + "ms");
+		    System.out.println("i + \"\"ï¼š" + (System.currentTimeMillis() - startTime) + "ms");
 }
 }

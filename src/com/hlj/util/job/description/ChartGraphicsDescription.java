@@ -18,7 +18,7 @@
 //                                                         String description,
 //                                                         String label
 //    ) {
-////小编推荐 去掉
+////小编推荐 ------start-----------------------
 //        String tuijian = description ;
 //        StringBuffer s1= null;
 //        String oneLine = "",otherLine = "";
@@ -63,14 +63,16 @@
 //        int  lovelyImageWidth = 375*30;
 //         lovelyImageHeight = bili*30;
 //
+////小编推荐 ------end-----------------------
+
 //
 //
 //
-//
-////小编推荐加上
+////小编推荐 start
 ////        int  lovelyImageWidth = 375*30;
 ////        int lovelyImageHeight = 534*30;
-//
+////小编推荐 end
+
 //
 //
 //

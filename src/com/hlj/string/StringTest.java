@@ -1,25 +1,30 @@
 package com.hlj.string;
 
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.junit.Test;
+import org.junit.platform.commons.util.StringUtils;
 
 public class StringTest {
 	public static void main(String[] args) {
 
 		
 		/**
-		 * 1¡¢²âÊÔstring ¿É²»¿ÉÒÔ +
+		 * 1ã€æµ‹è¯•string å¯ä¸å¯ä»¥ +
 		 */
 	//	teststringadd();
 		
 		/**
-		 * 2¡¢²âÊÔnull+×Ö·û´®µÄÖµ
+		 * 2ã€æµ‹è¯•null+å­—ç¬¦ä¸²çš„å€¼
 		 */
 	//	testnull() ;
 		
 		/**
-		 * 3¡¢²âÊÔ×Ö·û´®ÊÇ·ñ¸Ä±ä
+		 * 3ã€æµ‹è¯•å­—ç¬¦ä¸²æ˜¯å¦æ”¹å˜
 		 */
 		String str = "a";
 		StringTest stringTest = new StringTest();
@@ -27,18 +32,18 @@ public class StringTest {
 		int a[] = {1,2,3};
 		String abc[] = {"a","b","c"};
 		 stringTest.change(str,i,a,abc);   
-		 System.out.println(str+i); //a1 ²»»á¸Ä±ä
+		 System.out.println(str+i); //a1 ä¸ä¼šæ”¹å˜
 	    System.out.println(a[2]); //56
 	    System.out.println(abc[2]); //ef
 		
 		/**
-		 * 4¡¢²âÊÔ split·Ö¸î 
+		 * 4ã€æµ‹è¯• splitåˆ†å‰² 
 		 */
 	//	Testsplit();
 		
 		
 		/**
-		 * 5¡¢²âÊÔstring ºÍbyteÊı×éµÄ×ª»¯
+		 * 5ã€æµ‹è¯•string å’Œbyteæ•°ç»„çš„è½¬åŒ–
 		 */
 	//	testbyteArray();
 		
@@ -46,7 +51,7 @@ public class StringTest {
 		
 
 		/**
-		 * 6¡¢String ºÍ StringBufferÖ®¼äµÄ×ª»¯
+		 * 6ã€String å’Œ StringBufferä¹‹é—´çš„è½¬åŒ–
 		 */
 
 	//	strToBuffer();
@@ -54,7 +59,7 @@ public class StringTest {
 		
 		 /**
 		  * 
-		  * 7¡¢Êı×é length
+		  * 7ã€æ•°ç»„ length
 		  *   String length()
 		 *
 		  */
@@ -62,7 +67,7 @@ public class StringTest {
 		
 		
 		 /**
-		  * 8¡¢string ...
+		  * 8ã€string ...
 		  */
 	//	printStringMain() ;
 		
@@ -73,15 +78,15 @@ public class StringTest {
 
 
 	/**
-	 * 1¡¢²âÊÔstring ¿É²»¿ÉÒÔ +
+	 * 1ã€æµ‹è¯•string å¯ä¸å¯ä»¥ +
 	 */
 	
 	private static void teststringadd() {
 
-		//Î´ÌáÇ°¶¨ÒåºÃ¶ÔÏó
-		//String m = m +"abc"; //´íÎóµÄ 
+		//æœªæå‰å®šä¹‰å¥½å¯¹è±¡
+		//String m = m +"abc"; //é”™è¯¯çš„ 
 		
-		//Èç¹ûÌáÇ°¶¨Òå¶ÔÏó£¬ÊÇ¿ÉÒÔµÄ
+		//å¦‚æœæå‰å®šä¹‰å¯¹è±¡ï¼Œæ˜¯å¯ä»¥çš„
 		String a = "123";
 		String b = "";
 		 b += "abc";
@@ -92,7 +97,7 @@ public class StringTest {
 	
 	
 	/**
-	 * 2¡¢²âÊÔnull+×Ö·û´®µÄÖµ
+	 * 2ã€æµ‹è¯•null+å­—ç¬¦ä¸²çš„å€¼
 	 */
 	@Test
 	public void testnull() {
@@ -103,13 +108,13 @@ public class StringTest {
 		int i = 2222;
 		String testIntString = "abc"+(i+1);
 		String testIntStringNo = "abc"+i+1;
-		System.out.println("¼ÓÀ¨ºÅ"+testIntString+"\n"+"²»¼ÓÀ¨ºÅ"+testIntStringNo);
+		System.out.println("åŠ æ‹¬å·"+testIntString+"\n"+"ä¸åŠ æ‹¬å·"+testIntStringNo);
 	} 
 	
 	
 	
 	/**
-	 * 3¡¢²âÊÔ×Ö·û´®ÊÇ·ñ¸Ä±ä
+	 * 3ã€æµ‹è¯•å­—ç¬¦ä¸²æ˜¯å¦æ”¹å˜
 	 */
 	void change(String str,int i,int[]a,String abc[]){
 		 i   =  123;
@@ -119,15 +124,16 @@ public class StringTest {
 	}
 	
 	/**
-	 * 4¡¢²âÊÔ split·Ö¸î 
+	 * 4ã€æµ‹è¯• splitåˆ†å‰² 
 	 */
-	public static void Testsplit() {
+	@Test
+	public  void Testsplit() {
 		// 
-String a = "abcdef";
+	String a = "abcdef";
 	String []aStrings  = a.split("");
-	System.out.println("0Êä³ö"+aStrings[0]+"*"); //Êä³ö* ±íÊ¾Ë÷ÒıÎª0µÄÊ±ºò£¬²»´æÔÚÊı¾İ 
-	System.out.println("5Êä³ö"+aStrings[5]); //Êä³öe 
-	System.out.println(aStrings.length);  //7
+	System.out.println("0è¾“å‡º"+aStrings[0]); //è¾“å‡ºa
+	System.out.println("5è¾“å‡º"+aStrings[5]); //è¾“å‡ºf
+	System.out.println(aStrings.length);  //6
 
 	for(String b:aStrings){
 			System.out.println(b); //a b c d e f 
@@ -135,7 +141,7 @@ String a = "abcdef";
 	}
 	
 	/**
-	 * 5¡¢²âÊÔstring ºÍbyteÊı×éµÄ×ª»¯
+	 * 5ã€æµ‹è¯•string å’Œbyteæ•°ç»„çš„è½¬åŒ–
 	 */
 	public static void testbyteArray(){
 		String str = "HealerJean";
@@ -143,7 +149,7 @@ String a = "abcdef";
 		try {
 			byteArray = str.getBytes("utf-8");
 			String strByte = new String (byteArray,"UTF-8");
-			System.out.println("byteÊı×é£º"+byteArray+"\n"+"string:"+strByte);
+			System.out.println("byteæ•°ç»„ï¼š"+byteArray+"\n"+"string:"+strByte);
 
 		} catch (UnsupportedEncodingException e) {
 			// 
@@ -152,41 +158,41 @@ String a = "abcdef";
 	}
 	
 	/**
-	 * 6¡¢String ºÍ StringBufferÖ®¼äµÄ×ª»¯
+	 * 6ã€String å’Œ StringBufferä¹‹é—´çš„è½¬åŒ–
 	 */
 
 	 public static void strToBuffer() {
-	  //String -> StringBuffer 1¡¢¹¹Ôì·½·¨  2¡¢Í¨¹ıappend·½·¨
-	        //´´½¨Ò»¸öString¶ÔÏó
+	  //String -> StringBuffer 1ã€æ„é€ æ–¹æ³•  2ã€é€šè¿‡appendæ–¹æ³•
+	        //åˆ›å»ºä¸€ä¸ªStringå¯¹è±¡
 	        String str = "Hi Java!";
 	        System.out.println(str);
 	 
-	        //·½Ê½Ò»£º¹¹Ôì·½·¨
+	        //æ–¹å¼ä¸€ï¼šæ„é€ æ–¹æ³•
 	        StringBuffer buffer = new StringBuffer(str);
 	        System.out.println(buffer);
 	 
-	        //·½Ê½¶ş£ºÍ¨¹ıappend·½·¨
+	        //æ–¹å¼äºŒï¼šé€šè¿‡appendæ–¹æ³•
 	        StringBuffer buffer2 = new StringBuffer();
 	        buffer2.append(str);
 	        System.out.println(buffer2);
 	 
 	 //StringBuffer -> String
-	        //´´½¨Ò»¸öStringBuffer¶ÔÏó 1¡¢¹¹Ôì·½·¨ 2¡¢toString·½·¨
+	        //åˆ›å»ºä¸€ä¸ªStringBufferå¯¹è±¡ 1ã€æ„é€ æ–¹æ³• 2ã€toStringæ–¹æ³•
 	        StringBuffer buffer3 = new StringBuffer();
 	        buffer3.append("Happy birthday Java!");
 	        System.out.println(buffer3);
 	 
-	        //·½Ê½Ò»£ºÍ¨¹ı¹¹Ôì·½·¨
+	        //æ–¹å¼ä¸€ï¼šé€šè¿‡æ„é€ æ–¹æ³•
 	        String str2 = new String(buffer3); 
 	        System.out.println(str2);
 	         
-	        //·½Ê½¶ş£ºÍ¨¹ıtoString·½·¨
+	        //æ–¹å¼äºŒï¼šé€šè¿‡toStringæ–¹æ³•
 	        String str3 = buffer3.toString();
 	        System.out.println(str3);
 	    }
 	 /**
 	  * 
-	  * 7¡¢Êı×é length
+	  * 7ã€æ•°ç»„ length
 	  *   String length()
 	 *
 	  */
@@ -196,15 +202,15 @@ String a = "abcdef";
 		 
 		 System.out.println(string.length()); 
 		 System.out.println(strArray.length); 
-		 //´íÎó System.out.println(strArray.size);
+		 //é”™è¯¯ System.out.println(strArray.size);
 	}
 	 
 	 /**
-	  * 8¡¢string ...
+	  * 8ã€string ...
 	  */
 	 public static void printString(String... str){  
 		  if(str.length==0){  
-		   System.out.println("Ã»ÓĞ´«²ÎÊı¡£");  
+		   System.out.println("æ²¡æœ‰ä¼ å‚æ•°ã€‚");  
 		  }  
 		  for (int i = 0; i < str.length; i++) {  
 		   System.out.printf(str[i]);  
@@ -214,72 +220,128 @@ String a = "abcdef";
 	 public static void printStringMain() {  
 		  printString();  
 		  System.out.println("==========");  
-		  printString(new String[]{"ÎÒ","ºÍ","Äã"});  
+		  printString(new String[]{"æˆ‘","å’Œ","ä½ "});  
 		 }  
 	 
 	 /**
-	  * 9¡¢Êı×éµÄ¶¨Òå
+	  * 9ã€æ•°ç»„çš„å®šä¹‰
 	  */
 	 @Test
 	 public  void array(){
-	//1¡¢	
-		 int[] a = new int[3]; //¶¨ÒåÒ»¸öÊı×é
+	//1ã€	
+		 int[] a = new int[3]; //å®šä¹‰ä¸€ä¸ªæ•°ç»„
 			a[0] = 1;
 			a[1] = 2;
 			a[2] = 3;
-		//	a[4] = 5; //³¬³öÏŞÖÆ ±¨´í
-	//2¡¢¶¯Ì¬³õÊ¼»¯
+		//	a[4] = 5; //è¶…å‡ºé™åˆ¶ æŠ¥é”™
+	//2ã€åŠ¨æ€åˆå§‹åŒ–
 		  int b[] ;
-		//  b[1] = 2;  Ã»ÓĞ¸ø¶¨´óĞ¡£¬±¨´í
+		//  b[1] = 2;  æ²¡æœ‰ç»™å®šå¤§å°ï¼ŒæŠ¥é”™
 		  b = new int[5];
-	//3¡¢ ¾²Ì¬³õÊ¼»¯
-		 //  int c[3] = {1,4,2,3}; ²»ÄÜ¸ø¶¨Öµ
+	//3ã€ é™æ€åˆå§‹åŒ–
+		 //  int c[3] = {1,4,2,3}; ä¸èƒ½ç»™å®šå€¼
 		  int c[] = {1,4,2,3};
 	
-	//4¡¢new ²¢Ö±½Ó¾²Ì¬¸³Öµ£¬²»¿ÉĞ´Èë´óĞ¡
-		//  int d[] = new int[5]{1,2,3}; ´íÎó
+	//4ã€new å¹¶ç›´æ¥é™æ€èµ‹å€¼ï¼Œä¸å¯å†™å…¥å¤§å°
+		//  int d[] = new int[5]{1,2,3}; é”™è¯¯
 		  int d[] = new int[]{1,2,3};
 	 }
 
 	 
 	 /***
-	  * 10¡¢substring ½ØÈ¡µÄÊÇ×Ö½Ú»¹ÊÇ×Ö·û
-	  * StringÀàµÄlength()·½·¨ÊÇÒÔunicode´úÂëµ¥Ôª£¬»»ÑÔÖ®¾ÍÊÇcharµÄ¸öÊıÎªÀ´Í³¼ÆµÄ¡£
-	  * ËùÒÔÊ¹ÓÃsubStringµÈ½ØÈ¡³öÀ´µÄ×Ó´®¶¼²»»á³öÏÖ°ë¸öºº×ÖµÄÇé¿ö£¬
-	   		ÒòÎªjavaÒ»¸öcharÀàĞÍ¿ÉÒÔ´æ·ÅÒ»¸öºº×Ö£¨2¸ö×Ö½Ú£©¡£
+	  * 10ã€substring æˆªå–çš„æ˜¯å­—èŠ‚è¿˜æ˜¯å­—ç¬¦
+	  * Stringç±»çš„length()æ–¹æ³•æ˜¯ä»¥unicodeä»£ç å•å…ƒï¼Œæ¢è¨€ä¹‹å°±æ˜¯charçš„ä¸ªæ•°ä¸ºæ¥ç»Ÿè®¡çš„ã€‚
+	  * æ‰€ä»¥ä½¿ç”¨subStringç­‰æˆªå–å‡ºæ¥çš„å­ä¸²éƒ½ä¸ä¼šå‡ºç°åŠä¸ªæ±‰å­—çš„æƒ…å†µï¼Œ
+	   		å› ä¸ºjavaä¸€ä¸ªcharç±»å‹å¯ä»¥å­˜æ”¾ä¸€ä¸ªæ±‰å­—ï¼ˆ2ä¸ªå­—èŠ‚ï¼‰ã€‚
 	   		
-	  * ¶øÈç¹ûÒÔ×Ö½ÚbyteÀ´½ØÈ¡×Ö·û´®£¬¾Í»á³öÏÖ°ë¸öºº×ÖµÄÇé¿ö¡£
+	  * è€Œå¦‚æœä»¥å­—èŠ‚byteæ¥æˆªå–å­—ç¬¦ä¸²ï¼Œå°±ä¼šå‡ºç°åŠä¸ªæ±‰å­—çš„æƒ…å†µã€‚
 	  	
-	  	Ë¼Â·£ººº×ÖµÄunicode±àÂë¶¼ÊÇ¸ºÊı£¬Èç¹ûÕâĞ©¸ºÊı×Ö½ÚÔÚ½ØÈ¡µÄ×Ö½ÚÊı×éÖĞ³É¶Ô³öÏÖ£¬ËµÃ÷²»»á½ØÈ¡µ½°ë¸öºº×Ö¡£
-	  	Èç¹û²»ÊÇ³É¶Ô³öÏÖ£¬Ôò»á½ØÈ¡µ½°ë¸öºº×Ö£¬ĞèÒª½«×îºóÒ»¸ö×Ö½ÚÉáÈ¥¡£
-	  * °´×Ö½ÚÊı½ØÈ¡×Ö·û´®, ²»ÄÜ½Ø³ö°ë¸öºº×Ö, Èç¹ûÊÇ°ë¸öºº×ÖÔòÉáÈ¥!
+	  	æ€è·¯ï¼šæ±‰å­—çš„unicodeç¼–ç éƒ½æ˜¯è´Ÿæ•°ï¼Œå¦‚æœè¿™äº›è´Ÿæ•°å­—èŠ‚åœ¨æˆªå–çš„å­—èŠ‚æ•°ç»„ä¸­æˆå¯¹å‡ºç°ï¼Œè¯´æ˜ä¸ä¼šæˆªå–åˆ°åŠä¸ªæ±‰å­—ã€‚
+	  	å¦‚æœä¸æ˜¯æˆå¯¹å‡ºç°ï¼Œåˆ™ä¼šæˆªå–åˆ°åŠä¸ªæ±‰å­—ï¼Œéœ€è¦å°†æœ€åä¸€ä¸ªå­—èŠ‚èˆå»ã€‚
+	  * æŒ‰å­—èŠ‚æ•°æˆªå–å­—ç¬¦ä¸², ä¸èƒ½æˆªå‡ºåŠä¸ªæ±‰å­—, å¦‚æœæ˜¯åŠä¸ªæ±‰å­—åˆ™èˆå»!
 	  */
 	 @Test
 	 public void testSubStringByteOr(){
-		String source = "ÎÒÊÇÒ»abcd¸öºÃÈËcccc";
-		 int byteCount = 8; //±íÊ¾½ØÈ¡¶àÉÙ¸ö
+		String source = "æˆ‘æ˜¯ä¸€abcdä¸ªå¥½äººcccc";
+		 int byteCount = 8; //è¡¨ç¤ºæˆªå–å¤šå°‘ä¸ª
 			        byte[] byteArr = source.getBytes();
-			        System.out.println("×Ö½Ú´óĞ¡Îª"+byteArr.length);
+			        System.out.println("å­—èŠ‚å¤§å°ä¸º"+byteArr.length);
 			        int count = 0;
-			        // Í³¼ÆÒª½ØÈ¡µÄÄÇ²¿·Ö×Ö½ÚÖĞ¸ºÊıµÄ¸öÊı
+			        // ç»Ÿè®¡è¦æˆªå–çš„é‚£éƒ¨åˆ†å­—èŠ‚ä¸­è´Ÿæ•°çš„ä¸ªæ•°
 			        for (int i = 0; i < byteCount; i++) {
 			            if (byteArr[i] < 0) {
 			            	System.out.println(i);
 			                count++;
 			            }
 			        }
-			        System.out.println("¸ºÊıµÄ¸öÊıÎª"+count); 
+			        System.out.println("è´Ÿæ•°çš„ä¸ªæ•°ä¸º"+count); 
 			        
-			        // ¸ºÊı³É¶Ô³öÏÖ Ôò²»»á³öÏÖ°ë¸öºº×Ö
+			        // è´Ÿæ•°æˆå¯¹å‡ºç° åˆ™ä¸ä¼šå‡ºç°åŠä¸ªæ±‰å­—
 			        if (count % 2 == 0)
 			            System.out.println(new String(byteArr, 0, byteCount));
-			        // ¸ºÊı¸öÊı²»ÊÇÅ¼Êı£¬ÔòÓĞ°ë¸öºº×Ö
+			        // è´Ÿæ•°ä¸ªæ•°ä¸æ˜¯å¶æ•°ï¼Œåˆ™æœ‰åŠä¸ªæ±‰å­—
 			        else
 			            System.out.println(new String(byteArr, 0, byteCount - 1));
-			    }
+	}
 
-		
 
+
+
+	//æŠŠåŸå§‹å­—ç¬¦ä¸²åˆ†å‰²æˆæŒ‡å®šé•¿åº¦çš„å­—ç¬¦ä¸²åˆ—è¡¨
+	@Test
+	public void testLengthSplit(){
+		System.out.println(getStrList("12",3));
+	}
+
+
+	/**
+	 * æŠŠåŸå§‹å­—ç¬¦ä¸²åˆ†å‰²æˆæŒ‡å®šé•¿åº¦çš„å­—ç¬¦ä¸²åˆ—è¡¨
+	 * @param inputString  åŸå§‹å­—ç¬¦ä¸²
+	 * @param length   æŒ‡å®šé•¿åº¦
+	 * @return
+	 */
+	public static List<String> getStrList(String inputString, int length) {
+		int size = inputString.length() / length;
+		if (inputString.length() % length != 0) {
+			size += 1;
+		}
+		return getStrList(inputString, length, size);
+	}
+
+
+	/**
+	 * æŠŠåŸå§‹å­—ç¬¦ä¸²åˆ†å‰²æˆæŒ‡å®šé•¿åº¦çš„å­—ç¬¦ä¸²åˆ—è¡¨
+	 * @param inputString åŸå§‹å­—ç¬¦ä¸²
+	 * @param length æŒ‡å®šé•¿åº¦
+	 * @param size  æŒ‡å®šåˆ—è¡¨å¤§å°
+	 * @return
+	 */
+	public static List<String> getStrList(String inputString, int length,
+										  int size) {
+		List<String> list = new ArrayList<String>();
+		for (int index = 0; index < size; index++) {
+			String childStr = substring(inputString, index * length,
+					(index + 1) * length);
+			list.add(childStr);
+		}
+		return list;
+	}
+	/**
+	 * åˆ†å‰²å­—ç¬¦ä¸²ï¼Œå¦‚æœå¼€å§‹ä½ç½®å¤§äºå­—ç¬¦ä¸²é•¿åº¦ï¼Œè¿”å›ç©º
+	 * @param str  åŸå§‹å­—ç¬¦ä¸²
+	 * @param f å¼€å§‹ä½ç½®
+	 * @param t  ç»“æŸä½ç½®
+	 * @return
+	 */
+	public static String substring(String str, int f, int t) {
+		if (f > str.length())
+			return null;
+		if (t > str.length()) {
+			return str.substring(f, str.length());
+		} else {
+			return str.substring(f, t);
+		}
+	}
 	 
 	 
 }

@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 /**
  * @Desc: lambda延迟执行
@@ -34,12 +35,22 @@ public class Demo06Delay {
         };
         loggerLambda(2, msgBuiler);
 
+        /**
+         * 下面这个不会延迟加载
+         */
+        loggerSupplier(2, ()->msgA+msgB);
     }
 
 
     private void loggerLambda(int level, MsgBuiler msgBuiler){
         if(level==1){
             System.out.println( msgBuiler.buildMsg());
+        }
+    }
+
+    private void loggerSupplier(int level, Supplier<String> supplier){
+        if(level==2){
+            System.out.println( supplier.get());
         }
     }
 

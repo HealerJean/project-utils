@@ -1,6 +1,6 @@
 //package com.hlj.util.job.description;
 //
-//import com.hlj.util.QRcode.QrCodeUtils;
+//import com.hlj.util.QRcode.BufferedImageUtils;
 //import com.hlj.util.job.ChartGraphicsDescription;
 //
 //import javax.imageio.ImageIO;
@@ -27,13 +27,13 @@
 //
 //        BufferedImage urlimage = ImageIO.read(new URL("https://img.alicdn.com/imgextra/i1/3694212174/TB21Wb_jlsmBKNjSZFFXXcT9VXa_!!3694212174.jpg"));
 //
-//        BufferedImage imageQR  = QrCodeUtils.reduceImg(urlimage,375*2,375*2,null);
+//        BufferedImage imageQR  = BufferedImageUtils.reduceImg(urlimage,375*2,375*2,null);
 //
 //        URL u = new URL("http://admore.oss-cn-beijing.aliyuncs.com/admin/duodianyouhui/itemgood/6a4507a16213460ab3476a3204a9e5bc.png");
 //
 //        BufferedImage titleLab = ImageIO.read(u);
 //
-//        BufferedImage  ErWeiMaImage =  QrCodeUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44",300,300,3);
+//        BufferedImage  ErWeiMaImage =  BufferedImageUtils.writeQRImg("http://admore.oss-cn-beijing.aliyuncs.com/duodian-youhui/index.html#/44",300,300,3);
 //
 //        String title = "AAAAAAAAAAAAAA千妇恋-日本进口温和控油洗面奶30g";
 //        BigDecimal originPrice =new BigDecimal("88.9");
@@ -90,11 +90,11 @@
 //                bili = 590 ;
 //            }
 //
-//       BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
+//       BufferedImage bufferedImageFinal =  BufferedImageUtils.reduceImg(bufferedImage, 375*3, bili*3, null);
 ////        有小编推荐去 end-----------------------------------------------------------------------------------------------------------------------------
 
 //         //下面这个是去掉 小编推荐语
-////        BufferedImage bufferedImageFinal =  QrCodeUtils.reduceImg(bufferedImage, 375*3, 534*3, null);
+////        BufferedImage bufferedImageFinal =  BufferedImageUtils.reduceImg(bufferedImage, 375*3, 534*3, null);
 //
 //        ImageIO.write(bufferedImageFinal, "jpg", outputStream);
 //

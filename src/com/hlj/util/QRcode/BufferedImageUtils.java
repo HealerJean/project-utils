@@ -18,18 +18,18 @@ import java.util.Hashtable;
 import java.util.Map;
 
 /**
- * ×÷Õß £ºHealerJean
- * ÈÕÆÚ £º2018/10/29  ÏÂÎç4:31.
- * ÀàÃèÊö£º
+ * ä½œè€… ï¼šHealerJean
+ * æ—¥æœŸ ï¼š2018/10/29  ä¸‹åˆ4:31.
+ * ç±»æè¿°ï¼š
  */
-public class QrCodeUtils {
+public class BufferedImageUtils {
 
 
     /**
      *
-     * 1¡¢ Êä³öÍ¼Æ¬µ½±¾µØÄ¿Â¼
-     * @param buffImg Í¼Æ¬
-     * @param savePath ±¾µØÄ¿Â¼µÄÂ·¾¶
+     * 1ã€ è¾“å‡ºå›¾ç‰‡åˆ°æœ¬åœ°ç›®å½•
+     * @param buffImg å›¾ç‰‡
+     * @param savePath æœ¬åœ°ç›®å½•çš„è·¯å¾„
      */
     public static void  saveImageToLocalDir(BufferedImage buffImg, String savePath) {
         try {
@@ -43,66 +43,66 @@ public class QrCodeUtils {
 
     /**
      *
-     * 2¡¢ ·½·¨ÃèÊö: ¶à¸öÍ¼Æ¬ºÏ³É
-     * exImage µ×Í¼
-     * innerImage Ç¶ÈëµÄÍ¼Æ¬
-     * x ×ø±êx
-     * y ×ø±êy
-     * innerImageWedith Ç¶ÈëÍ¼Æ¬µÄ³¤¶È
-     * innerImageHeight Ç¶ÈëÍ¼Æ¬µÄ¿í¶È
+     * 2ã€ æ–¹æ³•æè¿°: å¤šä¸ªå›¾ç‰‡åˆæˆ
+     * exImage åº•å›¾
+     * innerImage åµŒå…¥çš„å›¾ç‰‡
+     * x åæ ‡x
+     * y åæ ‡y
+     * innerImageWedith åµŒå…¥å›¾ç‰‡çš„é•¿åº¦
+     * innerImageHeight åµŒå…¥å›¾ç‰‡çš„å®½åº¦
      */
     public  static BufferedImage imageAndImages(BufferedImage exImage, BufferedImage innerImage, int x, int y, int innerImageWedith, int innerImageHeight, float alpha) throws IOException {
         Graphics2D g2d = exImage.createGraphics();
-        // ÔÚÍ¼ĞÎºÍÍ¼ÏñÖĞÊµÏÖ»ìºÏºÍÍ¸Ã÷Ğ§¹û
+        // åœ¨å›¾å½¢å’Œå›¾åƒä¸­å®ç°æ··åˆå’Œé€æ˜æ•ˆæœ
         g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, alpha));
-        // »æÖÆ
+        // ç»˜åˆ¶
         g2d.drawImage(innerImage, x, y, innerImageWedith, innerImageHeight, null);
-        g2d.dispose();// ÊÍ·ÅÍ¼ĞÎÉÏÏÂÎÄÊ¹ÓÃµÄÏµÍ³×ÊÔ´
+        g2d.dispose();// é‡Šæ”¾å›¾å½¢ä¸Šä¸‹æ–‡ä½¿ç”¨çš„ç³»ç»Ÿèµ„æº
         return exImage;
     }
 
     /**
-     * 2¡¢²âÊÔ ¶à¸öÍ¼Æ¬ºÏ³É
+     * 2ã€æµ‹è¯• å¤šä¸ªå›¾ç‰‡åˆæˆ
      */
     @Test
     public void testimageAndImages(){
 
         String sourceFilePath = "/Users/healerjean/Desktop/origin.jpeg";
         String innerImageFilePath = "/Users/healerjean/Desktop/img.jpeg";
-        // ¹¹½¨µş¼Ó²ã
+        // æ„å»ºå åŠ å±‚
         BufferedImage buffImg = null;
         try {
             buffImg = imageAndImages(ImageIO.read(new File(sourceFilePath)), ImageIO.read(new File(innerImageFilePath)),595, 1000,245 ,245, 1.0f);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // Êä³öË®Ó¡Í¼Æ¬
+        // è¾“å‡ºæ°´å°å›¾ç‰‡
         String saveFilePath = "/Users/healerjean/Desktop/new.png";
         saveImageToLocalDir(buffImg, saveFilePath);
     }
 
 
     /**
-     * 3¡¢²»´ølogoµÄ¶şÎ¬Âë
+     * 3ã€ä¸å¸¦logoçš„äºŒç»´ç 
      *
-     * @param text ¶şÎ¬ÂëÄÚÈİ
-     * @param width ¶şÎ¬Âë¿í¶È
-     * @param height ³¤¶È
-     * @param whiteSize °×±ß´óĞ¡
+     * @param text äºŒç»´ç å†…å®¹
+     * @param width äºŒç»´ç å®½åº¦
+     * @param height é•¿åº¦
+     * @param whiteSize ç™½è¾¹å¤§å°
      * @return
      */
     public static BufferedImage writeQRImg(String text,int width,int height,int whiteSize){
-        // ÅäÖÃ²ÎÊı
+        // é…ç½®å‚æ•°
         Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
-        // ×Ö·û±àÂë
+        // å­—ç¬¦ç¼–ç 
         hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
-        // Èİ´í¼¶±ğ
+        // å®¹é”™çº§åˆ«
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
 
-        // ÉèÖÃ¿Õ°×±ß¾àµÄ¿í¶È
-        hints.put(EncodeHintType.MARGIN, whiteSize); // Ä¬ÈÏÊÇ4
+        // è®¾ç½®ç©ºç™½è¾¹è·çš„å®½åº¦
+        hints.put(EncodeHintType.MARGIN, whiteSize); // é»˜è®¤æ˜¯4
 
-        // 1¡¢Éú³É¶şÎ¬Âë
+        // 1ã€ç”ŸæˆäºŒç»´ç 
         BitMatrix bitMatrix = null;
         try {
             bitMatrix = new MultiFormatWriter().encode(text, BarcodeFormat.QR_CODE, width, height, hints);
@@ -110,17 +110,17 @@ public class QrCodeUtils {
             e.printStackTrace();
         }
 
-        // 2¡¢»ñÈ¡¶şÎ¬Âë¿í¸ß
+        // 2ã€è·å–äºŒç»´ç å®½é«˜
         int codeWidth = bitMatrix.getWidth();
         int codeHeight = bitMatrix.getHeight();
 
-        // 3¡¢½«¶şÎ¬Âë·ÅÈë»º³åÁ÷
+        // 3ã€å°†äºŒç»´ç æ”¾å…¥ç¼“å†²æµ
         BufferedImage image = new BufferedImage(codeWidth, codeHeight, BufferedImage.TYPE_INT_RGB);
 
         for (int i = 0; i < codeWidth; i++) {
             for (int j = 0; j < codeHeight; j++) {
-                // 4¡¢Ñ­»·½«¶şÎ¬ÂëÄÚÈİ¶¨ÈëÍ¼Æ¬
-                //ÅĞ¶Ï BitMatrix ÊÇ·ñ´æÔÚÏñËØ  ¶şÎ¬ÂëÌî³äÑÕÉ« ºÚÉ«  0XFF000000 °×É« £º0xFFÊÇ²¹Âë 0XFFFFFFFF
+                // 4ã€å¾ªç¯å°†äºŒç»´ç å†…å®¹å®šå…¥å›¾ç‰‡
+                //åˆ¤æ–­ BitMatrix æ˜¯å¦å­˜åœ¨åƒç´   äºŒç»´ç å¡«å……é¢œè‰² é»‘è‰²  0XFF000000 ç™½è‰² ï¼š0xFFæ˜¯è¡¥ç  0XFFFFFFFF
                 image.setRGB(i, j, bitMatrix.get(i, j) ? 0XFF000000 : 0XFFFFFFFF);
             }
         }
@@ -129,14 +129,14 @@ public class QrCodeUtils {
     }
 
     /**
-     * 3¡¢²âÊÔ ²»´ølogoµÄ¶şÎ¬Âë
+     * 3ã€æµ‹è¯• ä¸å¸¦logoçš„äºŒç»´ç 
      * @throws Exception
      */
     @Test
     public void testWriteQRImg(){
         String text = "http://blog.healerjean.top";
         BufferedImage  noLogoImage = writeQRImg(text,200,200, 0 );
-        //´æ´¢µ½±¾µØ
+        //å­˜å‚¨åˆ°æœ¬åœ°
         String saveFilePath = "/Users/healerjean/Desktop/new.png";
         saveImageToLocalDir(noLogoImage, saveFilePath);
     }
@@ -146,7 +146,7 @@ public class QrCodeUtils {
 
 
     /**
-     *  4¡¢ ¶ÁÈ¡¶şÎ¬ÂëµÄÎÄ¼şÀïÃæµÄĞÅÏ¢
+     *  4ã€ è¯»å–äºŒç»´ç çš„æ–‡ä»¶é‡Œé¢çš„ä¿¡æ¯
      */
     public static String readQRImg(BufferedImage image) throws Exception {
 
@@ -154,19 +154,19 @@ public class QrCodeUtils {
         Binarizer binarizer = new HybridBinarizer(source);
         BinaryBitmap binaryBitmap = new BinaryBitmap(binarizer);
         Map<DecodeHintType, Object> hints = new HashMap<DecodeHintType, Object>();
-        // ×Ö·û±àÂë
+        // å­—ç¬¦ç¼–ç 
         hints.put(DecodeHintType.CHARACTER_SET, "UTF-8");
-        Result result = new MultiFormatReader().decode(binaryBitmap, hints);// ¶ÔÍ¼Ïñ½øĞĞ½âÂë
+        Result result = new MultiFormatReader().decode(binaryBitmap, hints);// å¯¹å›¾åƒè¿›è¡Œè§£ç 
         return result.getText();
     }
 
     /**
-     * 4¡¢²âÊÔ ¶ÁÈ¡¶şÎ¬ÂëĞÅÏ¢
+     * 4ã€æµ‹è¯• è¯»å–äºŒç»´ç ä¿¡æ¯
      * @throws Exception
      */
     @Test
     public void testReadQRImg() throws Exception{
-        //¶ÁÈ¡¶şÎ¬ÂëĞÅÏ¢
+        //è¯»å–äºŒç»´ç ä¿¡æ¯
         String filePath = "/Users/healerjean/Desktop/new.png";
         BufferedImage image = ImageIO.read(new File(filePath));
         String info =readQRImg(image);
@@ -176,30 +176,30 @@ public class QrCodeUtils {
 
 
     /**
-     *   5¡¢ Éú³É´ølogoµÄ¶şÎ¬Âë
+     *   5ã€ ç”Ÿæˆå¸¦logoçš„äºŒç»´ç 
      *
      *
-     * @param text ¶şÎ¬ÂëÄÚÈİ
-     * @param text ¶şÎ¬ÂëÄÚÈİ
-     * @param width ¶şÎ¬Âë¿í¶È
-     * @param height ³¤¶È
-     * @param whiteSize °×±ß´óĞ¡
-     * @param logo LOGOÍ¼Æ¬
+     * @param text äºŒç»´ç å†…å®¹
+     * @param text äºŒç»´ç å†…å®¹
+     * @param width äºŒç»´ç å®½åº¦
+     * @param height é•¿åº¦
+     * @param whiteSize ç™½è¾¹å¤§å°
+     * @param logo LOGOå›¾ç‰‡
      * @return
      * @throws Exception
      */
     public static BufferedImage createLogoQRImg(String text,int width,int height, int whiteSize,BufferedImage logo) throws Exception {
-        // ÅäÖÃ²ÎÊı
+        // é…ç½®å‚æ•°
         Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
-        // ×Ö·û±àÂë
+        // å­—ç¬¦ç¼–ç 
         hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
-        // Èİ´í¼¶±ğ
+        // å®¹é”™çº§åˆ«
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
 
-        // ÉèÖÃ¿Õ°×±ß¾àµÄ¿í¶È
-        hints.put(EncodeHintType.MARGIN, whiteSize); // Ä¬ÈÏÊÇ4
+        // è®¾ç½®ç©ºç™½è¾¹è·çš„å®½åº¦
+        hints.put(EncodeHintType.MARGIN, whiteSize); // é»˜è®¤æ˜¯4
 
-        // 1¡¢Éú³É¶şÎ¬Âë
+        // 1ã€ç”ŸæˆäºŒç»´ç 
         BitMatrix bitMatrix = null;
         try {
             bitMatrix = new MultiFormatWriter().encode(text, BarcodeFormat.QR_CODE, width, height, hints);
@@ -207,42 +207,42 @@ public class QrCodeUtils {
             e.printStackTrace();
         }
 
-        // 2¡¢»ñÈ¡¶şÎ¬Âë¿í¸ß
+        // 2ã€è·å–äºŒç»´ç å®½é«˜
         int codeWidth = bitMatrix.getWidth();
         int codeHeight = bitMatrix.getHeight();
 
-        // 3¡¢½«¶şÎ¬Âë·ÅÈë»º³åÁ÷
+        // 3ã€å°†äºŒç»´ç æ”¾å…¥ç¼“å†²æµ
         BufferedImage image = new BufferedImage(codeWidth, codeHeight, BufferedImage.TYPE_INT_RGB);
 
         for (int i = 0; i < codeWidth; i++) {
             for (int j = 0; j < codeHeight; j++) {
-                // 4¡¢Ñ­»·½«¶şÎ¬ÂëÄÚÈİ¶¨ÈëÍ¼Æ¬
-                //ÅĞ¶Ï BitMatrix ÊÇ·ñ´æÔÚÏñËØ  ¶şÎ¬ÂëÌî³äÑÕÉ« ºÚÉ«  0XFF000000 °×É« £º0xFFÊÇ²¹Âë 0XFFFFFFFF
+                // 4ã€å¾ªç¯å°†äºŒç»´ç å†…å®¹å®šå…¥å›¾ç‰‡
+                //åˆ¤æ–­ BitMatrix æ˜¯å¦å­˜åœ¨åƒç´   äºŒç»´ç å¡«å……é¢œè‰² é»‘è‰²  0XFF000000 ç™½è‰² ï¼š0xFFæ˜¯è¡¥ç  0XFFFFFFFF
                 image.setRGB(i, j, bitMatrix.get(i, j) ? 0XFF000000 : 0XFFFFFFFF);
             }
         }
 
-            //ÔÚÔ­À´»ù´¡ÉÏ£¬ÔÙÌí¼ÓÒ»¸öÍ¼Æ¬
+            //åœ¨åŸæ¥åŸºç¡€ä¸Šï¼Œå†æ·»åŠ ä¸€ä¸ªå›¾ç‰‡
             Graphics2D g = image.createGraphics();
             int widthLogo = logo.getWidth(null) > image.getWidth() * 2 / 10 ?
                     (image.getWidth() * 2 / 10) : logo.getWidth(null);
             int heightLogo = logo.getHeight(null) > image.getHeight() * 2 / 10 ?
                     (image.getHeight() * 2 / 10) : logo.getHeight(null);
 
-            //Éè¶¨ÔÚÍ¼Æ¬ÖĞ¼ä
+            //è®¾å®šåœ¨å›¾ç‰‡ä¸­é—´
             int x = (image.getWidth() - widthLogo) / 2;
             int y = (image.getHeight() - heightLogo) / 2;
 
-            // ¿ªÊ¼»æÖÆÍ¼Æ¬
+            // å¼€å§‹ç»˜åˆ¶å›¾ç‰‡
             g.drawImage(logo, x, y, widthLogo, heightLogo, null);
 
-            //»æÖÆÔ²½Ç¾ØĞÎ
+            //ç»˜åˆ¶åœ†è§’çŸ©å½¢
             g.drawRoundRect(x, y, widthLogo, heightLogo, 15, 15);
 
-            //±ß¿ò¿í¶È
+            //è¾¹æ¡†å®½åº¦
             g.setStroke(new BasicStroke(2));
 
-            //±ß¿òÑÕÉ«
+            //è¾¹æ¡†é¢œè‰²
             g.setColor(Color.WHITE);
             g.drawRect(x, y, widthLogo, heightLogo);
 
@@ -256,7 +256,7 @@ public class QrCodeUtils {
 
 
     /**
-     * 5¡¢²âÊÔ ´ølogoµÄ¶şÎ¬Âë
+     * 5ã€æµ‹è¯• å¸¦logoçš„äºŒç»´ç 
      * @throws Exception
      */
     @Test
@@ -266,42 +266,44 @@ public class QrCodeUtils {
         BufferedImage logo = ImageIO.read(new File(logoPath));
         BufferedImage  logoImage = createLogoQRImg(text,200,200, 1 ,logo);
 
-        //´æ´¢µ½±¾µØ
+        //å­˜å‚¨åˆ°æœ¬åœ°
         String saveFilePath = "/Users/healerjean/Desktop/new.png";
         saveImageToLocalDir(logoImage, saveFilePath);
     }
 
 
+
+
     /**
-     * 6/ Ö¸¶¨Í¼Æ¬¿í¶ÈºÍ¸ß¶ÈºÍÑ¹Ëõ±ÈÀı¶ÔÍ¼Æ¬½øĞĞÑ¹Ëõ
-     * @param widthdist Ñ¹ËõºóÍ¼Æ¬µÄ¿í¶È
-     * @param heightdist Ñ¹ËõºóÍ¼Æ¬µÄ¸ß¶È
-     * @param rate Ñ¹ËõµÄ±ÈÀı ,¿ÉÒÔÉèÖÃÎªnull
+     * 6/ æŒ‡å®šå›¾ç‰‡å®½åº¦å’Œé«˜åº¦å’Œå‹ç¼©æ¯”ä¾‹å¯¹å›¾ç‰‡è¿›è¡Œå‹ç¼©
+     * @param widthdist å‹ç¼©åå›¾ç‰‡çš„å®½åº¦
+     * @param heightdist å‹ç¼©åå›¾ç‰‡çš„é«˜åº¦
+     * @param rate å‹ç¼©çš„æ¯”ä¾‹ ,å¯ä»¥è®¾ç½®ä¸ºnull
      */
     public static BufferedImage reduceImg(BufferedImage bufferedImage, int widthdist, int heightdist, Float rate) {
         try {
 
-            // Èç¹û±ÈÀı²»Îª¿ÕÔòËµÃ÷ÊÇ°´±ÈÀıÑ¹Ëõ
+            // å¦‚æœæ¯”ä¾‹ä¸ä¸ºç©ºåˆ™è¯´æ˜æ˜¯æŒ‰æ¯”ä¾‹å‹ç¼©
             if (rate != null && rate > 0) {
-                //»ñµÃÔ´Í¼Æ¬µÄ¿í¸ß´æÈëÊı×éÖĞ
+                //è·å¾—æºå›¾ç‰‡çš„å®½é«˜å­˜å…¥æ•°ç»„ä¸­
                 int results[] = { 0, 0 };
-                results[0] =bufferedImage.getWidth(null); // µÃµ½Ô´Í¼Æ¬¿í
-                results[1] =bufferedImage.getHeight(null);// µÃµ½Ô´Í¼Æ¬¸ß
+                results[0] =bufferedImage.getWidth(null); // å¾—åˆ°æºå›¾ç‰‡å®½
+                results[1] =bufferedImage.getHeight(null);// å¾—åˆ°æºå›¾ç‰‡é«˜
 
                 if (results == null || results[0] == 0 || results[1] == 0) {
                     return null;
                 } else {
-                    //°´±ÈÀıËõ·Å»òÀ©´óÍ¼Æ¬´óĞ¡£¬½«¸¡µãĞÍ×ªÎªÕûĞÍ
+                    //æŒ‰æ¯”ä¾‹ç¼©æ”¾æˆ–æ‰©å¤§å›¾ç‰‡å¤§å°ï¼Œå°†æµ®ç‚¹å‹è½¬ä¸ºæ•´å‹
                     widthdist = (int) (results[0] * rate);
                     heightdist = (int) (results[1] * rate);
                 }
             }
-            // ¿ªÊ¼¶ÁÈ¡ÎÄ¼ş²¢½øĞĞÑ¹Ëõ
+            // å¼€å§‹è¯»å–æ–‡ä»¶å¹¶è¿›è¡Œå‹ç¼©
             Image src = (Image) bufferedImage;
-            // ¹¹ÔìÒ»¸öÀàĞÍÎªÔ¤¶¨ÒåÍ¼ÏñÀàĞÍÖ®Ò»µÄ BufferedImage
+            // æ„é€ ä¸€ä¸ªç±»å‹ä¸ºé¢„å®šä¹‰å›¾åƒç±»å‹ä¹‹ä¸€çš„ BufferedImage
             BufferedImage tag = new BufferedImage((int) widthdist, (int) heightdist, BufferedImage.TYPE_INT_RGB);
-            //»æÖÆÍ¼Ïñ  getScaledInstance±íÊ¾´´½¨´ËÍ¼ÏñµÄËõ·Å°æ±¾£¬·µ»ØÒ»¸öĞÂµÄËõ·Å°æ±¾Image,°´Ö¸¶¨µÄwidth,height³ÊÏÖÍ¼Ïñ
-            //Image.SCALE_SMOOTH,Ñ¡ÔñÍ¼ÏñÆ½»¬¶È±ÈËõ·ÅËÙ¶È¾ßÓĞ¸ü¸ßÓÅÏÈ¼¶µÄÍ¼ÏñËõ·ÅËã·¨¡£
+            //ç»˜åˆ¶å›¾åƒ  getScaledInstanceè¡¨ç¤ºåˆ›å»ºæ­¤å›¾åƒçš„ç¼©æ”¾ç‰ˆæœ¬ï¼Œè¿”å›ä¸€ä¸ªæ–°çš„ç¼©æ”¾ç‰ˆæœ¬Image,æŒ‰æŒ‡å®šçš„width,heightå‘ˆç°å›¾åƒ
+            //Image.SCALE_SMOOTH,é€‰æ‹©å›¾åƒå¹³æ»‘åº¦æ¯”ç¼©æ”¾é€Ÿåº¦å…·æœ‰æ›´é«˜ä¼˜å…ˆçº§çš„å›¾åƒç¼©æ”¾ç®—æ³•ã€‚
             tag.getGraphics().drawImage(src.getScaledInstance(widthdist, heightdist, Image.SCALE_SMOOTH), 0, 0, null);
 
             return tag;
@@ -312,7 +314,7 @@ public class QrCodeUtils {
     }
 
     /**
-     * 6 ²âÊÔ
+     * 6 æµ‹è¯•
      * @throws IOException
      */
     @Test
@@ -321,56 +323,56 @@ public class QrCodeUtils {
         BufferedImage originImage = ImageIO.read(new File(reducePath));
         BufferedImage  reduceImg = reduceImg(originImage,200,200, null );
 
-        //´æ´¢µ½±¾µØ
+        //å­˜å‚¨åˆ°æœ¬åœ°
         String saveFilePath = "/Users/healerjean/Desktop/new.png";
         saveImageToLocalDir(reduceImg, saveFilePath);
     }
 
 
     /**
-     *  7¡¢ Ìí¼ÓÎÄ×ÖË®Ó¡
-     * @param image ĞèÒª¼ÓË®Ó¡µÄÎÄ¼ş
-     * @param waterText Ë®Ó¡ÎÄ±¾
-     * @param moreMark  ÊÇ·ñÊÇ¶à¸öË®Ó¡ true¶à¸öË®Ó¡   /false »ò²»Ğ´£¬Ò»¸öË®Ó¡
+     *  7ã€ æ·»åŠ æ–‡å­—æ°´å°
+     * @param image éœ€è¦åŠ æ°´å°çš„æ–‡ä»¶
+     * @param waterText æ°´å°æ–‡æœ¬
+     * @param moreMark  æ˜¯å¦æ˜¯å¤šä¸ªæ°´å° trueå¤šä¸ªæ°´å°   /false æˆ–ä¸å†™ï¼Œä¸€ä¸ªæ°´å°
      * @return
      */
     public static BufferedImage textWaterMark(BufferedImage image,String waterText, boolean... moreMark) {
 
-            //×ÖÌåÑùÊ½
+            //å­—ä½“æ ·å¼
             int FONT_STYLE = Font.BOLD;
-            //×ÖÌå´óĞ¡
+            //å­—ä½“å¤§å°
             int FONT_SIZE = 50;
-            //×ÖÌåÑÕÉ«
+            //å­—ä½“é¢œè‰²
             Color FONT_COLOR = Color.black;
-            //×ÖÌåÑÕÉ«
-            String FONT_NAME = "Î¢ÈíÑÅºÚ";
-            //Í¸Ã÷¶È
+            //å­—ä½“é¢œè‰²
+            String FONT_NAME = "å¾®è½¯é›…é»‘";
+            //é€æ˜åº¦
             float ALPHA = 0.3F;
 
-            //¶àÍ¼µÄÇé¿öÏÂ£¬Ë®Ó¡µÄ¼ä¾à
+            //å¤šå›¾çš„æƒ…å†µä¸‹ï¼Œæ°´å°çš„é—´è·
             Integer MORE_MARK_DISTANCE = 100;
 
-            //¼ÆËãÔ­Ê¼Í¼Æ¬¿í¶È³¤¶È
+            //è®¡ç®—åŸå§‹å›¾ç‰‡å®½åº¦é•¿åº¦
             int width = image.getWidth();
             int height = image.getHeight();
-            //´´½¨Í¼Æ¬»º´æ¶ÔÏó
+            //åˆ›å»ºå›¾ç‰‡ç¼“å­˜å¯¹è±¡
             BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-            //´´½¨java»æÍ¼¹¤¾ß¶ÔÏó
+            //åˆ›å»ºjavaç»˜å›¾å·¥å…·å¯¹è±¡
             Graphics2D graphics2d = bufferedImage.createGraphics();
-            //²ÎÊıÖ÷ÒªÊÇ£¬Ô­Í¼£¬×ø±ê£¬¿í¸ß
+            //å‚æ•°ä¸»è¦æ˜¯ï¼ŒåŸå›¾ï¼Œåæ ‡ï¼Œå®½é«˜
             graphics2d.drawImage(image, 0, 0, width, height, null);
 
-            //Ê¹ÓÃ»æÍ¼¹¤¾ß½«Ë®Ó¡»æÖÆµ½Í¼Æ¬ÉÏ
-            //¼ÆËãÎÄ×ÖË®Ó¡¿í¸ßÖµ
+            //ä½¿ç”¨ç»˜å›¾å·¥å…·å°†æ°´å°ç»˜åˆ¶åˆ°å›¾ç‰‡ä¸Š
+            //è®¡ç®—æ–‡å­—æ°´å°å®½é«˜å€¼
             int waterWidth = FONT_SIZE*getTextLength(waterText);
             int waterHeight = FONT_SIZE;
-            //Ë®Ó¡Í¸Ã÷ÉèÖÃ
+            //æ°´å°é€æ˜è®¾ç½®
             graphics2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, ALPHA));
             graphics2d.setFont(new Font(FONT_NAME, FONT_STYLE, FONT_SIZE));
             graphics2d.setColor(FONT_COLOR);
 
             if(moreMark!= null && moreMark.length >0 && moreMark[0]){
-                //Éè¶¨Ğı×ª £¬ ºóÃæÁ½¸ö²ÎÊı±íÊ¾µÄÊÇÎ§ÈÆÄÇ¸ö×ø±ê
+                //è®¾å®šæ—‹è½¬ ï¼Œ åé¢ä¸¤ä¸ªå‚æ•°è¡¨ç¤ºçš„æ˜¯å›´ç»•é‚£ä¸ªåæ ‡
                 graphics2d.rotate(Math.toRadians(-30), bufferedImage.getWidth()/2, bufferedImage.getHeight()/2);
 
                 int x = -width/2;
@@ -380,7 +382,7 @@ public class QrCodeUtils {
                     y = -height/2;
                     while(y < height*1.5){
                         graphics2d.drawString(waterText, x, y);
-                        //Ë®Ó¡µÄ¼ä¾à
+                        //æ°´å°çš„é—´è·
                         y+=waterHeight+MORE_MARK_DISTANCE;
                     }
                     x+=waterWidth+MORE_MARK_DISTANCE;
@@ -389,19 +391,19 @@ public class QrCodeUtils {
                 graphics2d.drawString(waterText, width-waterWidth, height);
             }
 
-            //Ğ´Í¼Æ¬
+            //å†™å›¾ç‰‡
             graphics2d.dispose();
             return  bufferedImage;
     }
     /**
-     * ¼ÆËãË®Ó¡ÎÄ±¾³¤¶È
+     * è®¡ç®—æ°´å°æ–‡æœ¬é•¿åº¦
      *
-     * ÖĞÎÄ³¤¶È¼´ÎÄ±¾³¤¶È 2¡¢Ó¢ÎÄ³¤¶ÈÎªÎÄ±¾³¤¶È¶ş·ÖÖ®Ò»
+     * ä¸­æ–‡é•¿åº¦å³æ–‡æœ¬é•¿åº¦ 2ã€è‹±æ–‡é•¿åº¦ä¸ºæ–‡æœ¬é•¿åº¦äºŒåˆ†ä¹‹ä¸€
      * @param text
      * @return
      */
     private static int getTextLength(String text){
-        //Ë®Ó¡ÎÄ×Ö³¤¶È
+        //æ°´å°æ–‡å­—é•¿åº¦
         int length = text.length();
 
         for (int i = 0; i < text.length(); i++) {
@@ -420,7 +422,7 @@ public class QrCodeUtils {
         BufferedImage originImage = ImageIO.read(new File(originPath));
         BufferedImage newImage = textWaterMark(originImage,"healerjean",true);
 
-        //´æ´¢µ½±¾µØ
+        //å­˜å‚¨åˆ°æœ¬åœ°
         String saveFilePath = "/Users/healerjean/Desktop/new.png";
         saveImageToLocalDir(newImage, saveFilePath);
     }
@@ -430,51 +432,51 @@ public class QrCodeUtils {
 
 
     /**
-     * 8¡¢ Ìí¼ÓÍ¼Æ¬Ë®Ó¡
+     * 8ã€ æ·»åŠ å›¾ç‰‡æ°´å°
      * @param
      * @return
      */
     public static BufferedImage imageWaterMark(BufferedImage image,BufferedImage imageLogo, boolean... moreMark) {
-        //×ÖÌåÑùÊ½
+        //å­—ä½“æ ·å¼
         int FONT_STYLE = Font.BOLD;
-        //×ÖÌå´óĞ¡
+        //å­—ä½“å¤§å°
         int FONT_SIZE = 50;
-        //×ÖÌåÑÕÉ«
+        //å­—ä½“é¢œè‰²
         Color FONT_COLOR = Color.black;
-        //×ÖÌåÑÕÉ«
-        String FONT_NAME = "Î¢ÈíÑÅºÚ";
-        //Í¸Ã÷¶È
+        //å­—ä½“é¢œè‰²
+        String FONT_NAME = "å¾®è½¯é›…é»‘";
+        //é€æ˜åº¦
         float ALPHA = 0.3F;
-        //¶àÍ¼µÄÇé¿öÏÂ£¬Ë®Ó¡µÄ¼ä¾à
+        //å¤šå›¾çš„æƒ…å†µä¸‹ï¼Œæ°´å°çš„é—´è·
         Integer MORE_MARK_DISTANCE = 100;
 
         int X = 636;
         int Y = 763;
-            //¼ÆËãÔ­Ê¼Í¼Æ¬¿í¶È³¤¶È
+            //è®¡ç®—åŸå§‹å›¾ç‰‡å®½åº¦é•¿åº¦
             int width = image.getWidth(null);
             int height = image.getHeight(null);
-            //´´½¨Í¼Æ¬»º´æ¶ÔÏó
+            //åˆ›å»ºå›¾ç‰‡ç¼“å­˜å¯¹è±¡
             BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-            //´´½¨java»æÍ¼¹¤¾ß¶ÔÏó
+            //åˆ›å»ºjavaç»˜å›¾å·¥å…·å¯¹è±¡
             Graphics2D graphics2d = bufferedImage.createGraphics();
-            //²ÎÊıÖ÷ÒªÊÇ£¬Ô­Í¼£¬×ø±ê£¬¿í¸ß
+            //å‚æ•°ä¸»è¦æ˜¯ï¼ŒåŸå›¾ï¼Œåæ ‡ï¼Œå®½é«˜
             graphics2d.drawImage(image, 0, 0, width, height, null);
             graphics2d.setFont(new Font(FONT_NAME, FONT_STYLE, FONT_SIZE));
             graphics2d.setColor(FONT_COLOR);
 
-            //Ë®Ó¡Í¼Æ¬Â·¾¶
+            //æ°´å°å›¾ç‰‡è·¯å¾„
             int widthLogo = imageLogo.getWidth(null);
             int heightLogo = imageLogo.getHeight(null);
             int widthDiff = width-widthLogo;
             int heightDiff = height-heightLogo;
-            //Ë®Ó¡×ø±êÉèÖÃ
+            //æ°´å°åæ ‡è®¾ç½®
             if (X > widthDiff) {
                 X = widthDiff;
             }
             if (Y > heightDiff) {
                 Y = heightDiff;
             }
-            //Ë®Ó¡Í¸Ã÷ÉèÖÃ
+            //æ°´å°é€æ˜è®¾ç½®
             graphics2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, ALPHA));
 
             if(moreMark!= null && moreMark.length >0 && moreMark[0]){
@@ -498,7 +500,6 @@ public class QrCodeUtils {
             graphics2d.dispose();
 
             return  bufferedImage;
-
     }
 
 
@@ -515,18 +516,18 @@ public class QrCodeUtils {
 
         BufferedImage newImage = imageWaterMark(originImage,logoImage,true);
 
-        //´æ´¢µ½±¾µØ
+        //å­˜å‚¨åˆ°æœ¬åœ°
         String saveFilePath = "/Users/healerjean/Desktop/new.png";
         saveImageToLocalDir(newImage, saveFilePath);
     }
 
 
     /**
-     *  9¡¢½â¾öÍ¼Æ¬ºìÉ«ÎÊÌâ £¬JDKÖĞÌá¹©µÄImage
-     //Èç¹ûÊÇfile
+     *  9ã€è§£å†³å›¾ç‰‡çº¢è‰²é—®é¢˜ ï¼ŒJDKä¸­æä¾›çš„Image
+     //å¦‚æœæ˜¯file
      Image src=Toolkit.getDefaultToolkit().getImage(file.getPath());?
 
-     Èç¹ûÊÇurl
+     å¦‚æœæ˜¯url
      URL url = new URL(wechat_erweimaTmail);
      java.awt.Image imageTookittitle = Toolkit.getDefaultToolkit().createImage(url);
      BufferedImage titleLab = ImageUtils.toBufferedImage(imageTookittitle);
@@ -564,6 +565,96 @@ public class QrCodeUtils {
         g.drawImage(image, 0, 0, null);
         g.dispose();
         return bimage;
+    }
+
+
+    /**
+     * 10ã€è‡ªå·±åšå›¾ç‰‡ ï¼Œæ ¹æ®æ–‡æœ¬å®½åº¦è¿›è¡Œæ¢è¡Œ
+     */
+    @Test
+    public void creatMyImage(){
+
+        //æ•´ä½“å›¾åˆæˆ
+        BufferedImage bufferedImage = new BufferedImage(500, 500, BufferedImage.TYPE_INT_RGB);
+        //è®¾ç½®å›¾ç‰‡çš„èƒŒæ™¯è‰²
+        Graphics2D main = bufferedImage.createGraphics();
+        main.fillRect(0, 0, 500, 500);
+
+        String text = "111122223æ‰€ä»¥æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯ä¿3334441æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯11111111111111122223æ‰€ä»¥æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯ä¿3334441æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯11111111111111122223æ‰€ä»¥æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯ä¿3334441æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯11111111111111122223æ‰€ä»¥æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯ä¿3334441æ¯”ä¼ ç»Ÿçº¸å·¾æ›´ç¯11111111111";
+
+        Graphics2D textG = bufferedImage.createGraphics() ;
+
+        textG.setColor(new Color(37,37,37));
+        Font hualaoContentFont = new Font("PingFang SC", Font.PLAIN, 20);
+        textG.setFont(hualaoContentFont);
+        textG.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
+        drawString(textG,text,30,100,4,10,50,true,false);
+
+        //å­˜å‚¨åˆ°æœ¬åœ°
+        String saveFilePath = "/Users/healerjean/Desktop/new.png";
+        saveImageToLocalDir(bufferedImage, saveFilePath);
+
+    }
+
+
+    /**
+     *
+     * @param g
+     * @param text æ–‡æœ¬
+     * @param lineHeight è¡Œé«˜ï¼ˆæ³¨æ„å­—ä½“å¤§å°çš„æ§åˆ¶å“¦ï¼‰
+     * @param maxWidth è¡Œå®½
+     * @param maxLine æœ€å¤§è¡Œæ•°
+     * @param left å·¦è¾¹è· //æ•´æ®µæ–‡å­—çš„å·¦è¾¹è·
+     * @param top ä¸Šè¾¹è· //æ•´é¡¿æ–‡å­—çš„ä¸Šè¾¹è·
+     * @param trim æ˜¯å¦ä¿®å‰ªæ–‡æœ¬ï¼ˆ1ã€å»é™¤é¦–å°¾ç©ºæ ¼ï¼Œ2ã€å°†å¤šä¸ªæ¢è¡Œç¬¦æ›¿æ¢ä¸ºä¸€ä¸ªï¼‰
+     * @param lineIndent æ˜¯å¦é¦–è¡Œç¼©è¿›
+     */
+    public static void drawString(Graphics2D g, String text, float lineHeight, float maxWidth, int maxLine, float left,
+                                  float top, boolean trim, boolean lineIndent) {
+        if (text == null || text.length() == 0) return;
+        if(trim) {
+            text = text.replaceAll("\\n+", "\n").trim();
+        }
+        if(lineIndent) {
+            text = "ã€€ã€€" + text.replaceAll("\\n", "\nã€€ã€€");
+        }
+        drawString(g, text, lineHeight, maxWidth, maxLine, left, top);
+    }
+
+    /**
+     *
+     * @param g
+     * @param text æ–‡æœ¬
+     * @param lineHeight è¡Œé«˜
+     * @param maxWidth è¡Œå®½
+     * @param maxLine æœ€å¤§è¡Œæ•°
+     * @param left å·¦è¾¹è·
+     * @param top ä¸Šè¾¹è·
+     */
+    private static void drawString(Graphics2D g, String text, float lineHeight, float maxWidth, int maxLine, float left,
+                                   float top) {
+        if (text == null || text.length() == 0) return;
+
+        FontMetrics fm = g.getFontMetrics();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            sb.append(c);
+            int stringWidth = fm.stringWidth(sb.toString());
+            if (c == '\n' || stringWidth > maxWidth) {
+                if(c == '\n') {
+                    i += 1;
+                }
+                if (maxLine > 1) {
+                    g.drawString(text.substring(0, i), left, top);
+                    drawString(g, text.substring(i), lineHeight, maxWidth, maxLine - 1, left, top + lineHeight);
+                } else {
+                    g.drawString(text.substring(0, i - 1) + "â€¦", left, top);
+                }
+                return;
+            }
+        }
+        g.drawString(text, left, top);
     }
 
 
